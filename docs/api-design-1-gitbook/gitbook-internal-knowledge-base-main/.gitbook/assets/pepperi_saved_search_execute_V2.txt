@@ -1,0 +1,73 @@
+/**
+ * @NApiVersion 2.0
+ * @NScriptType Restlet
+ * @NModuleScope SameAccount
+ */
+
+define(['N/search'],
+/**
+ * @param {search} search
+ */
+
+function(search) {
+
+function executeSavedSearch(options) {
+
+  if ( !options.searchId ) {
+    return { error: 'Must provide the searchId of the saved search', options: options };
+  }
+
+  var mySearch = search.load({ id: options.searchId }); 
+
+  var resultSet = mySearch.run();
+
+  var results = resultSet.getRange( {
+            start : options.start,
+            end : options.end
+    } );
+
+  var arrRows = new Array();
+  var arrColumns = new Array();
+
+  for(var i =0;i<results.length;i++)
+  {
+
+	var columns =results[i].columns;
+	var arrRow = new Array();
+
+	for(var j = 0; j<columns.length; j++)
+	{
+		if(i==0)
+		{
+ 		 	var label= columns[j].label;
+  			if( label == null || label.length == 0 ) 
+  			{ 
+  				arrColumns[arrColumns.length++] = columns[j].name;
+  			}	
+  			else
+     			arrColumns[arrColumns.length++] = label;
+		}
+	
+		var id = results[i].getValue(columns[j]);
+		var text = results[i].getText(columns[j]) ? results[i].getText(columns[j]) : id;
+		arrRow [arrRow.length++] = text;
+  	}
+    
+   	arrRows [arrRows.length++] =arrRow ;
+
+  }
+
+  var reobj = new Object();
+  reobj.columns= arrColumns;
+  reobj.rows= arrRows;
+
+  return reobj;
+
+}
+
+    return {
+        post: executeSavedSearch
+    };
+
+});
+

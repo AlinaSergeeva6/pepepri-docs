@@ -1,0 +1,1055 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"  crossorigin="anonymous"  />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap" rel="stylesheet"  />
+    <script>
+      var timerStart = Date.now();
+      var arr;
+    </script>
+    <script type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+
+      body {
+        background: #fff;
+        margin: 0;
+      }
+
+      .t1,
+      .t1:hover {
+        transition: all 0.1s ease-in;
+        -webkit-transition: all 0.1s ease-in;
+      }
+.topbar {
+        background: #F3CF7B;
+        margin-bottom: 85px;
+        position: fixed;
+        width: 100%;
+        top: 19px;
+        z-index: 1;
+      }
+
+      .topbar__content {
+        position: relative;
+        margin: auto;
+        width: 152px;
+        height: 50px;
+      }
+
+      .topbar__content img {
+        width: 34px;
+        position: absolute;
+        top: 6px;
+      }
+
+      .topbar__content span {
+        text-transform: uppercase;
+        position: absolute;
+        right: 0;
+        top: 16px;
+        color: #fff;
+      }
+
+      .main {
+        max-width: 970px;
+        margin: auto;
+        margin-top: 140px;
+      }
+
+      .fl {
+        float: left;
+      }
+
+      .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+.displayNone {
+        display: none;
+      }
+
+      .form {
+        width: 420px;
+        background: #ececec;
+        font-family: Arial;
+        border-radius: 10px;
+        margin: 0 auto 15px auto;
+        box-shadow: 0px 4px 0px #c3c3c3;
+        position: relative;
+      }
+
+      .title_form {
+        font-weight: bold;
+        text-align: center;
+        font-size: 14px;
+        color: #565656;
+        padding: 10px 0;
+        position: relative;
+      }
+
+      .num_btn {
+        width: calc(20% - 12px);
+        background: #fff;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0 0px 10px 10px;
+        box-sizing: border-box;
+        min-height: 38px;
+        line-height: 18px;
+        border-radius: 4px;
+        box-shadow: 0 3px 0px #0000001f;
+      }
+
+      .num_btn:hover {
+      }
+
+      .bottom_wrap {
+        text-align: center;
+        padding-bottom: 10px;
+      }
+
+      .display_form {
+        padding: 10px;
+        background: #fff;
+margin: 0 5px 5px 5px;
+        border-radius: 5px;
+      }
+
+      .add_btn {
+        min-width: calc(50% - 14px);
+        display: inline-block;
+        background: #ffffff;
+        padding: 10px 20px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0 3px 0px #0000001f;
+      }
+
+      .input_form input {
+        display: block;
+      }
+
+      .input_form input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 15px;
+        border: 2px solid #e0e0e0;
+        font-size: 20px;
+        color: #4c4c4c;
+        border-radius: 4px;
+      }
+
+      .item_description {
+        padding: 15px 0 15px 0;
+        position: absolute;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        width: 90%;
+      }
+
+      .display_bts {
+        text-align: center;
+        margin-top: 48px;
+      }
+      .bts {
+        height: 50px;
+        box-shadow: 0 3px 0px #0000001f;
+        padding: 0px 20px;
+        border-radius: 5px;
+        background: #f7f7f7;
+        display: inline-block;
+        cursor: default;
+        font-family: "Roboto Condensed", sans-serif;
+        /* font-weight: bold; */
+        font-size: 18px;
+        box-sizing: border-box;
+        line-height: 50px;
+        color: #8a8a8a;
+      }
+
+      .qtaBase {
+        color: #404f61;
+      }
+
+      .close {
+        position: absolute;
+        right: -3px;
+        top: -3px;
+        background: #de4e4e;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        color: #fff;
+      }
+
+      .close i {
+        padding-top: 7px;
+      }
+
+      .loading_bg {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #ffffffc9;
+        z-index: 123;
+        display: none;
+      }
+      /*.loading .loading_bg {display:block;}*/
+
+      .loading_block {
+        text-align: center;
+        margin-top: 150px;
+      }
+
+      .infoBlock {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        display: none;
+      }
+
+      .infoBlock2 {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+
+      .infoBlock3 {
+        margin: 0 auto;
+        width: 400px;
+        font-weight: bold;
+      }
+
+      .num_btn {
+        cursor: pointer;
+      }
+
+      .num_btn:hover,
+      .add_btn:hover {
+        box-shadow: 0 3px 0px #4a4a4a66;
+      }
+
+      .num_btn:active,
+      .add_btn:active {
+        background: #f5f5f5;
+        box-shadow: 0 2px 0px #0000001f;
+      }
+
+      .searchType {
+        position: absolute;
+        top: -73px;
+      }
+
+      .searchType {
+        top: -73px;
+      }
+
+      .searchType label {
+        display: block;
+        font-size: 12px;
+        font-family: Arial;
+      }
+
+      .case {
+        box-shadow: 0 3px 0px #a1afbf;
+        background: #d3dce6;
+        color: #404f61;
+      }
+
+      .num_btn.case:hover,
+      .add_btn.case:hover {
+        box-shadow: 0 3px 0px #77889c;
+      }
+
+      .num_btn.case:active,
+      .add_btn.case:active {
+        background: #dee5ec;
+        box-shadow: 0 2px 0px #a1afbf;
+      }
+
+      .num_btn.case:active {
+        background: #dee5ec;
+        box-shadow: 0 2px 0px #a1afbf;
+      }
+
+      .add_btn.case {
+        margin-left: 6px;
+      }
+
+      .qty input {
+        height: inherit;
+        width: 60px;
+        border: 2px solid #e0e0e0;
+        padding: 6px 6px;
+        border-radius: 4px;
+        position: relative;
+        right: -12px;
+        color: #7b7b7b;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+}
+
+      .scanner_test {
+        background: #4a759a;
+        text-align: center;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: Arial;
+      }
+
+      .wrapper {
+        max-width: 100%;
+        /* margin-top: 50px; */
+        /* width: 960px; */
+        /* margin: 50px auto 0 auto; */
+      }
+
+      .result {
+        width: 500px;
+        height: 100px;
+        margin-left: 40px;
+        font-family: Arial;
+      }
+
+      .ExternalID {
+        width: 30%;
+        text-align: center;
+      }
+
+      .Name {
+        width: 35%;
+        text-align: left;
+      }
+
+      .Price {
+        width: 15%;
+        text-align: center;
+      }
+
+      .qty_min {
+        width: 15%;
+        text-align: center;
+      }
+.remove {
+        width: 5%;
+        text-align: center;
+      }
+
+      .remove span {
+        color: #ca9696;
+      }
+
+      .remove span:hover {
+        color: #923939;
+      }
+
+      .item {
+        padding: 10px 20px;
+        font-size: 14px;
+        color: #868686;
+      }
+
+      .item.top {
+        background: #89000e;
+        /* font-weight: bold; */
+        color: #fff;
+        text-align: center;
+        border-radius: 4px 4px 0 0;
+        text-transform: uppercase;
+        padding: 15px 20px;
+      }
+      .total {
+        position: absolute;
+        top: 18px;
+        right: 145px;
+        font-size: 18px;
+      }
+
+      .add_cart_btn {
+        background: #5fa965 !important;
+        color: #ffffff !important;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        border-radius: 2px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .add_cart_btn:hover {
+        background: #487fc3;
+      }
+
+      input:focus {
+        border: 2px solid #a1afbf !important;
+        outline: none !important;
+      }
+
+      .items_results {
+        background: #fff;
+        border-radius: 0 0 4px 4px;
+        border: 1px solid #c3c3c3;
+        box-shadow: 0px 4px 0px #c3c3c3;
+        position: relative;
+        overflow-y: auto;
+      }
+      @media (min-width: 992px) {
+        .items_results {
+          min-height: 400px;
+        }
+      }
+
+      .cancel_btn {
+        background: #c17070 !important;
+      }
+
+      .next_result {
+        position: fixed;
+        top: 69px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 10px;
+      }
+
+      .posabs {
+        position: absolute;
+        right: 30px;
+      }
+
+      .add_cart_btn:hover {
+        opacity: 0.8;
+      }
+
+      .error_result {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: calc(50% - 9px);
+        color: #c1c1c1;
+        display: none;
+      }
+
+      .disabled .add_big {
+        opacity: 0.6 !important;
+      }
+
+      .disabled .error_result {
+        display: inline-block;
+      }
+
+      .clear_btn {
+        position: absolute;
+        right: 575px;
+        background: #5fa965 !important;
+        color: #ffffff !important;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        border-radius: 2px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      
+      .modalwindow {
+            position:fixed;
+            display:none; 
+            z-index:9999;
+            width:700px;
+            background: white;
+            border: #ececec 5px solid;
+            padding: 10px!important;
+            -webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+            -webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+            border-radius: 10px;
+        }
+.confirm {
+            width:300px;
+            padding: 5px;
+        }
+
+        .yes-no-buttons{ 
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+      @media screen and (max-width: 992px) {
+        .wrapper {
+          width: 100%;
+          margin: 0;
+        }
+        .form {
+          float: none !important;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          margin-top: 70px;
+        }
+        .result {
+          float: none !important;
+          width: 100% !important;
+          margin-left: 0 !important;
+        }
+        .next_result {
+          position: fixed;
+          left: 0;
+          right: 0;
+          padding: 10px;
+        }
+        .posabs {
+          right: 10px;
+        }
+        .add_cart_btn {
+          margin-bottom: 0;
+        }
+        .items_results {
+          height: 220px;
+        }
+        .item.top {
+          margin-top: 50px;
+        }
+      }
+
+    </style>
+
+    <script>
+        var exitAction = ''; 
+
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+
+      function apiResult(e) {
+        arr = e["objects"];
+        console.log(e);
+        var loadTime = Date.now() - timerStart;
+        $("body").removeClass("loading");
+        $(".elemsInArr").html("" + arr.length + "");
+        $(".scriptTime").html("" + loadTime / 1000 + " s");
+      }
+
+      window.onload = function() {
+        $("body").addClass("loading");
+        pepperi.api.transactionScopeItems.search({
+          transaction: {
+            UUID: workflowObject.UUID
+          },
+          fields: ["ItemExternalID", "ItemUPC","ItemName", "UnitPriceAfterDiscount"],
+          pageSize: 1000000,
+          page: 1,
+          responseCallback: "apiResult"
+        });
+      };
+
+      function insertTextAtCursor(el, text, backspace) {
+        var val = el.value,
+          endIndex,
+          range,
+          doc = el.ownerDocument;
+        if ( typeof el.selectionStart == "number" && typeof el.selectionEnd == "number"
+        ) {
+          endIndex = el.selectionEnd;
+          var l = val.slice(0, endIndex);
+          if (backspace) l = l.substr(0, l.length - 1);
+          el.value = l + text + val.slice(endIndex);
+          el.selectionStart = el.selectionEnd = endIndex + text.length;
+        } else if (doc.selection != "undefined" && doc.selection.createRange) {
+          el.focus();
+          range = doc.selection.createRange();
+          range.collapse(false);
+          range.text = text;
+          range.select();
+        }
+      }
+
+      //   function btn(k) {
+      //       var cs = $(currentFocus).val();
+      //       if(currentFocus){
+      //       $(currentFocus).val(cs+k);}
+      //       else{
+      //         $(currentFocus).val(parseInt(cs) + parseInt(k));
+
+      //       }
+
+      //       $(currentFocus).focus();
+      //   }
+
+      function btn(k) {
+        var key = "";
+        var backspace = 0;
+        if (k == 11) {
+          k = "";
+          $("#textareaid").val("");
+          $(".qty_case input").val($(".qtaBase").html());
+          $(".item_description").html("");
+      $(".wrapper").attr("data-focus", "textareaid");
+          return 0;
+        }
+        if (k == 12) {
+          k = "";
+          backspace = 1;
+        }
+        var focus_selector = $(".wrapper").attr("data-focus");
+    if (!focus_selector)
+      focus_selector = 'textareaid';
+        insertTextAtCursor(document.getElementById(focus_selector), k, backspace);
+    //$("#"+focus_selector).select();
+        if ($("#textareaid").val()) ft_live_search();
+      }
+      function ft_api() {
+$("body").addClass("loading");
+        var loadT = Date.now();
+        $("body").attr("data-time", loadT);
+        var s = $(".input_form input").val();
+        pepperi.api.items.get({
+          key: { ItemExternalID: s },
+          fields: ["ItemExternalID", "ItemName", "UnitPriceAfterDiscount"],
+          responseCallback: "oneRes"
+        });
+
+        pepperi.api.transactionScopeItems.search({
+          transaction: {
+            UUID: workflowObject.UUID
+          },
+          fields: ["ItemExternalID", "ItemName", "UnitPriceAfterDiscount"],
+          pageSize: 1000000,
+          page: 1,
+          responseCallback: "oneRes"
+        });
+      }
+
+      function oneRes(e) {
+        var loadT = $("body").attr("data-time");
+        var loadTime = Date.now() - loadT;
+        $(".searchTime").html("" + loadTime / 1000 + " s");
+        //  console.log(e);
+        $("body").removeClass("loading");
+        if (e["count"] && e["count"] > 0) {
+          elPrint(
+            loadTime,
+            e["objects"][0]["ItemExternalID"],
+            e["objects"][0]["ItemName"],
+            e["objects"][0]["UnitPriceAfterDiscount"],
+            "The item is found in the array. <br>[NAME:" +
+              e["objects"][0]["ItemExternalID"] +
+              "]" +
+              e["objects"][0]["ItemName"]
+          );
+        } else {
+          clean_item();
+        }
+      }
+
+      function ft_live_search() {
+        if (!$("#live").prop("checked")) return false;
+        ft_search();
+      }
+      function ft_case() {
+        var cur = $(".qtaBase").html();
+        var cs = $(".qty_case input").val();
+        if (!cs) cs = 0;
+        if (!cur) cur = 1;
+        $(".qty_case input").val(parseInt(cs) + parseInt(cur));
+        $(".qty_case input").focus();
+        //currentFocus='.qty_case input';
+      }
+
+      function case_btn(count) {
+        var cur = $(".qty_case input").val();
+        if (!cur) cur = 0;
+        $(".qty_case input").val(parseInt(cur) + parseInt(count));
+        $(".qty_case input").focus();
+        //currentFocus='.qty_case input';
+      }
+
+      function test_scanner() {
+        var z = getRandomInt(1, 999999);
+        var y = getRandomInt(1, 48);
+        $("#textareaid").val(z);
+        ft_search();
+        $(".qty_case input").val(y);
+        $(".qty_case input").select();
+      }
+
+      function count_items() {
+        var price = 0;
+        var qta = 0;
+        var i = 0;
+        $(".items_results .item").each(function(a, e) {
+          var data = $(e).data();
+          if (data["price"])
+            price += parseInt(data["price"]) * parseInt(data["qty"]);
+          if (data["qty"]) qta += parseInt(data["qty"]);
+          i++;
+        });
+        if (i > 0) {
+          $(".result").removeClass("disabled");
+          $(".add_info").html(
+            " " + i + " | Total Qty: " + qta + " | Total Price: $" + price
+          );
+        } else {
+          $(".result").addClass("disabled");
+          $(".add_info").html("");
+        }
+      }
+
+      function clean_item() {
+        $(".input_form input").val("");
+        $(".qty_case input").val(0);
+        $(".item_description").html("");
+        $(".itemExternalID").html("");
+      }
+      function elPrint(
+        loadTime,
+        ItemExternalID,
+        ItemName,
+        UnitPriceAfterDiscount,
+        text
+      ) {
+        $(".searchTime").html("" + loadTime / 1000 + " s");
+        $(".searchTitle").html(text);
+        $(".item_description").html(
+          '[ID <span class="itemExternalID">' +
+            ItemExternalID +
+            '</span>] <span class="itemJsName">' +
+            ItemName +
+            '</span> - $<span class="itemPrice">' +
+            UnitPriceAfterDiscount +
+            "</span>"
+        );
+        ItemExternalID = null;
+        //$(".bts.price").html("$" + UnitPriceAfterDiscount + "");
+      }
+
+      function ft_search() {
+        console.log(arr);
+        var t = $("input[name=type]:checked").val();
+        if (t == 2) {
+          ft_api();
+          return false;
+        }
+        var timerStart = Date.now();
+        if (!arr) return false;
+        var len = arr.length;
+        var s = $(".input_form input").val();
+       // s = s.toLowerCase(); 
+        if (!s.length) {
+          return 0;
+        }
+        // console.log(arr);
+        for (var i = 0; i < len; i++) {
+          if (arr[i]["ItemExternalID"] == s || arr[i]["ItemUPC"] == s) {
+            //console.log(arr);
+            elPrint(
+              Date.now() - timerStart,
+              arr[i]["ItemExternalID"],
+              arr[i]["ItemName"],
+              arr[i]["UnitPriceAfterDiscount"],
+              "The item is found in the array. <br>[NAME:" +
+                arr[i]["ItemExternalID"] +
+                "]" +
+                arr[i]["ItemName"]
+            );
+            return 1;
+          }
+        }
+        //$(".qty_case input").val(0);
+        $(".item_description").html("");
+        var loadTime = Date.now() - timerStart;
+        $(".searchTime").html("" + loadTime / 1000 + " s");
+        return 0;
+      }
+
+      function add_item() {
+        var cs = parseInt($(".qty_case input").val());
+        var x = $(".input_form input").val();
+        var price = parseInt($(".itemPrice").html());
+        var itemExternalID = $(".itemExternalID").html();
+        var name = $(".item_description .itemJsName").html();
+        if (!x) return false;
+        var i = 0;
+        var add = 0;
+        $(".items_results .item").each(function(a, e) {
+          var data = $(e).data();
+          if (data["item"] == x) {
+            var q = $(e)
+              .find(".qty_min")
+              .html();
+            if (q && cs >= 0 && add == 0) {
+              var new_q = (parseInt(q) + parseInt(cs)) * 1;
+              add = 1;
+              $(".item[data-item=" + x + "] .qty_min").html(cs);
+              //clear_item();
+              return;
+            }
+          }
+          i++;
+        });
+        console.log(itemExternalID);
+        if (!add && itemExternalID) {
+          $(".items_results").append(
+            '<div class="item clearfix" data-item="' +
+              x +
+              '" data-price="' +
+              price +
+              '" data-qty="' +
+              cs +
+              '"><div class="Name fl"><span class="item_id"> ' +
+              name +
+              "&nbsp;</span> </div>" +
+              '<div class="ExternalID fl"><span class="item_id"> ' +
+              itemExternalID +
+              "</span> </div>" +
+              '<div class="Price fl"><span class="item_id"> ' +
+              price +
+              "</span> </div>" +
+              '<div class="qty_min fl">' +
+              cs +
+              '</div><div class="remove fl"><span class="remove_btn t1" onclick="removeItem(' +
+              "'" +
+              x +
+              "'" +
+              ')"><i class="fas fa-times"></i></span></div></div>'
+          );
+          //clean_item();
+        }
+        itemExternalID = null;
+        count_items();
+      }
+
+      function focus_input(e) {
+        if (!e) e = ".input_form input";
+        $(e).select();
+        add_item();
+        clean_item();
+      }
+
+      function removeItem(x) {
+        $(".item[data-item=" + x + "]").remove();
+        count_items();
+      }
+
+      function qty_focus(e) {
+        $(e).select();
+        add_item();
+      }
+
+      function update() {
+        var objArr = [];
+        $(".items_results .item").each(function(a, e) {
+          var data = $(e).data();
+          console.log(data);
+          var obj = {};
+          obj.item = {
+            ExternalID: data.item
+          };
+          obj.UnitsQuantity = data.qty;
+          objArr.push(obj);
+        });
+        pepperi.app.transactionScopeItems.update({
+          transaction: {
+            UUID: workflowObject.UUID
+          },
+          objects: objArr,
+          responseCallback: "lastCallb"
+        });
+      }
+
+      function lastCallb(data) {
+        console.log(data);
+        onSaveAndClose();
+      }
+
+      function count_list_items() {
+        var cs = parseInt($(".qty_case input").val());
+        var x = $(".input_form input").val();
+        if (!cs) cs = 0;
+        $(".item[data-item=" + x + "] .qty_min").html(cs);
+        $(".item[data-item=" + x + "]").data("qty", cs);
+      }
+
+      function ft_exit() {
+        exitAction = 'Cancel'; 
+        showModalWindowConfirm('Do you want to exit without changes?'); 
+      }
+
+      function ft_clear() {
+        exitAction = 'Clear'; 
+        showModalWindowConfirm('Do you want clear all items?'); 
+      }
+      function showModalWindowConfirm(text) {
+                let modal = $('#confirm'); 
+
+                $('.confirmQuestion').html(text); 
+
+                var winH = $(window).height();
+                var winW = $(window).width();
+
+                // Move modal window in center
+                modal.css('top', winH/2-modal.height()/2);
+                modal.css('left', winW/2-modal.width()/2);
+
+                // show form
+                modal.fadeIn(500);
+                
+        }
+      
+      function ft_remove_all() {
+        $(".items_results .item").remove();
+        count_items();
+      }
+    function check_focus()
+    {
+      var qta = $('#qtaarea').val();
+      if (qta && qta != '0' && qta != ' ')
+      {
+        add_item(); 
+      clean_item();
+      $('#textareaid').select();
+      }
+      else
+      $('#qtaarea').select();
+    }
+
+      function yesBtnClick() {
+
+        if (exitAction == 'Cancel') {
+            onClose(); 
+        } 
+        if (exitAction == 'Clear') {
+            ft_remove_all(); 
+            $('.modalwindow').fadeOut(500);
+        } 
+
+     } 
+        function noBtnClick() {
+        $('.modalwindow').fadeOut(500);
+
+    }
+
+
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Time test</title>
+  </head>
+  <body class="load ing">
+    <div class="loading_bg"><div class="loading_block"><img src="https://www.pepperi.com/wp-content/uploads/loading.gif" /></div></div>
+    <!-- <div class="infoBlock3"> id: 0 - 130 000  </div> -->
+    <div class="infoBlock">
+      <div class="scanner_test" onclick="test_scanner();">Scanner</div>
+      <span class="displayNone">
+        <div class="des">Elements:</div>
+        <div class="elems elemsInArr">0</div>
+        <div class="des">The time spent filling the array:</div>
+        <div class="elems scriptTime">0</div>
+      </span> </div>
+    <!--<div class="infoBlock2">
+  <div class="des">Data search time:</div>
+    <div class="elems searchTime">0</div>
+    <div class="des">Search item:</div>
+    <div class="elems searchTitle">-//-</div> </div>-->
+    <div class="clearfix wrapper">
+      <div class="topbar">
+        <div class="topbar__content">
+          <img src="https://i.imgur.com/Z2cPfZG.png" alt="logo" />
+          <span>Quick order</span> </div> </div>
+      <div class="main">
+        <div class="form fl">
+          <div class="searchType displayNone">
+            <label for="sChoice1"><input type="radio" id="sChoice1" name="type" value="1" checked="checked"  />Search by array received from API (100 000+ elements)</label>
+            <label for="sChoice2"><input type="radio" id="sChoice2" name="type" value="2" />Search using an API request for 1 element</label>
+            <label for="live" id="lvb"><input type="checkbox" value="" name="live" id="live" checked="checked"  />Live search</label> </div>
+          <div class="title_form">Add New Item</div>
+          <div class="display_form">
+            <div class="input_form">
+              <input type="text" value="" onfocus="focus_input(this); $('.wrapper').attr('data-focus', 'textareaid');" id="textareaid" onkeyup="if (event.keyCode == 13) { $('.qty_case input').focus();return false;} else {ft_live_search();}"  class="t1"  /> </div>
+            <div class="item_description"></div>
+            <div class="clearfix display_bts">
+              <div class="bts qty">
+                Case QTY: <span class="qtaBase">1</span> </div>
+              <div class="bts qty qty_case">
+                QTY: <input type="text" value="1" onfocus="qty_focus(this); $('.wrapper').attr('data-focus', 'qtaarea');" onkeydown="if (event.key == 'Tab') {$('#textareaid').focus();return false}" onkeyup="if (event.keyCode == 13) {add_item(); clean_item(); $('#textareaid').focus(); return false;}else{count_list_items();}" id="qtaarea" onchange=""  class="t1"  /> </div> </div> </div>
+          <div class="buttons clearfix">
+            <div class="num_btn fl t1" onclick="btn('1');">1</div>
+            <div class="num_btn fl t1" onclick="btn('2');">2</div>
+            <div class="num_btn fl t1" onclick="btn('3');">3</div>
+            <div class="num_btn fl t1 case" onclick="case_btn('5');">&#43;5</div>
+            <div class="num_btn fl t1 case" onclick="case_btn('6');">&#43;6</div>
+
+            <div class="num_btn fl t1" onclick="btn('4');">4</div>
+            <div class="num_btn fl t1" onclick="btn('5');">5</div>
+            <div class="num_btn fl t1" onclick="btn('6');">6</div>
+            <div class="num_btn fl t1 case" onclick="case_btn('10');">&#43;10</div>
+            <div class="num_btn fl t1 case" onclick="case_btn('12');">&#43;12</div>
+
+            <div class="num_btn fl t1" onclick="btn('7');">7</div>
+            <div class="num_btn fl t1" onclick="btn('8');">8</div>
+            <div class="num_btn fl t1" onclick="btn('9');">9</div>
+            <div class="num_btn fl t1 case" onclick="case_btn('20');">&#43;20</div>
+            <div class="num_btn fl t1 case" onclick="case_btn('25');">&#43;25</div>
+            <div class="num_btn fl t1" onclick="btn('11');">
+              <i class="fas fa-angle-right"></i></div>
+            <div class="num_btn fl t1" onclick="btn('0');">0</div>
+            <div class="num_btn fl t1" onclick="btn('12');">
+              <i class="fas fa-backspace"></i></div>
+            <div class="num_btn fl t1 case" onclick="case_btn('50');">&#43;50 </div>
+            <div class="num_btn fl t1 case" onclick="case_btn('100');">&#43;100</div> </div>
+              <div class="bottom_wrap">
+                <div  class="add_btn t1" onclick="check_focus();">Enter</div>
+                <div class="add_btn t1 case" onclick="ft_case();">&#43;Case</div>
+              </div>
+        </div>
+        <div class="result fl  disabled">
+          <div class="next_result">
+            <div  class="add_cart_btn t1 cancel_btn" onclick="ft_exit();">Cancel</div>
+            <div  class="add_cart_btn t1 remove_btn clear_btn" onclick="ft_clear();">Clear</div>
+            <div class="total">Total items:<span class="add_info"></span></div>
+            <div class="add_cart_btn add_big t1 posabs" onclick="update();">Done</div></div>
+          <div class="item top clearfix">
+            <div class="Name fl">Name</div>
+            <div class="ExternalID fl">ID</div>
+            <div class="Price fl">Price</div>
+            <div class="qty_min fl">QTY</div>
+            <div class="remove fl"></div>
+          </div>
+          <div class="items_results clearfix">
+            <span class="error_result">No items selected</span>
+           </div>
+    </div>
+  </div>
+</div>
+
+    <div id="confirm" class="modalwindow confirm">
+        <h6 class="confirmQuestion text-center"></h6>
+        <div class="yes-no-buttons">
+            <button class="yes btn btn-danger" onclick="yesBtnClick()">YES</button>
+            <button class="no btn btn-info" onclick="noBtnClick()">NO</button>
+        </div>
+    </div>
+
+ </body>
+</html>

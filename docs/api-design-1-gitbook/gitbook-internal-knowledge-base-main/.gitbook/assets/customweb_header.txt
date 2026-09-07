@@ -1,0 +1,731 @@
+/**********************************************************************************************/ // Pepperi plugin interface /**********************************************************************************************/ // 1. The namespace of the header
+must be "customHeader". // 3. The header must implement those functions: // * initPlugin - This method is to get the option object with the declared interface: // - JsURLs: the path of the script files. // - cssURLs: the path of the css files. // - more...
+// * onPluginLoad(context) - This method is called when the plugin is ready for use (external files are loaded). // - params: context object . // * navigateTo - (Optional) The event for the navigation the data need to be like this: // - detail: { // path:
+'HomePage' - (the path is the url that you want). // } // * logout - (Optional) The event for the logout the name of the event have to be 'logout': // * favIconURL - this parameter should contain url of the favicon. if it will be empty string or null
+the user will get pepperi default favicon. // * pageTitle - this parameter should contains the string ot the page title. if it will be empty string or null the user will see pepperi default title - "Pepperi". // *Changed background image and logout URL
+6.14.19 DZ /**********************************************************************************************/ var customHeader = {}; (function () { this.email this.context; this.accountUUID; this.userEmail; this.userUUID; this.favIconURL = "https://static.wixstatic.com/media/1fcd02_e34a0c4c1e01493cbdd296d68e8c551b~mv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/1fcd02_e34a0c4c1e01493cbdd296d68e8c551b~mv2.jpg";
+this.pageTitle = "Luxury Eyewear | OGI Eyewear | United States"; //this.catalogName = "2020 Fall Catalog"; this.transactionName = "Sales Order"; this.lastTransactionUUID; //this.clientApiPath = 'http://localhost:4300/assets/ClientAPI/ClientApi.js';//
+Open it for debug only this.setHtml = function () { var str = `
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,900&display=swap");
+    @font-face {
+        font-family: "LuloCleanW01-OneBold";
+        src: url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot");
+        /* IE9*/
+        src: url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.woff2") format("woff2"), /* chrome firefox */
+        url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.woff") format("woff"), /* chrome firefox */
+        url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+        url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.svg#LuloCleanW01-OneBold") format("svg");
+        /* iOS 4.1- */
+    }
+    
+    #header-section {
+        background-color: white;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        font: normal normal normal 11px/1.4em LuloCleanW01-OneBold, sans-serif;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+        font-weight: normal;
+        font-stretch: normal;
+        font-size: 11px;
+        font-family: LuloCleanW01-OneBold, sans-serif;
+        text-decoration: none;
+    }
+    
+    header {
+        height: 50px;
+    }
+    
+    #header-section .d-flex {
+        display: flex;
+    }
+    
+    #header-section .dropdown-menu:after {
+        display: none;
+    }
+    
+    #header-section .left-mobile {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    #header-section .btn-group ul {
+        align-items: center;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #header-section .btn-group ul li {
+        display: inline;
+        padding: 0 15px;
+    }
+    
+    .btn-group ul li a {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        font: normal normal normal 11px/1.4em "LuloCleanW01-OneBold", sans-serif;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+        font-weight: normal;
+        font-stretch: normal;
+        font-size: 11px;
+        font-family: LuloCleanW01-OneBold, sans-serif;
+        transition: color 0.2s ease-out;
+        -webkit-transition: color 0.2s ease-out;
+        -moz-transition: color 0.2s ease-out;
+        -o-transition: color 0.2s ease-out;
+    }
+    
+    .logo ul li a {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        font: normal normal normal 11px/1.4em "LuloCleanW01-OneBold", sans-serif;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+        font-weight: normal;
+        font-stretch: normal;
+        font-size: 11px;
+        font-family: LuloCleanW01-OneBold, sans-serif;
+        transition: color 0.2s ease-out;
+        -webkit-transition: color 0.2s ease-out;
+        -moz-transition: color 0.2s ease-out;
+        -o-transition: color 0.2s ease-out;
+    }
+    
+    .btn-group ul li a:hover {
+        color: #cbdcd4;
+    }
+    
+    .btn-group .wishlist {
+        color: #cbdcd4;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    #header-section .container-fluid {
+        width: 100%;
+    }
+    
+    #header-section .justify-content-between {
+        justify-content: space-between;
+    }
+    
+    #header-section .btn-group {
+        display: flex;
+        align-items: center;
+    }
+    
+    #header-section .btn-group button {
+        outline: none;
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+        color: black;
+        height: 40px;
+        line-height: 20px;
+        padding: 0 15px;
+        margin-left: 10px;
+    }
+    
+    #header-section .dropdown {
+        height: 40px;
+        margin-right: 5px;
+    }
+    
+    #header-section .dropdown .dropdown-log-in:hover {
+        color: #cbdcd4;
+    }
+    
+    #header-section .dropdown .dropdown-log-in {
+        color: transaparent;
+        text-decoration: none;
+        cursor: pointer;
+        font: normal normal normal 11px/1.4em "LuloCleanW01-OneBold", sans-serif;
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+        font-weight: normal;
+        font-stretch: normal;
+        font-size: 11px;
+        font-family: LuloCleanW01-OneBold, sans-serif;
+        transition: color 0.2s ease-out;
+        -webkit-transition: color 0.2s ease-out;
+        -moz-transition: color 0.2s ease-out;
+        -o-transition: color 0.2s ease-out;
+    }
+    
+    #header-section .dropdown a {
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+        font-size: 10px;
+    }
+    
+    #header-section .dropdown a:hover {
+        color: #cbdcd4;
+    }
+    
+    .logo:hover {
+        cursor: pointer;
+    }
+    
+    #header-section .dropdown-menu:before {
+        border: none !important;
+    }
+    
+    #header-section .dropdown-menu {
+        text-align: center;
+    }
+    
+    #header-section .favorite {
+        position: relative;
+        width: 118px;
+    }
+    
+    .showMobile {
+        display: none;
+    }
+    
+    .info {
+        width: 100%;
+        height: 25px;
+        background-color: #000000;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        margin-top: -1px;
+    }
+    
+    .list-left {
+        display: flex;
+        padding: 0;
+    }
+    
+    .list-left li {
+        list-style: none;
+        padding: 0 5px;
+    }
+    
+    @media (max-width: 769px) {
+        #header-section .dropdown-menu-left {
+            left: 0;
+            font-size: 25px;
+            width: 95vw;
+        }
+        .logo {
+            display: none;
+        }
+        .showMobile {
+            display: block;
+        }
+        .showDesktop,
+        #header-section .btn-group ul {
+            display: none;
+        }
+        .info {
+            font-size: 11px;
+        }
+        .tag-info {
+            display: none;
+        }
+        .mobile-tag:after {
+            content: "Next Level: "
+        }
+    }
+    /* @media (max-width: 415px) {
+              
+            }
+            @media (max-width: 376px) {
+              
+            }
+            @media (max-width: 321px) {
+              
+            } */
+</style>
+<header id="header-section">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+            <div class="left-mobile">
+                <div class="dropdown showMobile">
+                    <button style="background: transparent; border: none; outline: none" class="dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img
+                        style="background: transparent;"
+                        src="https://storage.pepperi.com/General/Icons/open-menu-black.svg"
+                        width="30px"
+                        alt="user"
+                      />
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="javascript: void(0)" title="Luxury Eyewear | OGI Eyewear | United States" rel="home" onclick="customHeader.navigation(\'HomePage\')">Home</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        onclick="customHeader.navigation(\'list/all_activities\')"
+                        >My orders</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        onclick="customHeader.openInNewTab(\'https://www.ogieyewearspring2020.com/\');"
+                        >Visit our website</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        onclick="customHeader.openInNewTab(\'https://ogieyewear.com/en/contact-us\');"
+                        >Help</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="logo" style="margin-right: 44%; margin-top: 15px; position: absolute">
+                  <ul class="showDesktop" style="list-style: none; padding-inline-start: 25px;">
+                    <li>
+                      <a href="javascript: void(0)" onclick="customHeader.navigation(\'HomePage\')">
+                        <span style="font-size:12px;">OGI EYEWEAR</span>
+                      </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <ul class="showDesktop" style="list-style: none;">
+                            <li>
+                                <a onclick="customHeader.navigation(\'list/all_activities\')">MY ORDERS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        onclick="customHeader.openInNewTab(\'https://www.ogieyewear.com/\');"
+                        >VISIT OUR WEBSITE</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        onclick="customHeader.openInNewTab(\'https://www.ogieyewear.com/ogi-customer-relations\');"
+                        >CONTACT</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-log-in"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                    <svg _ngcontent-c1="" class="svg-icon" style="fill: rgb(34, 34, 34);margin-top: 3px;" viewBox="0 0 28 28">
+                    <path fill-rule="evenodd" d="M5.87300934,20 C5.31672677,18.8352719 5,17.5623379 5,16.3333333 C5,13.9259827 6.21522434,12.2548428 8.06569509,11.3364984 C7.70530908,10.3928205 7.5,9.36966701 7.5,8.4 C7.5,5.36243388 9.51471863,4 12,4 C14.4852814,4 16.5,5.36243388 16.5,8.4 C16.5,9.36966701 16.2946909,10.3928205 15.9343049,11.3364984 C17.7847757,12.2548428 19,13.9259827 19,16.3333333 C19,17.5623379 18.6832732,18.8352719 18.1269907,20 C17.7963837,20 17.3817618,20 16.883125,20 C15.7220834,20 15.7220834,19.3712729 15.8841722,19.0335104 C16.2755898,18.2178696 16.5,17.329449 16.5,16.5 C16.5,15.0183086 15.7838916,14.0593118 14.6788931,13.5264125 C13.9304475,14.4190907 13.00359,15 12,15 C10.99641,15 10.0695525,14.4190907 9.32110687,13.5264125 C8.21610842,14.0593118 7.5,15.0183086 7.5,16.5 C7.5,17.3265901 7.72286593,18.211746 8.11178644,19.0250739 C8.2747433,19.3658565 8.2747433,20 7.14578125,20 C6.64072083,20 6.21646352,20 5.87300934,20 Z M12,12.5 C13.1045695,12.5 14,10.2997114 14,8.64285714 C14,6.98600289 13.1045695,6.5 12,6.5 C10.8954305,6.5 10,6.98600289 10,8.64285714 C10,10.2997114 10.8954305,12.5 12,12.5 Z"></path>
+                  </svg>
+                      <!--<img
+                          src="https://storage.pepperi.com/General/Icons/user-white-unfilled.svg"
+                          width="30px"
+                          alt="user"
+                        />-->
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a id="email_container" class="dropdown-item">
+                      </a>
+                                <a class="dropdown-item" onclick="customHeader.changePassword();">Change Password</a
+                      >
+                      <a class="dropdown-item" onclick="customHeader.logout();"
+                        >Log out</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="info">
+            <div class="list-group-left">
+              <ul class="list-left">
+                <li>
+                  <span class="tag-info">Dealer Level: </span>
+                  <span id="dealer-level"></span>
+                </li>&#183;
+                <li>
+                  <span class="mobile-tag"><span class="tag-info">Frames for Next Level: </span></span>
+                  <span id="next-level"></span>
+                </li>&#183;
+                <li>
+                  <span class="tag-info">Sales Rep Name: </span>
+                  <span id="sales-rap-name"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        `;
+
+      return str; //"<div style='height:200px; background-color:red;'><span style='font-size: 40px;line-height:40px;'>Custom Header</span></div>";
+    };
+
+    this.openInNewTab = function (url) {
+      var win = window.open(url, "_blank");
+      win.focus();
+    };
+
+    this.initPlugin = function () {
+      var options = {
+        JsURLs: [
+          //this.clientApiPath
+        ],
+        cssURLs: [],
+        favIcon: this.favIconURL,
+        pageTitle: this.pageTitle,
+      };
+
+      return options;
+    };
+
+    this.onPluginLoad = function (context) {
+      this.context = context;
+
+      // let oidc = context.oidc.user:https://idp.pepperi.com:pepperi.webapp.app.pepperi.com
+
+      var data = JSON.parse(context.pluginData);
+      if (data) {
+        this.transactionName = data.typeName || '';
+        this.accountUUID = data.accountUUID || '';
+      }      
+      this.getAccountStatus();
+    };
+    window.addEventListener('popstate', function(){
+      if(window.location.href.includes('transactions/cart')){
+        customHeader.lastTransaction(customHeader.accountUUID);
+      }
+    })
+
+    this.lastTransaction = function (accountUUID) {
+      console.log(accountUUID);
+      pepperi.api.transactions.search({
+          fields: [
+            "UUID",
+            "GrandTotal",
+            "AccountUUID",
+            "WrntyID",
+            "AgentEmail",
+            "AgentFirstName"
+          ],
+          filter: {
+            Operation: "AND",
+            RightNode: {
+              ApiName: "ActionDateTime",
+              Operation: "InTheLast",
+              Values: ["4", "Weeks"],
+            },
+            LeftNode: {
+              Operation: "AND",
+              RightNode: {  
+                ApiName: "Account.UUID",
+                Operation: "IsEqual",
+                Values: ['' + accountUUID],
+              },
+              LeftNode: {
+                Operation: "AND",
+                RightNode: {
+                  ApiName: "Hidden",
+                  Operation: "IsEqual",
+                  Values: ['false'],
+                },
+                LeftNode: {
+                  ApiName: "Status",
+                  Operation: "IsEqual",
+                  Values: ["1"],
+                },
+              },
+            },
+          },
+        sorting: [{
+          Field: "ActionDateTime",
+          Ascending: false
+        }],
+        pageSize: 1,
+        page: 1,
+        responseCallback: "customHeader.getRecentTransactionForAccountCallback"
+      });
+  }
+
+  this.getRecentTransactionForAccountCallback = function (resPre) {
+    // debugger
+    console.log(resPre.objects[0].UUID);
+    customHeader.lastTransactionUUID = resPre.objects[0].UUID
+    pepperi.api.transactionLines.search({
+      fields: [
+        "UUID",
+        "ItemName",
+        "UnitsQuantity",
+        "UnitPrice",
+        "Image",
+        "ItemExternalID",
+        "ItemWrntyID",
+        "ItemLongDescription",
+        "ItemMainCategory",
+        "ItemDiscount",
+        "UnitPriceAfterDiscount",
+        "UnitDiscountPercentage"
+      ],
+      filter: {
+        Operation: "AND",
+        RightNode: {
+          ApiName: "Transaction.UUID",
+          Operation: "IsEqual",
+          Values: [customHeader.lastTransactionUUID],
+        },
+        LeftNode: {
+          ApiName: "Hidden",
+          Operation: "IsEqual",
+          Values: ['false'],
+        }
+      },
+      sorting: [{
+        Field: "ActionDateTime",
+        Ascending: false
+      }],
+      responseCallback: "customHeader.getRecentTransactionLinesForAccountCallback",
+      requestID: resPre.objects[0]
+    });
+  }
+
+  this.getRecentTransactionLinesForAccountCallback = function (res) {
+    console.log(res);
+    console.log(res.requestID);
+    var allLines = [];
+    
+
+
+    res.objects.forEach(element => {
+      var lineItems = {};
+      total = element.UnitPrice * element.UnitsQuantity
+      lineItems = {
+        "sku": element.ItemWrntyID,
+        "name": element.ItemName,
+        "description": element.ItemLongDescription,
+        "category": element.ItemMainCategory,
+        "unitPrice": element.UnitPrice,
+        "salePrice": element.UnitDiscountPercentage,
+        "quantity": element.UnitsQuantity,
+        "totalPrice": element.UnitPriceAfterDiscount,
+        "imageUrl": element.Image,
+        "productUrl": `https://app.pepperi.com/transactions/item_details/${customHeader.lastTransactionUUID}/${element.ItemExternalID}`
+      }
+      allLines.push(lineItems)
+    });
+
+
+    (function (w, d, u, t, o, c) {
+      w['dmtrackingobjectname'] = o;
+      c = d.createElement(t);
+      c.async = 1;
+      c.src = u;
+      t = d.getElementsByTagName(t)[0];
+      t.parentNode.insertBefore(c, t);
+      w[o] = w[o] || function () {
+        (w[o].q = w[o].q || []).push(arguments);
+      };
+    })(window, document, '//static.trackedweb.net/js/_dmptv4.js', 'script', 'dmPt');
+  
+    window.dmPt('create', 'DM-0395272459-02', 'shop.ogieyewear.com,ogieyewear.com');
+  
+    // Identify the user via email
+    window.dmPt('identify', res.requestID.split(":")[2].split(",")[0].replace(/["']/g, ""));
+    console.log(res.requestID.split(":")[2].split(",")[0].replace(/["']/g, ""));
+    // debugger
+
+    // Track your cart  
+    window.dmPt("cartInsight", {
+      "programID": 28305,
+      "cartDelay": 300,
+      "cartID": res.requestID.split(":")[5].split(",")[0].replace(/["]/g,"").replace(/[\\]/g,""),
+      "cartPhase": "CUSTOMER_LOGIN",
+      "currency": "USD",
+      "subtotal": res.requestID.split(":")[4].split(",")[0],
+      "shipping": 0,
+      "discountAmount": 0,
+      "taxAmount": 0,
+      "grandTotal":res.requestID.split(":")[4].split(",")[0],
+      "cartUrl": `https://app.pepperi.com/transactions/cart/${customHeader.lastTransactionUUID}`,
+      "other": {"firstName": res.requestID.split(":")[3].split(",")[0]},
+      "lineItems": allLines
+    });
+  }
+
+  this.getAccountStatus = function () {
+    var bridgeObject = {
+      fields: ["Name", "UUID", "Email", "TSAFramesNextLevel", "Prop2"],
+      responseCallback: "customHeader.getCurrentAccountCallback",
+    };
+    pepperi.api.accounts.search(bridgeObject);
+  }; this.getCurrentAccountCallback = function (res) {
+    console.log(res);
+    if (
+      res &&
+      res.success &&
+      res.objects &&
+      res.objects.length &&
+      this.accountUUID &&
+      this.accountUUID !== ""
+    ) {
+      this.accountUUID = res.objects[0].UUID;
+      console.log('Property 2:', res.objects[0].Prop2);
+      console.log('TSAFramesNextLevel:', res.objects[0].TSAFramesNextLevel);
+      console.log('Sales Rep Name:', this.context.userName);
+      this.getCurrentUser();
+
+      document.getElementById("dealer-level").innerHTML = res.objects[0].Prop2;
+      document.getElementById("next-level").innerHTML = res.objects[0].TSAFramesNextLevel;
+      document.getElementById("sales-rap-name").innerHTML = this.context.userName;
+      //let userEmail = res.objects[0]["Email"];
+      //document.getElementById("email_container").innerHTML = userEmail;
+    }
+
+  }; this.getCurrentUser = function () {
+    var bridgeObject = {
+      fields: ["Name", "UUID", "Email", "ExternalID", "InternalID"],
+      filter: {
+        ApiName: "InternalID",
+        Operation: "IsEqual",
+        Values: [this.context.userId]
+      },
+      responseCallback: "customHeader.getCurrentUserCallback",
+    };
+    pepperi.api.users.search(bridgeObject);
+  }; this.getCurrentUserCallback = function (res) {
+    if (
+      res &&
+      res.success &&
+      res.objects &&
+      res.objects.length &&
+      this.accountUUID &&
+      this.accountUUID !== ""
+    ) {
+      this.userUUID = res.objects[0].UUID;
+      console.log("context:", this.context);
+      console.log("getUser calb:", res);
+      this.userEmail = res.objects[0]["Email"];
+      document.getElementById("email_container").innerHTML = this.userEmail;
+    }
+  }; this.navigation = function (path) {
+    var eventData = {
+      detail: {
+        path: path,
+      },
+    };
+
+    var event = new CustomEvent("navigateTo", eventData);
+
+    if (document.createEvent) {
+      window.dispatchEvent(event);
+    } else {
+      window.fireEvent("on" + event.eventType, event);
+    }
+  };
+
+  this.setSessionStorage = function (paramName, data) {
+    sessionStorage.setItem(paramName, data);
+  };
+
+  this.getSessionStorage = function (paramName) {
+    return sessionStorage.getItem(paramName);
+  };
+
+  this.logout = function () {
+    var event = new CustomEvent("logout");
+
+    if (document.createEvent) {
+      window.dispatchEvent(event);
+    } else {
+      window.fireEvent("on" + event.eventType, event);
+    }
+  };
+
+  this.changePassword = function () {
+    window.location.href = "https://idp.pepperi.com/Account/ChangePassword";
+  };
+
+  this.createNewOrder = function () {
+    let deepLink =
+      'Transactions/scope_items/{{UUID}}?CurrentTab="%7B%5C"JsonFilter%5C":%5C"8dee937f-39ba-494b-b10d-8af30927d8b5%5C"%7D"';
+    deepLink = deepLink.replace(/\"/g, "%22");
+
+    var bridgeObject = {
+      references: {
+        account: {
+          UUID: this.accountUUID
+        }, 
+        catalog: {
+          Name: this.catalogName
+        },
+      },
+      type: {
+        Name: this.transactionName
+      },
+      responseCallback: "customHeader.createNewOrderCallback",
+      requestID: deepLink,
+    };
+    pepperi.app.transactions.add(bridgeObject);
+  };
+
+  this.createNewOrderCallback = function (res) {
+    if (res && res.success) {
+      if (Boolean(!this.typeName)) {
+        customHeader.setSessionStorage("LastOpenTransactionUUID", res.id);
+      }
+      let uuid = res.id;
+      if (res.requestID) {
+        var requestID = res.requestID.replace(
+          "{{UUID}}",
+          uuid.replace(/-/g, "")
+        );
+        customHeader.navigation(requestID);
+      }
+    }
+    // this.setCurrentTransaction(res.id, res.GrandTotal, res.Currency);
+  };
+
+  this.setCurrentTransaction = function (uuid, grandTotal, currency) {
+    customHeader.setSessionStorage("LastOpenTransactionUUID", uuid);
+
+    var total = grandTotal ? Number(grandTotal).toFixed(2).toString() : "0.00";
+    var curr = currency || "";
+
+    var totalElem = document.getElementById("transactionTotal");
+    if (totalElem) {
+      totalElem.innerHTML = curr + total;
+    }
+    if (clicked) {
+      window.location.href =
+        "Transactions/scope_items/" + uuid.replace(/-/g, "") + currentTab;
+    }
+
+
+
+  };
+
+  // <![CDATA[
+ 
+  // ]]fr
+}.apply(customHeader));

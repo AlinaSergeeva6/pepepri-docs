@@ -1,0 +1,244 @@
+{
+  "PPM_General": {
+    "QuantityCriteriaField": "UnitsQuantity",
+    "TotalPriceCriteria": {
+      "Type": "Block",
+      "Name": "Base"
+    },
+    "CalcDateField": "TransactionTSADeliveryDateForPricing",
+    "MultipleValuesKeyFields": [
+      "TransactionTSAAccountContr",
+      "TransactionTSAAccountHierarchy"
+    ],
+    "PriceRoundPrecision": 4,
+    "UOM": {
+      "ConfigurationField": "ItemTSAItemUOMConfig",
+      "AllowedUomsField": "TSAAllowedUOMs",
+      "Fields": [
+        {
+          "Type": "TSAAOQMUOM1",
+          "Quantity": "TSAAOQMQuantity1"
+        }
+      ]
+    },
+    "UDC": ["PricingGeneral", "PricingCompany", "PricingCompanyParent"]
+  },
+  "PPM_CalcProcedures": [
+    {
+      "Key": "Proc1",
+      "Blocks": [
+        {
+          "Key": "Base",
+          "ConditionsOrder": ["ZCEF"],
+          "InitialPrice": {
+            "Type": "Field",
+            "Name": "UnitPrice"
+          },
+          "CalculatedOfPrice": {
+            "Type": "Field",
+            "Name": "UnitPrice"
+          }
+        },
+        {
+          "Key": "Quantity",
+          "Group": true,
+          "ConditionsOrder": ["ZKR3", "ZKF3"],
+          "InitialPrice": {
+            "Type": "Block",
+            "Name": "Base"
+          },
+          "CalculatedOfPrice": {
+            "Type": "Block",
+            "Name": "Base"
+          }
+        },
+        {
+          "Key": "ManualLine",
+          "ConditionsOrder": [],
+          "InitialPrice": {
+            "Type": "Block",
+            "Name": "Quantity"
+          },
+          "CalculatedOfPrice": {
+            "Type": "Block",
+            "Name": "Quantity"
+          },
+          "UserManual": {
+            "ValueField": "TSAUserLineDiscount"
+          }
+        },
+        {
+          "Key": "SFAPromo",
+          "ConditionsOrder": [],
+          "InitialPrice": {
+            "Type": "Block",
+            "Name": "ManualLine"
+          },
+          "CalculatedOfPrice": {
+            "Type": "Block",
+            "Name": "ManualLine"
+          },
+          "UserManual": {
+            "ValueField": "TSAPromoLineDiscount",
+            "NameField": "TSAPromoLineDiscountName",
+            "TypeField": "TSAPromoLineDiscountType"
+          }
+        },
+        {
+          "Key": "Tax",
+          "ConditionsOrder": ["MWST"],
+          "InitialPrice": {
+            "Type": "Block",
+            "Name": "SFAPromo"
+          },
+          "CalculatedOfPrice": {
+            "Type": "Block",
+            "Name": "SFAPromo"
+          }
+        }
+      ],
+      "ExclusionRules": [
+        {
+          "Condition": "ZKF1",
+          "ExcludeConditions": ["ZKF8", "ZKR8"]
+        },
+        {
+          "Condition": "ZKR1",
+          "ExcludeConditions": ["ZKF8", "ZKR8"]
+        }
+      ],
+      "CalculatedItemFields": [
+        {
+          "Name": "TSAPPMBaseUnitPriceAfter1",
+          "Type": "=",
+          "Operand1": {
+            "Type": "Block",
+            "Name": "Base"
+          },
+          "BlockPriceField": {
+            "Type": "Single",
+            "UomIndex": 1
+          }
+        },
+        {
+          "Name": "TSAPPMBaseTotalPriceAfter",
+          "Type": "=",
+          "Operand1": {
+            "Type": "Block",
+            "Name": "Base"
+          },
+          "BlockPriceField": {
+            "Type": "Total"
+          }
+        },
+        {
+          "Name": "TSADiscountAmount",
+          "Type": "-",
+          "Operand1": {
+            "Type": "Block",
+            "Name": "Cash"
+          },
+          "Operand2": {
+            "Type": "Block",
+            "Name": "ManualOrder"
+          },
+          "BlockPriceField": {
+            "Type": "Total"
+          }
+        }
+      ],
+      "AdditionalItemPricing": {
+        "BasedOnBlock": "Base",
+        "ContinueCalcFromBlock": "Tax"
+      }
+    }
+  ],
+  "PPM_Conditions": [
+    {
+      "Key": "MWST",
+      "Name": "MWST",
+      "TablesSearchOrder": ["A002"]
+    },
+    {
+      "Key": "ZKR4",
+      "Name": "ZKR4",
+      "TablesSearchOrder": [
+        "A004",
+        "A715",
+        "A850",
+        "A717",
+        "A948",
+        "A707",
+        "A949",
+        "A844",
+        "A843"
+      ]
+    },
+    {
+      "Key": "ZCEF",
+      "Name": "ZCEF",
+      "TablesSearchOrder": ["A715", "A707", "A844"]
+    },
+    {
+      "Key": "ZPR0",
+      "Name": "ZPR0",
+      "TablesSearchOrder": [
+        "A505",
+        {
+          "Name": "A505",
+          "Keys": [
+            { "Name": "TransactionAccountTSAPriceLevelCode", "Value": "01" }
+          ]
+        }
+      ]
+    },
+    {
+      "Key": "ZCD1",
+      "Name": "ZCD1",
+      "TablesSearchOrder": [
+        "A305",
+        { "Name": "A600" },
+        {
+          "Name": "A600",
+          "Keys": [{ "Name": "ItemTSAProdHierarchy", "Split": 11 }]
+        },
+        {
+          "Name": "A600",
+          "Keys": [{ "Name": "ItemTSAProdHierarchy", "Split": 8 }]
+        },
+        {
+          "Name": "A600",
+          "Keys": [{ "Name": "ItemTSAProdHierarchy", "Split": 5 }]
+        },
+        {
+          "Name": "A600",
+          "Keys": [{ "Name": "ItemTSAProdHierarchy", "Split": 2 }]
+        }
+      ]
+    }
+  ],
+  "PPM_Tables": [
+    {
+      "Key": "A997",
+      "KeyFields": ["TransactionTSACompany", "ItemExternalID"]
+    },
+    {
+      "Key": "A996",
+      "KeyFields": [
+        "TransactionTSACompany",
+        "TransactionTSADivision",
+        "TransactionTSAPlant",
+        "TransactionAccountTSAParentExID",
+        "ItemExternalID"
+      ]
+    },
+    {
+      "Key": "A002",
+      "KeyFields": [
+        "TransactionAccountCountryISOAlpha2Code",
+        "TransactionTSATaxClass",
+        "TSATaxClass"
+      ]
+    }
+  ]
+}

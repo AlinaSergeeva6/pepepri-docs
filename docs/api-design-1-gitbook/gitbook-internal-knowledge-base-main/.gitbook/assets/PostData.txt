@@ -1,0 +1,77 @@
+'use strict';
+
+/* About this script
+ * What is does: provides fast way to POST data which requires posting with only one object in request body
+ * How to use:
+ * 1. Copy idp_token of environment you want post data to. You need to login to the environment,
+ * open session storage and find record with key 'idp_token'. Paste it into 'token' variable.
+ * 2. Prepare your JSON data array. It shoud be valid JSON array with entities to post (one entity per request). Paste data into 'dataToPost' variable.
+ * 3. Paste full endpoint URL into 'postURL' variable.
+ * 4. Check and populate additional options if needed.
+ * 5. Run the script using 'Code Runner' VSCode extension or straight in browser console
+ */
+
+// config start
+const dataToPost = []; // populate it with JSON array of data to be posted
+const token = '';
+const postURL = ''; // POST endpoint full url
+const runInParallel = false; // set to true if you want to post data in parallel
+const chunkSize = 5; // specify size of each sub array for parallel run. Relevant only if runInParallel=true
+// config end
+
+const startTime = new Date().getTime();
+const postArr = [];
+
+async function getJson(data) {
+    console.log(`Starting posting data ${runInParallel ? 'in parallel' : 'one by one'}..`);
+    if (runInParallel) {
+        const chunkedArray = chunkify(data, chunkSize);
+        await Promise.all(
+            chunkedArray.map(async (chunk) => {
+                for (let entity of chunk) {
+                    const resp = await postEntity(entity);
+                    postArr.push(resp);
+                }
+            })
+        );
+    } else {
+        for (let entity of data) {
+            const resp = await postEntity(entity);
+            postArr.push(resp);
+        }
+    }
+    console.log(`posting ${dataToPost.length} items took ${new Date().getTime() - startTime}ms`);
+    console.log('POST result:');
+    console.log(JSON.stringify(postArr));
+}
+
+async function postEntity(body) {
+    try {
+        const headers = {
+            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json',
+        };
+        const response = await fetch(postURL, {
+            method: 'POST',
+            headers: headers,
+            body: JSON.stringify(body),
+        });
+        const data = await response.json();
+        return data;
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+function chunkify(arr, numOfChunks) {
+    let res = [];
+    let i = 0;
+    let chunkSize = Math.ceil(arr.length / numOfChunks);
+    while (i < arr.length) {
+        res.push(arr.slice(i, i + chunkSize));
+        i += chunkSize;
+    }
+    return res;
+}
+
+getJson(dataToPost);

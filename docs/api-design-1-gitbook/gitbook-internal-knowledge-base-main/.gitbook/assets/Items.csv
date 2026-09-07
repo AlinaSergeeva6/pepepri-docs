@@ -1,0 +1,7 @@
+Product line,ExternalID,Code,Name,Price,CaseQuantity,MinimumQuantity,TSAAllowedUOM,TSAUOMConversionObject
+Coffee Drinks,Espresso,ESP,Espresso,1.5,1,1,"[""EA""]","[{""UOMKey"":""EA"",""Factor"":1}]"
+Coffee Drinks,Americano,AM,Americano,1.7,1,1,"[""EA""]","[{""UOMKey"":""EA"",""Factor"":1}]"
+Coffee Drinks,Double Espresso,DESP,Double Espresso,2.5,1,1,"[""EA""]","[{""UOMKey"":""EA"",""Factor"":1}]"
+Coffee Drinks,Cappuccino,CAP,Cappuccino,3,1,1,"[""EA""]","[{""UOMKey"":""EA"",""Factor"":1}]"
+Coffee Drinks,Latte,LAT,Latte,3,1,1,"[""EA""]","[{""UOMKey"":""EA"",""Factor"":1}]"
+Coffee Drinks,Raff Coffee,RAF,Raff Coffee,5,1,1,"[""EA""]","[{""UOMKey"":""EA"",""Factor"":1}]"

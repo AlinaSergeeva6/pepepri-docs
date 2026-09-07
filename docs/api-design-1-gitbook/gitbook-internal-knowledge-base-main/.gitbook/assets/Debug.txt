@@ -1,0 +1,381 @@
+<html lang="en">
+<head>
+<title>Debug Rule Engine</title>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- add basic CodeMirror functionality -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.30.0/codemirror.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.30.0/addon/selection/active-line.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.30.0/codemirror.css"/>
+
+<!-- add CodeMirror autocomplete functionality -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.30.0/addon/hint/show-hint.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.30.0/addon/hint/show-hint.css"/>
+
+<!-- add Javascript-mode dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.30.0/mode/javascript/javascript.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.30.0/addon/hint/javascript-hint.js" type="text/javascript" charset="utf-8"></script>
+
+<style type="text/css" media="screen">
+    
+    #container, #options, #result {
+        padding: 15px;
+    }
+    h5 {
+        margin: 7px 0px;
+    }
+    #editor1-pane {
+        position:relative;
+        display: block;
+        width: 800px;
+        height: 400px;
+        border: solid 1px #bbb;
+    }
+    
+    #editor1 {
+        font-size: 15pt;
+    }
+    #editor1 .CodeMirror {
+        height: 400px;
+    }
+	
+	.CodeMirror-linenumber {
+		padding: 1px 8px 1px 1px;
+	}
+    
+
+</style>
+</head>
+<body>
+
+<div id="options">
+ <select id="formulaTSAs" onchange='onFormulaSelected();'>
+ </select>
+ <div id='transactionLineDiv' hidden=true>
+ <input id='useTransactionLines' type='checkbox' onclick='changeUseTransactionLines(this);'>Use Transaction Lines</input>
+ <select id="transactionLinesUUIDS" onchange='onTransactionLineUUIDSelected();' disabled=true>
+ </select>
+ </div>
+</div>
+
+<div id="container">
+ 
+ <h5>Rule Engine PlayGround</h5>
+ <div id="editor1-pane">
+   <div id="editor1"></div>
+ </div>
+
+</div> 
+
+<div id="result">
+ <button padding="25px" onclick='onClickRunButton();'> Run </button>
+ <div id='resultText'> </div>
+</div>
+    
+<script type="text/javascript">
+
+// Init a timeout variable to be used below
+var timeout = null;
+
+$(document).ready(function () {
+    window.codemirror1 = CodeMirror($('#editor1').get(0), {
+        value: $("#rule-body").html(),
+        mode:  {name: "javascript", globalVars: true},
+        readOnly: false,
+		extraKeys: {"Tab": "autocomplete"},
+        styleActiveLine: true,
+        lineNumbers: true,
+		hint: CodeMirror.hint.javascript,
+		lineWrapping: true,
+		gutters: ["CodeMirror-linenumbers"],
+   });
+   
+   window.codemirror1.on('keyup', function(editor, event){
+		
+		clearTimeout(timeout);
+
+		if ((event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode >= 97 && event.keyCode <= 122)) {
+			// Make a new timeout set to go off in 800ms
+			timeout = setTimeout(function () {
+				// type code and show autocomplete hint in the meanwhile
+				CodeMirror.commands.autocomplete(editor);
+			}, 200);
+		}
+		else if(event.code == 'Period') {// '.' operator
+			CodeMirror.commands.autocomplete(editor);
+		}
+	});
+	
+	initTsaData();
+});
+
+CodeMirror.commands.autocomplete = function (cmeditor) {
+
+		CodeMirror.showHint(cmeditor, CodeMirror.hint.javascript, {
+
+			// "completeSingle: false" prevents case when you are typing some word
+			// and in the middle it is automatically completed and you continue typing by reflex.
+			// So user will always need to select the intended string
+			// from popup (even if it's single option). (copy from @Oleksandr Pshenychnyy)
+			completeSingle: false,
+		});
+	};
+</script>
+
+<script type="text/javascript" id="init-type-api"> 
+
+// allow syncronous api functions
+var isDebugMode = '';
+
+var apiType = "";
+var UUID;
+var ATDIDApiName = "ActivityTypeDefinitionWrntyID";
+var context = {};
+
+function initApiForCurrentObjectType() {
+
+	context = pepperi.app.getContext({});
+		
+	if (typeof(context.transaction) != 'undefined') {
+	  apiType = 'transactions';
+	  UUID = context.transaction.uuid;
+	  document.getElementById('transactionLineDiv').hidden = false;
+	  populateTransactionLinesUUIDs();
+	}
+	else if (typeof(context.activity) != 'undefined') {
+	  apiType = 'activities';
+	  UUID = context.activity.uuid;
+	}
+	else if (typeof(context.account) != 'undefined') {
+	  apiType = 'accounts';
+	  UUID = context.account.uuid;
+	}	
+};
+
+function changeUseTransactionLines(cb) {
+  if (cb.checked) {
+	apiType = 'transaction_lines';
+	onTransactionLineUUIDSelected();
+	ATDIDApiName = 'Transaction.ActivityTypeDefinitionWrntyID';
+	document.getElementById('transactionLinesUUIDS').disabled = false;
+  }
+  else {
+	apiType = 'transactions';
+	UUID = context.transaction.uuid;
+	ATDIDApiName = 'ActivityTypeDefinitionWrntyID';
+	document.getElementById('transactionLinesUUIDS').disabled = true;
+  }
+  initTsaData();
+}
+
+function populateTransactionLinesUUIDs() {
+	var fields = [ 'UUID', 'ItemExternalID' ];
+	var filter = { ExpressionId:1 , 
+				   ApiName:'Transaction.UUID', 
+                   Operation:'IsEqual', 
+                   Values:[context.transaction.uuid] };
+	var params = { fields, filter };
+
+	var tls = pepperi.api.transactionLines.search(params).objects;
+	
+	$.each(tls, (i, tl) => {
+		$('#transactionLinesUUIDS').append($("<option></option>")
+                    .attr("value",tl.UUID)
+                    .text(tl.ItemExternalID));
+	});
+}
+
+function onTransactionLineUUIDSelected() {
+	var selectBox = document.getElementById("transactionLinesUUIDS");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    
+	UUID = selectedValue;
+}
+
+initApiForCurrentObjectType();
+
+</script>
+
+
+<script type="text/javascript" id="get-set-functions"> 
+
+function iso2ms(value) {
+	var d = new Date(value);
+	var d2 = new Date(d - (-d.getTimezoneOffset()*60*1000));
+	return d2.getTime() / 1000;
+}
+
+function ms2iso(value) {
+	var d = new Date(value*1000);
+	var d2 = new Date(d - d.getTimezoneOffset()*60*1000);
+	return d2.toISOString();
+}
+
+function GetValueByApiName(apiName) {
+
+	var value = "";
+	
+	var params = { key:{UUID}, fields:[apiName] };
+	
+	switch (apiType) {
+    case "transactions":
+        value = pepperi.api.transactions.get(params).object[apiName];
+		break;
+	case "activities":
+        value = pepperi.api.activities.get(params).object[apiName];
+		break;
+    case "accounts":
+        value = pepperi.api.accounts.get(params).object[apiName];
+		break;
+    case "transaction_lines":
+        value = pepperi.api.transactionLines.get(params).object[apiName];
+		break;
+	}
+
+	if (isDateTimeTSA(apiName)) {
+		value = iso2ms(value);
+	}
+	
+	return value;
+	
+};
+
+function SetValueByApiName(apiName, value) {
+	var obj = { UUID };
+	
+	if (isDateTimeTSA(apiName)) {
+		value = ms2iso(value);
+	}
+	
+	obj[apiName] = value;
+	var params = { objects:[ obj ] };
+	switch (apiType) {
+    case "transactions":
+        return pepperi.api.transactions.update(params).result.find((x) => { return x.UUID = UUID; }).status == 'updated';
+    case "activities":
+        return pepperi.api.activities.update(params).result.find((x) => { return x.UUID = UUID; }).status == 'updated';
+    case "accounts":
+        return pepperi.api.accounts.update(params).result.find((x) => { return x.UUID = UUID; }).status == 'updated';
+    case "transaction_lines":
+        return pepperi.api.transactionLines.update(params).result.find((x) => { return x.UUID = UUID; }).status == 'updated';
+	}
+
+	return "";
+};
+
+</script>
+
+<script type="text/javascript" id="initTSAData">
+
+var allTSAs;
+var allFormulaTSAs;
+
+
+function initTsaData() {
+	allTSAs = [];
+	allFormulaTSAs = [];
+	var atdID = GetValueByApiName(ATDIDApiName);
+	var path = 'Meta_Data/PepperiObjects/Describe/' + apiType + '/' + atdID;
+	var method = 'GET'
+	var response = pepperi.internal.webAPI({ method, path }).result;
+	allTSAs = JSON.parse(response);
+	allFormulaTSAs = allTSAs.filter((x)=>{return x.CustomFieldType == "Formula";});
+	
+	$("#formulaTSAs").empty();
+	$('#formulaTSAs').append($("<option></option>")
+                    .attr("value",'Select')
+                    .text('Select A TSA'));
+	$.each(allFormulaTSAs, (index, value) => {
+		$('#formulaTSAs').append($("<option></option>")
+                    .attr("value",value.Name)
+                    .text(value.Name));
+	});
+}
+
+function isDateTimeTSA(tsaName) {
+	var res = false;
+	if (typeof(tsaName) != 'undefined') {
+		var config = allTSAs.find((x)=>{return x.Name == tsaName; });
+		if (typeof(config) != 'undefined') {
+			res = config.DataType == 'DateTime';
+		}
+	}
+	return  res;
+}
+
+function onFormulaSelected() {
+	var selectBox = document.getElementById("formulaTSAs");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    
+	if (selectedValue != 'Select') {
+		initWithFormulaTSA(selectedValue);
+	}
+}
+
+function initWithFormulaTSA(apiName) {
+	
+	var atdID = GetValueByApiName(ATDIDApiName);
+	var path = 'Meta_Data/TypeSafeAttribute/' + apiType + '/' + atdID + '/' + apiName;
+	var method = 'GET'
+	var response = pepperi.internal.webAPI({ method, path }).result;
+	var config = JSON.parse(response);
+	var advancedConfig = config.AdvancedTSAConfig;
+	var formula = advancedConfig.Formula;
+	var participating = [];
+	if (advancedConfig.ParticipatingAPINames != null) {
+		participating = advancedConfig.ParticipatingAPINames.string;
+	}
+		
+	window.codemirror1.setValue(formula);
+	initParticipatingApiNames(participating);
+}
+
+function initParticipatingApiNames(apiNames) {
+	$.each(apiNames, (i, apiName) => {
+		var value = GetValueByApiName(apiName);
+		eval(apiName + " = " + JSON.stringify(value) + ";");
+	});
+}
+
+</script>
+
+<script type="text/javascript" id="rule-body"> 
+// write your JavaScript code here
+// Select a TSA to load the formulas
+var res = pepperi.api.transactions.getValueByFieldName({
+	uuid: GetValueByApiName("UUID"),
+	fieldName: 'TSASomething'
+});
+
+if(res.success) {
+	return res.value;
+}
+
+return res.error.message;
+</script>
+
+<script type="text/javascript" id="running"> 
+
+function onClickRunButton() {
+	var code = window.codemirror1.getValue();
+	
+	var fullCode = 'function foo() { \n' + 'debugger;\n\n' + code + '\n};\nfoo();';
+	
+	try {
+		var res = eval(fullCode);
+		var selectBox = document.getElementById("formulaTSAs");
+		var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+		var selectedFormula = allFormulaTSAs.find((x) => { return x.Name == selectedValue});
+		var expectedType = "";
+		if (typeof(selectedFormula) != 'undefined')
+			expectedType = selectedFormula.DataType;
+		$('#resultText').html('<b> Result: </b> <pre>' + res + '</pre><br /><b> Result Type: </b>' + typeof(res) +'<br /> <b>Expected:</b> ' + expectedType + ' <br />');
+	}catch(e) {
+		alert(e.message);
+	};	
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <div id="map"></div>
+    <link rel="stylesheet" href="styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.mobile.min.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.mobile.min.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+
+
+
+
+    <script>
+        function createMap() {
+            $("#map").kendoMap({
+                center: [50.4317234, 30.4929412],
+                zoom: 13,
+                
+              layers: [{
+                    type: "tile",
+                    urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                    subdomains: ["a", "b", "c"],
+                    attribution: "&copy; <a href='http://osm.org/copyright'>OpenStreetMap contributors</a>"
+                }], 
+                layers: [{
+                    type: "bing",
+                    imagerySet: "aerialWithLabels",
+
+                    // IMPORTANT: This key is locked to demos.telerik.com
+                    // Please replace with your own Bing Key
+                    key: "PT90GNrnG5Bqxg1PfopA~Beliai2bFxJQJPNp-d2orA~AprjUTzhdIWJ5RikqfABIFIMXmOsjE6p4KClZs6lbakU5WtN-ENqHtEHLVSwqMpa"
+                }],
+                markers: [
+                {
+                        location: [50.4543448, 30.5155133],
+                        shape: "pinTarget",
+                        tooltip: {
+                            content: "Ofice"
+                        }
+                    },
+                    {
+                        location: [50.4234696, 30.4933677],
+                        shape: "pinTarget",
+                        tooltip: {
+                            content: "Home"
+                        }
+                    },
+
+                ],
+            });
+        }
+
+        $(document).ready(createMap);
+    </script>
+
+<style>
+    .k-map .k-i-marker-custom-marker {
+      background-image: url('https://demos.telerik.com/kendo-ui/content/dataviz/chart/images/sunny.png');
+      background-size: 30px;
+      width: 30px;
+      height: 30px;
+    }
+</style>
+</body>
+
+</html>

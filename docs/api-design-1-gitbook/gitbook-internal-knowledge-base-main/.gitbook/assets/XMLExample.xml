@@ -1,0 +1,226 @@
+<Root>
+	<Config>
+		<Key name="DecimalSeparator">.</Key>
+		<Key name="GroupingSeparator">,</Key>
+	</Config>
+	<Title>
+		<Caption>VladC Test1</Caption>
+		<Image>https://settings.pepperi.com/9.6.381/Handlers/ResizeImage.ashx?imgPath=WrntyImages/Distributors/30015615.jpg&amp;maxWidth=400&amp;maxHeight=150&amp;missingImage=False&amp;u=638660579479842055</Image>
+	</Title>
+	<Scales></Scales>
+	<Header>
+		<Column ApiName="GeneralInformation" Type="13" Size="2" X="0" Y="0" Line_Number="0" Field_Height="1" NewRow="False">
+			<Name>General Information</Name>
+			<Value></Value>
+		</Column>
+		<Column ApiName="AccountName" Type="1" Size="1" X="0" Y="1" Line_Number="1" Field_Height="1" NewRow="True">
+			<Name>Account Name</Name>
+			<Value>A Paris Food</Value>
+		</Column>
+		<Column ApiName="WrntyID" Type="1" Size="1" X="1" Y="1" Line_Number="1" Field_Height="1" NewRow="False" >
+			<Name>ID</Name>
+			<Value>405262284</Value>
+		</Column>
+		<Column ApiName="AccountExternalID" Type="1" Size="1" X="0" Y="2" Line_Number="2" Field_Height="1" NewRow="True">
+			<Name>Account External ID</Name>
+			<Value>3962770</Value>
+		</Column>
+		<Column ApiName="ActionDateTime" Type="1" Size="1" X="1" Y="2" Line_Number="2" Field_Height="1" NewRow="False">
+			<Name>Action Time</Name>
+			<Value>11/1/2024 11:38:47 AM</Value>
+		</Column>
+		<Column ApiName="AgentName" Type="1" Size="1" X="1" Y="3" Line_Number="3" Field_Height="1" NewRow="True">
+			<Name>Sales Rep Name</Name>
+			<Value>VladC Test1</Value>
+		</Column>
+		<Column ApiName="Currency" Type="1" Size="1" X="1" Y="4" Line_Number="4" Field_Height="1" NewRow="True">
+			<Name>Currency</Name>
+			<Value>€</Value>
+		</Column>
+		<Column ApiName="AccountInformation" Type="13" Size="2" X="0" Y="5" Line_Number="5" Field_Height="1" NewRow="True">
+			<Name>Account Information</Name>
+			<Value></Value>
+		</Column>
+		<Column ApiName="Branch" Type="16" Size="1" X="1" Y="6" Line_Number="6" Field_Height="1" NewRow="True">
+			<Name>Branch</Name>
+			<Value>A Paris Food</Value>
+		</Column>
+		<Column ApiName="BillToName" Type="1" Size="1" X="0" Y="7" Line_Number="7" Field_Height="1" NewRow="True">
+			<Name>Bill to Name</Name>
+			<Value>A Paris Food</Value>
+		</Column>
+		<Column ApiName="ShipToName" Type="1" Size="1" X="1" Y="7" Line_Number="7" Field_Height="1" NewRow="False">
+			<Name>Ship to Name</Name>
+			<Value>A Paris Food</Value>
+		</Column>
+		<Column ApiName="BillToAddress" Type="14" Size="1" X="0" Y="8" Line_Number="8" Field_Height="1" NewRow="True">
+			<Name>Bill to Address</Name>
+			<Value>
+				<Street>16 Rue Michel le Comte</Street>
+				<City>Paris</City>
+				<State></State>
+				<ZipCode>75003</ZipCode>
+				<Country>France</Country>
+			</Value>
+		</Column>
+		<Column ApiName="ShipToAddress" Type="14" Size="1" X="1" Y="8" Line_Number="8" Field_Height="1" NewRow="False">
+			<Name>Ship to Address</Name>
+			<Value>
+				<Street>16 Rue Michel le Comte</Street>
+				<City>Paris</City>
+				<State></State>
+				<ZipCode>75003</ZipCode>
+				<Country>France</Country>
+			</Value>
+		</Column>
+		<Column ApiName="BillToPhone" Type="1" Size="1" X="0" Y="9" Line_Number="9" Field_Height="1" NewRow="True">
+			<Name>Bill to Phone</Name>
+			<Value>5551678</Value>
+		</Column>
+		<Column ApiName="ShipToPhone" Type="1" Size="1" X="1" Y="9" Line_Number="9" Field_Height="1" NewRow="False">
+			<Name>Ship to Phone</Name>
+			<Value>55678</Value>
+		</Column>
+		<Column ApiName="OrderInformation" Type="13" Size="2" X="0" Y="10" Line_Number="10" Field_Height="1" NewRow="True">
+			<Name>Order Information</Name>
+			<Value></Value>
+		</Column>
+		<Column ApiName="Remark" Type="1" Size="2" X="0" Y="11" Line_Number="11" Field_Height="1" NewRow="True">
+			<Name>Order Remark</Name>
+			<Value></Value>
+		</Column>
+	</Header>
+	<Footer>
+		<Column ApiName="TotalsBox" Type="23" Size="1" X="0" Y="0" NewRow="False">
+			<Name>Totals Box</Name>
+			<Value>
+				<SubTotal>
+					<Name>SubTotal</Name>
+					<Value>€ 70.00</Value>
+				</SubTotal>
+				<Discount>
+					<Name>Discount</Name>
+					<Value>€ 10.50</Value>
+				</Discount>
+				<DiscountPercentage >
+					<Name>%</Name>
+					<Value>15</Value>
+				</DiscountPercentage>
+				<Totals>
+					<Name>Totals</Name>
+					<Value>59.50</Value>
+				</Totals>
+			</Value>
+		</Column>
+		<Column ApiName="Signature" Type="25" Size="1" X="1" Y="0" NewRow="False">
+			<Name>Signature</Name>
+			<Value>https://settings.pepperi.com/9.6.381/Handlers/ResizeImage.ashx?imgPath=Images/Shared/defaultItem.jpg?v=0.63&amp;maxWidth=300&amp;maxHeight=300&amp;missingImage=True&amp;u=638660579480141989</Value>
+		</Column>
+	</Footer>
+	<Cart ScaleColumnsCount="0" TotalColumnsCount="8" TotalUnits="70">
+		<Group Name="">
+			<Line Type="1">
+				<Column ApiName="Image" Type="20" width="140">
+					<Name>Image</Name>
+					<Value>https://settings.pepperi.com/9.6.381/Handlers/ResizeImage.ashx?imgPath=WrntyImages/30015615/PortfolioItems/4/74947544.jpg&amp;maxWidth=80&amp;maxHeight=80&amp;missingImage=False&amp;u=638660579480861944</Value>
+				</Column>
+				<Column ApiName="ItemExternalID" Type="1" width="140">
+					<Name>Item Code</Name>
+					<Value>HT3003</Value>
+				</Column>
+				<Column ApiName="ItemMainCategory" Type="1" width="140">
+					<Name>Main Category</Name>
+					<Value>Hats</Value>
+				</Column>
+				<Column ApiName="ItemName" Type="1" width="140">
+					<Name>Item Description</Name>
+					<Value>Elegant Hat</Value>
+				</Column>
+				<Column ApiName="UnitsQuantity" Type="8" width="140">
+					<Name>Unit Quantity</Name>
+					<Value>1</Value>
+				</Column>
+				<Column ApiName="UnitPrice" Type="9" width="140">
+					<Name>Unit Price</Name>
+					<Value>24.00</Value>
+				</Column>
+				<Column ApiName="UnitPriceAfterDiscount" Type="9" width="140">
+					<Name>Unit Price After Discount</Name>
+					<Value>24.00</Value>
+				</Column>
+				<Column ApiName="TotalUnitsPriceAfterDiscount" Type="9" width="140">
+					<Name>Total Unit Price After Discount</Name>
+					<Value>24.00</Value>
+				</Column>
+			</Line>
+			<Line Type="1" >
+				<Column ApiName="Image" Type="20" width="140">
+					<Name>Image</Name>
+					<Value>https://settings.pepperi.com/9.6.381/Handlers/ResizeImage.ashx?imgPath=WrntyImages/30015615/PortfolioItems/3/74947543.jpg&amp;maxWidth=80&amp;maxHeight=80&amp;missingImage=False&amp;u=638660579480621844</Value>
+				</Column>
+				<Column ApiName="ItemExternalID" Type="1" width="140">
+					<Name>Item Code</Name>
+					<Value>HT3002</Value>
+				</Column>
+				<Column ApiName="ItemMainCategory" Type="1" width="140">
+					<Name>Main Category</Name>
+					<Value>Hats</Value>
+				</Column>
+				<Column ApiName="ItemName" Type="1" width="140">
+					<Name>Item Description</Name>
+					<Value>Wool Hat</Value>
+				</Column>
+				<Column ApiName="UnitsQuantity" Type="8" width="140">
+					<Name>Unit Quantity</Name>
+					<Value>1</Value>
+				</Column>
+				<Column ApiName="UnitPrice" Type="9" width="140">
+					<Name>Unit Price</Name>
+					<Value>23.00</Value>
+				</Column>
+				<Column ApiName="UnitPriceAfterDiscount" Type="9" width="140">
+					<Name>Unit Price After Discount</Name>
+					<Value>23.00</Value>
+				</Column>
+				<Column ApiName="TotalUnitsPriceAfterDiscount" Type="9" width="140">
+					<Name>Total Unit Price After Discount</Name>
+					<Value>23.00</Value>
+				</Column>
+			</Line>
+			<Line Type="1">
+				<Column ApiName="Image" Type="20" width="140">
+					<Name>Image</Name>
+					<Value>https://settings.pepperi.com/9.6.381/Handlers/ResizeImage.ashx?imgPath=WrntyImages/30015615/PortfolioItems/2/74947542.jpg&amp;maxWidth=80&amp;maxHeight=80&amp;missingImage=False&amp;u=638660579480381925</Value>
+				</Column>
+				<Column ApiName="ItemExternalID" Type="1" width="140">
+					<Name>Item Code</Name>
+					<Value>HT3001</Value>
+				</Column>
+				<Column ApiName="ItemMainCategory" Type="1" width="140">
+					<Name>Main Category</Name>
+					<Value>Hats</Value>
+				</Column>
+				<Column ApiName="ItemName" Type="1" width="140">
+					<Name>Item Description</Name>
+					<Value>Wool Hat</Value>
+				</Column>
+				<Column ApiName="UnitsQuantity" Type="8" width="140">
+					<Name>Unit Quantity</Name>
+					<Value>1</Value>
+				</Column>
+				<Column ApiName="UnitPrice" Type="9" width="140">
+					<Name>Unit Price</Name>
+					<Value>23.00</Value>
+				</Column>
+				<Column ApiName="UnitPriceAfterDiscount" Type="9" width="140">
+					<Name>Unit Price After Discount</Name>
+					<Value>23.00</Value>
+				</Column>
+				<Column ApiName="TotalUnitsPriceAfterDiscount" Type="9" width="140">
+					<Name>Total Unit Price After Discount</Name>
+					<Value>23.00</Value>
+				</Column>
+			</Line>
+		</Group>
+	</Cart>
+</Root>

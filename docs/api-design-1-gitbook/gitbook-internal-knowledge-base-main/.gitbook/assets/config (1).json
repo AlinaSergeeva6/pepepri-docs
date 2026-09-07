@@ -1,0 +1,148 @@
+{
+  "PPM_General": {
+    "QuantityCriteriaField": "UnitsQuantity",
+    "PriceCriteriaField": "TSAPPMUnitPrice",
+    "TotalPriceCriteria": {
+      "Type": "Block",
+      "Name": "Base"
+    },
+    "CalcDateField": "",
+    "UOM": {
+      "ConfigurationField": "ItemTSAUOMConversion",
+      "AllowedUomsField": "ItemTSAAllowedUOM",
+      "Fields": [
+        {
+          "Type": "TSAAOQMUOM1",
+          "Quantity": "TSAAOQMQuantity1"
+        }
+      ]
+    },
+    "UDC": [
+      "PricingGeneral"
+    ]
+  },
+  "PPM_CalcProcedures": [
+    {
+      "Key": "proc",
+      "Blocks": [
+        {
+          "Key": "Base",
+          "ConditionsOrder": [
+            "INIP"
+          ],
+          "InitialPrice": {
+            "Type": "Field",
+            "Name": "ItemPrice"
+          },
+          "CalculatedOfPrice": {
+            "Type": "Field",
+            "Name": "TSAPPMPrice"
+          }
+        },
+        {
+          "Key": "LicenseTax",
+          "ConditionsOrder": [
+            "LTIP"
+          ],
+          "InitialPrice": {
+            "Type": "Block",
+            "Name": "Base"
+          },
+          "CalculatedOfPrice": {
+            "Type": "Field",
+            "Name": "TSAPPMPrice"
+          }
+        },
+        {
+          "Key": "CityDiscount",
+          "ConditionsOrder": [
+            "CDIP"
+          ],
+          "InitialPrice": {
+            "Type": "Block",
+            "Name": "LicenseTax"
+          },
+          "CalculatedOfPrice": {
+            "Type": "Field",
+            "Name": "TSAPPMPrice"
+          }
+        }
+      ],
+      "CalculatedItemFields": [
+        {
+          "Name": "TSAPPMUnitPrice",
+          "Type": "=",
+          "Operand1": {
+            "Type": "Block",
+            "Name": "CityDiscount"
+          },
+          "BlockPriceField": {
+            "Type": "Single",
+            "UomIndex": 1
+          }
+        },
+        {
+          "Name": "TSAItemTax",
+          "Type": "-",
+          "Operand1": {
+            "Type": "Block",
+            "Name": "Base"
+          },
+          "Operand2": {
+            "Type": "Block",
+            "Name": "LicenseTax"
+          },
+          "BlockPriceField": {
+            "Type": "Single",
+            "UomIndex": 1
+          }
+        }
+      ]
+    }
+  ],
+  "PPM_Conditions": [
+    {
+      "Key": "INIP",
+      "Name": "INIP",
+      "TablesSearchOrder": [
+        "TBL1"
+      ]
+    },
+    {
+      "Key": "LTIP",
+      "Name": "LTIP",
+      "TablesSearchOrder": [
+        "TBL2"
+      ]
+    },
+    {
+      "Key": "CDIP",
+      "Name": "CDIP",
+      "TablesSearchOrder": [
+        "TBL3"
+      ]
+    }
+  ],
+  "PPM_Tables": [
+    {
+      "Key": "TBL1",
+      "KeyFields": [
+        "ItemExternalID"
+      ]
+    },
+    {
+      "Key": "TBL2",
+      "KeyFields": [
+        "ItemExternalID",
+        "TransactionTSAHasLicense"
+      ]
+    },
+    {
+      "Key": "TBL3",
+      "KeyFields": [
+        "ItemExternalID",
+        "TransactionAccountCity"
+      ]
+    }
+  ]
+}

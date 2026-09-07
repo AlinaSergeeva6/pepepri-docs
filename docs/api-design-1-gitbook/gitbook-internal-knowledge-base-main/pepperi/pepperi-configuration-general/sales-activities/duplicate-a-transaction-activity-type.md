@@ -1,0 +1,38 @@
+# Duplicate a Transaction/Activity Type
+
+### Objective:
+
+Create a copy of an existing Transaction or Activity Type for testing, new sales channels, or similar forms with modifications.
+
+***
+
+### **Use Cases:**
+
+1. Test trade promotions in a separate environment before live deployment.
+2. Replicate a Transaction Type for a different sales channel (e.g., Sales Reps to eCommerce Buyers) with minor tweaks.
+3. Reuse an Activity form as a template with adjusted workflows or fields.
+
+***
+
+### **Steps:**
+
+1.  **Create New Type:**
+
+    * Go to **Settings → Sales Activities → Transaction Types/Activity Types**.
+    * Click **+**, enter a name and description, and save.
+
+    <figure><img src="../../../.gitbook/assets/image (716).png" alt="" width="375"><figcaption></figcaption></figure>
+2. **Export and Import:**
+   * Select the existing Transaction/Activity Type to duplicate.
+   * Choose **Export** from the menu to download the definition file.
+   * Select the new Transaction/Activity Type, choose **Import**, and drag the downloaded file into the import screen.
+
+<figure><img src="../../../.gitbook/assets/image (718).png" alt="" width="375"><figcaption></figcaption></figure>
+
+3. **Modify Configuration:**
+   * Adjust the new Transaction/Activity Type (e.g., workflows, views, custom fields) for its intended use.
+
+{% hint style="info" %}
+**Note:** All custom fields, workflows, Order Center views, cart settings, and menus are duplicated.
+{% endhint %}
+

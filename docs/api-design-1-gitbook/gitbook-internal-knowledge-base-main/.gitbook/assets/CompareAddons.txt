@@ -1,0 +1,62 @@
+'use strict';
+
+/* About this script
+ * What is does: compares installed addons of 2 environments and outputs differences
+ * How to use:
+ * 1. Copy idp_token of 1st 'reference' environment. You need to login to the environment,
+ * open session storage and find record with key 'idp_token'. Paste it into 'bearer1' variable.
+ * 2. Copy idp_token of 2nd environment and paste it into 'bearer2' variable.
+ * 3. Run the script using 'Code Runner' VSCode extension or straight in browser console
+ */
+
+// config start
+const bearer1 = ''; // bearer of 1 env (origin)
+const bearer2 = ''; // bearer of 2 env
+// config end
+
+async function retrieveData() {
+    const url = 'https://papi.pepperi.com/v1.0/addons/installed_addons?page_size=-1';
+    const [addons1, addons2] = await Promise.all([fetchUrl(url, bearer1), fetchUrl(url, bearer2)]);
+    findDifference(addons1, addons2);
+}
+async function fetchUrl(url, bearer) {
+    try {
+        const response = await fetch(url, {
+            headers: {
+                Authorization: `Bearer ${bearer}`,
+                'Content-Type': 'application/json',
+            },
+        });
+        const data = await response.json();
+        return data;
+    } catch (e) {
+        console.log('Error fetching', e);
+    }
+}
+function findDifference(data1, data2) {
+    const res = {
+        missingAddons: [],
+        differentVersions: [],
+    };
+    for (let addon1 of data1) {
+        let addon2 = data2.find((el) => el.Addon.UUID == addon1.Addon.UUID);
+        if (!addon2) {
+            res.missingAddons.push(
+                `addon '${addon1.Addon.Name}' is missing on 2nd env. Reference version ${addon1.Version}. Addon UUID: ${addon1.Addon.UUID}`
+            );
+            continue;
+        }
+        if (addon1.Version !== addon2.Version) {
+            res.differentVersions.push(
+                `addon '${addon1.Addon.Name}' has different versions: 1st env - ${addon1.Version} <=> 2nd env - ${addon2.Version}`
+            );
+        }
+    }
+    const missingStr = res.missingAddons.join('\n');
+    const differentString = res.differentVersions.join('\n');
+    console.log('---- Missing Addons ----');
+    console.log(missingStr);
+    console.log('\n---- Different Versions ----');
+    console.log(differentString);
+}
+retrieveData();
