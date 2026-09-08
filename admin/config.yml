@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "docs/images"
+public_folder: "images"
+
+collections:
+  - name: "docs"
+    label: "Pepperi Knowledge Base"
+    folder: "docs"
+    create: true
+    nested:
+      depth: 5
+      summary: "{{title}}"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Head", name: "title", widget: "string", required: false}
+      - {label: "Article", name: "body", widget: "markdown"}
