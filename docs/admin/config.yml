@@ -13,7 +13,7 @@ collections:
     create: true
     nested:
       depth: 5
-    identifier_field: "title"
+      summary: "{{title}}"
     slug: "{{slug}}"
     fields:
       - {label: "Head", name: "title", widget: "string", required: false}
