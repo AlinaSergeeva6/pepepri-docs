@@ -2,8 +2,9 @@ backend:
   name: github
   repo: AlinaSergeeva6/pepepri-docs
   branch: main
+  app_id: "Ov23ligXdRqjgMmcWa2h"
 
-media_folder: "docs/images"
+media_folder: "/images"
 public_folder: "/images"
 
 collections:
@@ -12,7 +13,7 @@ collections:
     folder: "docs"
     create: true
     nested:
-      depth: 5 # Позволяет редактору видеть вложенные папки
+      depth: 5
     fields:
       - {label: "Head", name: "title", widget: "string", required: false}
       - {label: "Article", name: "body", widget: "markdown"}
