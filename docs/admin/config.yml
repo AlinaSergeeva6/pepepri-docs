@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: AlinaSergeeva6/pepepri-docs
+  name: git-gateway
   branch: main
 
 media_folder: "docs/images"
