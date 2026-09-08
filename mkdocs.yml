@@ -1,3 +1,5 @@
 site_name: Pepperi IKB
 theme:
   name: material
+  extra_css:
+  - css/custom.css
