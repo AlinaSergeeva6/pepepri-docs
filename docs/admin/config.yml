@@ -3,7 +3,7 @@ backend:
   repo: AlinaSergeeva6/pepepri-docs
   branch: main
 
-media_folder: "/images"
+media_folder: "docs/images"
 public_folder: "/images"
 
 collections:
