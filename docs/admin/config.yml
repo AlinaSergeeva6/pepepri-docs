@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: AlinaSergeeva6/pepepri-docs
+  branch: main
+
+media_folder: "docs/images"
+public_folder: "../images"
+
+collections:
+  - name: "docs"
+    label: "Pepperi Knowledge Base"
+    folder: "docs"
+    create: true
+    nested:
+      depth: 5 # Позволяет редактору видеть вложенные папки
+    fields:
+      - {label: "Head", name: "title", widget: "string", required: false}
+      - {label: "Article", name: "body", widget: "markdown"}
