@@ -2,7 +2,6 @@ backend:
   name: github
   repo: AlinaSergeeva6/pepepri-docs
   branch: main
-  app_id: "Ov23ligXdRqjgMmcWa2h"
 
 media_folder: "/images"
 public_folder: "/images"
