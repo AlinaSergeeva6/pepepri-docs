@@ -13,7 +13,7 @@
 }
 
 /* --------------------------------------
-   Sidebar Improvements (Material specific)
+   Sidebar Improvements
    -------------------------------------- */
 .md-sidebar--primary .md-nav__link {
     border-radius: 6px;
@@ -36,52 +36,52 @@
     font-weight: 600;
 }
 
-/* --------------------------------------
-   Modern Search Bar & Killer Dropdown
-   -------------------------------------- */
-.md-search__inner {
-    background-color: #f5f7f9 !important;
-    border-radius: 8px !important;
-    border: 1px solid #e6ecf1 !important;
-    transition: all 0.2s ease;
-}
-
-.md-search__inner:hover {
-    background-color: #eef1f5 !important;
-}
-
-/* When search input is active/focused */
-.md-search--active .md-search__inner {
-    background-color: #ffffff !important;
-    border-color: #3884ff !important;
-    box-shadow: 0 0 0 4px rgba(56, 132, 255, 0.15), 0 8px 24px rgba(0, 0, 0, 0.08) !important;
-}
-
-/* Kill the ugly retro "Type to start searching" box shadow and style the dropdown */
-.md-search__scrollwrap {
-    border-radius: 0 0 12px 12px !important;
-    background: #ffffff !important;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1) !important;
-    border: 1px solid #e6ecf1;
-    border-top: none;
-}
-
-/* Hide or clean up outdated helper text elements inside search if needed */
-.md-search__output {
-    background-color: #ffffff !important;
-    border-radius: 0 0 12px 12px !important;
-}
-
-.md-search__input,
-.md-search__icon {
-    color: #5c6975 !important;
-}
-
-.md-search__input::placeholder {
-    color: #9daab6 !important;
-}
 /* Hide icons inside the sidebar menu */
 .md-sidebar--primary .md-nav__link > .md-icon,
 .md-sidebar--primary .md-nav__item .md-icon {
     display: none !important;
+}
+
+/* --------------------------------------
+   Modern Search Bar 
+   -------------------------------------- */
+/* Normal (inactive) state */
+.md-search__form {
+    background-color: #f5f7f9 !important;
+    border: 1px solid #e6ecf1 !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease;
+}
+
+/* On hover */
+.md-search__form:hover {
+    background-color: #ffffff !important;
+    border-color: #b0c4de !important;
+}
+
+/* Active state (when clicked) */
+.md-search--active .md-search__form {
+    background-color: #ffffff !important;
+    border-color: #3884ff !important;
+    border-radius: 8px 8px 0 0 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* The dropdown container */
+.md-search__output {
+    background-color: #ffffff !important;
+    border-radius: 0 0 8px 8px !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #3884ff !important;
+    border-top: none !important;
+}
+
+/* Input text and placeholder */
+.md-search__input {
+    color: #242a31 !important;
+}
+
+.md-search__input::placeholder {
+    color: #9daab6 !important;
 }
