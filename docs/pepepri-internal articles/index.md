@@ -1,6 +1,6 @@
 ---
 label: Home
-icon: home
+icon: material/home
 title: "Pepperi Professional Services Internal Knowledge Base"
 order: 10000
 ---
