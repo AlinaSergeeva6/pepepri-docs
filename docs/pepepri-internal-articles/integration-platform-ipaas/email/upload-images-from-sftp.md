@@ -9,19 +9,19 @@ Steps of upload images to the Pepperi from SFTP:
 1) Install FileZilla
 2) You need to input SFTP credentials (Host,User name, password and port)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-21.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-21.jpg)
 
 3) When you input correct data you will get data navigation through file manager section
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-16.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2-16.jpg)
 
 4) After that go to the integration platform and create dataflow task with this settings:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-11.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/3-11.jpg)
 
 5) Configuration of settings in dataflow task.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/4-7.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/4-7.jpg)
 
 5.1- **is\_sftp** – set true
 

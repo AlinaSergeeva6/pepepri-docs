@@ -24,11 +24,11 @@ This integration connects QuickBooks Online, a cloud-based ERP designed for smal
 -   **HTTP Request Configuration:**
     -   **companyID:** Each QuickBooks Online instance has a unique companyID, required in the HTTP request.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-553.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-553.png)
 
     -   **Query Example:** query=select \* from item STARTPOSITION {#page\_num#} retrieves all columns of items, with pagination support via STARTPOSITION.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-554.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-554.png)
 
     -   **Important Note:** Using select \* from item is recommended. Specifying specific columns (e.g., select column1, column2 from item) often results in errors.
     -   **Additional Settings:** Use the same settings as for QuickBooks (ensure OAuth 2.0 is configured and the HTTP request includes query=select\*).

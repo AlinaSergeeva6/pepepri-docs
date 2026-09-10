@@ -45,7 +45,7 @@ Example of simplest code:
 
 We send it as a string with post\_array to the UI task token:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-16.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/3-16.png)
 
 And receive access token to render iframe:
 
@@ -61,7 +61,7 @@ id="worldPayIframe"></iframe>`;
 
 In default iframe we can see these inputs:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/4-12.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/4-12.png)
 
 ### Supported card types that we can add to xml:
 
@@ -97,7 +97,7 @@ In response you will get:
 
 Customized response can look like this:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/5-10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/5-10.png)
 
 **Pay** and **Cancel** buttons need to be added to the ui\_page\_body of main UI task.
 
@@ -142,11 +142,11 @@ const fields = await this.getResponsePacket(accessToken);
 
 getResponsePacket is UI task that gets response with access token:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/6-9.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/6-9.png)
 
 After this we send fields with test withdrawal amount in “WorldPay Card Pre-Authorization” task which can be 0 or 1 for different card types to get information about validation of the card.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/7-7.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/7-7.png)
 
 ```
 //If we receive

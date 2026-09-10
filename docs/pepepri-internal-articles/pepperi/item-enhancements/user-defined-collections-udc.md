@@ -38,11 +38,11 @@ The best way to update fields is through UDC Scheme
 
 -   **Scheme Only**: if true - you won't be able to upload data to this UDC. Such UDC can be used as a template for creating new UDC fields. Also it could be used in VisitFlows UDC: it contains an array of objects which are typed of such Scheme Only collection.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-54.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-54.png)
 
 3) To edit UDC configuration: ✏ -> Edit
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-55.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-55.png)
 
 ---
 
@@ -51,11 +51,11 @@ The best way to update fields is through UDC Scheme
 1) Select UDC -> Edit;
 2) In the "Fields" section click "Add":
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-56.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-56.png)
 
 3) Configure the new field:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-57.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-57.png)
 
 -   **Key**: name of the field in lower camel case e.g. "salesRep" (*Note: it allows creating a field started with an uppercase character but you won't be able to save such UDC*).
 
@@ -92,11 +92,11 @@ Be careful selecting types. If you need a field for future calculations (e.g. ca
 
 4) Click "Update" to save the changes:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-58.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-58.png)
 
  Wait till notification appears:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-59.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-59.png)
 
 ---
 
@@ -110,17 +110,17 @@ If you select Indexed=true when creating a new field, the Additional Indexed Fie
 
 1) Click "Add" to select additional fields related to the Resource you selected:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-60.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-60.png)
 
 2) Select several fields:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-61.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-61.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-62.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-62.png)
 
 Selected fields will not appear as separate UDC fields in the list:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-63.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-63.png)
 
 However, they will be indexed and could be used in different Pepperi modules such as Insights.
 
@@ -128,7 +128,7 @@ However, they will be indexed and could be used in different Pepperi modules suc
 
 You can select whether to apply filtering for this field:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-64.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-64.png)
 
 "True" enables filtering by this field in different Pepperi modules where UDC is used as a Resource.
 
@@ -136,7 +136,7 @@ You can select whether to apply filtering for this field:
 
 When adding records to UDC, you have to enter UUID in the Resource Type fields. For example, if the Resource Type is account, enter Account UUID:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-65.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-65.png)
 
 ---
 
@@ -189,23 +189,23 @@ Key
 -   create fields on which to base the Key;
 -   Mandatory: true
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-66.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-66.png)
 
 -   Select "based on fields" from the drop-down and delimiter (@ - by default):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-67.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-67.png)
 
 -   Click "Add":
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-68.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-68.png)
 
 -   Select your fields:
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-69.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-69.png)
 
 -   Your fields will appear here:
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-70.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-70.png)
 
 -   Example:
 
@@ -223,40 +223,40 @@ ecef500a-4dae-48e3-8c69-e216d4406cbd**@**8f46de00-68a1-4d2f-bbca-3e451de7b584**@
 
 Click on UDC name
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-71.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-71.png)
 
 or "Edit data"
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-72.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-72.png)
 
 -   click on "Add":
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-73.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-73.png)
 
 -   fill the fields (the fields you set as 'mandatory' should be filled, other fields could be empty):
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-74.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-74.png)
 
 -   click "Save";
 
 !!!warning
 You can't create a record with the same key which already exists:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-75.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-75.png)
 !!!
 
 #### 2️⃣ Import file:
 
 -   edit data -> burger menu -> click on "Import":
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-76.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-76.png)
 
 -   upload CSV file with data.
 
 !!!info
 If there are fields with a Resource type, UUID should be uploaded. Alternatively, you can upload an External ID but in this case "#ExternalID" should be added to the field name:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-77.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-77.png)
 !!!
 
 CSV example:
@@ -274,15 +274,15 @@ You can upload data to UDC via iPaaS.
 !!!info
 🤔 The dataflow task ran successfully but you don't see any changes? Check the UDC Upload Results in the dataflow log:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-78.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-78.png)
 
  To check details, go to URL address from **URL with upload result data**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-79.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-79.png)
 
  Example:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-80.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-80.png)
 !!!
 
 #### Adding lines:
@@ -296,7 +296,7 @@ sub\_type\_id: *UDC name*
 
 Map field names you'd like to add e.g.:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-81.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-81.png)
 
 -   Dataflow task example:
     -   Upload data to UDC KBIntExamples2: [https://integration.pepperi.com/mgr/PluginSettings/ClientTask?TaskId=92300](https://integration.pepperi.com/mgr/PluginSettings/ClientTask?TaskId=92300)
@@ -319,7 +319,7 @@ Map field names you'd like to add e.g.:
 
 Hidden: 'true'
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-82.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-82.png)
 
 -   Dataflow task example:
     -   Remove records - UDC KBIntExamples2: [https://integration.pepperi.com/mgr/PluginSettings/ClientTask?TaskId=92306](https://integration.pepperi.com/mgr/PluginSettings/ClientTask?TaskId=92306)
@@ -342,7 +342,7 @@ Hidden: 'true'
 
 Fields you'd like to update
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-83.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-83.png)
 
 -   Dataflow task example:
     -   Update records - UDC KBIntExamples2: [https://integration.pepperi.com/mgr/PluginSettings/ClientTask?TaskId=92311](https://integration.pepperi.com/mgr/PluginSettings/ClientTask?TaskId=92311)
@@ -371,11 +371,11 @@ When a new indexed field is created, you won't see data from this field in other
 
 1) Select UDC:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-84.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-84.png)
 
 2) Select "Rebuild Index":
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-85.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-85.png)
 
 !!!warning
 Running a rebuild will prevent all users from using this UDC until the process ends. This can take up to several minutes.
@@ -754,12 +754,12 @@ Body example:
 
 Data Retention by UDC is now available in Data Retention section in Backoffice:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-86.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-86.png)
 
 -   Click Add +
 -   Select the UDC and max data retention mohths
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-87.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-87.png)
 
 -   Click Add
 
@@ -771,7 +771,7 @@ Data Retention by UDC is now available in Data Retention section in Backoffice:
 
 *When data is added to UDC you still can create new fields. However, if you create a "mandatory" field and try to access data, the following error can occur:*
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-88.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-88.png)
 
 **Cause**
 

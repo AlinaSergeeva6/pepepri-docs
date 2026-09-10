@@ -6,11 +6,11 @@ order: 149
 
 ### 0.Before the upgrading, be sure that all of the settings in General Settings tab are correct
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-460.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-460.png)
 
 ### 1.Download latest version from Integration Manager Tools>>Desktop Applications (Sap Listener 32)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-461.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-461.png)
 
 ### 2. Backup existing "online listener" folder
 
@@ -20,7 +20,7 @@ order: 149
 
 ### 5. Check connection settings - inside each listener there is a folder : connection_tester>> Run the Pepperi _SAP_Connection_Tester.exe and this is how it should be configured for perfect performance:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-462.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-462.png)
 
 ### 6. Restart Service
 
@@ -36,28 +36,28 @@ You can generate new Client ID to be sure that this value is properly the same y
 
 In Services - > Pepperi Online Listener - > Properties - > Recovery specify such fields:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-463.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-463.png)
 
 These settings will allow to restart the service in cases of failures
 
 Now you can see logs like this(with really poor description):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-20.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/3-20.png)
 
 To improve the description of the logs, you can do the following:
 
 Find this:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-38.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-38.png)
 
 Find this 2 files:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-27.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2-27.png)
 
 Replace these files with the files that are attached in the attachment and then you will be able to see more detailed logs
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2020-02-27_15h29_49.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2020-02-27_15h29_49.png)
 
 To download the necessary files for updating or installing, follow **Tools** ----> **Desktop Applications**\-----> SAP Business One.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Capture-24.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Capture-24.PNG)

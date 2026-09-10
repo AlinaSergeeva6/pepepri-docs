@@ -26,30 +26,30 @@ The Excel Cart Uploader allows your customers to upload orders using a familiar 
 
 -   Navigate to **Settings -> iPaaS -> Quick Setup -> Excel Cart Uploader**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-945.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-945.png)
 
 -   **Install:** Click **Install** if the add-on is not yet installed.
 -   **Launch:** Click **Launch** if it is already installed.
 -   You can create multiple configurations for use with different Transaction Types.
 -   Add a new configuration or copy an existing one and modify it as needed.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-946.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-946.png)
 
 -   **Note:** Click **Save** at the top of the page to save changes. Clicking **OK** or **Confirm** within configuration screens will not save changes.
 
 #### Configuration Steps
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-947.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-947.png)
 
 **General Tab**
 
 -   **Select Transaction:** Choose the Transaction Type (e.g., Sales Order, B2B Order) that will be updated with the uploaded Excel data.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-948.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-948.png)
 
 **Excel Fields Mappings Tab**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-949.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-949.png)
 
 -   **Configure Mappings:** Define the mappings between Excel columns and transaction fields.
     -   **Column Name:** Enter the equivalent name from the uploaded Excel sheet.
@@ -57,15 +57,15 @@ The Excel Cart Uploader allows your customers to upload orders using a familiar 
 
 -   **Add Field:** Click **Add** to include a new field in the uploader configuration.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-950.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-950.png)
 
 -   **Edit Field:** Click **Edit** to update the Column Name or Source Field as needed.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-951.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-951.png)
 
 **Advanced Tab**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-952.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-952.png)
 
 -   **Settings Description:**
     -   **Allow Excel Upload Multiple Times:** Enable to permit multiple uploads of Excel files.
@@ -80,7 +80,7 @@ The Excel Cart Uploader allows your customers to upload orders using a familiar 
 -   Click **Save** at the top of the page to apply all changes.
 -   Upon successful installation and configuration, UI tasks will appear in your iPaaS module.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-953.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-953.png)
 
 #### Next Steps: Integrate with Transaction
 
@@ -88,7 +88,7 @@ The Excel Cart Uploader allows your customers to upload orders using a familiar 
     -   In the **General Tab**, locate the message: "Copy the HTML code by clicking here and insert it into the custom form in the selected transaction."
     -   Click the icon to copy the UI task code.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-954.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-954.png)
 
 2.  **Add Program to Transaction Type:**
     -   Go to **Sales Activities -> Transaction Types -> &lt;Your Transaction>**.
@@ -97,7 +97,7 @@ The Excel Cart Uploader allows your customers to upload orders using a familiar 
     -   Enter required values (e.g., program name, description).
     -   Add a new **Custom Form Action** and paste the copied UI task code.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-955.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-955.png)
 
 3.  **Add to Order Center Menu:**
     -   Go to the **Views Tab -> Menu -> Order Center Menu**.

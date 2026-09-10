@@ -9,8 +9,8 @@ order: 243
 
 Firstable you need to get all failed transactions (in separate task). After you have this csv with data , create a new one task, where privious task will be loop\_over\_table:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-15.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-15.png)
 
 Then do this:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2020-07-13_15h30_09.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2020-07-13_15h30_09.png)

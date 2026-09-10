@@ -10,11 +10,11 @@ Notifications is a new feature available in Pepperi.
 
 It allows to send notifications to the webapp and mobile application. Notifications are fully customizable. You can send any information you want, it could be related to the orders, invoices, etc.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Push-Notifications-Webapp.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Push-Notifications-Webapp.png)
 
 **Notifications on a webapp.**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Push-Notifications-Device.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Push-Notifications-Device.jpg)
 
 **Notifications on a mobile device.**
 
@@ -44,7 +44,7 @@ Use case for this, for example, you are a Rep and you want to have a notificatio
 2.  It triggers the webhook with dataflow tasks and sends the data to the Notification API.
 3.  Rep receives a notification on their devices.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Push-Notifications-Dataflow-tasks.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Push-Notifications-Dataflow-tasks.png)
 
 ## How to copy to another environment
 

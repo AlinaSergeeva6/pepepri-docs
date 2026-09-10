@@ -47,7 +47,7 @@ The process starts like always with a Webhook - since this is what the workflow 
 
 Screenshot of manage Webhook tasks:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-281.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-281.png)
 
 The Job:
 
@@ -59,7 +59,7 @@ The Job:
 
 Screenshot of manage Dataflow task:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-282.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-282.png)
 
 The Webhook that starts the process must have the following settings:
 
@@ -67,17 +67,17 @@ The Webhook that starts the process must have the following settings:
 2.  job\_wait\_seconds = seconds to wait until job ends with failure or success status
 3.  lock\_online\_trn = the value here MUST be 0 - since the webhook triggers another Webhook within the job process - and if we set it to 1 (default) the meaning will be the job will never end as it will not allow the additional Webhook to run in parallel.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-283.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-283.png)
 
 1.The job starts with HTTP task to get the Transaction Header - please note the `{#pepperi_object_id#}` **its the object id of the Webhook that triggered the job**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-284.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-284.png)
 
 2\. HTTP task to get the Transaction Lines - and perform Join with Task 1
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-285.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-285.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-286.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-286.png)
 
 3\. HTTP task to loop over the lines from task 2 and filter only required lines - and **POST** a transaction in Pepperi that has only the required lines
 
@@ -87,21 +87,21 @@ The Webhook that starts the process must have the following settings:
 
 **Loop:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-287.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-287.png)
 
 **POST**:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-288.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-288.png)
 
 4\. General Cloud task that trigger Webhook = submit the newly created transaction on step 3
 
 **Loop**:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-289.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-289.png)
 
 **POST**:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-290.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-290.png)
 
 5\. HTTP task that takes the response - transaction ID from task 4 and updated external ID in Pepperi.
 
@@ -109,18 +109,18 @@ The Webhook that starts the process must have the following settings:
 
 **(its also possible to loop over the Webhook task name - it might be clearer as the result had the internal id as a column)**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-291.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-291.png)
 
 **POST:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-292.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-292.png)
 
 The required General Settings are:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-293.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-293.png)
 
 to ensure that all loops are per job and response is not taken from other job
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-294.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-294.png)
 
 to ensure that when HTTP request fails - the entire Job fails

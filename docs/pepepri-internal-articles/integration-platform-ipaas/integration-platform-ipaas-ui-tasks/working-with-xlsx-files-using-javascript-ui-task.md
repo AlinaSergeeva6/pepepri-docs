@@ -91,7 +91,7 @@ kendo.saveAs({
 
 Result of after saving:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-26.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-26.png)
 
 #### Note:
 

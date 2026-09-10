@@ -14,7 +14,7 @@ Custom homepage itself consist of two configuration files.
 
 **Important: Header customization available for each user profile type such as buyer, admin, rep, manager, etc.**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-9.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-9.png)
 
 Fig 1. Custom Header.
 
@@ -22,7 +22,7 @@ Fig 1. Custom Header.
 
 **Important: Body customization available only for BUYER profile.**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2-4.png)
 
 Fig 2. Body section.
 
@@ -30,7 +30,7 @@ Fig 2. Body section.
 
 To set the custom homepage header and body first you need to create two config files with **WebApp Customization** type. One for header and another one for Body.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/3-4.png)
 
 Fig. 3 File Type.
 

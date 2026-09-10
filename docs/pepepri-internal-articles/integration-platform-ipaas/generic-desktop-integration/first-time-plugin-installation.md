@@ -16,15 +16,15 @@ In order to install all the necessary tools you need to download them from the I
 
 1.  Go to Integration Pepperi, open the tools panel and choose **"Desktop applications"**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-483.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-483.png)
 
 2\. Download plugin **Listener Service Includes All.**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-484.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-484.png)
 
 3\. Then **unarchive** the content. As a rule, the plugin are extracted to **C:/Program files(x86)/Pepperi**. In some particular cases, when the client uses Quickbooks the path can be C:/Pepperi.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-485.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-485.png)
 
 ### Installation Configuration
 
@@ -38,7 +38,7 @@ The next step is to configure 2 .bat files: **install.bat** and **uninstall.bat*
 2.  On the right, please provide the correct path to **OnlineListenerService.exe**, which should be stored in **Pepperi** folder now
 3.  Do the same for **uninstall.bat**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-486.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-486.png)
 
 ### Installation
 
@@ -56,7 +56,7 @@ After successfully installing the listener, we need to configure it for the futu
 2.  **Click** on **"Generate GUID"**
 3.  Copy GUID to **ClientID** key as a value.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-487.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-487.png)
 
 #### Restart the listener
 
@@ -65,11 +65,11 @@ After configuring the file, you need to restart the listener.
 1.  Go to Task Manager and find the service "Pepperi Online Listener"
 2.  Right click on it, then choose "Open services"
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-488.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-488.png)
 
 3\. Find Pepperi Online listener there right click on it and choose **restart**.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-489.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-489.png)
 
 !!!info
 If the status after reloading is "Running", you can proceed to the next stage
@@ -85,4 +85,4 @@ If the status is "Starting" it means that firewall blocks the connection and you
 2.  Go to integration -> tools -> online listener statuses
 3.  enter you id in "Listener Client ID" column
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-490.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-490.png)

@@ -17,7 +17,7 @@ Main links (you can find there all requests):
 
 ● Sandbox account creation: [https://developer.authorize.net/hello\_world/sandbox.html](https://developer.authorize.net/hello_world/sandbox.html) If you go to developer.authorize -> SIGN IN -> sandbox, first time you will see modal window like this:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/5-13.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/5-13.png)
 
 You should set it to “Live” in order to process transactions (even test).
 
@@ -29,17 +29,17 @@ You can find all views of solution in attached presentation.
 
 You need to add general settings for dataflow tasks (or you can use that fields (General Settings) exactly in tasks):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/6-11.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/6-11.png)
 
 How to find merchant name and key:
 
 Go to [https://sandbox.authorize.net/](https://sandbox.authorize.net/) -> ACCOUNT -> API Credentials & Keys
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/7-8.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/7-8.png)
 
 You will see all required information there:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/8-5.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/8-5.png)
 
 ### Transaction Types
 
@@ -121,19 +121,19 @@ Methods:
 
 “**getCustomerProfile**”, “**createCustomerProfile**” and “**deleteCustomerPaymentProfile**” api calls you can find by the following link (with all request and response fields explanations): [https://developer.authorize.net/api/reference/index.html#customer-profiles-get-customer-profile](https://developer.authorize.net/api/reference/index.html#customer-profiles-get-customer-profile)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/9-5.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/9-5.png)
 
 Some notes about dataflow task testing: 1) If you change name of main UI task, you also should change some http body:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/10-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/10-4.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/11-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/11-3.png)
 
 2) Data about AUTH transaction (success, transaction Ids etc.) can be save in pepperi current transaction, UDT or other activity. That's why UI task have some function, that we don't use in current example, but can be used in others.
 
 ### FlowChart
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/12-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/12-2.png)
 
 You can find this diagram in attached PDF.
 
@@ -145,7 +145,7 @@ After sending transaction request, you will get response and proceed it with “
 
 Fields that we can get from AUTH response:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/13-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/13-1.png)
 
 ### Conclusion
 

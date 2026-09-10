@@ -9,11 +9,11 @@ order: 232
 
 create new dataflow task:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image2.png)
 
 Define the following settings (on general - or per task)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image1.png)
 
 **feature #1 : In case you want to upload image to different level (1-6) you can name the file with underscore and the image level &lt;item id>\_1.jpg**
 
@@ -28,15 +28,15 @@ Define the following settings (on general - or per task)
 
 ### file used for join:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-295.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-295.png)
 
 ### ftp folder:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-296.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-296.png)
 
 ### join settings:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-297.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-297.png)
 
 !!!info
 sys*last\_image\_upload in settings - is read only like other sys* settings - it shows the last time all images were synced - only files with a newer date will be synced again

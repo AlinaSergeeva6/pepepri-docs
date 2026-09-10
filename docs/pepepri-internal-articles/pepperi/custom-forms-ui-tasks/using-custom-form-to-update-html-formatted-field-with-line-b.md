@@ -14,7 +14,7 @@ This guide demonstrates how to use a Custom Form in Pepperi to update an HTML Fo
 
 The goal is to display multiple UDT values in a single HTML Formatted field, with each value on a new line. For example:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-43.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-43.png)
 
 To achieve this:
 
@@ -198,7 +198,7 @@ Use the following Custom Form code to fetch UDT values, format them with line br
     -   For `ArrivalDatePerRegion`, splits the `value` string (e.g., `Date1~Qty1~Date2~Qty2`) and formats pairs with a dash and newline (e.g., `Date1 - Qty1 \n Date2 - Qty2`).
     -   Adds `<pre>` tags for Web App to ensure proper rendering of line breaks.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-44.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-44.png)
 
 4.  **Updating Fields:**
     -   Updates the `TSADiscountNameandValue` header field with formatted discount data.

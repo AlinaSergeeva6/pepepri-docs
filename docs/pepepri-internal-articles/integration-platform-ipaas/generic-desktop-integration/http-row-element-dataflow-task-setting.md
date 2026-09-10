@@ -23,7 +23,7 @@ GET http://localhost/odata/Categories
 
 In this case, to integrate the data and process it in Integration platform we will use parameter ‘value’ in 'http\_row\_element' setting.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-43.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-43.png)
 
 If our response would look like that: GET [http://localhost/odata/**Categories?$expand=Products**](http://localhost/odata/Categories?$expand=Products)
 
@@ -58,39 +58,39 @@ The server will include the products for each category, inline with the categori
 
 Here, if we use parameter ‘*value*’ in *http\_row\_element* setting to integrate the data and process it in **I**ntegration platform we will receive resulting csv file which will look like this:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-32.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2-32.png)
 
 As you can see here each attribute of collection entity of “Products” has its own column and enumerated ascending. The number of columns will depend on the number of attributes in collections and the overall number of collections. Such data requires a lot of tricky manipulations to receive more adequate format which can be processed easily by Integration platform. Lest say we need to receive something like this:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-24.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/3-24.png)
 
 At that moment **http\_row\_element** setting comes in handy. By replacing default value “value” of this setting with the name of our expand category “Products”.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/4-19.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/4-19.png)
 
 Our resulting csv will contain only values of the expand category:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/5-17.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/5-17.png)
 
 Other words saying, our csv will contain only highlighted yellow rows of response.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/6-15.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/6-15.png)
 
 We also need to include main ID “ExtID” and Category Name “Name”
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/7-10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/7-10.png)
 
 This values could be easily obtained using *http\_export\_add\_parents*.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/8-6.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/8-6.png)
 
 The output CSV will be:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/9-6.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/9-6.png)
 
 You can read about the syntax of this setting here:
 
-[![Logo](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/favicon-2.ico) XPath ExamplesMicrosoftLearn](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256086%28v%3dvs.100%29)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/favicon-2.ico) XPath ExamplesMicrosoftLearn](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256086%28v%3dvs.100%29)
 
 Reference Info link:
 

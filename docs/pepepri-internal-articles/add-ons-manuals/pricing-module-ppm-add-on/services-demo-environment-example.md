@@ -89,7 +89,7 @@ Before uploading items, make sure you create the necessary fields for **UOM (Uni
 
 ### 3. Create and prepare new transaction.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-793.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-793.png)
 
 Creating new transaction for PPM module
 
@@ -99,7 +99,7 @@ Creating new transaction for PPM module
 2.  Click **Install** -> **Ok**.
 3.  Set the parameters as shown in the screenshot below and click **Save**.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-794.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-794.png)
 
 #### 2. Create necessary fields.
 
@@ -136,17 +136,17 @@ Creating new transaction for PPM module
 
 #### 3. Configure views.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-18-161023.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2025-02-18-161023.png)
 
 Order banner view
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-18-160033.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2025-02-18-160033.png)
 
 Grid Line View
 
 #### 4. Configure setting to show only new catalog.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-795.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-795.png)
 
 Settings tab
 
@@ -157,19 +157,19 @@ Settings tab
 1.  Create **two UDC collections** as described in the **"General Setup"** article.
 2.  Create **two UDTs (User Defined Tables)** to store pricing data.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-796.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-796.png)
 
 !!!info
 Don't forget to publish your collections.
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-797.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-797.png)
 
 ---
 
 ### 5. Upload scripts that will be used in flows.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-798.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-798.png)
 
 Scripts page after uploading scripts
 
@@ -180,7 +180,7 @@ Scripts page after uploading scripts
 -   Using the **"General Setup"** article, create all the flows described there.
 -   Here’s how the setup should look:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-799.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-799.png)
 
 Flow list page
 
@@ -197,7 +197,7 @@ Don't forget to publish your flows!
     -   **Transaction load**.
     -   Every field that will be used in the calculation.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-18-122328.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2025-02-18-122328.png)
 
 Transaction Event Tab
 
@@ -445,7 +445,7 @@ This is the final part of the config, where we describe the tables from the **PP
     -   **Key**: `"main"`.
     -   **Schema**: Copy and paste the JSON from the config file.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-800.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-800.png)
 
 ---
 
@@ -453,7 +453,7 @@ This is the final part of the config, where we describe the tables from the **PP
 
 -   Export the transaction to retrieve its **UUID**.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-801.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-801.png)
 
 Transaction export JSON
 
@@ -463,7 +463,7 @@ Transaction export JSON
     -   **Key**: Use the `TransactionUUID` copied from the exported JSON file.
     -   **Procedure**: Use the name of the procedure from the `config.json` file.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-802.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-802.png)
 
 ---
 
@@ -476,7 +476,7 @@ Transaction export JSON
 
 2.  Proceed to upload pricing data for the items.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-803.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-803.png)
 
 NPM Calc Message fields show empty array
 
@@ -549,7 +549,7 @@ The pricing data file contains the same structure for all items and conditions. 
 3.  If everything is configured correctly, you will see the expected results.
 4.  Check the **"Has License"** checkbox and observe how the price changes dynamically.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-18-164102.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2025-02-18-164102.png)
 
 !!!success
 You’ve successfully set up and configured the PPM module. Now it’s time to enjoy a well-deserved cup of tea or coffee as a victory drink! 🎉☕

@@ -36,7 +36,7 @@ Insights delivers this information directly within the Pepperi mobile app and We
 -   **Features:** Tracks brand targets and visit metrics.
 -   **Example:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-714.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-714.png)
 
 Displays a dashboard showing a rep’s progress toward brand-specific sales targets and visit tracking.
 
@@ -45,7 +45,7 @@ Displays a dashboard showing a rep’s progress toward brand-specific sales targ
 -   **Features:** Includes Targets vs. Actual, Top Sellers, Account Sales by Category, and more.
 -   **Example:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-715.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-715.png)
 
 Showcases a manager’s dashboard with comprehensive performance insights.
 

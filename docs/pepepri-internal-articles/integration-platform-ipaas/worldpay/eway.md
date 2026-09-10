@@ -13,15 +13,15 @@ order: 190
 
 make sure to mark the checkbox “Copy Sub Tasks”, otherwise repeat the copying process!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-09-01-at-12.32.48.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-09-01-at-12.32.48.png)
 
 the eWay UI Task
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-09-01-at-12.34.04.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-09-01-at-12.34.04.png)
 
 copying the eWay UI Task to the different client
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-09-01-at-12.35.23.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-09-01-at-12.35.23.png)
 
 copying the eWay UI Task to the different client
 
@@ -29,7 +29,7 @@ copying the eWay UI Task to the different client
 
 which will result into opening a window where we need to copy the code to a custom form.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-349.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-349.png)
 
 the code we need for the further implementation.
 
@@ -37,13 +37,13 @@ the code we need for the further implementation.
 
 for this follow the path **Sales Activities------>Transaction Types>Programs------->New Program**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-350.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-350.png)
 
 creating a new Program
 
 ### #4 Step: edit the newly created program in order to insert our code previously copied from the UI Task
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-351.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-351.png)
 
 implementing the code to our Custom Form
 
@@ -51,13 +51,13 @@ implementing the code to our Custom Form
 
 for this transaction, see the screenshot below for the example of the required field type
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-352.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-352.png)
 
 custom fields needed for the custom form.
 
 Some of the default fields are also needed
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-353.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-353.png)
 
 default required fields
 
@@ -65,7 +65,7 @@ default required fields
 
 Go to **Sales Activities** ---->**Transaction Types**\------->**Views and Forms** ------>**Menu**\---------->**Order Center Menu** and configure the specific profile that you need to add a program:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-354.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-354.png)
 
 adding our program to the dropdown menu
 
@@ -73,12 +73,12 @@ adding our program to the dropdown menu
 
 Go to the **webapp** ---> **Sales Order** ---> choose **a test account** ------> add some goods to the cart -------> go to the **dropdown menu** and choose **payment option** that you added in the select menu
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-355.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-355.png)
 
 dropdown menu in the Sales Order.
 
 **Finally**, this is what you should see in the end. Make sure that **TotalSum** from the cart matches with what you have in the form:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-356.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-356.png)
 
 the final look of the Custom Form

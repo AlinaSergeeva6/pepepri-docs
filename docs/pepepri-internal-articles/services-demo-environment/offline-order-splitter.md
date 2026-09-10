@@ -11,7 +11,7 @@ order: 39
 
 Offline order splitter is a feature that allows you to split an order using client API and create a few additional transactions of any type. It allows you to add a bunch of items to the cart and then choose what type of transaction you want to assign every item to.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-956.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-956.png)
 
 ### Advantages and disadvantages
 

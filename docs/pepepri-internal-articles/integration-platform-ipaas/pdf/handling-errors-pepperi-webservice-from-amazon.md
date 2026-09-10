@@ -16,28 +16,28 @@ If you need to get more information about errors, facing with uploading issues y
 
 **4\.** to run any queries you need, you can check the **Queries library** on the right **Queries ---> support ---> get-put log**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-302.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-302.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-303.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-303.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-304.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-304.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-305.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-305.png)
 
 **5\.** this service is used to check the failed files, so for this purpose you will need a **File ID** which was failed you can find it in **ERP Integration ---> File Upload and Logs ---> File ID**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-306.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-306.png)
 
 **6\.** you can use this File ID as **ActionID** and push the button **Run query**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-307.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-307.png)
 
 **7\.** you can see the explanation of the failed file below
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-308.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-308.png)
 
 **8\.** having these filters
 
 filter **ActionID** = {Filter ID} filter **Level** = ‘ERROR’ You can see which lines from this upload file failed and for what reason
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-309.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-309.png)

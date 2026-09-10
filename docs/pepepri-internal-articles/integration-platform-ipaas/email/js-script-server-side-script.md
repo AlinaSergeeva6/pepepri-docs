@@ -9,7 +9,7 @@ order: 230
 
 In order to start using **Server Side Script**, the necessary Addon is set automatically for the client on Integration
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-11-12-at-10.51.25.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-11-12-at-10.51.25.png)
 
 **In a word, the way it works:**
 
@@ -25,7 +25,7 @@ If time execution of JS code takes longer, exception will be returned
 
 If you want to prepare **dataflow task with JS scripting** you need to have these settings:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-11-12-at-10.52.41.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-11-12-at-10.52.41.png)
 
 **IMPORTANT:** Source Object: **Server Side Script**
 
@@ -33,11 +33,11 @@ As a result you will get **a new tab JS Script**.
 
 In this Tab you need to put down the main logic which you need:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-11-12-at-10.46.41.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-11-12-at-10.46.41.png)
 
 You can find **possible functions in Server Api**:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-11-12-at-10.47.52.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-11-12-at-10.47.52.png)
 
 **a. get\_data**
 
@@ -47,7 +47,7 @@ You can find **possible functions in Server Api**:
 
 If you struggle to deal with get\_data function, this detailed instruction can come in handy**:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-11-12-at-10.49.22.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-11-12-at-10.49.22.png)
 
 The difference between **get\_data in UI tasks** and **get\_data in JS script** is the way you call this function :
 
@@ -65,20 +65,20 @@ The difference between **get\_data in UI tasks** and **get\_data in JS script** 
 
 **Example:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-298.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-298.png)
 
 **Any manipulations can be provided with JS Script in dataflow task:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-299.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-299.png)
 
 **the magic button Parse JS**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-11-12-at-10.18.06.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-11-12-at-10.18.06.png)
 
 -   gives an opportunity to parse the code on client's side (not execute but parse only)
 -   it helps to find errors in the code before the execution -------> in order to do that remember about some necessary conditions:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-11-12-at-10.22.53.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-11-12-at-10.22.53.png)
 
 **HotKeys:**
 
@@ -88,7 +88,7 @@ The difference between **get\_data in UI tasks** and **get\_data in JS script** 
 
 Default Log of executed dataflow task if you work on get\_data function (it’s possible to debug with the help of write\_log function):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-11-12-at-11.06.55.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-11-12-at-11.06.55.png)
 
 **NOTE**
 
@@ -114,13 +114,13 @@ write\_log({message: '2'})
 
 If you need to increase time out for your purpose, set **server\_side\_script\_is\_ async** in your dataflow task’s settings**:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-300.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-300.png)
 
 **How to use this as a variable in http request:**
 
 1\. you prepare in settings \-----> **server\_side\_script**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-301.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-301.png)
 
 2\. prepare **the url in HTTP request**, using **{#text\_from\_script(!%server\_side\_script%!)#}** where
 
@@ -130,7 +130,7 @@ If you need to increase time out for your purpose, set **server\_side\_script\_i
 
 Instead of **(!%server\_side\_script%!)** you can put down any **JS as a string** with necessary "**return 'something'''** ----> this JS string must return **a string (not an array)**, because it will be inserted into the code straightly
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-11-12-at-10.36.22.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-11-12-at-10.36.22.png)
 
 **REMEMBER** to use double quotes “……”
 

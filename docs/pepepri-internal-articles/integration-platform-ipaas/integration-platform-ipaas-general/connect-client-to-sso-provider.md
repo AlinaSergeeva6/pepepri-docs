@@ -37,7 +37,7 @@ Fill in the following fields in the table:
 
 Once the client provides the credentials (ClientId, ClientSecret and Authority), proceed to the next step.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-279.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-279.png)
 
 Example of filled requirement table
 

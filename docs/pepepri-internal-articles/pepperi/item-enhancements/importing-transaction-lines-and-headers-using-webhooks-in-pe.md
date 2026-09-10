@@ -27,7 +27,7 @@ The "Import Sales Order" task involves transferring transaction headers and line
 
 2.  **Configure Webhook Settings:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-45.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-45.png)
 
 1.  **Configure the SQL Settings:**
 
@@ -126,7 +126,7 @@ select '1', '$#InternalID#' from YourTable
     -   Fields in '$# #$': Represent Pepperi fields (e.g., InternalID, Account.TSABillToName).
     -   Hardcoded values (e.g., 0 for DiscountAmt) can be used where applicable.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-46.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-46.png)
 
 ### Step 2: Handle Special Characters and Filtering
 
@@ -135,7 +135,7 @@ select '1', '$#InternalID#' from YourTable
     -   Use the Replace Tab to escape these characters:
     -   Apply this to all fields where special characters might occur (e.g., BillToName, ShipToAddress).
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/3.png)
 
 -   **Filter Lines and Headers:**
     -   To exclude specific lines (e.g., "blue lines" from campaigns), add a trn\_import\_filter with a logic expression:

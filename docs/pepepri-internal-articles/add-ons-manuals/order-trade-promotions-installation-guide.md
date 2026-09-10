@@ -29,7 +29,7 @@ The Order Trade Promotions module allows to install and configure a system for a
     -   Locate **Order Trade Promotions** in the list.
     -   Click the **Edit Menu** and select **Install**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-633.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-633.png)
 
     -   **Troubleshooting:** If the add-on is missing or access is denied, contact Pepperi support to enable it.
 
@@ -51,7 +51,7 @@ After installing the add-on, the following steps must be performed to fully enab
 1.  **Run Installation per Transaction Type:**
     -   Navigate to **Settings → Promotion Setup → Order TP Setup**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-634.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-634.png)
 
     -   Select each Transaction Type where Order Trade Promotions should apply (e.g., B2B Transaction, Sales Rep Order).
 
@@ -69,11 +69,11 @@ After installing the add-on, the following steps must be performed to fully enab
     -   **Outcome:**
         -   Creates User Defined Tables (prefix PPI\_OrderPromotion).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-635.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-635.png)
 
         -   Creates custom Transaction fields (prefix PPI\_OrderPromotion).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-636.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-636.png)
 
 !!!warning
 #### Note: Do not delete or modify these objects, as it will break the promotion functionality.
@@ -94,7 +94,7 @@ After installing the add-on, the following steps must be performed to fully enab
             -   **Property:** Choose the field (e.g., Account.Size, Transaction.SelectedPaymentMethod).
             -   Click **Add+** for additional properties.
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-637.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-637.png)
 
     -   **Example Types:**
         -   Medium-sized accounts paying by cash:
@@ -118,20 +118,20 @@ After installing the add-on, the following steps must be performed to fully enab
         -   Add the following actions in the transition to the final status (e.g., In Creation → Submit):
             -   **Calculate Formula Action:** Use the PPI\_OrderPromotion\_Trigger field.
 
-                ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-638.png)
+                ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-638.png)
 
             -   **Branch Action:** Use the PPI\_OrderPromotion\_AdditionalPhaseShouldStart field (failure workflow continues to the same status).
 
-                ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-639.png)
+                ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-639.png)
 
             -   **Open Campaign Action:** Use the PPI\_OrderPromotion\_AdditionalPhaseItemExternalID field after the Branch action.
 
-                ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-640.png)
+                ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-640.png)
 
         -   **Note:** Add these actions to intermediate transitions (e.g., Revise → Submit) but not post-submit transitions (e.g., Submit → Paid).
         -   **Outcome:** The workflow ensures promotions are calculated correctly before submission.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-641.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-641.png)
 
 3.  **Indicate Custom Pricing Fields:**
     -   By default, the module uses standard Transaction fields (e.g., SubTotalAfterItemsDiscount, GrandTotal).
@@ -156,13 +156,13 @@ After installing the add-on, the following steps must be performed to fully enab
     -   If the promotion includes an additional phase (e.g., selecting free/discounted items):
         -   Go to **Order TP Setup → Advanced Setup**.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-642.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-642.png)
 
         -   Select a Transaction Type for additional items (a default is provided, or choose a custom one).
         -   Save the configuration.
         -   Further setup occurs in the Order Promotions Editor.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-643.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-643.png)
 
 5.  **Create Item Lists:**
     -   Create at least one Item List via **Item Lists** instructions.
@@ -171,7 +171,7 @@ After installing the add-on, the following steps must be performed to fully enab
         -   Go to **Settings → Promotion Setup → Item TP Setup → Advanced Setup**.
         -   Enter the List ID You can find the List ID as explained in section #9 in Package Promotions Advanced Configuration
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-644.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-644.png)
 
 ---
 

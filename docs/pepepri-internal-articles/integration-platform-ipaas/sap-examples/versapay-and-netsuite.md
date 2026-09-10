@@ -9,7 +9,7 @@ order: 137
 
 You can find the description of general processes between **NetSuite**, **Payment Systems** and **Pepperi** here:
 
-[![Logo](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image) Netsuite and Payment system integration | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/article-drafts/general-about-drafts/payment-systems-and-netsuite)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image) Netsuite and Payment system integration | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/article-drafts/general-about-drafts/payment-systems-and-netsuite)
 
 **Services Demo Environment** (7343) (30013939)
 
@@ -39,7 +39,7 @@ You can find the description of general processes between **NetSuite**, **Paymen
 
 2.  Collect.js Tokenization Docs:
 
-[![Logo](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/c2ee5f63ec6643286b1cddcf2dc498ed88e5c7c0.png) Collect.js Tokenization With Direct ConnectNMI](https://support.nmi.com/hc/en-gb/articles/360009713318-Collect-js-Tokenization-With-Direct-Connect)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/c2ee5f63ec6643286b1cddcf2dc498ed88e5c7c0.png) Collect.js Tokenization With Direct ConnectNMI](https://support.nmi.com/hc/en-gb/articles/360009713318-Collect-js-Tokenization-With-Direct-Connect)
 
 ▶ Copy UI Task "**VersaPay - Update UDT**" from **Services Demo Environment**
 
@@ -49,7 +49,7 @@ You can find the description of general processes between **NetSuite**, **Paymen
 
 The result should be as follows:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-476.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-476.png)
 
 ▶ Copy the following Dataflow Task from the **Services Demo Environment**:
 
@@ -85,7 +85,7 @@ Create two Saved Searches:
 
 ◾ Results:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-472.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-472.png)
 
 ▶ Pepperi Export Payment Card Tokens:
 
@@ -101,4 +101,4 @@ Create two Saved Searches:
 
 ◾ Results:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-473.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-473.png)

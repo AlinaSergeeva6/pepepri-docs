@@ -24,8 +24,8 @@ To retrieve data from the configured Business Central environment, you need to o
 
 Locate the correct endpoint URL in the **OData v4** column. Copy this URL and paste it into the HTTP tab. Set the HTTP method to **GET** to retrieve the data.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-503.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-503.png)
 
 Then using this URLs and Authentication Type = OAuth 2.0 you can get data from BC
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-504.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-504.png)

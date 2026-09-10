@@ -47,19 +47,19 @@ Example 2:
 
 For example, in Dataflow task 'Tas Tabs' we get the following file:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-10.png)
 
 Using the Mapping we can change columns name:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-5.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2-5.png)
 
 After run task with this Mapping you will get a csv where last two columns are UserInternalId and AccountInternalId, but in the table still exist columns Account\_Data\_InternalID and User\_Data\_InternalID. To avoid data duplication use this:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/4-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/4-2.png)
 
 Also in the Mapping you can use the conditions (IIF).
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/5-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/5-3.png)
 
 IIF(UserInternalID='11380835','UserIDis11380835','Nope')
 
@@ -69,7 +69,7 @@ IIF(AccountInternalID='19840506','AccountIdis19840506','Nope')
 
 Resulting csv :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/6-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/6-3.png)
 
 You can also use [formulas](https://kbint.pepperi.com/integration-platform-general/integration-plugin-optional-formulas) in Expression column
 
@@ -87,27 +87,27 @@ Note: order of IDs in join condition matters. First ID must be originated from t
 
 in Dataflow task 'Tas Tabs' **j**oin column 'Name ' of task 'Join-1'
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_15h08_48.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_15h08_48.png)
 
 Resulting csv :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_15h09_03.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_15h09_03.png)
 
 ## Pivot
 
 For example, you have a csv :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_19h17_12.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_19h17_12.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_19h14_07.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_19h14_07.png)
 
 Add to Settings:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_19h19_54.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_19h19_54.png)
 
 Resulting csv :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_19h15_33.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_19h15_33.png)
 
 ## Replace
 
@@ -115,19 +115,19 @@ Replace Tab allows you to replace selected characters from the column to some an
 
 In Replace Tab you should specify such fields: Column: like ***ItemName -*** column where you would like to replace some characters Find: characters combination you would like to replace like ***asd92#,*** Replace: characters combination you would like to place like ***asd212?***
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_17h24_17.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_17h24_17.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_17h25_14.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_17h25_14.png)
 
 Add to Settings **replace with value 1**
 
 Also in the settings is possible to set a run queue:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_17h28_05.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_17h28_05.png)
 
 In result after all:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_17h29_00.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_17h29_00.png)
 
 ## Split
 
@@ -137,43 +137,43 @@ To turn it on add setting **split** with value **1** In Split Tab you should spe
 
 For example, we have :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_16h51_33.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_16h51_33.png)
 
 Pay attention that **Year-Mounth-Time** is equal to date-format **2019-09-17T14:15:54Z**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_16h58_16.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_16h58_16.png)
 
 Add to Settings
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_17h00_06.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_17h00_06.png)
 
 Resulting csv :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_17h02_09.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_17h02_09.png)
 
 ## Union
 
 Union Tab allows you to add additional data from another task with the same Columns Names To turn it on add setting **union** with value **1** It needs to fill some fields **Task/File Name** - Task name you want to add like ***Get Data***, etc
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_19h23_44.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_19h23_44.png)
 
 Add to Settings **union with value 1**
 
 Resulting csv :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-10-04_19h27_59.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-10-04_19h27_59.png)
 
 ## Format
 
 You can set Format for numbers, date and string:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/3.jpg)
 
 To format String, you have to put '**up**' for upper and '**low**' for lower case in Upper/Lowe Case column To format string in UNIX format you should put '**unix**' in Upper/Lowe Case column To turn it on add setting format with value 1 Resulting csv :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2019-12-05_14h10_36.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2019-12-05_14h10_36.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2.jpg)
 
 ## SQL
 

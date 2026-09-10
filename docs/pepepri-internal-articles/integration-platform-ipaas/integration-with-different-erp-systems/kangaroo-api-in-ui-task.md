@@ -28,7 +28,7 @@ When the user starts a transaction and chooses a certain number of items for the
 
 **UI task for receiving and using Kangaroo points:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-385.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-385.png)
 
 **1\. Balance** (The number of points available for a certain account, taken from the Kangaroo API)
 
@@ -40,7 +40,7 @@ To get the values for the account we use, we must take a special ID that the req
 
 In **Dataflow Task** we get:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-386.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-386.png)
 
 This is due to what we specified in the settings http\_row\_element: included
 
@@ -78,7 +78,7 @@ After the transaction is confirmed, a new UI task is launched, which checks whet
 
 Also, the UI Task can be used simply to display the user's balance in Activity:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-387.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-387.png)
 
 Works as in part 1.Balance. The UI Task shown in the example receives, displays on the screen and update the latest value of points for the account.
 

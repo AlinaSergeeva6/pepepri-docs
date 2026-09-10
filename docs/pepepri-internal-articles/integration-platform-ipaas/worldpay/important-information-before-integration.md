@@ -36,7 +36,7 @@ PDF
 You need to get credentials on WorldPay for the connection, in this example they are:
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-30.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-30.png)
 
 **keys used on screenshots:**
 
@@ -67,4 +67,4 @@ You need to get credentials on WorldPay for the connection, in this example they
 
 **Credentials are in use in the following UI tasks:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-22.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2-22.png)

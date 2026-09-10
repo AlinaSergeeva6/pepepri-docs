@@ -8,7 +8,7 @@ order: 40
 
 The feature allows you to upload orders with different transaction IDs with the items from separate transactions and submit them at once. The order items will appear in a table, where you can edit and/or delete each row(which represents the info about each item). Then you can upload transactions.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/11111.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/11111.png)
 
 ## Advantages and disadvantages
 

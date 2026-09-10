@@ -9,7 +9,7 @@ order: 250
 
 By UI task you can implement logic, visualize data. It is used for various types of reports, logic programs. Here is used HTML, CSS, JavaScript, jQuery, Kendo. UI tasks always work only online. The advantage is the use of external libraries, also you can extract data from the Dataflow task, or vice versa, send the necessary data to Dataflow. For example, data for an email attachment that is sent by Dataflow etc.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-6.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2-6.png)
 
 Specify such parameters (all of them are mandatory):
 
@@ -38,8 +38,8 @@ This option could be different for each application
 
 **Main Settings:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2021-02-24_12h50_58.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2021-02-24_12h50_58.png)
 
 Also you can find ready-made structures. Just click on the setting you want and ctrl+V
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2021-02-24_13h03_01.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2021-02-24_13h03_01.png)

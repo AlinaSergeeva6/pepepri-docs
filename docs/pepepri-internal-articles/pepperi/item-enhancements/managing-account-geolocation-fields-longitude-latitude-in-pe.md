@@ -25,7 +25,7 @@ The Longitude and Latitude fields for Accounts in Pepperi are automatically popu
 -   **Solution:**
     -   Manually search the address on Google to identify corrections (e.g., add missing spaces or correct spelling).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-53.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-53.png)
 
     -   Test the corrected address by POSTing it to the Account via the Pepperi API.
     -   If successful, request the customer to update the address in their ERP, as an accounts file upload will overwrite manual changes.

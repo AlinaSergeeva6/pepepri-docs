@@ -28,29 +28,29 @@ This process allows you to connect your Google Drive account to Pepperi for task
 -   Visit the [Google Cloud Console](https://console.cloud.google.com/).
 -   Click **API and Services** in the left-hand menu.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-574.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-574.png)
 
 #### Step 3: Create a Project
 
 -   Press **Select Project**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-575.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-575.png)
 
 -   Click **New Project**, enter a name (e.g., "Pepperi Google Drive Integration"), and create the project.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-576.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-576.png)
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-577.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-577.png)
 
 #### Step 4: Enable the Google Drive API
 
 -   Press **Enable APIs and Services**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-578.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-578.png)
 
 -   Search for **Google Drive API**, select it, and click **Enable**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-579.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-579.png)
 
 #### Step 5: Configure the Consent Screen
 
@@ -58,47 +58,47 @@ This process allows you to connect your Google Drive account to Pepperi for task
 -   Configure the consent screen by providing an app name, support email, and other required details.
 -   Save and continue to the next step.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-580.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-580.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-581.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-581.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-582.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-582.png)
 
 #### Step 6: Configure Scopes
 
 -   Under **Scopes**, add the necessary permissions for the Google Drive API.
 -   Select all relevant scopes.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-583.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-583.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-584.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-584.png)
 
 #### Step 7: Add Test Users
 
 -   In the **Test users** section, add the email addresses of users who will test the integration.
 -   Save the changes.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-585.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-585.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-586.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-586.png)
 
 #### Step 8: Create Credentials
 
 -   Click **Create Credentials** in the left menu and select **OAuth 2.0 Client IDs**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-587.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-587.png)
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-588.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-588.png)
 
 -   Configure the redirect URI as:
 
     `https://integration.pepperi.com/utils/oauth/AuthorizeOAuth2`
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-589.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-589.png)
 
 -   Download the JSON file containing the client ID and secret.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-590.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-590.png)
 
 #### Step 9: Set Up Dataflow Task
 
@@ -115,7 +115,7 @@ This process allows you to connect your Google Drive account to Pepperi for task
 
     -   Press **Continue** and confirm access when prompted.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-591.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-591.png)
 
 ---
 

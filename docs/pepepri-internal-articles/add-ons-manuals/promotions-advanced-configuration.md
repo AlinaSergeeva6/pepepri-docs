@@ -35,7 +35,7 @@ This article addresses the following advanced configurations for Promotions:
 -   **Steps:**
     1.  Go to **Views and Forms → Order Center → Cart Line Menu Configuration**.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-693.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-693.png)
 
     2.  Add **Edit Package** and **Delete Package** options to the menu.
     3.  **Behavior:**
@@ -43,7 +43,7 @@ This article addresses the following advanced configurations for Promotions:
         -   **Mobile App:** Long-tap the leading package item (regular items show Edit/Delete for the item only).
         -   Menu options are context-sensitive, showing "Edit/Delete" for both package and non-package items.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-694.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-694.png)
 
 #### 2. Translate Package Messages
 
@@ -71,7 +71,7 @@ This article addresses the following advanced configurations for Promotions:
 
     4.  **Note:** Messages for selecting quantities per phase are set in the Package Editor, not here.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-695.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-695.png)
 
 **Translate Package Next Discount Messages**
 
@@ -110,15 +110,15 @@ This article addresses the following advanced configurations for Promotions:
         -   Go to **Workflow** tab of PPI\_PackagePromotion.
         -   Edit the In Creation transition in both branches.
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-696.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-696.png)
 
         -   Add the fields to the **Merge Transaction Lines** action (e.g., map TSAmyPrice to TSAmyPrice).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-697.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-697.png)
 
 #### 4. Pass Promotion Code to Line Items in Original Transaction
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-698.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-698.png)
 
 -   **Objective:** Assign a Promotion Code from the Package configuration to each line item in the original transaction for tracking.
 -   **Steps:**
@@ -127,7 +127,7 @@ This article addresses the following advanced configurations for Promotions:
     3.  Edit the **Merge Transaction Lines** action in both branches of the In Creation transition.
     4.  Map PPI\_PackagePromotion\_Start\_PromotionCode to TSAPromoCode.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-699.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-699.png)
 
 #### 5. Merge Pricing Fields from Package to Original Transaction
 
@@ -137,7 +137,7 @@ This article addresses the following advanced configurations for Promotions:
     -   Edit the **Merge Transaction Lines** action in both branches of the In Creation transition in PPI\_PackagePromotion.
     -   Add a mapping: Custom field (e.g., TSACustomUnitPrice) ← PPI\_PackagePromotion\_Start\_UnitPrice (Calculated).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-700.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-700.png)
 
 **Case B: Custom Pricing Fields (UnitPrice, UnitDiscount, etc.)**
 
@@ -146,7 +146,7 @@ This article addresses the following advanced configurations for Promotions:
     -   Replace default fields with custom fields (e.g., UnitPriceAfterDiscount → TSACustomUnitPriceAfterDiscount, UnitDiscount → TSACustomUnitDiscount).
     -   Add a mapping for TotalUnitPriceAfterDiscount: Custom field (e.g., TSACustomTotalPrice) ← PPI\_PackagePromotion\_Start\_ItemTotalPrice (Set By API).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-701.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-701.png)
 
 #### 6. Set Up Predefined Kits (Non-Editable Quantities)
 
@@ -156,30 +156,30 @@ This article addresses the following advanced configurations for Promotions:
         -   Go to **Settings → Promotion Setup → Package TP Setup → Advanced Setup**.
         -   Click **Add**, select new transaction types for both Package and Additional Items (e.g., PPI\_PackagePromotion\_Kit).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-702.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-702.png)
 
     2.  **Configure Transaction Type:**
         -   Go to **Settings → Sales Activities → Transaction Types → \[New Transaction Type\]**.
         -   Set Name (e.g., PPI\_PackagePromotion\_Kit) and Description.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-703.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-703.png)
 
     3.  **Create Custom Quantity Field:**
         -   Add a custom line-item field (e.g., MyUnitsQuantity, type: Number) to return UnitsQuantity.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-704.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-704.png)
 
     4.  **Update Order Center Views:**
         -   Replace UnitsQuantity with MyUnitsQuantity in views (e.g., Medium or Grid Line).
         -   Set as read-only.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-705.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-705.png)
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-706.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-706.png)
 
     5.  **Result:** Users can select the new transaction type in the Package Editor for kits.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-707.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-707.png)
 
 #### 7. Assign Catalogs to Package Transactions
 
@@ -187,7 +187,7 @@ This article addresses the following advanced configurations for Promotions:
 -   **Steps:**
     1.  Go to **Settings → Sales Activities → Transaction Types → \[PPI\_PackagePromotion or PPI\_PackagePromotionAdditionalItems\] → Settings**.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-708.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-708.png)
 
     2.  Assign the desired catalog(s), ideally a separate catalog without filters to avoid user errors.
     3.  For detailed setup, see "Modify the Catalog Setup for Package Promotion Transactions" in the **Packages Trade Promotions Editor Guide**.
@@ -216,7 +216,7 @@ This article addresses the following advanced configurations for Promotions:
             }
             ```
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-709.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-709.png)
 
     3.  **Note:** Only supports discounts, not additional items.
 
@@ -227,7 +227,7 @@ This article addresses the following advanced configurations for Promotions:
     1.  Go to **Settings → Promotion Setup → Package TP Setup → Advanced Setup**.
     2.  Enter the List IDs:
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-710.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-710.png)
 
         -   **Account List ID Format:** \[AG#39949\]AccountList
         -   **Item List ID Format:** \[GL#22b4eef3-130b-4590-8d8b-a0d9395e7d82\]ListView
@@ -237,13 +237,13 @@ This article addresses the following advanced configurations for Promotions:
             -   Go to **Settings → Accounts → Account Lists**.
             -   Open browser debugger (F12), go to Network tab, edit the list, find GetListUIControl → Data → UIControls → Type.
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-711.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-711.png)
 
         -   **Item List or Account List (New Format):**
             -   Go to **Settings → Items → Item Lists** (or **Account Lists (New)**).
             -   Open debugger, edit the list, find GetTemplates → Data → uiControlState → Type.
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-712.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-712.png)
 
 #### 10. Set Field Values on the Package Leading Item Line
 
@@ -253,7 +253,7 @@ This article addresses the following advanced configurations for Promotions:
     -   Edit the header field TSAPPIPackagePromotionStartUpdateLeadingItem.
     -   Add code to set fields (e.g., TSAmyQuantity to 1):
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-713.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-713.png)
 
 #### 11. Apply Package Promotion Discounts to Line Views or Custom Fields
 

@@ -11,7 +11,7 @@ order: 148
 
 Open **SAP Business One\\online\_listener\\SettingsEditor.exe**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-464.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-464.png)
 
 |  |  |  |  |
 | --- | --- | --- | --- |

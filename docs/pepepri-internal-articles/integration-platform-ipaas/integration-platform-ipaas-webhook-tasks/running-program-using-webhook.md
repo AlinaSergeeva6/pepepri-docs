@@ -8,15 +8,15 @@ For example, we need to create a program that will send invoices to the client e
 
 First you need to create a program in the transaction you need.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-314.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-314.png)
 
 Next, you need to select an action - in our case, this is **Send Email:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-315.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-315.png)
 
 Now you see this form:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-316.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-316.png)
 
 To - specify the email on which you will test
 
@@ -58,13 +58,13 @@ Where **264979**– transaction ActivityTypeDefinitionID, You can find this info
 
 Go to Dataflow task, open Settings àCreate Pepperi User Defined Field à Chose dataType (now it is Transaction and find your Transaction) :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-317.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-317.png)
 
 And SendEmail it’s name of your program in back Office.
 
 Webhook task creation:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-318.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-318.png)
 
 Then we created the second Dataflow task which will take the loop over table of first Dataflow task .
 
@@ -100,11 +100,11 @@ URL: take from Webhook task by this way :
 
 Your Webhook à Details à copy Commit Task URL ant put it to HTTP
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-319.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-319.png)
 
 Last step is create a Scheduled job:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-320.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-320.png)
 
 Then go to Details and Run Job.
 

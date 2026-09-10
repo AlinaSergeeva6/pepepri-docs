@@ -6,7 +6,7 @@ order: 297
 
 ### Catalog template
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Image-2019-09-27-12-29-26.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Image-2019-09-27-12-29-26.png)
 
 21KB
 
@@ -20,7 +20,7 @@ Catalog XSLT Template
 
 Fit to page image
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/MicrosoftTeams-image-8.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/MicrosoftTeams-image-8.png)
 
 6KB
 

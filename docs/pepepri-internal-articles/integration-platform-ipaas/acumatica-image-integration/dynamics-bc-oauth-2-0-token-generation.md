@@ -14,11 +14,11 @@ order: 117
 3.  Choose "Auth Type" = OAuth 2.0
 4.  Click on Get Token
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-528.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-528.png)
 
 Here you will need to fill in the required parameters.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-529.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-529.png)
 
 **Initial Parameters**
 
@@ -41,7 +41,7 @@ Here you will need to fill in the required parameters.
 
 Go to your Azure [https://portal.azure.com/](https://portal.azure.com/) application page → **Overview** tab → **Endpoints**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/зображення_2024-03-07_120921980.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/зображення_2024-03-07_120921980.png)
 
 -   **Authorization URL:**
 
@@ -66,7 +66,7 @@ Click on Advanced tab to open additional configurations and fill in:
 -   **Renew Access Token URL** \- same as Access Token URL OAuth 2.0 token endpoint (v1) + ‘?resource=https://api.businesscentral.dynamics.com’
 -   **Resource** - specify ‘[https://api.businesscentral.dynamics.com](https://api.businesscentral.dynamics.com/)’ here
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-530.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-530.png)
 
 Then you can press "Generate Token" and confirm access. The token will need to be regenerated after 6 month (or after the time period set in Azure)
 

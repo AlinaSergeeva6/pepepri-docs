@@ -13,9 +13,9 @@ It can be integrated with Google Ads, with which users can create and review onl
 
 **Goals** might include sales, lead generation, viewing a specific page, or downloading a particular file. Google Analytics' approach is to show high-level, dashboard-type data for the casual user, and more in-depth data further into the report set.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-09-17-at-12.31.31.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-09-17-at-12.31.31.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-09-17-at-12.32.18.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2021-09-17-at-12.32.18.png)
 
 ### How Google Analytics works
 

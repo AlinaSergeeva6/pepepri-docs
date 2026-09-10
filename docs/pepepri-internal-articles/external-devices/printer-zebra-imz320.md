@@ -8,7 +8,7 @@ order: 89
 
 For effective work we should know main elements of the printer:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-46.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-46.jpg)
 
 1) **Turn on button**:
 
@@ -26,11 +26,11 @@ For effective work we should know main elements of the printer:
 
 First of all, we need to install special app in App Store, you can find it by name **Natuurnetwerk:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-37.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2-37.jpg)
 
 Then you can connect you iPad to printer via Bluetooth. Its main app with which pepperi app connects to print. If your iPad can’t find printer, you should install some additional apps like:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-27.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/3-27.jpg)
 
 · **Zebra Printer Setup** – to see and set some printer settings;
 

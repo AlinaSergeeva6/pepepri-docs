@@ -6,13 +6,13 @@ order: 300
 
 By default, sub totals in the template are calculated for 2 fields:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-6.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-6.png)
 
 but if you need to add subtotals for other columns, then you need to write a little additional code in the existing template. This example will describe how to add subtotal for number, decimal with/without currency.
 
 First, add a cell with a new amount to the subtotal line:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2-2.png)
 
 then add this code:
 
@@ -42,7 +42,7 @@ then add this code:
 
 Result:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/3-2.png)
 
 You can download the example here:
 

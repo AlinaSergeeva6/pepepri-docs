@@ -47,11 +47,11 @@ If there is no scheduler.exe then Windows Task Scheduler must be setup.
 
 Create the new job and configure triggers and actions next way:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-477.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-477.png)
 
 Add the path to the old Downloader.exe
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-478.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-478.png)
 
 Run the job and check if it is calling Downloader.exe after 5 minutes.
 
@@ -61,9 +61,9 @@ In order for Downloader to work, correct credentials must be updated.
 
 User and Pass could be found in Backoffice -> ERP Integration -> Configuration
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-479.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-479.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-480.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-480.png)
 
 | Setting | Value |
 | --- | --- |

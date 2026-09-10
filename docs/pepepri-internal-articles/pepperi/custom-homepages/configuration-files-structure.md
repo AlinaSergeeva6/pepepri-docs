@@ -16,7 +16,7 @@ The namespace of the header must be "customHeader".
 
 **You may find custom header code example file in attachment.** **Note: deeplink – part of the url call which used for navigation between elements within webapp.**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/4-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/4-1.png)
 
 Where 1 is Transaction UUID, 2 is catalog/brand parameters**.**
 
@@ -72,15 +72,15 @@ Config.js is javascript file with bunch of constants you may change to achieve t
 
 **Notice. You can made the config file for you own purposes. Be aware that any changes of config file structure eg consts names, object names should be done also for buildHtml() function of body file because it uses cycle structure to parse the config file. The parse sequence based on constants names. See Fig 6.**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/5-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/5-2.png)
 
 Fig 4. Top Image and new Arrivals presented
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/6-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/6-2.png)
 
 Fig 5. Titles
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/7-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/7-1.png)
 
 Fig 6. Config file parser convers constants data to appropriate html elements
 

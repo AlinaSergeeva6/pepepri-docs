@@ -13,7 +13,7 @@ In order to display a PDF file that is on FTP follow the next steps:
 
 **Step#1: prepare a dataflow task** which will take the file from FTP
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/22Capture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/22Capture.PNG)
 
 **Required settings:**
 
@@ -24,15 +24,15 @@ In order to display a PDF file that is on FTP follow the next steps:
 -   storage\_file\_name = the name of the file we want to download;
 -   ftp\_storage\_folder = FTP folder path; requires\_session = disabled checkbox
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2Capture-1.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2Capture-1.PNG)
 
 Run the dataflow task and we see the uploaded file
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/lCapture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/lCapture.PNG)
 
 **Step#2: prepare a UI task** which will do redirect to PDF
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/lllCapture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/lllCapture.PNG)
 
 The UI task then runs a dataflow task that takes the PDF file from FTP and returns the session name in encrypted format.
 
@@ -68,4 +68,4 @@ The UI task then runs a dataflow task that takes the PDF file from FTP and retur
 
 Run the UI task and ready. We rendered a PDF file using a UI task
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/;Capture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/;Capture.PNG)

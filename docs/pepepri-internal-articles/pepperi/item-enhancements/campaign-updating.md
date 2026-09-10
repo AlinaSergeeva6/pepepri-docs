@@ -8,15 +8,15 @@ order: 314
 
 Lets tell that we have Sales Orders with Campaigns, which means that we can choose Departments before going to items:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-47.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-47.png)
 
 When we choose items in 1 department and then go to it again, system will create 2 department transaction lines with same Department:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-48.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-48.png)
 
 And in cart it will be shown like this (2 same departments with 2 same items):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-49.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-49.png)
 
 We want the system to create only 1 for each department where we brought something, because in this case it’s much easier to interact and process with them.
 
@@ -42,7 +42,7 @@ return ret;
 return TSACampaignItemReference.ExternalID;
 ```
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/clip_image008.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/clip_image008.jpg)
 
 You need to add CampaignItemReference Item code from CampaignItemReference Fields to Available Fields.
 
@@ -50,7 +50,7 @@ You need to add CampaignItemReference Item code from CampaignItemReference Field
 
 We need to search transaction lines with same department code and update our items in transaction scope. We will do it with custom form at the beginning (between NEW and IN CREATION in our workflow):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-50.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-50.png)
 
 First of all, we should add our calculated fields and UUID to available fields **in Custom Form**
 
@@ -68,7 +68,7 @@ Code 1
 
 We need to delete transaction lines with same department. We will do it with custom form at the end (between IN CREATION and IN CREATION in our workflow), red arrow:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-51.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-51.png)
 
 Also we will need to do merging (black arrow), but more on that later.
 
@@ -86,7 +86,7 @@ Code 2
 
 #### Merging Transaction Lines:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-52.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-52.png)
 
 We have 2 reasons to do that after our second custom form:
 

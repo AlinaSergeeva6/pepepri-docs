@@ -12,7 +12,7 @@ This guide explains how to use the Item and Order Trade Promotions Editor in Pep
 
 Once the Item and Order Trade Promotions Add-Ons were installed and completed the additional setup (see Item Trade Promotions Installation Guide and Order Trade Promotions Installation Guide), users can configure promotions using the editor. Access the editor through **Settings** in the Webapp.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-651.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-651.png)
 
 ---
 
@@ -75,7 +75,7 @@ This guide walks through configuring example Item and Order promotions to demons
 -   **Steps:**
     1.  **Open Editor:** Click **Add** in the Item Promotions Editor.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-652.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-652.png)
 
     2.  **Fill Promotion Details:**
         -   **Description:** "10-20 Tier Discount for Medium Accounts - Nail Polish"
@@ -88,16 +88,16 @@ This guide walks through configuring example Item and Order promotions to demons
             -   Quantity: 10 → Get: Discount % → Value: 10
             -   Quantity: 20 → Get: Discount % → Value: 15
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-653.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-653.png)
 
     3.  **Save and Set Values:**
         -   Click **Save**, then **Values**.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-654.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-654.png)
 
         -   Select: Account Size = "Medium", Main Category = "Nail Polish".
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-655.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-655.png)
 
     4.  **Result:** Promotion applies immediately after sync, adjusting prices in the cart.
 
@@ -105,9 +105,9 @@ This guide walks through configuring example Item and Order promotions to demons
 
 -   **Steps:** Similar to 1a, but select Account Size = "Large" and Quantity tier: 10 → 20% discount.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-656.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-656.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-657.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-657.png)
 
 **Example 1c: 5% Discount for 3 Items on B2B**
 
@@ -120,13 +120,13 @@ This guide walks through configuring example Item and Order promotions to demons
         -   Get: Discount %
         -   Value: 5
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-658.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-658.png)
 
     -   **Save and Set Items:**
         -   Click **Items**, select by Item ID, choose 3 face creams (e.g., A, B, C).
         -   Select Transaction Type: "B2B eCommerce Order".
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-659.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-659.png)
 
 **Example 1d: Free Item XYZ for 10+ of 2 Items**
 
@@ -140,16 +140,16 @@ This guide walks through configuring example Item and Order promotions to demons
         -   Value: Select "Skin Cream XYZ" (click Edit → Select another item → Item ID).
         -   Discount: 100% (free), Quantity: 1
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-660.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-660.png)
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-661.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-661.png)
 
     -   **Save and Set Items:**
         -   Click **Items**, select by Item ID, choose 2 items (e.g., SE50, SE140).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-662.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-662.png)
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-663.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-663.png)
 
 **Example 1e: Multiple Incentives**
 
@@ -162,7 +162,7 @@ This guide walks through configuring example Item and Order promotions to demons
         -   Tier 1: Get: Price → Value: $10
         -   Tier 2: Get: Additional Item → Value: "Display Unit" (100% discount, Quantity: 1)
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-664.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-664.png)
 
 #### 2. Order Trade Promotions by Price
 
@@ -178,13 +178,13 @@ This guide walks through configuring example Item and Order promotions to demons
         -   By: Price
         -   Promotion Tiers: Price: 500 → Get: Discount % → Value: 10
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-665.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-665.png)
 
     -   **Save and Set Values:** Select Transaction Type = "B2B eCommerce Order".
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-666.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-666.png)
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-667.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-667.png)
 
 **Example 2b: 5% Discount for Cash Payments over $1000**
 
@@ -195,13 +195,13 @@ This guide walks through configuring example Item and Order promotions to demons
         -   By: Price
         -   Promotion Tiers: Price: 1000 → Get: Discount % → Value: 5
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-668.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-668.png)
 
     -   **Set Values:** Select Account Default Payment = "Credit", Payment Method Selected = "Cash".
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-669.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-669.png)
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-670.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-670.png)
 
     -   **Note:** Custom fields (e.g., TSA:DefaultPaymentMethod) must exist with test data.
 
@@ -214,11 +214,11 @@ This guide walks through configuring example Item and Order promotions to demons
         -   By: Price
         -   Promotion Tiers: Price: 100 → Get: Additional User-Selected Items
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-671.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-671.png)
 
     -   **Configure Additional Items:**
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-672.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-672.png)
 
         -   Click **Value** to define the selection list.
         -   **Message Displayed:** Add a pop-up message (e.g., "Select 3 items").
@@ -227,4 +227,4 @@ This guide walks through configuring example Item and Order promotions to demons
         -   **Available Items Rules:** Filter by property (e.g., Main Category = "Skincare"), set Default Quantity = 1.
         -   **Excluded Items Rules:** Exclude specific items (e.g., by Item Code).
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-673.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-673.png)

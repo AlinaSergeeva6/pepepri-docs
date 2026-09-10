@@ -11,15 +11,15 @@ order: 233
 
 For example , you have the next datas (to retrieve data using the task 'GroupBy') :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-20.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-20.png)
 
 for data conversion we need second task (GroupBy-1) and set the following settings: func\_groupby\_cols, func\_col
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/kk.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/kk.png)
 
 The final file will contain the following data:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-15.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/2-15.png)
 
 ## Group By with aggregation function
 

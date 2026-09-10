@@ -48,13 +48,13 @@ Unlike calculated fields, scripts are run every time the transaction is open eve
 3) Go to Settings -> Sales Activities -> Transaction Types and select the transaction for which the Script will be created;
 4) Open the "Events" tab:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-152.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-152.png)
 
 5) Add new Event:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-153.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-153.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-154.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-154.png)
 
 There are several options for when the Script will be run:
 
@@ -75,16 +75,16 @@ Using the '**on loaded**' will result in items **after** catalog filters.
 
 6) Open the Event:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-155.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-155.png)
 
 7) Add **UserScriptBlock** and click on Edit:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-156.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-156.png)
 
 1.  Select the script from the dropdown;
 2.  In parameters find `transactionUUID` parameter, set "Dynamic" and "TransactionUUID" from the drop-downs:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-157.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-157.png)
 
 ---
 
@@ -257,11 +257,11 @@ pepperi.environment.isWebApp() // to identify whether it is webapp
 
 Used to generate **dynamic HTML** for Rich Text page block. Could be used to display dynamic charts etc.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-158.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-158.png)
 
 1.  Create a script with '**configuration**' param, type Object:
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-159.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-159.png)
 
 2.  In the script:
     1.  create the HTML markup,
@@ -286,29 +286,29 @@ In resource views (e.g. UDC viewers) you can filter incoming data.
 
 1) Pages -> Resource Views:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-160.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-160.png)
 
 2) Add new:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-161.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-161.png)
 
 3) "Events" tab -> Add:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-162.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-162.png)
 
 4) Select Event: OnResourceListLoad -> Click "Update":
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-163.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-163.png)
 
 5) Drag and drop "UserScriptsBlock" and select your Script:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-164.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-164.png)
 
 6) Set parameter:
 -   AccountUUID;
 -   ResourceName (e.g. the name of UDC);
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-165.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-165.png)
 
 #### Script
 
@@ -384,13 +384,13 @@ Use case: button "Cart" with a label that shows the total sum of the last transa
 
 1) Page -> Buttons -> Select flow:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-166.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-166.png)
 
 2) In Flow Picker -> buttonObj (mandatory parameter):
 -   Dynamic;
 -   configuration;
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-167.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-167.png)
 
 Other parameters are optional.
 

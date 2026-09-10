@@ -14,7 +14,7 @@ order: 88
 
 **Print button** - button which can be used for testing, because code will start compiling automatically.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-47.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-47.png)
 
 If you look on the code, you will see, that there js code which will transfer html to ZPL.
 

@@ -20,22 +20,22 @@ order: 62
 1.  **Open Transaction**:
     -   Open a transaction that uses the **PPM add-on** and wait for it to load.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-03-11-112359.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2025-03-11-112359.png)
 
 2.  **Attach Debugger**:
     -   Open the **script folder** in your project.
     -   Attach the debugger in VS Code.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-03-11-112459.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2025-03-11-112459.png)
 
     -   If the debugger attaches successfully, you will see logs in the **Debug Console**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-03-11-112529.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2025-03-11-112529.png)
 
 3.  **Check Logs**:
     -   Look for logs prefixed with **PPM** – these are the necessary logs for debugging the PPM module.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-804.jpg)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-804.jpg)
 
 ---
 
@@ -43,11 +43,11 @@ order: 62
 
 -   Go back to the transaction and trigger the **pricing calculation**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-03-11-112602.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2025-03-11-112602.png)
 
 -   In **VS Code**, you will see the **debug breakdown** and the current state of the pricing calculation.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_8.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot_8.png)
 
 ---
 
@@ -57,7 +57,7 @@ order: 62
     -   **Edit the script code** directly in VS Code.
     -   **Add breakpoints** or additional debugger statements at specific lines in the code.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_3-1.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot_3-1.png)
 
 ---
 
@@ -66,13 +66,13 @@ order: 62
 1.  **Close Transaction**:
     -   Close the transaction after making changes to the script.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_4.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot_4.png)
 
 2.  **Run Sync**:
     -   Go to the **main screen** and run the **sync process**.
     -   **Note**: Re-syncing does not reload script files, so your code changes remain in the application.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_5.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot_5.png)
 
 ---
 
@@ -81,12 +81,12 @@ order: 62
 1.  **Reopen Transaction**:
     -   Return to the transaction and trigger the pricing calculation again.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_6.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot_6.png)
 
 2.  **Debugger Stops at New Code**:
     -   In **VS Code**, the debugger will stop at the lines you added or modified, allowing you to inspect the state and verify the changes.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_9.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot_9.png)
 
 ---
 
@@ -303,7 +303,7 @@ To identify the reason why certain transaction items have a zero promotion disco
 -   **Issue**: The promotion provides a credit note instead of a real discount.
 -   **Action**: Verify in the UI by checking the package editor for credit notes.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-805.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-805.png)
 
 ---
 

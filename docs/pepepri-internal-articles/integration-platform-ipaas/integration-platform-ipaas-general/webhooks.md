@@ -11,7 +11,7 @@ Webhook - tool that allows you to send transaction data somewhere, for example t
 
 To create Webhook Task you have to select "Webhook Tasks" in 'Manage Tasks' and press 'Add New Task'
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-11.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/1-11.jpg)
 
 ### Task Name
 

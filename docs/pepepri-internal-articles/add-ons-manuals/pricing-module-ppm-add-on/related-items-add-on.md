@@ -11,7 +11,7 @@ order: 54
 
 The Related Items add-on allows users to associate and display items related to a specific catalog item (e.g., substitutions, recommended purchases, or grouped items) in a carousel on the Item Information page. Relationships are defined through uploaded data, supporting both web and mobile platforms. For example, the item "Gouda Cheese" (CH001) may have related items (CH002–CH006) displayed based on factors like low stock substitutions or promotional pricing.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-883.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-883.png)
 
 ---
 
@@ -49,30 +49,30 @@ A collection is a list of items and their related items, defined by associations
 1.  **Manually:**
     -   Go to **Settings -> Items -> Item Collections**.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-884.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-884.png)
 
     -   Click **Add Collection**.
     -   Enter a name and description (avoid special characters like +, -, %, &, etc.).
     -   Add the **Item ExternalID** and related items (up to 100 manually; use import/export for more).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-885.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-885.png)
 
     -   Enter related **Item ExternalIDs** one by one or use semicolons (e.g., Item11; Item12; Item13).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-886.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-886.png)
 
     -   Save the collection.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-887.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-887.png)
 
     -   Add more items as needed.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-888.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-888.png)
 
 2.  **Import via CSV:**
     -   Go to **Settings -> Items -> Item Collections**, click the menu, and select **Import**.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-889.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-889.png)
 
     -   Upload a CSV file with the following columns:
         -   CollectionName
@@ -107,7 +107,7 @@ A collection is a list of items and their related items, defined by associations
     -   Enter a **Name** (e.g., "Bought Together"); the API Name (e.g., TSABoughtTogether) is auto-generated.
     -   Select the associated collection.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-890.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-890.png)
 
 5.  Add multiple fields for additional carousels if needed.
 
@@ -121,7 +121,7 @@ A collection is a list of items and their related items, defined by associations
 
 4.  Add a **Splitter** field above the carousel for a title.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-891.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-891.png)
 
 ---
 
@@ -129,4 +129,4 @@ A collection is a list of items and their related items, defined by associations
 
 The carousel displays in the app (mobile and web) with items based on the **Small Thumbnail View** configuration.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-892.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-892.png)

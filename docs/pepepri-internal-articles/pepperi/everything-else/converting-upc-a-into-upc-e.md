@@ -9,11 +9,11 @@ order: 265
 -   UPC or UPC-A - consists of 12 digits that are uniquely assigned to each trade item.
 -   UPC-E is the condensed version of the standard sized UPC-A numeric barcode.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-254.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-254.png)
 
 UPC (UPC-A) barcode
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-255.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-255.png)
 
 UPC-E barcode
 

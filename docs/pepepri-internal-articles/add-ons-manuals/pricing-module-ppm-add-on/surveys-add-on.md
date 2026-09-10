@@ -20,7 +20,7 @@ Survey is a new feature in Pepperi, which is presented with a fancy UI and allow
 
 Example of survey view for end user:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_1-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot_1-1.png)
 
 survey view
 
@@ -48,13 +48,13 @@ On Survey View Load
 
     Edit schema of MySurveys and assign OnSurveyViewLoad script to “OnSurveyFieldChange”, “OnSurveyQuestionChanged” and “OnSurveyViewLoad” events.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_4-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot_4-1.png)
 
 events
 
 1.  Create new page and add a survey block to it. Map this page to ‘surveys’ slug (create it if does not exist).
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_2-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot_2-1.png)
 
 survey block
 
@@ -92,7 +92,7 @@ Survey Builder can be accessed from Settings -> Sales Acvivities -> Survey Build
 
 Except default settings and features you can create custom fields for your purposes (mainly for filtering) which called ‘Additional Fields’:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_5-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot_5-1.png)
 
 Additional Fields
 

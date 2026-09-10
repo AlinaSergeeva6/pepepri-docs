@@ -29,21 +29,21 @@ This integration allows you to connect Zoho ERP to Pepperi via HTTP requests, pr
 
 -   **Default Mapping:** Items are mapped by default (specific mapping details not provided; consult Zoho ERP documentation for customization).
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-606.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-606.png)
 
 -   **Item List and Page:** The item list and item page layouts are predefined (examples not provided; refer to Zoho ERP UI for visual reference).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-607.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-607.png)
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-608.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-608.png)
 
 -   **Upload Examples:** Data for items and price lists can be uploaded (specific examples not provided; prepare data in JSON or CSV format as per Zoho API requirements).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/CleanShot-2022-11-18-at-10.06.27@2x.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/CleanShot-2022-11-18-at-10.06.27@2x.png)
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/CleanShot-2022-11-18-at-10.06.12@2x.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/CleanShot-2022-11-18-at-10.06.12@2x.png)
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/CleanShot-2022-11-18-at-10.05.48@2x.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/CleanShot-2022-11-18-at-10.05.48@2x.png)
 
 -   In Zoho ERP, use the upload functionality to add items and price lists manually or via API endpoints.
 
@@ -54,7 +54,7 @@ This integration allows you to connect Zoho ERP to Pepperi via HTTP requests, pr
     -   Copy the existing dataflow tasks that retrieve data from Zoho.
     -   Update the credentials with your own Zoho account details (e.g., API key, access token).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-609.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/image-609.png)
 
 -   **HTTP Request Setup:**
     -   In the Pepperi iPaaS, create or modify a dataflow task.

@@ -11,15 +11,15 @@ order: 34
 
 One of the best solutions among existing returns. Allows you to return items based on existing invoices, but more customizable and very flexible when it comes to styles, includes searching by Invoice ID or Product ID.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2023-03-31-122224.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2023-03-31-122224.png)
 
 **The UI task shows a list of all items and the number of items that can be returned.**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2023-03-31-122810.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2023-03-31-122810.png)
 
 **Select the items you would like to return and their quantity.**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2023-03-31-122904.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot-2023-03-31-122904.png)
 
 **You can then view the items you have selected in your cart and submit a return.**
 
