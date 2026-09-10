@@ -80,3 +80,8 @@
 .md-search__input::placeholder {
     color: #9daab6 !important;
 }
+/* Hide icons inside the sidebar menu */
+.md-sidebar--primary .md-nav__link > .md-icon,
+.md-sidebar--primary .md-nav__item .md-icon {
+    display: none !important;
+}
