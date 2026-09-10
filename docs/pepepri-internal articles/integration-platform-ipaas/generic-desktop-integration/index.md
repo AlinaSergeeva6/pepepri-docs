@@ -2,7 +2,7 @@
 title: "Generic Desktop Integration"
 label: "Generic Desktop Integration"
 order: 134
-icon: file-directory
+icon: material/folder
 ---
 # Generic Desktop Integration
 

@@ -2,7 +2,7 @@
 title: "PDF"
 label: "PDF"
 order: 229
-icon: file-directory
+icon: material/folder
 ---
 # PDF
 

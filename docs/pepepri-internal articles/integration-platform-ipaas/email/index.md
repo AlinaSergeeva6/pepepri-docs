@@ -2,7 +2,7 @@
 title: "Email"
 label: "Email"
 order: 240
-icon: file-directory
+icon: material/folder
 ---
 # Email
 

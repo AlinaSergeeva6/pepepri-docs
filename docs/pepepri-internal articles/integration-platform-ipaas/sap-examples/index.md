@@ -2,7 +2,7 @@
 title: "SAP Examples"
 label: "SAP Examples"
 order: 144
-icon: file-directory
+icon: material/folder
 ---
 # SAP Examples
 

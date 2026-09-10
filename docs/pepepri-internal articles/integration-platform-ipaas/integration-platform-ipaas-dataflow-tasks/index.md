@@ -2,7 +2,7 @@
 title: "Integration Platform (IPAAS) – Dataflow tasks"
 label: "Integration Platform (IPAAS) – Dataflow tasks"
 order: 245
-icon: file-directory
+icon: material/folder
 ---
 # Integration Platform (IPAAS) – Dataflow tasks
 

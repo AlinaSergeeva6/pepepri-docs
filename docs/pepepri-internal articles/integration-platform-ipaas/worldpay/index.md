@@ -2,7 +2,7 @@
 title: "WorldPay"
 label: "WorldPay"
 order: 197
-icon: file-directory
+icon: material/folder
 ---
 # WorldPay
 

@@ -2,7 +2,7 @@
 title: "Acumatica Image Integration"
 label: "Acumatica Image Integration"
 order: 122
-icon: file-directory
+icon: material/folder
 ---
 # Acumatica Image Integration
 

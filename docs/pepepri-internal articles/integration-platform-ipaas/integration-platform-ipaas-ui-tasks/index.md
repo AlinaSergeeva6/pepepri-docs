@@ -2,7 +2,7 @@
 title: "Integration Platform (IPAAS) – UI tasks"
 label: "Integration Platform (IPAAS) – UI tasks"
 order: 213
-icon: file-directory
+icon: material/folder
 ---
 # Integration Platform (IPAAS) – UI tasks
 

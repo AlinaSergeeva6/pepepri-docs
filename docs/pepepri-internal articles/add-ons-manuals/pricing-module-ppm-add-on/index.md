@@ -2,7 +2,7 @@
 title: "Pricing Module (PPM) Add-on"
 label: "Pricing Module (PPM) Add-on"
 order: 67
-icon: file-directory
+icon: material/folder
 ---
 # Pricing Module (PPM) Add-on
 

@@ -2,7 +2,7 @@
 title: "NetSuite Integration"
 label: "NetSuite Integration"
 order: 175
-icon: file-directory
+icon: material/folder
 ---
 # NetSuite Integration
 

@@ -3,7 +3,7 @@ title: "XSLT template"
 label: "XSLT template"
 description: "Dynamic XSLT template with 3*3 images"
 order: 311
-icon: file-directory
+icon: material/folder
 ---
 # XSLT template
 

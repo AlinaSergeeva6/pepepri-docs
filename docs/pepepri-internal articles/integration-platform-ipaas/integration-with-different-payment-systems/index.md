@@ -2,7 +2,7 @@
 title: "Integration with different Payment Systems"
 label: "Integration with different Payment Systems"
 order: 199
-icon: file-directory
+icon: material/folder
 ---
 # Integration with different Payment Systems
 

@@ -2,7 +2,7 @@
 title: "Integration Platform (IPAAS) – Webhook tasks"
 label: "Integration Platform (IPAAS) – Webhook tasks"
 order: 222
-icon: file-directory
+icon: material/folder
 ---
 # Integration Platform (IPAAS) – Webhook tasks
 

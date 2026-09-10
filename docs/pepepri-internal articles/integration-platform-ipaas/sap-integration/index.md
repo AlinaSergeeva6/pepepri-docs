@@ -2,7 +2,7 @@
 title: "SAP Integration"
 label: "SAP Integration"
 order: 157
-icon: file-directory
+icon: material/folder
 ---
 # SAP Integration
 

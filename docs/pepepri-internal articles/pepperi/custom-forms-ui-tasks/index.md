@@ -2,7 +2,7 @@
 title: "Custom Forms & UI Tasks"
 label: "Custom Forms & UI Tasks"
 order: 324
-icon: file-directory
+icon: material/folder
 ---
 # Custom Forms & UI Tasks
 

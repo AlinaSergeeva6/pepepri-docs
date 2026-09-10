@@ -2,7 +2,7 @@
 title: "Integration with different ERP Systems"
 label: "Integration with different ERP Systems"
 order: 185
-icon: file-directory
+icon: material/folder
 ---
 # Integration with  different ERP Systems
 

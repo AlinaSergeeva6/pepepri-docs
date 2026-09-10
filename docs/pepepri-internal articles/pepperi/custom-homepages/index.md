@@ -2,7 +2,7 @@
 title: "Custom HomePages"
 label: "Custom HomePages"
 order: 292
-icon: file-directory
+icon: material/folder
 ---
 # Custom HomePages
 

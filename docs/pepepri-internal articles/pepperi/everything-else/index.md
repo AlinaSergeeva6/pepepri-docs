@@ -2,7 +2,7 @@
 title: "Everything else ..."
 label: "Everything else ..."
 order: 266
-icon: file-directory
+icon: material/folder
 ---
 # Everything else ...
 

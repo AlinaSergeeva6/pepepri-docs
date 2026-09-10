@@ -2,7 +2,7 @@
 title: "Item Enhancements"
 label: "Item Enhancements"
 order: 320
-icon: file-directory
+icon: material/folder
 ---
 # Item Enhancements
 

@@ -2,7 +2,7 @@
 title: "Sales Activities"
 label: "Sales Activities"
 order: 330
-icon: file-directory
+icon: material/folder
 ---
 # Sales Activities
 

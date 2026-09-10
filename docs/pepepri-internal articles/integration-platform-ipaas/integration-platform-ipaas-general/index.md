@@ -2,7 +2,7 @@
 title: "Integration Platform (IPAAS) – GENERAL"
 label: "Integration Platform (IPAAS) – GENERAL"
 order: 260
-icon: file-directory
+icon: material/folder
 ---
 # Integration Platform (IPAAS) – GENERAL
 

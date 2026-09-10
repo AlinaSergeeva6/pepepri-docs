@@ -2,7 +2,7 @@
 title: "Integration Platform (IPAAS) - Tools"
 label: "Integration Platform (IPAAS) - Tools"
 order: 208
-icon: file-directory
+icon: material/folder
 ---
 # Integration Platform (IPAAS) - Tools
 
