@@ -19,11 +19,11 @@ Requires the extensions for new Pages. See [Pages Add-on](/add-ons-manuals/prici
 1.  Go to Pepperi Backoffice -> Configuration -> Scripts
 2.  Select the script you need to debug, then click on pencil and Debugger:
 
-![](/static/image-206.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-206.png)
 
 1.  The debugging space will be opened:
 
-![](/static/image-207.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-207.png)
 
 #### Debugging space consists of:
 
@@ -54,9 +54,9 @@ If the script runs successfully it will open a new tab using the resulting link 
 1.  Go to Pepperi Backoffice -> Configuration -> Flows
 2.  Select the flow you need to debug, then click on pencil and Test:
 
-![](/static/image-208.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-208.png)
 
-![](/static/image-209.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-209.png)
 
 #### Debugging space consists of:
 

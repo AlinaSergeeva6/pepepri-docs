@@ -28,7 +28,7 @@ If you want to **reload all the images**, you should remove 'uploaded.xml' file 
 
 ### Configuration for the first dataflow task
 
-![](/static/image-467.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-467.png)
 
 1.  **Listener\_*****run*****\_exe** should contain the path for SAP listener on the client's server
 2.  **Staticfile** is a path to the final csv file with all the necessary data.
@@ -46,7 +46,7 @@ FROM  OITM t0, OADP t1
 
 ### Configuration for the second dataflow task
 
-![](/static/image-468.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-468.png)
 
 **Listener\_*****run*****\_exe** should contain the path for SAP Image Exporter on the client's server
 

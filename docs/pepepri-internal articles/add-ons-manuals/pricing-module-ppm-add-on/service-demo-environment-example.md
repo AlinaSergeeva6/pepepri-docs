@@ -67,19 +67,19 @@ The following dataflow tasks are used to manage related items in the Service Dem
         -   **Body Example:**
             -   **CollectionName**: Name of the collection you'd like to update.
 
-                ![](/static/image-893.png)
+                ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-893.png)
 
                 -   **ItemExternalID**: External ID of the item to which related items will be assigned.
 
-            ![](/static/image-894.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-894.png)
 
             -   **RelatedItems:** Array of Item External IDs which will be assigned to the main item.
 
-            ![](/static/image-895.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-895.png)
 
             -   **Key:** CollectionName\_ItemExternalID.
 
-            ![](/static/image-896.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-896.png)
 
             -   **JSON Example:**
 
@@ -108,11 +108,11 @@ The following dataflow tasks are used to manage related items in the Service Dem
             -   **MainKey**: "4f9f10f3-cd7d-43f8-b969-5029dad9d02b\_CPIRelation"
             -   **SecondaryKey:** "CollectionName\_\[UUID of the main item\]":
 
-                ![](/static/image-897.png)
+                ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-897.png)
 
             -   **Values**: \[{"RelatedItems":\["**UUID** of assigned item","**UUID2** of assigned item"....\]}\]
 
-            ![](/static/image-898.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-898.png)
 
             -   **JSON Example:**
 

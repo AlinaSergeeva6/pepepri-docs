@@ -42,7 +42,7 @@ This job will require your patience and being attention!
 1.  Copy group of tasks **"Connect Buyers using API"** from **Services Demo Environment** plugin to your target plugin
 2.  Create schedule job from each subfolder. There should be 6 jobs, **None** **of them scheduled.** Use Create Job From Task button do it it easily
 
-    ![](/static/image-960.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-960.png)
 
      List of created jobs:
 
@@ -55,92 +55,92 @@ This job will require your patience and being attention!
 
 3.  Rename each of the task inside subfolders to represent JOB ID:
 
-    ![](/static/image-961.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-961.png)
 
      result:
 
-    ![](/static/image-962.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-962.png)
 
 4.  Edit this task:
 
-    ![](/static/image-963.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-963.png)
 
      Change source to be the task with correct name:
 
-    ![](/static/image-964.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-964.png)
 
      Change mapping to represent correct next job ID. Logic is pretty simple - if contact is a buyer we will fire job 'Is Already Buyer' otherwise we will trigger 'Connect Buyer' so in IIF we need to fill in this case jobs IDs of relevant jobs:
 
-    ![](/static/image-965.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-965.png)
 
      result will look accordingly:
 
-    ![](/static/image-966.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-966.png)
 
 5.  Edit this task:
 
-    ![](/static/image-967.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-967.png)
 
      Change source of the task:
 
-    ![](/static/image-968.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-968.png)
 
      go to HTTP tab, change token, make sure you are using YOUR ENVIRONMENT token:
 
-    ![](/static/image-969.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-969.png)
 
 6.  Repeat steps 4-5 for folder Catch Disconnect Webhook. Logic for Check If Already Disconnect Buyer is the same - either your buyer is connected and you need to disconnect it or it is already disconnected and you need to run job which says it is already disconnected buyer
 
-    ![](/static/image-970.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-970.png)
 
 7.  Fix sources here in these tasks
 
-    ![](/static/image-971.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-971.png)
 
      in task Connect Buyer edit HTTP tab you need to edit 2 values:
 
-    ![](/static/image-972.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-972.png)
 
      The first one, profile ID is a contact person profile ID, usually Buyer, take it from pepperi resources in ipaas
 
-    ![](/static/image-973.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-973.png)
 
      Second one is optional and can be taken from here in backoffice
 
-    ![](/static/image-974.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-974.png)
 
-    ![](/static/image-975.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-975.png)
 
      or can be removed at all
 
 8.  Repeat steps 7-8 for disconnect buyer folder
 
-    ![](/static/image-976.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-976.png)
 
 9.  There are 2 almost the same folders
 
-    ![](/static/image-977.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-977.png)
 
      Edit these tasks sources. You can edit email send properties here
 
-    ![](/static/image-978.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-978.png)
 
 10.  Prepare Postman Library for customer You can download example here with 3 major changes for each request 1. change auth token
 
-     ![](/static/image-979.png)
+     ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-979.png)
 
       2. change job id to represent ID of catch connect or catch disconnect job accordingly
 
-     ![](/static/image-980.png)
+     ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-980.png)
 
       3. change body so it will be clear to customer or maybe just explain what each parameter means
 
-     ![](/static/image-981.png)
+     ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-981.png)
 
 ### Advanced configuration
 
 If customer is not created yet in pepperi you might need to export them before checking buyer. In order to do that please add additional task to job:
 
-![](/static/image-982.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-982.png)
 
-![](/static/image-983.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-983.png)

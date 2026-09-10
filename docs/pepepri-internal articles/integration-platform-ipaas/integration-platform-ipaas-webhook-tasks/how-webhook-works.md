@@ -12,7 +12,7 @@ In Pepperi we have two different services which allow to do retry - synchronous 
 
 This is default (legacy) Pepperi service which makes retry in different periods of time. To activate it, just add workflow action 'Webhook' between in creation and submitted. 'Retry' checkbox should be checked
 
-![](/static/image-310.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-310.png)
 
 If you want to understand, how does it work, visit
 
@@ -24,7 +24,7 @@ this service will redirect you to your personal link you can put as webhook url,
 
 Save it and trigger action - submit order. Check your webhook site URL:
 
-![](/static/image-311.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-311.png)
 
 Means, Webhook action in workflow with checked checkbox 'retry' (**Invoker**) is sending HTTP request to the URL specified inside with such body:
 
@@ -51,14 +51,14 @@ Means, Webhook action in workflow with checked checkbox 'retry' (**Invoker**) is
 
 If you will wait 5 minutes, you will see, that another request came to the same url in 5 min - Thats what Invoker actually do - Webhook.test didn\`t send back any response to Invoker, so this service think that transition was not successfull and it tries to retry it. Invoker make retry up to 20 times, each next try increasing time delta. Next request will come in 15 min, then in 30 min, etc. All the next tries will come to synchronous query which brings another isuue - this query could be too long in case of IPAAS multiple failures
 
-![](/static/image-312.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-312.png)
 
 ### Amazon Add-on
 
 Instructions how to install it you can find here
 
-[![Logo](/static/image) Amazon Webhook Service | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/integration-platform-webhook-tasks-examples/amazon-webhook-service)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/static/image) Amazon Webhook Service | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/integration-platform-webhook-tasks-examples/amazon-webhook-service)
 
 The main difference of this process is that each retry will come to async nodejs 'query' - retry will be done with 5 min interval. Number of retries could be set in url as parameter. Also, be careful - checkbox should be unchecked. This checkbox is changing body request. Example of body with unchecked checkbox :
 
-![](/static/image-313.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-313.png)

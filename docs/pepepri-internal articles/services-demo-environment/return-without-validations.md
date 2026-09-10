@@ -11,7 +11,7 @@ order: 36
 
 This return transaction type is the simplest return we can implement. Requires no complexity to implement. Only the items you need to add to your cart and the ability to add an invoice ID as a remark.
 
-![](/static/Screenshot-2023-03-30-110529.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2023-03-30-110529.png)
 
 ### Advantages and disadvantages
 

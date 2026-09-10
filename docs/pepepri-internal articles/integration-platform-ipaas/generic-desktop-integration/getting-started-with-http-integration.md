@@ -13,7 +13,7 @@ Commonly, clients HTTP API should have user authentication.
 
 There are a few auth types that may differ with credentials they use.
 
-![](/static/1-42.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-42.png)
 
 (Pic 1.)
 
@@ -23,7 +23,7 @@ So first thing you need to do is to add the credentials to Pepperi integration a
 
 You can to do so by adding apiuser and apipass setting to the General Settings of the integration profile (Pic 1.). Please note, that, obviously, setting application must be Generic HTTP Connector in our case.
 
-![](/static/2-31.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-31.png)
 
 2\. **Dataflow task setup for retrieving data.**
 
@@ -31,7 +31,7 @@ To get data from your client’s API via dataflow task you need to configure it 
 
 Firstly, create dataflow task with appropriate parameters. Lets take Account Upload as an example.
 
-![](/static/3-23.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3-23.png)
 
 **Task Name** - whatever task name you need (Accounts in this example case)
 
@@ -43,7 +43,7 @@ Firstly, create dataflow task with appropriate parameters. Lets take Account Upl
 
 After that we need to configure a data source. In this case we retrieving data by GET call with URL provided by client. Depending on the client’s data and API structure, the link appearance may vary. Go to Dataflow Task settings -> HTTP.
 
-![](/static/4-18.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4-18.png)
 
 **Method** \- Depending on the API structure. POST or GET commonly (GET in this example)
 
@@ -65,7 +65,7 @@ The header itself looks like:
 
 To generate it using Integration platform you need to set 2 settings:
 
-![](/static/image-492.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-492.png)
 
 And in HTTP tab add such string as header **Authorization: Basic {#base64(!%apiuser%!\\:!%apipass%!)#}**
 
@@ -73,15 +73,15 @@ The easiest way to obtain it is Postman.
 
 By using Authorization tab of Postman and providing Username and Password, the software will generate necessary headers you may use in Integration.
 
-![](/static/5-16.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/5-16.png)
 
-![](/static/6-14.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/6-14.png)
 
 #### Content-Type
 
 Depending on the API configuration you also require to set the content type as one of the headers. In this example we are using the most common JSON content type.
 
-[![Logo](/static/favicon-1.ico) Content-Type header - HTTP | MDNMDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/static/favicon-1.ico) Content-Type header - HTTP | MDNMDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type)
 
 #### Unique Dataflow task settings used with HTTP:
 

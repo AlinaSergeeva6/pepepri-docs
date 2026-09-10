@@ -14,7 +14,7 @@ To make sure you’re using the newest version:
 
 1.  Open Addon Manager
 
-![](/static/Open-Addon-Manager.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Open-Addon-Manager.png)
 
 2\. Check whether you have these parameters in the query for the url pass
 
@@ -24,7 +24,7 @@ To make sure you’re using the newest version:
 
 3\. Find addon ‘Homepage Editor’
 
-![](/static/find-addon-‘Homepage-Editor’.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/find-addon-‘Homepage-Editor’.png)
 
 #### Here you can check which version of the editor you have got right now, and which one is available
 
@@ -32,7 +32,7 @@ To make sure you’re using the newest version:
 
 After verifying the version or installation of the addon, first of all, in the sidebar, you should see the sections for the addon.
 
-![](/static/After-verifying-the-version-or-installation-of-the-addon,-first-of-all,-in-the-sidebar,-you-should-see-the-sections-for-the-addon..png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/After-verifying-the-version-or-installation-of-the-addon,-first-of-all,-in-the-sidebar,-you-should-see-the-sections-for-the-addon..png)
 
 **Header Editor** – allows to change the config header file
 
@@ -56,7 +56,7 @@ After verifying the version or installation of the addon, first of all, in the s
 
 There are 3 buttons in top right corner. **The first button** redirects the user to the git repository with various templates that can be used immediately, the **2nd and 3rd buttons** redirect the user back to **Header and Body editors.**
 
-![](/static/image-100.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-100.png)
 
 Menu Editor page has 2 tabs:
 
@@ -92,15 +92,15 @@ You can configure all parts of the template, it’s just matter of time and requ
 
 The repository has different branches, each branch is a separate template for a customer. Name of the branch is the name of the customer.
 
-![](/static/image-101.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-101.png)
 
 **IMPORTANT!** If you work with a new customer, who has different layout or a new functionality, please try to notify people responsible for git, to add your customer template to the repository.
 
 All templates have the same structure, which looks like this:
 
-![](/static/image-102.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-102.png)
 
-![](/static/image-103.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-103.png)
 
 Template folder structure Root folder structure
 
@@ -128,7 +128,7 @@ upload/remove stuff with template is done in the **Settings** tab.
 
 Upload addon homepage configuration file in the Addon Homepage Configuration block. (Remember, the template is called - **addon-homepage-tabs.json**)
 
-![](/static/image-104.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-104.png)
 
 ### Create Homepage Profile
 
@@ -138,15 +138,15 @@ At first you will see that there is a table with all your profiles. Now you can 
 
 **Important**! The first profile is always called **Buyer**, because default setting of the template work only with the Buyer profile. You can create another profile after the Buyer one.
 
-![](/static/image-105.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-105.png)
 
 **Click ‘Add Profile’, the dialog will show up. Put profile name and description and click ‘Add’.**
 
-![](/static/image-106.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-106.png)
 
 **After Homepage Profile will be create you’ll see the updated table.**
 
-![](/static/image-107.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-107.png)
 
 Besides Name and Description fields, there are 3 more fields:
 
@@ -166,21 +166,21 @@ After homepage profile is created, you need to assign the created files to the u
 
 Open WebApp Main Bar page
 
-![](/static/image-108.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-108.png)
 
 Here you should see the user profiles. If you don’t see a profile that you want to use with the template, on the top right of the page, add a profile you need.
 
-![](/static/image-109.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-109.png)
 
 Edit the profile and put the files from your homepage profile to the layout (Reminder – the files have the same name as homepage profile), in this order - header -> body.
 
 1.  Header
 
-![](/static/image-110.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-110.png)
 
 2\. Body
 
-![](/static/image-111.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-111.png)
 
 Now your homepage profile is connected to the user profile.
 
@@ -190,7 +190,7 @@ Now your homepage profile is connected to the user profile.
 
 Now go back to the Menu Editor, open Settings tab and Template block
 
-![](/static/image-112.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-112.png)
 
 Each zip file from git repository has a zip file with all necessary files already prepared for the upload.
 
@@ -200,17 +200,17 @@ Now your template is uploaded and ready to use.
 
 Login as buyer that has the same profile as we connected before and see a template.
 
-![](/static/image-113.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-113.png)
 
 ## Different Homepage Profiles
 
 After the first homepage profile were created, you can create as many as you want different homepage profiles. The homepage profiles with the same name are not supported.
 
-![](/static/image-114.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-114.png)
 
 After you have more than one homepage profile, in Header/Body Editors on top, you will see a dropdown, where you can switch to config file to different profile.
 
-![](/static/image-115.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-115.png)
 
 **Important!** All changes are work only for the profile that are displayed on top.
 
@@ -220,15 +220,15 @@ After you have more than one homepage profile, in Header/Body Editors on top, yo
 
 After a setup was complete, now in both Editors, you’ll see a lot of the fields and different parts of the template that could be modified/changed/removed. Review everything, change something, save it, see the results in the user that you login as buyer.
 
-![](/static/image-116.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-116.png)
 
-![](/static/image-117.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-117.png)
 
 ## Save, Import, Export Config File
 
 Header/Body Editor pages have a few features on top right side of the page. From the left to the right
 
-![](/static/image-118.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-118.png)
 
 Last modification date – is the time, when the config files were modified for the last time
 
@@ -270,7 +270,7 @@ And you will see a changes you just did, but the regular user won’t see any ch
 
 2\. It should be from the root folder, like on the picture, select all folders and make a zip file of them.
 
-![](/static/image-119.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-119.png)
 
 \- In your client in production and you need to make some changes in the template code, be really careful with it, because in order to reupload a template, you need to remove the old one first. Always have a backup of the old one.
 

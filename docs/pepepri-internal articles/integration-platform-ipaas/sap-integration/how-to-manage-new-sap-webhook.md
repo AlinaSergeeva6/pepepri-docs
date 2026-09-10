@@ -15,7 +15,7 @@ order: 151
 
 Description: SAP - Import XML Sales Order (any appropriate name) **Application:** SAP Desktop Plugin **Source Object:** Pepperi Transaction Webhook **Target Object:** SAP B1 Desktop Import Order Header
 
-![](/static/Screenshot-2021-09-21-at-10.29.44.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2021-09-21-at-10.29.44.png)
 
 ### #2 Step: prepare Settings of the webhook
 
@@ -25,11 +25,11 @@ Description: SAP - Import XML Sales Order (any appropriate name) **Application:*
 
 **PAY ATTENTION:** \- if you want to get through all these settings, check out [https://kbint.pepperi.com/test-settings-configuration](https://kbint.pepperi.com/test-settings-configuration)
 
-![](/static/Screenshot-2021-09-21-at-10.41.17.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2021-09-21-at-10.41.17.png)
 
 ### #3 Step: prepare xml file with necessary fields
 
-![](/static/Screenshot-2021-09-21-at-10.44.26.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2021-09-21-at-10.44.26.png)
 
 **Example:**
 

@@ -13,11 +13,11 @@ When you're using Dynamics BC extensions and trying to add custom fields to you 
 
 Open Dynamics BC admin panel and search for **Extension Management**. Open it and find requested extension (**Custom Fields** in our case):
 
-![](/static/image-544.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-544.png)
 
 Click on its name to see detailed information:
 
-![](/static/image-545.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-545.png)
 
 Now navigate to *app.json* file in you BC project and fill in required information about dependent extension:
 
@@ -42,11 +42,11 @@ Last step is to download new packages using `AL: Download symbols` command. Cong
 
 Configuring GST in Dynamics BC involves setting up tax groups, tax codes, and linking them to the appropriate ledger accounts. The basic thing that required a configuration when you're doing an integration is tax groups. Go to Dynamics BC admin panel, search for **GST Posting Setup**. Here you're able to set required tax amount:
 
-![](/static/image-546.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-546.png)
 
 After that go to **Items**, select one of them and navigate to **Costs & Posting** section, click on *Show more*. The fields **Gen. Prod. Posting Group** and **GST Prod. Posting Group** are used for GST configuration of current item:
 
-![](/static/image-547.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-547.png)
 
 ### Add Order Discount
 
@@ -88,24 +88,24 @@ Order discount will be successfully added to the sales order and appear in Dynam
 
 When you need to upload some data type in bulk, navigate to requested type (Items for example) and click on **Share** icon on the top right, select option **Edit in Excel**:
 
-![](/static/image-548.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-548.png)
 
 Download the Excel document and open it. Authenticate using your Dynamic BC credentials if requested - and you'll see a list of all items - the same as you have in BC admin panel:
 
-![](/static/image-549.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-549.png)
 
 Now copy a line with some item and put it in the end of the document. Edit needed fields (specifying **Item Category Code** is a must) and don't forget to change item **No.** :
 
-![](/static/image-550.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-550.png)
 
 Click on **Publish** and after getting message saying that publish operation was successful - click on **Refresh**. After that you can navigate o Dynamics BC admin panel - Items list. Recently uploaded items are available:
 
-![](/static/image-551.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-551.png)
 
 ### Move changes from Sandbox to Prod environment
 
 Once you're finished with developing on Sandbox environment you might need to transfer all changes to Production. In order to manage this you should create a package and upload it to Production. Perform `AL: Package` command in VS Code. The package will be created in the project folder with the next name: "&lt;publisher>\_&lt;name>\_&lt;version>.app":
 
-![](/static/image-552.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-552.png)
 
 Then in Production environment search for **Extension Management**. Click on **Manage** → **Upload Extension** and upload recently created package.

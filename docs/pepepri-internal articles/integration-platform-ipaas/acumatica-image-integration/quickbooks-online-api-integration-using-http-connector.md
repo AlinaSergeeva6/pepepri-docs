@@ -9,7 +9,7 @@ order: 111
 
 ### General Dataflow Tasks Configurations
 
-![](/static/image-555.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-555.png)
 
 -   **URL Structure:** Common for all tasks, varying only by realmID and database table.
     -   `https://quickbooks.api.intuit.com/v3/company/[realmID]/query?minorversion=41&query=select * from [table] STARTPOSITION {#page_num#} MAXRESULTS !%page_interval%!`
@@ -22,7 +22,7 @@ order: 111
 
 -   **Authentication:** Configure OAuth 2.0 in the HTTP tab with the access token.
 
-    ![](/static/image-556.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-556.png)
 
 ---
 
@@ -33,27 +33,27 @@ order: 111
 -   **URL:** `https://quickbooks.api.intuit.com/v3/company/[realmID]/query?minorversion=41&query=select * from Account STARTPOSITION {#page_num#} MAXRESULTS !%page_interval%!`
 -   **Notes:** Retrieve all account data; adjust fields as needed.
 
-    ![](/static/image-557.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-557.png)
 
-    ![](/static/image-558.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-558.png)
 
 #### Items
 
 -   **URL:** `https://quickbooks.api.intuit.com/v3/company/[realmID]/query?minorversion=41&query=select * from Item STARTPOSITION {#page_num#} MAXRESULTS !%page_interval%!`
 -   **Notes:** Fetch item details; customize fields for specific use cases.
 
-    ![](/static/image-559.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-559.png)
 
-    ![](/static/image-560.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-560.png)
 
 #### Inventory
 
 -   **URL:** `https://quickbooks.api.intuit.com/v3/company/[realmID]/query?minorversion=41&query=select * from Inventory STARTPOSITION {#page_num#} MAXRESULTS !%page_interval%!`
 -   **Notes:** Retrieve inventory data; ensure proper table mapping.
 
-    ![](/static/image-561.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-561.png)
 
-    ![](/static/image-562.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-562.png)
 
 #### Transaction Header
 
@@ -61,9 +61,9 @@ order: 111
 -   **Notes:** Example uses Invoice; change `[table]` to SalesOrder, PurchaseOrder, etc., based on the transaction type.
 -   **Setting:** Include `sub_type_id` to specify the transaction type (e.g., Invoice, SalesOrder).
 
-    ![](/static/image-563.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-563.png)
 
-    ![](/static/image-564.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-564.png)
 
 #### Transaction Lines
 
@@ -73,11 +73,11 @@ order: 111
     -   Include `sub_type_id` to specify the transaction type.
     -   Use `http_export_add_parents` to include the transactionID (Doc Num) in the output.
 
-        ![](/static/image-565.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-565.png)
 
-        ![](/static/image-566.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-566.png)
 
-        ![](/static/image-567.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-567.png)
 
 ---
 
@@ -87,9 +87,9 @@ order: 111
 
 -   **Purpose:** Automate data updates or notifications based on QuickBooks events.
 
-![](/static/image-568.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-568.png)
 
-![](/static/image-569.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-569.png)
 
 #### Transaction Webhook Example
 

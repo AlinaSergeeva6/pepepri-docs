@@ -30,14 +30,14 @@ This process allows you to connect your personal OneDrive account to Pepperi for
 
 -   Press **New Registration** in the Azure Active Directory section.
 
-    ![](/static/image-592.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-592.png)
 
 -   Provide the following details:
     -   **Name:** Enter a descriptive name (e.g., "Pepperi").
     -   **Supported account types:** Select an appropriate option (e.g., "Personal Microsoft accounts only").
     -   **Redirect URI:** Enter https://integration.pepperi.com/utils/oauth/AuthorizeOAuth2 and select "Web" as the platform.
 
-    ![](/static/image-593.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-593.png)
 
 -   Submit the registration.
 
@@ -50,39 +50,39 @@ This process allows you to connect your personal OneDrive account to Pepperi for
 
 -   In the left sidebar, click **Certificates & secrets**.
 
-    ![](/static/image-594.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-594.png)
 
 -   Click **New Client Secret**.
 -   Add a description and set an expiration period, then click **Add**.
 -   Copy the **Value** (e.g., zSe8Q~Hk-1.G9f7xHDY1jN9dLHWnDIYgLa.vrbW\_) and save it securely.
     -   **Secret ID:** 5ec67bd4-9015-40bc-80c5-32b8454c9411 (for reference).
 
-        ![](/static/image-595.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-595.png)
 
 #### Step 5: Configure API Permissions
 
 -   Go to **API permissions** in the left sidebar.
 -   Click **Add a permission** and select **Microsoft Graph**.
 
-    ![](/static/image-596.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-596.png)
 
 -   Choose the appropriate permissions (e.g., Files.ReadWrite.All) and grant admin consent if required.
 
-    ![](/static/image-597.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-597.png)
 
-    ![](/static/image-598.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-598.png)
 
 #### Step 6: Expose an API and Add Scope
 
 -   Navigate to **Expose an API** in the left sidebar
 
-    ![](/static/image-599.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-599.png)
 
 -   Click **Add a scope** and configure:
     -   **Scope Name:** api://aa965841-0806-4e67-85ff-9b7b1e460073
     -   Set other required details (e.g., admin consent, description).
 
-    ![](/static/image-600.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-600.png)
 
 -   Save the changes.
 
@@ -90,7 +90,7 @@ This process allows you to connect your personal OneDrive account to Pepperi for
 
 -   In Pepperi iPaaS, go to the dataflow task and press **Get Token** on the HTTP tab.
 
-    ![](/static/image-601.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-601.png)
 
 -   Fill in the details:
     -   **Start Authorization URL:** https://login.live.com/oauth20\_authorize.srf

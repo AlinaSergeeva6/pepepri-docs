@@ -19,22 +19,22 @@ This guide walks you through the process of creating, testing, and debugging a C
     -   Go to **Settings → Sales Activities → Transaction Types**.
     -   Select the relevant transaction and navigate to the **Programs** tab.
 
-    ![](/static/image-33.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-33.png)
 
 2.  **Create a New Program:**
     -   Click **Add New Program**.
     -   Create a new **Action** within the program.
 
-    ![](/static/image-34.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-34.png)
 
     -   Select **Custom Form** as the action type, then click **File**.
     -   A configuration file will be created to store your Custom Form code.
 
-    ![](/static/image-35.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-35.png)
 
-    ![](/static/image-36.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-36.png)
 
-    ![](/static/image-37.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-37.png)
 
 #### Step 2: Write the Default HTML Document
 
@@ -75,7 +75,7 @@ This guide walks you through the process of creating, testing, and debugging a C
     -   Press F12 or right-click and select **Inspect** to open Chrome Developer Tools.
     -   Ensure the webappiframe console is visible in the Console tab for debugging Pepperi-specific interactions.
 
-    ![](/static/image-38.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-38.png)
 
 #### Step 2: Write and Test JavaScript Logic
 
@@ -90,7 +90,7 @@ This guide walks you through the process of creating, testing, and debugging a C
 
     This retrieves and logs the transaction context.
 
-![](/static/image-39.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-39.png)
 
 1.  **Add Logic to the Custom Form:** Update the Custom Form with the following code to fetch and display transaction details:
 
@@ -138,7 +138,7 @@ This guide walks you through the process of creating, testing, and debugging a C
     -   In the Custom Form editor, check the **Run in Background** checkbox.
     -   This is useful for automating tasks without user interaction.
 
-    ![](/static/image-40.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-40.png)
 
 ---
 
@@ -146,12 +146,12 @@ This guide walks you through the process of creating, testing, and debugging a C
 
 -   **Available Fields Section:** On the left side of the Custom Form editor, you can add fields to the scope, which are accessible via the workflowObject variable.
 
-![](/static/image-41.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-41.png)
 
 -   **Caution:** This is a legacy feature and can be buggy, especially with strings containing the " symbol.
     -   **Best Practice:** Avoid using workflowObject to prevent potential issues. Instead, use direct API calls (e.g., pepperi.api.transactions.search) to fetch data.
 
-    ![](/static/image-42.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-42.png)
 
 ---
 

@@ -10,15 +10,15 @@ Netsuite configuration:
 
 Here is NS criteria configurations, main of them is Quantity and Arrival Date.
 
-![](/static/1-36.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-36.png)
 
 Columns configuration:
 
-![](/static/2-26.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-26.png)
 
 Integration configuration:
 
-![](/static/3-19.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3-19.png)
 
 Normally you will need 1 task to fill in the UDT.
 
@@ -26,13 +26,13 @@ You must have fields: MainKey, SecondaryKey, Values, MapdataExternalID.
 
 You will use this settings:
 
-![](/static/4-15.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4-15.png)
 
 In case when SecondaryKey is not unique you will need 2 tasks to upload data to UDT, because of pepperi back office will remove duplicates and you will get only unique Secondary Key.
 
 1 task settings you see on screenshot above and there is mapping for it:
 
-![](/static/5-14.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/5-14.png)
 
 This task will only get data from NS or other platform.
 
@@ -40,8 +40,8 @@ This task will only get data from NS or other platform.
 
 Settings:
 
-![](/static/6-12.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/6-12.png)
 
 Mapping:
 
-![](/static/7-9.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/7-9.png)

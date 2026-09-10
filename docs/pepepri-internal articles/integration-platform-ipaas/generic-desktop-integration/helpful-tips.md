@@ -15,24 +15,24 @@ Tenant is a database inside one environment **Important!** If you want to work w
 
 To set up a test environment, you need to add a setting such as generic\_app\_id with any name to the dataflow task settings.
 
-![](/static/2-35.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-35.png)
 
 Then, when we go to the HTTP tab and click Get Token - we see our Application Unique Name.
 
-![](/static/3-26.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3-26.png)
 
-![](/static/photo_2022-04-03_14-23-54.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/photo_2022-04-03_14-23-54.jpg)
 
 Ready. Now you can test dataflow tasks.
 
 **2***.* **Inspect Elements** If the client asks to add some field (for example, Description). In order to understand which field from which table is responsible for Description, you need to go to ***Sales Order→ Customization → Inspect Element.***
 
-![](/static/Capture-29.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-29.PNG)
 
 Point to the desired element, click and see all the information we need. **Data Class** - table name **Data Field** - field name We also have the opportunity to open the documentation for all the fields that we have. This can be obtained by following **Actions*****→ View data class source****.*
 
-![](/static/Capture-30.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-30.PNG)
 
-![](/static/Capture-31.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-31.PNG)
 
 How to change branch Add to header of http request : PX-CbApiBranch:SS

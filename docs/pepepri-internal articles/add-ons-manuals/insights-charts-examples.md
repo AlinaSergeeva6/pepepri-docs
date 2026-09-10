@@ -26,7 +26,7 @@ Reps Active Accounts
 
 *The bestsellers' top 5 list features the most popular products based on submitted Sales Order transactions.*
 
-![](/static/image-763.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-763.png)
 
 ### KBint Example - Bestsellers Top 5
 
@@ -58,7 +58,7 @@ Series:
 
 *The "Top Sales by Customers" section displays the Top 5 Customers based on the Total Sum of submitted Sales Order transactions.*
 
-![](/static/image-764.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-764.png)
 
 ### KBint Example - Bestsellers Top 5
 
@@ -92,7 +92,7 @@ Series:
 
 *"Sales by Main Category - Yearly" chart presents sales by the Main Categories by Year. This helps to identify trends and determine which product categories contribute most to the sales over the year.*
 
-![](/static/image-765.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-765.png)
 
 ### KBint Example - Sales by Main Category - Yearly
 
@@ -129,7 +129,7 @@ Series:
 
 *"*Reps Active Accounts*" chart is based on UDC KBIntExamples and shows Active Accounts per Sales Rep. This helps to understand the distribution of active customer accounts among Sales Reps.*
 
-![](/static/image-766.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-766.png)
 
 ### KBint Example - Active Accounts from UDC
 
@@ -152,11 +152,11 @@ Series:
 
 **Fields**:
 
-![](/static/image-767.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-767.png)
 
 **Data example**:
 
-![](/static/image-768.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-768.png)
 
 -   **Page** "Insights Examples"
 -   **Title**: Reps Active Accounts
@@ -169,7 +169,7 @@ Series:
 
 *"% of Active Accounts" chart shows the percentage of active customers per Sales Rep.*
 
-![](/static/image-769.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-769.png)
 
 ### 1) KBint Example - Active Accounts from UDC
 
@@ -208,11 +208,11 @@ Series:
 
 **Fields**:
 
-![](/static/image-770.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-770.png)
 
 **Data example**:
 
-![](/static/image-771.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-771.png)
 
 -   **Page** "Insights Examples"
 -   **Title**: Reps Active Accounts

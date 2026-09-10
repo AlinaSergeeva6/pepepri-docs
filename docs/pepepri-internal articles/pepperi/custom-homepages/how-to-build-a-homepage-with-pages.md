@@ -66,13 +66,13 @@ In some cases UI import may not work, so you can use API to duplicate the page:
 
 Now you have a page to work with we can go through its configuration
 
-![](/static/Screenshot-2025-05-30-at-12.17.20.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-30-at-12.17.20.png)
 
 In the "General" section you can setup page parameters, flows, add sections and page blocks
 
 In "Design" tab there are some styling configurations which will be applied to page, e.g. spacing between sections
 
-![](/static/Screenshot-2025-05-30-at-12.17.44.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-30-at-12.17.44.png)
 
 !!!info
 List of available blocks can be different and depends on the addons installed. If you need a block which is not in the list yet, you need to install a corresponding addon.
@@ -82,11 +82,11 @@ List of available blocks can be different and depends on the addons installed. I
 
 Sometimes it is hard to build a homepage which looks good both on desktop and devices. To resolve such issue, sections can be set up to be visible only on specified screen types. The common approach is to add some additional sections which will be shown only for mobile, while those that look good only on desktop, should be hidden.
 
-![](/static/Screenshot-2025-05-30-at-14.03.50.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-30-at-14.03.50.png)
 
 If you click pencil icon, configuration sub-menu will be opened. There you can split the section into sub-sections which sometimes is a really useful feature
 
-![](/static/Screenshot-2025-05-30-at-14.14.42.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-30-at-14.14.42.png)
 
 Section configuration menu
 
@@ -98,7 +98,7 @@ Gallery, Slideshow, Buttons, Banner, Filter blocks are a bit similar in configur
 
 The block is used to show some static images with possibility to add titles.
 
-![](/static/Screenshot-2025-05-30-at-15.28.05.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-30-at-15.28.05.png)
 
 Gallery block
 
@@ -106,7 +106,7 @@ Onload/onchange flows allow you to dynamically set titles or to implement some a
 
 In the Content tab, you can edit each of the gallery slides and set on click flow to run any custom action you need.
 
-![](/static/Screenshot-2025-05-30-at-15.33.34.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-30-at-15.33.34.png)
 
 If a slide is satisfying the show if logic conditions, it will be shown.
 
@@ -114,7 +114,7 @@ If a slide is satisfying the show if logic conditions, it will be shown.
 
 The block is used to present slides that can automatically change each other.
 
-![](/static/Screenshot-2025-05-30-at-16.14.11.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-30-at-16.14.11.png)
 
 Slideshow block
 
@@ -126,7 +126,7 @@ Onload/onchange flows allow you to dynamically set titles or to implement some a
 
 Allows to add clickable buttons to the page
 
-![](/static/Screenshot-2025-05-30-at-16.52.35.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-30-at-16.52.35.png)
 
 Buttons block
 
@@ -138,7 +138,7 @@ Onload/onchange flows allow you to dynamically set titles or to implement some a
 
 The block is similar to Buttons block but with few more advances
 
-![](/static/Screenshot-2025-05-30-at-17.02.33.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-30-at-17.02.33.png)
 
 Banner block
 
@@ -150,7 +150,7 @@ The block represents a dropdown with some options to choose from
 
 In most of the cases, you will use it for presenting a list of accounts for multi account buyer homepage
 
-![](/static/Screenshot-2025-05-30-at-17.32.02.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-30-at-17.32.02.png)
 
 Filter block
 
@@ -164,7 +164,7 @@ Allows to use custom HTML on the page. HTML code can be written directly inside 
 
 Usage: ideally fits to create a footer for the page
 
-![](/static/Screenshot-2025-06-02-at-17.18.31.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-06-02-at-17.18.31.png)
 
 Rich Text block
 
@@ -174,7 +174,7 @@ Onload/onchange events allow you to assign a flow which will replace static plac
 
 This block allows you to add some external widgets to the page. It requires an HTML script tag which will be added to the page when it is loaded.
 
-![](/static/oie_FhumDLtoDu3H.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/oie_FhumDLtoDu3H.png)
 
 Widget block
 
@@ -196,24 +196,24 @@ Header takes up some defined space on the top of the homepage, and it is primari
 
 Create new header by clicking "Add" in the Application Header Configuration
 
-![](/static/Screenshot-2025-05-01-at-16.21.48.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-01-at-16.21.48.png)
 
 Creating new header
 
 -   **General** tab - specify the name and description
 -   **Menu** tab - custom action buttons are defined here. You can assign a flow for each button to be executed on click
 
-![](/static/Screenshot-2025-05-01-at-20.26.49.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-01-at-20.26.49.png)
 
 Example from above will look like this:
 
-![](/static/Screenshot-2025-05-01-at-20.39.07.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-01-at-20.39.07.png)
 
 As parameters on the input for flows you can use static, AccountUUID or global parameters.
 
 -   **Buttons** tab - currently only notification button is supported. Drag and drop the option from available fields to "Buttons" container to add notifications ring to the header.
 
-![](/static/Screenshot-2025-05-01-at-16.30.59.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-01-at-16.30.59.png)
 
 !!!warning
 Don't forget to publish you changes
@@ -224,18 +224,18 @@ Don't forget to publish you changes
 1.  Make sure legacy homepage is not used
     1.  Go to `Settings -> Branded App -> Webapp Main Bar` and check if relevant profile has empty configuration. It should look like this:
 
-        ![](/static/Screenshot-2025-05-01-at-21.05.27.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-01-at-21.05.27.png)
 
     2.  Remove any mappings from configuration in the relevant profiles
 
 2.  Go to `Settings -> Pages -> Slugs -> Mapping`
     1.  Add relevant profile (Buyer) if it is not present
 
-        ![](/static/Screenshot-2025-05-01-at-21.09.46.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-01-at-21.09.46.png)
 
     2.  Edit Buyer's profile, drag and drop ApplicationHeader and HomePage slugs to the available space. Map your homepage header to ApplicationHeader and homepage body page to HomePage slug. Don't forget to save the mappings.
 
-    ![](/static/Screenshot-2025-05-01-at-21.12.37.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-05-01-at-21.12.37.png)
 
 ## Troubleshooting
 

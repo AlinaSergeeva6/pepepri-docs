@@ -7,7 +7,7 @@ order: 24
 
 *Effort Estimation: 2h*
 
-![](/static/image-958.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-958.png)
 
 ### Description:
 
@@ -19,7 +19,7 @@ Switch Scanner mode: Remove/Add: This allows you to choose whether the quantity 
 
 After adding an item, you can edit the quantity or delete it.
 
-![](/static/image-959.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-959.png)
 
 ### Advantages and disadvantages
 

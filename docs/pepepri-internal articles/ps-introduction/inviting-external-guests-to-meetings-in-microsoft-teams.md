@@ -18,7 +18,7 @@ Microsoft Teams enables users to schedule and host meetings with both internal a
 2.  Navigate to the **Meetings** tab on the left sidebar.
 3.  Click the **Schedule a Meeting** button.
 
-    ![](/static/image-18.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-18.png)
 
 4.  Fill in the meeting details:
     -   **Title:** Provide a descriptive name for the meeting.
@@ -31,7 +31,7 @@ Microsoft Teams enables users to schedule and host meetings with both internal a
 2.  Enter the email address of the external guest.
 3.  Once the email is entered, a username suggestion will pop up. Click the suggestion to add the guest to the invitee list.
 
-    ![](/static/image-19.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-19.png)
 
 #### Step 3: Finalize and Schedule
 
@@ -39,14 +39,14 @@ Microsoft Teams enables users to schedule and host meetings with both internal a
 2.  Click the **Schedule** button to create the meeting.
 3.  A summary of the meeting will appear, confirming the creation.
 
-![](/static/image-20.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-20.png)
 
 #### Step 4: Guest Receives Invitation
 
 -   The external guest will receive an email invitation containing a **Join Microsoft Teams Meeting** link.
 -   The email will include meeting details such as the title, date, and time.
 
-    ![](/static/image-21.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-21.png)
 
 #### Step 5: Guest Joins the Meeting
 
@@ -55,7 +55,7 @@ Microsoft Teams enables users to schedule and host meetings with both internal a
     -   Configure their **Display Name**.
     -   Set up their audio devices (e.g., microphone, speakers).
 
-        ![](/static/image-22.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-22.png)
 
 3.  After configuration, the guest clicks **Join Now** and is directed to the meeting lobby.
 4.  The meeting will not start until the organizer joins.
@@ -64,7 +64,7 @@ Microsoft Teams enables users to schedule and host meetings with both internal a
 
 1.  The meeting organizer receives a pop-up notification to join the meeting.
 
-    ![](/static/image-23.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-23.png)
 
 2.  Upon joining, the organizer can view participants in the lobby.
 3.  The organizer invites the guest from the lobby into the meeting room to start the session.

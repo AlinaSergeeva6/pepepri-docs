@@ -15,24 +15,24 @@ To start working with task\_table\_sql first you need to define one of you targe
 
 Email – Get All Failed Transactions:
 
-![](/static/1-16.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-16.png)
 
 For further manipulations we need to define one key setting which allows us to process the data stored by this dataflow task by using SQL. In other words this setting converts final CSV into SQL table.
 
-![](/static/2-10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-10.png)
 
 TestSqlSource:
 
 By defining this setting:
 
-![](/static/3-6.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3-6.png)
 
 We set our dataflow task as data source.
 
 Applying **task\_table\_sql\_query**
 
-![](/static/4-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4-4.png)
 
 We can easily fetch the data we need by using standard SQL.
 
-![](/static/5-5.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/5-5.png)

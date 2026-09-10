@@ -30,20 +30,20 @@ The Dropbox Image Uploader Quick Setup allows you to configure automatic recurri
 
 -   Navigate to **Settings -> iPaaS -> Quick Setup -> Dropbox Image Uploader**.
 
-    ![](/static/image-935.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-935.png)
 
 -   **Install:** Click **Install** if the add-on is not yet installed.
 -   **Launch:** Click **Launch** if it is already installed.
 -   You can create multiple configurations (e.g., "Dropbox Brand Images", "Dropbox Custom Images") and upload them separately.
 -   Add a new configuration or copy an existing one and modify it as needed.
 
-    ![](/static/image-936.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-936.png)
 
 -   **Note:** Click **Save** at the top of the page to save changes. Clicking **OK** or **Confirm** within configuration screens will not save changes.
 
 #### Configuration Steps
 
-![](/static/image-937.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-937.png)
 
 **General Tab**
 
@@ -53,15 +53,15 @@ The Dropbox Image Uploader Quick Setup allows you to configure automatic recurri
 
 -   **Connect to Dropbox:** Click this button to initiate authorization, redirecting you to the Dropbox authentication page.
 
-    ![](/static/image-938.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-938.png)
 
 -   After successful authorization, you will be redirected to a success page with your credentials.
 
-    ![](/static/image-939.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-939.png)
 
 **Configure Advanced Upload Settings Tab**
 
-![](/static/image-940.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-940.png)
 
 -   **Items Image Name Field:** Select the field to map image file names to items (e.g., Item Code, Item Image Code, or a custom field).
     -   **Note:** The value of this field will be compared with the image file name.
@@ -79,18 +79,18 @@ The Dropbox Image Uploader Quick Setup allows you to configure automatic recurri
 
 **Upload Tab**
 
-![](/static/image-941.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-941.png)
 
 -   **Run Now:** Click to test the configuration and connection via a test scheduled job.
 
 **Schedule Upload Tab:** Set up a schedule for recurring uploads.
 
-![](/static/image-942.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-942.png)
 
 -   Enter necessary parameters (e.g., Once every # of hours, Days of the Week).
 -   Check the **Use Scheduler** box to create a scheduled job in iPaaS.
 
-    ![](/static/image-943.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-943.png)
 
     Created job for images uploads
 
@@ -99,7 +99,7 @@ The Dropbox Image Uploader Quick Setup allows you to configure automatic recurri
 -   Click **Save** at the top of the page to apply all changes.
 -   Upon successful installation and configuration, a folder of dataflow tasks will appear in your iPaaS module.
 
-    ![](/static/image-944.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-944.png)
 
 ---
 

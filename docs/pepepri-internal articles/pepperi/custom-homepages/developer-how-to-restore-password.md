@@ -6,19 +6,19 @@ order: 267
 
 On the login page, click on **Lost your password** link:
 
-![](/static/image-251.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-251.png)
 
 Pic. 1
 
 Enter your email address and click on **Get New Password**:
 
-![](/static/image-252.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-252.png)
 
 Pic. 2
 
 After email validation you’ll get this message:
 
-![](/static/image-253.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-253.png)
 
 Pic. 3
 

@@ -29,15 +29,15 @@ To edit scripts – log in as SupportAdminUser
 
 1) Go to Settings -> Configuration -> Scripts:
 
-![](/static/image-145.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-145.png)
 
 2) Click "Add":
 
-![](/static/image-146.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-146.png)
 
 3) The following window will be opened:
 
-![](/static/image-147.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-147.png)
 
 -   Name: add script name;
 -   Description: add script description;
@@ -50,7 +50,7 @@ To edit scripts – log in as SupportAdminUser
 
 1) Click "Add" and fill inputs:
 
-![](/static/image-148.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-148.png)
 
 2) To use the parameter in code:
 
@@ -66,7 +66,7 @@ You need to add a script to a button to redirect the user to a different page.
 
 -   Create a parameter 'url\_param':
 
-![](/static/image-149.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-149.png)
 
 -   Add script example:
 
@@ -86,11 +86,11 @@ export async function main(data) {
 
 -   Add a script to the page element:
 
-![](/static/image-150.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-150.png)
 
 -   Enter a value to a param:
 
-![](/static/image-151.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-151.png)
 
 -   Using param in a script code:
 

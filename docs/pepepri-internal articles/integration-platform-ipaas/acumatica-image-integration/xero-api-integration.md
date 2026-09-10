@@ -37,7 +37,7 @@ This integration connects Xero, an HTTP-based ERP, with Pepperi using OAuth 2.0,
 -   **Token Generation:**
     -   Click **Get Token** to generate the OAuth Access Token.
 
-        ![](/static/image-610.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-610.png)
 
     -   Fill the form with the following details (same for each customer except Consumer Key and Secret):
         -   **Application Unique Name:** default
@@ -54,7 +54,7 @@ This integration connects Xero, an HTTP-based ERP, with Pepperi using OAuth 2.0,
 -   **Result:** A “successfully connected” notification will appear.
 -   **Retrieve Tenant ID:** Run the task and download the **RESPONSE BODY** text file from the task’s Log to extract the tenant ID.
 
-    ![](/static/image-611.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-611.png)
 
 #### Step 2: Prepare Settings for Dataflow Tasks and Webhooks
 
@@ -65,9 +65,9 @@ This integration connects Xero, an HTTP-based ERP, with Pepperi using OAuth 2.0,
 -   **Key Considerations:**
     -   Include the tenant ID in the URL of each HTTP task (e.g., https://api.xero.com/api.xro/2.0/&lt;resource>?TenantId=&lt;tenant-id>).
 
-        ![](/static/image-612.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-612.png)
 
-        ![](/static/image-613.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-613.png)
 
     -   **Remark:** OAuth 1.0 used the Xero Plugin, while OAuth 2.0 uses the Generic HTTP Connector.
 

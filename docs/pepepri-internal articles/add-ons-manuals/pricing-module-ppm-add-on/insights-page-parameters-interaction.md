@@ -39,7 +39,7 @@ Let's assume we have managers with different Roles, and by each Role we have a l
 
 For example, user with InternalID 15049823 has RoleName == 'Commercial Sales':
 
-![](/static/image-851.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-851.png)
 
 We also have information that Commercial Sales manager could see the data on the page only for the accounts which TSARepGroup is one of the following: Blackstone-East / Blackstone-West / SIG-North / WLCC.
 
@@ -55,13 +55,13 @@ You can create dataflow task and schedule it to run as often as you want to have
 
 Example of the data in UserRoles UDT:
 
-![](/static/image-852.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-852.png)
 
 #### RepGroups UDT
 
 As was mentioned prevoiusly, we have the list of assigned rep groups for each user's RoleName. This data is saved in RepGroups UDT:
 
-![](/static/image-853.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-853.png)
 
 !!!info
 The list separator is '~', however, you can use any separator you want. But try to avoid using comma - it could be difficult to get exported data or work with this UDT in dataflow tasks.
@@ -79,7 +79,7 @@ If you're new to Pages, please check out this article:
 
 You can call the page parameter as you wish. In this example it will be called "repGroups".
 
-![](/static/image-854.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-854.png)
 
 ### Creating Script for getting data from UDTs
 
@@ -150,17 +150,17 @@ You can check existing flow on Sig Sauer environment: "Manager Dashboard - On Lo
 
 The only logic block which we will add to this flow is UserScriptsBlock:
 
-![](/static/image-855.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-855.png)
 
 Save the changes and add the flow to the page OnLoad action:
 
-![](/static/image-856.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-856.png)
 
 ### Data Queries
 
 Let's assume we need to show to a manager the progress bar where the 100% (benchmark) is sales amount from the last month and the main value is sales amount from current month:
 
-![](/static/image-857.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-857.png)
 
 To achieve it we need to have two data queries: sales amount from the last month and sales amount from current month.
 
@@ -172,15 +172,15 @@ You can check existing data query on Sig Sauer environment: "\_Manager UD - Card
 
 We will connect repGroups page parameter to the data queries througth data query input variable which we should also create:
 
-![](/static/image-858.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-858.png)
 
 The main filters for retrieved data are configured in Series section:
 
-![](/static/image-859.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-859.png)
 
 The Aggregated field is lineAmount - the query will sum up amounts in every line that match the specified filters:
 
-![](/static/image-860.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-860.png)
 
 Sales Series' Metric section
 
@@ -190,7 +190,7 @@ The filters are:
 2.  Date is not in the last 0 month - to remove data from current month;
 3.  AccountTSARepGroup is IN variable repGroups.
 
-![](/static/image-861.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-861.png)
 
 !!!info
 We have possibility to get the data related only to "accounts of users under my role" - accounts assigned to users which have roles under the role of current user (for example, "Commercial Sales" manager). It's up to you what the Account filter should be here.
@@ -198,7 +198,7 @@ We have possibility to get the data related only to "accounts of users under my 
 In this example we will select "Account of users under my role".
 !!!
 
-![](/static/image-862.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-862.png)
 
 !!!info
 We also have a lot of different filter settings. There are two which are related to the variables: In (variable) and Equal to (variable).
@@ -208,23 +208,23 @@ If in your case you need to check if the comma separated string list in the vari
 If you want to check if the string value in the variable is equal (as a string) to the value from the field - you should use Equal to (variable).
 !!!
 
-![](/static/image-863.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-863.png)
 
 When all of the needed parts of the data query are configured, you may see zero as a result in Preview section - it means that you're doing the configuration with Admin user or any user which have no directly assigned users / accounts:
 
-![](/static/image-864.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-864.png)
 
 !!!info
 If you want to test your data query, you can add Preview Value to the variable. For example:
 !!!
 
-![](/static/image-865.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-865.png)
 
 !!!info
 This value will be saved only for Preview section inside the data query and will not affect data query workability on the real page:
 !!!
 
-![](/static/image-866.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-866.png)
 
 #### Sales amount from current month
 
@@ -237,25 +237,25 @@ This Data Query is basically the same as the previous one. The only one differen
 1.  Date is in this month;
 2.  AccountTSARepGroup is IN variable repGroups.
 
-![](/static/image-867.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-867.png)
 
 #### Adding Block to the Page connected to Data Queries
 
 1\. Add new section on the Page:
 
-![](/static/image-868.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-868.png)
 
 2\. Add Sales Amount from current month as main Data Query and map the repGroups variable:
 
-![](/static/image-869.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-869.png)
 
 3\. Add Sales Amount from the last month as Benchmark Query and map the repGroups variable:
 
-![](/static/image-870.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-870.png)
 
 4\. Select any card design which suites better for data representation:
 
-![](/static/image-871.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-871.png)
 
 5\. Save and publish the page.
 
@@ -267,8 +267,8 @@ Basically now you can create any Data Query and simply add the same input variab
 
 You can check more page blocks and Data Query examples on Manager Dashboard page. This is how it looks like now:
 
-![](/static/image-872.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-872.png)
 
-![](/static/image-873.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-873.png)
 
-![](/static/image-874.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-874.png)

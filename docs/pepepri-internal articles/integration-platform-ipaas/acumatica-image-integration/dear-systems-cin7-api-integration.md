@@ -35,13 +35,13 @@ The DEAR Systems API (V2) enables management of eCommerce enterprise resource pl
         -   Go to the [API setup page](https://inventory.dearsystems.com/ExternalAPI.).
         -   Create the account, save it, and retrieve the credentials (DEAR Account ID and API Application Key).
 
-            ![](/static/image-602.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-602.png)
 
 -   **Store Credentials:**
     -   Navigate to **General Settings** in Pepperi iPaaS.
     -   Store the DEAR Account ID and API Application Key.
 
-        ![](/static/image-603.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-603.png)
 
 #### Step 2: Configure Dataflow or Webhook Task
 
@@ -58,9 +58,9 @@ The DEAR Systems API (V2) enables management of eCommerce enterprise resource pl
     -   **Configure URL with API Explorer:**
         -   To configure the URL to get data, you can go to the API explorer and select an API version, an endpoint, and a method. Then you can add additional parameters and pagination. You can copy the request URL or test the query with the Execute button.
 
-            ![](/static/image-604.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-604.png)
 
-        ![](/static/image-605.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-605.png)
 
     -   Example:
         -   https://inventory.dearsystems.com/dearapi/{someData}?page={#page\_num#}&limit={some number}

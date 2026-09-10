@@ -13,7 +13,7 @@ Follow these steps to log in to OpenAir, manage timesheets, and track your work 
 1.  **Access OpenAir:** Log in to your OpenAir account using Advantive as the **CompanyID**.
 2.  **View Dashboard:** Once logged in, you’ll see your dashboard, which displays your timesheets and other relevant information.
 
-![](/static/image.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image.png)
 
 ---
 
@@ -21,11 +21,11 @@ Follow these steps to log in to OpenAir, manage timesheets, and track your work 
 
 1.  **Locate Timesheet:** In the **My Status** panel on the dashboard, click **Open Timesheet**.
 
-![](/static/image-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-1.png)
 
 1.  **Select Timesheet:** A list of your opened timesheets will appear. Choose the one you need and click on it to open.
 
-![](/static/image-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-2.png)
 
 ---
 
@@ -33,11 +33,11 @@ Follow these steps to log in to OpenAir, manage timesheets, and track your work 
 
 1.  **Navigate to Timesheet Section:** In the sidebar, click **Timesheet**, then select **Open**.
 
-![](/static/image-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-3.png)
 
 1.  **Create New Timesheet:** Click **Create** > **New**.
 
-![](/static/image-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-4.png)
 
 1.  **Set Start Date:** In the opened menu, select the starting date for the timesheet and click **Save**.
 

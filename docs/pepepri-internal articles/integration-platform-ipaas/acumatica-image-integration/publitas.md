@@ -43,23 +43,23 @@ Integration requires 2 UI tasks: 1. Publitas Generic Entry Point: [here](https:/
 
 To connect to a Publitas publication, the client needs to create it or create your own test publication. To do this, log in to Publitas and select the Publications button, as shown in the screenshot. You can duplicate existing publication
 
-![](/static/publications.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/publications.jpg)
 
 publications
 
-![](/static/publications2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/publications2.jpg)
 
 !!!warning
 Make sure that the publication you intend to use is not offline. You will not be able to connect to such a publication.
 !!!
 
-![](/static/publications3.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/publications3.jpg)
 
 #### Publitas Injection
 
 To enable the launch of the second UI task, you need to paste the code into Custom code injection. The code you can find in the How to copy to another environment section.
 
-![](/static/injection.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/injection.jpg)
 
 injection
 
@@ -67,43 +67,43 @@ injection
 
 A Publitas Hotspot is an interactive element that can be added to Publitas publications such as catalogs, brochures, and magazines. A hotspot can be of any shape and size, and it can be linked to various actions. In our case, we will use a Hotspot to open the second UI task and add items to Pepper's cart (Product Hotspot). To create a Product Hotspot go to the Publications and press edit on the publication. Draw a new Hotspot and add some product. How to add products to the Publitas we will consider in the next section (How to copy to another environment).
 
-![](/static/Hotspot.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Hotspot.jpg)
 
 edit publication
 
-![](/static/Hotspot2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Hotspot2.jpg)
 
 add hotspot
 
-![](/static/Hotspot3.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Hotspot3.jpg)
 
 draw hotspot
 
-![](/static/Hotspot4.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Hotspot4.jpg)
 
 add product
 
 That's it for the main integration. Now, after running Publitas from the Pepperi, the publication will first open, and after clicking on the Hotspot, a window with product information will open. Then you can add a certain quantity of the product and click the Send to Cart button. After that, close the Publitas.
 
-![](/static/indaba1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/indaba1.jpg)
 
 open catalog
 
-![](/static/indaba2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/indaba2.jpg)
 
 open hotspot
 
-![](/static/indaba3.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/indaba3.jpg)
 
 send to cart
 
-![](/static/indaba4.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/indaba4.jpg)
 
 close publitas
 
 You can see how the required quantity of the product was added to the cart and all the calculations were done automatically in Pepperi.
 
-![](/static/indaba5.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/indaba5.jpg)
 
 pepperi's cart
 
@@ -117,41 +117,41 @@ Copy these two tasks to your environment:
 
 Open the ui\_page\_body setting first task and go to the "mountPublitas" function block. This function creates a script with attributes which open the publication.
 
-![](/static/Point1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Point1.jpg)
 
 mount Publtas
 
 The currentItem and currentCatalog variables are used for multiple Publitas publications and dynamic hotspots (to open a specific product in a publication automatically). We will consider this type of setup in the upcoming **"Advanced configuration**" section if you need it. Here let's look at a simple configuration with opening a single publication. In this way you need to comment this logic. In this case, you need to comment out the part of the code with these variables as shown in the screenshot.
 
-![](/static/Point2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Point2.jpg)
 
 comment the code
 
 Then you have to change the link to the publication in the **data-publication** attribute. Go to the Publitas -> Publications -> Share button and copy the link. Put the link to the attribute.
 
-![](/static/Point3.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Point3.jpg)
 
 publication link
 
-![](/static/Point4.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Point4.jpg)
 
 set link
 
 The example uses the additional TSANetSuiteID field for the logic of adding an item. If you have an ItemExternalID field or some other TSA field, you must change it in both UI tasks. You also need to change all the fields you will use to display product information. Go to the getItemPageData function in the Publitas Generic Entry Point task.
 
-![](/static/configuration1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/configuration1.jpg)
 
 configutation
 
 In the Publitas Generic Item Hotspot task go to the createHtml function and change the field names that you need. You can also configure html below, depending on what you need to display to the user.
 
-![](/static/configuration2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/configuration2.jpg)
 
 html
 
 Also, the current logic supports the use of multiple products in one a Hotspot. A user selects a Hotspot and when it opens, several products can be seen.
 
-![](/static/configuration3.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/configuration3.jpg)
 
 multiple products
 
@@ -163,29 +163,29 @@ Create a Program with a Custom form which will open the **Publitas Generic Entry
 
 First, you need to upload products to Publitas if the client hasn't done it. Copy the [Publitas Export Products](https://integration.pepperi.com/mgr/PluginSettings/ClientTask?TaskId=84732) dataflow task to your environment. In this example, we get items from Pepperi with 2 columns TSANetSuiteID and Name. You may need to change TSANetSuiteID to ExternalID or another TSA field that your client uses. If yes, change it in the Mappings tab as well.
 
-![](/static/Feed1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Feed1.jpg)
 
 products
 
-![](/static/Feed2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Feed2.jpg)
 
 expressions
 
 Run the task and after it is finished go to the logs and copy the file link.
 
-![](/static/Feed3.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Feed3.jpg)
 
 link
 
 Go to Publitas -> Product Feed put the link to the Product data and press the **Import Product Feed** button. When Product feed is finished, you can add Hotspot to the publication. When Product feed is finished, you can add Hotspot to the publication.
 
-![](/static/Feed4.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Feed4.jpg)
 
 feed products
 
 Next is to add the injection. Open the second **Publitas Generic Item Hotspot** UI task and copy a RunAddOn URL from the Details tab. **Change the const ipaasUiTaskUrl variable to your link**.
 
-![](/static/Screenshot_1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot_1.jpg)
 
 task link
 
@@ -234,7 +234,7 @@ task link
 
 Go to the Publitas settings -> Publication Reader -> Advanced settings. Put the code and save it.
 
-![](/static/injection2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/injection2.jpg)
 
 injection
 
@@ -252,11 +252,11 @@ Task examples that support matrix items as well:
 
 1\. **Publitas Generic Entry Point (Matrix Items)**: 👉 [here](https://integration.pepperi.com/mgr/PluginSettings/ClientTask?TaskId=89267) 2. **Publitas Generic Item Hotspot (Matrix Items)**: 👉 [here](https://integration.pepperi.com/mgr/PluginSettings/ClientTask?TaskId=89268)
 
-![](/static/Matrix_1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Matrix_1.jpg)
 
 matrix items in Publitas
 
-![](/static/Matrix_2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Matrix_2.jpg)
 
 matrix items in the cart
 
@@ -272,11 +272,11 @@ The Publitas Generic Entry Point UI task includes logic to use different publica
 Change the default publication name and the part of the URL to your own. The default publication will be used if no publication name has been passed.
 !!!
 
-![](/static/multiple1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/multiple1.jpg)
 
 default catalog
 
-![](/static/multiple4.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/multiple4.jpg)
 
 url
 
@@ -284,7 +284,7 @@ You can play with this logic as you need. For example, change the publication de
 
 UDT: Parameters
 
-![](/static/multiple3.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/multiple3.jpg)
 
 catalogs
 
@@ -636,7 +636,7 @@ catalogs
 </html>
 ```
 
-![](/static/multiple5.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/multiple5.jpg)
 
 dropdown selector
 
@@ -646,7 +646,7 @@ You can also use a dynamic parameter to open a publication with a specific Hotsp
 To find the Hotspot ID, copy the publication URL and open it in the new browser tab. Find the Hotspot that you need and select it. You can get the ID in the URL parameters.
 !!!
 
-![](/static/multiple6.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/multiple6.jpg)
 
 hotspot id
 
@@ -654,7 +654,7 @@ hotspot id
 If you don't need any of these fields, delete it from the transactionData function.
 !!!
 
-![](/static/multiple7.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/multiple7.jpg)
 
 additional fields
 
@@ -664,21 +664,21 @@ Using Pages allows you to transfer a user directly to a new transaction and auto
 
 But even more ergonomic and convenient for users is the use of Launch Page in Pepperi. This allows the client to generate links for users that will automatically redirect them to the transaction with the opening of the required publication. https://app.pepperi.com/launch\_page - it is the basis of the link. Then you can transfer all the necessary data. For example, the type of transaction, the Pepperi's catalog, the name of the publication, and the Hotspot ID (https://app.pepperi.com/launch\_page?type=B2B&catalog=Default&publitasCatalog=test\_publication&hotspot=555555 example).
 
-![](/static/launch1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/launch1.jpg)
 
 launch page
 
 To automatically launch the Publitas when using Pages or Launch Page, you should fill in a custom checkbox field when creating/opening a transaction in the script. Add a branch condition on this field in the transaction's workflow in the New-InCreation stage. On the branch, if it is launched from Pedges, add a custom form that opens Publicitas.
 
-![](/static/Pages_1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Pages_1.jpg)
 
 update checkbox
 
-![](/static/Pages_2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Pages_2.jpg)
 
 workflow branch
 
-![](/static/Pages_3.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Pages_3.jpg)
 
 custom form
 
@@ -793,18 +793,18 @@ This custom form code example opens a UI task with Publitas. Also, an additional
 </html>
 ```
 
-![](/static/Pages_4.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Pages_4.jpg)
 
 form button
 
-![](/static/Pages_1-1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Pages_1-1.jpg)
 
 script (open publitas)
 
-![](/static/Pages_2-1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Pages_2-1.jpg)
 
 workflow
 
-![](/static/Pages_3-1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Pages_3-1.jpg)
 
 launch publitas

@@ -17,26 +17,26 @@ The 'GroupBy' dataflow task returns a file, then the second task takes data and 
 
 Go to
 
-![](/static/a.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/a.png)
 
 Add new record
 
-![](/static/b.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/b.png)
 
 Here you can set the task execution time:
 
-![](/static/2-8.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-8.png)
 
 click Update and you will have new line with you own scheduled:
 
-![](/static/1-13.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-13.png)
 
 Click it --> oped 'Tasks' Tab --> Add new record --> select the name of the tasks that you need and put the execution queue:
 
-![](/static/e.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/e.png)
 
 #### It is not necessary to specify a manual sequence execution for each task. We can just grab the task and move it to the right place in the sequence (sequence will change automatically):
 
-![](/static/s.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/s.png)
 
 Then go to 'Details' and click 'Run Job'

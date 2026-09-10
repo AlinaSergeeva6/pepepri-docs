@@ -43,7 +43,7 @@ Data Queries in Pepperi Insights define the data sources and calculations used t
 
 1.  Navigate to **Settings -> Insights -> Data Queries**.
 
-    ![](/static/image-746.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-746.png)
 
 2.  Click **Add** to create a new query.
 
@@ -56,12 +56,12 @@ Data Queries in Pepperi Insights define the data sources and calculations used t
         -   transaction\_lines: Use line-level fields (e.g., UnitPriceAfterDiscount, UnitQuantity).
         -   A UDC defined in the **Targets Manager**: Use imported target data (see Target Resources for Insights Dashboards for details).
 
-            ![](/static/image-747.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-747.png)
 
 2.  **Add a Series:**
     -   Define how data is aggregated:
 
-        ![](/static/image-748.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-748.png)
 
         -   **Aggregator:**
             -   Sum: Adds all values of the field.
@@ -70,29 +70,29 @@ Data Queries in Pepperi Insights define the data sources and calculations used t
             -   Count Distinct: Returns the number of unique values.
             -   Script: Write a custom calculation using aggregators and fields.
 
-                ![](/static/image-749.png)
+                ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-749.png)
 
 3.  **Add Categories (Group By):**
     -   Choose a field to group values (e.g., ActionDateTime for sales by month).
     -   Results in uniform color for bars/columns/lines.
 
-    ![](/static/image-750.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-750.png)
 
     -   **Interval:** Select Day, Week, Month, Quarter, or Year.
     -   **Format:** Choose Year, YearMonth, Month, MonthDay, YearMonthDay, Week, WeekYear, Quarter, or QuarterYear.
 
-        ![](/static/image-751.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-751.png)
 
 4.  **Add Dynamic Series (Break By):**
     -   Generate separate graphs per field value (e.g., for a small set of values).
     -   Results in different colors for each bar/column/line.
 
-    ![](/static/image-752.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-752.png)
 
     -   **Limit Results:** Specify the number of values to display.
     -   **Order:** Choose Ascending or Descending.
 
-        ![](/static/image-753.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-753.png)
 
 5.  **Add Filters:**
     -   **Account Filter Options:**
@@ -109,7 +109,7 @@ Data Queries in Pepperi Insights define the data sources and calculations used t
         -   Filter by Transaction Type (e.g., "Sales Order", "B2B Order").
         -   Filter by Status Name (e.g., "submitted" transactions).
 
-            ![](/static/image-754.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-754.png)
 
 6.  **Preview and Save:**
     -   Preview the query results to verify accuracy.
@@ -138,7 +138,7 @@ Dynamic filtering enhances Data Queries by allowing real-time filter adjustments
     -   **Default Value:** Optional value if no parameter is passed (e.g., "All").
     -   **Preview Value:** Value for query preview (e.g., a specific brand).
 
-        ![](/static/image-755.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-755.png)
 
 3.  Add the variable to the series filter:
     -   Edit the series, go to the **Filter** section, and select a property.
@@ -148,12 +148,12 @@ Dynamic filtering enhances Data Queries by allowing real-time filter adjustments
 4.  **Conditional Filtering (Optional):**
     -   Use the **Conditional Filter** section to apply filters only if a condition is met (e.g., filter by MainCategory only if not "All").
 
-        ![](/static/image-756.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-756.png)
 
 5.  Verify in Preview:
     -   Adjust the **Preview Value** to see filtered data (e.g., change to a different brand).
 
-        ![](/static/image-757.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-757.png)
 
 #### Sending Values from the Page
 
@@ -166,7 +166,7 @@ Dynamic filtering enhances Data Queries by allowing real-time filter adjustments
     -   **Description:** Provide a description.
     -   **Default Value:** Set a default (e.g., "All" for no filter).
 
-        ![](/static/image-758.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-758.png)
 
 3.  **Set Parameter Values:**
     -   **Option 1: User Selection:**
@@ -183,7 +183,7 @@ Dynamic filtering enhances Data Queries by allowing real-time filter adjustments
     -   In the **Content** tab of the Insight block (e.g., Chart), go to **Variable Mapping**.
     -   Select **Variable** and choose the page parameter.
 
-        ![](/static/image-759.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-759.png)
 
 #### Example Use Case
 
@@ -198,15 +198,15 @@ Dynamic filtering enhances Data Queries by allowing real-time filter adjustments
 2.  Open or create a page for Insights.
 3.  **Add a Section:** Click **Add Section**.
 
-    ![](/static/image-760.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-760.png)
 
 4.  **Add a Block:** Drag and drop a block (e.g., Chart, Benchmark Chart, Scorecard, Table).
 
-    ![](/static/image-761.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-761.png)
 
 5.  **Configure Content:**
     -   Go to the **Content** tab.
     -   Select the desired Data Query from the list.
     -   Assign the query to the block’s "Content" section.
 
-    ![](/static/image-762.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-762.png)

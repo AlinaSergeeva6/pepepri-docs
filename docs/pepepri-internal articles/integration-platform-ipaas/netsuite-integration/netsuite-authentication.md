@@ -10,7 +10,7 @@ After we have created a script for communicating with saved search, we create an
 
 1\. Go on NetSuite --> **“Setup”** --> **“Integrations”** \---> **“Manage Integrations”**
 
-![](/static/image-399.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-399.png)
 
 2\. Select the Pepperi application
 
@@ -20,15 +20,15 @@ After we have created a script for communicating with saved search, we create an
 
 “TOKEN-BASED AUTHENTICATION”
 
-![](/static/image-400.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-400.png)
 
 5\. Save
 
-![](/static/image-401.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-401.png)
 
 6\. copy the **CONSUMER KEY** and **CONSUMER SECRET** that were generated (we will use it later on)
 
-![](/static/image-402.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-402.png)
 
 7\. the the **CONSUMER KEY** and **CONSUMER SECRET** should be added into Integration as
 
@@ -38,27 +38,27 @@ After we have created a script for communicating with saved search, we create an
 
 8\. Go to **Setup** > **Users/Roles** > **Access Tokens** > **New**
 
-![](/static/image-403.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-403.png)
 
 9\. In the application name – select the **Pepperi application**. Fill the user and role that will be assigned to the access token.
 
-![](/static/image-404.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-404.png)
 
 10\. Save
 
 !!!info
 Make sure that this role has access to all the relevant objects and lists needed for the integration. You can view/edit the role permissions under - Setup > Users/Roles > Manage Roles
 
-![](/static/Manage-Roles.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Manage-Roles.png)
 !!!
 
 11\. Copy the **Token ID** and **Token Secret** (we will use it later on)
 
-![](/static/image-405.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-405.png)
 
 12\. Go to your **Pepperi account** – **Settings > ERP Integration > Plugin Settings > Advanced Settings**
 
-![](/static/image-406.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-406.png)
 
 13\. **Add the following setting options in the general integration settings** –
 
@@ -68,13 +68,13 @@ Make sure that this role has access to all the relevant objects and lists needed
 4.  ***ns\_consumer\_key*** > the NetSuite Token ID you copied on step 6
 5.  ***ns\_is\_tba*** \= 1 (to activate the token based authentication)
 
-![](/static/image-407.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-407.png)
 
 14\. Make sure you have sufficient access to roles
 
 Go to **Setup** > **Users/Roles** > **Manage Roles** > select the required type for Saved Search and add required fields in ***Transaction*****s** and ***Lists*** tabs. Below you can find an excel file with an example of filling
 
-![](/static/Capture-3.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-3.PNG)
 
 16KB
 

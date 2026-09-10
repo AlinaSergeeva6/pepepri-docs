@@ -17,7 +17,7 @@ order: 183
 
 × Target Object: &lt;Depends on a usage>
 
-![](/static/1111.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1111.png)
 
 !!!success
 **Important:** In order to get the correct response from the server, add setting **http\_row\_element** and put your &lt;object> name
@@ -25,7 +25,7 @@ order: 183
 
 **Example:**
 
-![](/static/12312312313.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/12312312313.png)
 
 ## HTTP Header request
 
@@ -35,7 +35,7 @@ Content-Type: **text/xml**
 Method: **POST** (always)
 !!!
 
-![](/static/1222.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1222.png)
 
 ## XML request body
 

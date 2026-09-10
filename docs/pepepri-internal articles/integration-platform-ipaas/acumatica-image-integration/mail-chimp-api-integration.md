@@ -32,7 +32,7 @@ This integration allows you to connect your MailChimp account with Pepperi to au
     -   Go to **Profile -> Extras -> API Keys** to generate an API key.
     -   Go to **Audience -> Manage Audience -> Settings** to find the Audience ID.
 
-        ![](/static/image-570.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-570.png)
 
 #### Step 2: Create a Task to Get Accounts from Pepperi
 
@@ -47,7 +47,7 @@ This integration allows you to connect your MailChimp account with Pepperi to au
     -   **Audience ID:** Include your Audience ID in the URL (e.g., replace &lt;audience\_id> with your specific ID).
     -   **Authorization:** Use your API key in the Authorization header (e.g., apikey &lt;your-api-key>).
 
-![](/static/2-36.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-36.png)
 
 ### Example reference
 

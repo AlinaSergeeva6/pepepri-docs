@@ -26,7 +26,7 @@ Main purpose of using Splitit is to split payments to 2 or more.
 
 In order to better understanding how to integrate Splitit into the workflow, it is important to understand the transaction flow while using Splitit:
 
-![](/static/1-32.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-32.png)
 
 1.  The shopper inserts his personal details on your checkout page and selects Splitit as the payment method.
 2.  The shopper inserts his credit card details and chooses the payment period for the installment plan.
@@ -94,11 +94,11 @@ Development should be done in our sandbox environment. Once development is compl
 
 First, in order to connect to our services, you will need to authenticate yourself and get a SessionId.
 
-![](/static/2-24.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-24.png)
 
 Dataflow task login request example:
 
-![](/static/3-18.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3-18.png)
 
 You will get Session ID in your UI task with *get\_data* function then you should go to second part.
 
@@ -161,7 +161,7 @@ Not all keys are mandatory. Some descriptions:
 
 Buckley example:
 
-![](/static/4-14.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4-14.png)
 
 ```
     "RequestHeader":{
@@ -231,7 +231,7 @@ Remark – {checkoutURL}: The url that was returned from the initiate call.
 
 After that you will get from like this:
 
-![](/static/5-12.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/5-12.png)
 
 **4\. Redirect back from the Splitit payment form to the merchant checkout and closing the order**
 
@@ -254,6 +254,6 @@ Before you close the order on your end, it is highly recommended that you run a 
 
 It will look like this:
 
-![](/static/6-10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/6-10.png)
 
 And in case of success you should close the order.

@@ -13,12 +13,12 @@ It is neccesary create a fields, that takes MainKey, SecondaryKey, Values and sp
 
 MapDataExternalId is name of UDT.
 
-![](/static/1-1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-1.jpg)
 
 You can call webhook in workflow. For this make :
 
-![](/static/22.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/22.png)
 
 Web service URL : go to Detains in webhook task and copy **Commit Task URL:**
 
-![](/static/1-2.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-2.jpg)

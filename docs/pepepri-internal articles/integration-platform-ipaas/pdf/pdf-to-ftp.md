@@ -15,7 +15,7 @@ In order to save a file to FTP follow the next steps:
 
 With this dataflow task, we generate a PDF file
 
-![](/static/1Capture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1Capture.PNG)
 
 **Required settings:**
 
@@ -24,15 +24,15 @@ With this dataflow task, we generate a PDF file
 -   throw\_error\_on\_no\_data = disabled checkbox
 -   pdf\_html\_code, where we write the code on the PDF structure clicking Editor ()
 
-![](/static/2Capture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2Capture.PNG)
 
 We receive the generated PDF file
 
-![](/static/3Capture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3Capture.PNG)
 
 **Step#2: prepare a dataflow task** which will send pdf file to ftp server.
 
-![](/static/4Capture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4Capture.PNG)
 
 **Required settings:**
 
@@ -48,10 +48,10 @@ We receive the generated PDF file
 
 **Step#3:** Open FileZilla, enter the correct Host, Username and Password, then select the folder where we want to upload the PDF file (ftp\_in\_folder = FTP folder path)
 
-![](/static/9Capture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/9Capture.PNG)
 
 Run the dataflow task and done)
 
 Now we have saved the file to FTP
 
-![](/static/111Capture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/111Capture.PNG)

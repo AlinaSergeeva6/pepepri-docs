@@ -9,7 +9,7 @@ order: 295
 
 For example , you want to get Excel file like this:
 
-![](/static/1-8.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-8.png)
 
 Description:
 

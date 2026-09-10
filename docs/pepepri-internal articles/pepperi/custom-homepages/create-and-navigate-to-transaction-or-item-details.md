@@ -21,7 +21,7 @@ order: 273
     1.  **Title** and **description**: Create and Navigate to Transaction or Item Details
     2.  **Parameters**:
 
-        ![](/static/image-221.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-221.png)
 
 3.  Add the following **code**:
 
@@ -195,11 +195,11 @@ async function navigate(transaction_uuid, item_uuid, filter, view_type, smart_fi
 3.  You will be redirected to Steps tab of the **Flow editor**
 4.  Go to **Parameters tab** and add the following variables:
 
-    ![](/static/image-222.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-222.png)
 
 5.  In **Steps tab** add user script block with the following values:
 
-    ![](/static/image-223.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-223.png)
 
 6.  **Save** changes and update the flow
 
@@ -224,19 +224,19 @@ async function navigate(transaction_uuid, item_uuid, filter, view_type, smart_fi
     2.  **status\_list** If status is specified and the latest transaction with that status exists, the link will direct to it, and otherwise it will open new transaction . If status is empty (or invalid), the link will **always** open a new transaction. In most cases the value is set **1** for opening transactions in **In Creation**.
     3.  **filter** If you navigate to any order you will see the following:
 
-        ![](/static/image-224.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-224.png)
 
         Choose any category and see that the URL link is changing. The string starting from '**CurrentTab=**' and to the next '**&**' character (or the end of the URL) is the filter **value**. For example, in the following link the **filter value** is **highlighted** in green: https://app.pepperi.com/transactions/scope\_items/3e157e63-016e-46dc-8b72-f94942e042a7?**CurrentTab=****%22%7B%5C%22JsonFilter%5C%22:%5C%224129630e-16d5-4481-8b80-8b8c317ed78d%5C%22%7D%22**&SearchString=&StartIndex=0&SearchAll=false&SmartSearch=%5B%
 
     4.  **smart\_filter** Similarly to the filter, smart filter can also be viewed in opened transaction - expand one of the sections below the filter, choose value and click **apply**.
 
-        ![](/static/image-225.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-225.png)
 
         Once you have added smart search, you will see that the URL link now contains **SmartSearch** property. The same logic as of taking **value** for the filter applies. So, for instance, in the following URL, the **smart search value** is **highlighted** in green: https://app.pepperi.com/transactions/scope\_items/3e157e63-016e-46dc-8b72-f94942e042a7?CurrentTab=%22%7B%5C%22JsonFilter%5C%22:%5C%22fdb3a99c-b519-4b15-a269-38e2f1202faf%5C%22%7D%22&SearchString=&StartIndex=0&SearchAll=false&**SmartSearch=****%5B%7B%22ApiName%22:%22ItemTSAProductType%22,%22ComparisonType%22:%22Values%22,%22Values%22:%5B%221%20Cards%22%5D%7D%5D**
 
     5.  **view\_type** Open transaction and select any view from the dropdown:
 
-        ![](/static/image-226.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-226.png)
 
         After that, the URL will include the following property (value varies depending on your view selection): **ViewType=****%7B"Key":"OrderCenterView2","Value":"Small"%7D** Highlighted in green is the **value** you need to add to the **view\_type** input.
 

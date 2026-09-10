@@ -13,11 +13,11 @@ Distributed order is a feature that is usually added as a program or workflow. D
 
 You can then create a transaction with items that are assigned to a specific account. After you split the order of the main transaction, new transactions will be uploaded.
 
-![](/static/Screenshot-2023-03-31-152614.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2023-03-31-152614.png)
 
 **Select the accounts you want to ship-to.**
 
-![](/static/Screenshot-2023-03-31-152452.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2023-03-31-152452.png)
 
 **Distribute the totals across all locations.**
 
@@ -43,15 +43,15 @@ Now the job will be triggered, which will split the order and create child trans
 
 -   Copy the Dataflow Tasks and create a scheduled job for them - it should be the same as **Split Order (50682)** in **Services Demo Environment**.
 
-![](/static/2023-03-31-15_09_01-ACC-[7343]-General-Settings.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2023-03-31-15_09_01-ACC-[7343]-General-Settings.png)
 
 -   Copy the Webhook Tasks.
 
-![](/static/2023-03-31-15_15_10-ACC-[7343]-General-Settings.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2023-03-31-15_15_10-ACC-[7343]-General-Settings.png)
 
 -   Copy the UI Tasks.
 
-![](/static/2023-03-31-15_17_18-ACC-[7343]-Manage-UI-Tasks.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2023-03-31-15_17_18-ACC-[7343]-Manage-UI-Tasks.png)
 
 1.  In your transaction, create new step in the workflow, give it a following name: **Distributed Ordering**.
 2.  In this new step, add the following.

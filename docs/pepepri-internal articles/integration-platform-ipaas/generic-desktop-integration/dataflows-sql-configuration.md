@@ -12,7 +12,7 @@ Add these 2 fields:
 
 **signalr\_client\_id:** clientID
 
-![](/static/image-491.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-491.png)
 
 ### Dataflow task
 

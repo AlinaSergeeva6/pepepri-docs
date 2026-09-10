@@ -10,7 +10,7 @@ you can get it in 2 ways:
 
 **1) Create a field in subtransaction :**
 
-![](/static/2020-03-03_09h56_10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2020-03-03_09h56_10.png)
 
 **2) Do not create an additional field, do it in a Сustom Form:**
 

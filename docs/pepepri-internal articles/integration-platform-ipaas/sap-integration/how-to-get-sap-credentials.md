@@ -20,15 +20,15 @@ order: 153
 | licenseserver | server:30000/server:40000 |
 | desktop\_response\_timeout | 12000 (if there is a problem with timeouts) |
 
-![](/static/MicrosoftTeams-image.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/MicrosoftTeams-image.png)
 
 After we enter the username and password ---> **Change Company** \--->select server version ---> select Data Source ---> fill User ID and Password fields---> OK
 
-![](/static/Capture-19.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-19.PNG)
 
 **IMPORTANT!** To understand which version of SAP, you need to look at what number the version field begins with. If this is the number 10, then you need to update the importer.
 
-![](/static/Capture-20.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-20.PNG)
 
 **2\. How to find the transaction in SAP?**
 
@@ -36,7 +36,7 @@ We have 2 types of transactions - ***draft*** and ***regular***.
 
 If we need to find a transaction in the **regular** status, we follow Modules ---> Sales AR ---> Sales Order --->insert the ExternalID of the transaction--->enter
 
-![](/static/Capture-21.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-21.PNG)
 
 !!!info
 Below you can see the definition of **all fields of the OCRD (Sales Order)table** by clicking on the link [http://www.saptables.net/?schema=BusinessOne9.2&module\_id=3&table=OCRD](http://www.saptables.net/?schema=BusinessOne9.2&module_id=3&table=OCRD)
@@ -44,8 +44,8 @@ Below you can see the definition of **all fields of the OCRD (Sales Order)table*
 
 If we need to find a transaction in the **draft status**, we follow Modules ---> Sales - AR ---> Sales Reports -->Document Drats Report ---> select the desired report and see the table with the result
 
-![](/static/MicrosoftTeams-image-5.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/MicrosoftTeams-image-5.png)
 
 3\. If you need to get information about a **payment**, for example, about its type, you can find it by following Modules ---> Banking---> Incoming Payments -->Incoming Payments
 
-![](/static/Capture-22.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-22.PNG)

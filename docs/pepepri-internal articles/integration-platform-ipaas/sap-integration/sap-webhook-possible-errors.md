@@ -13,22 +13,22 @@ order: 152
 
 -   Windows --> System32 --> drivers --> etc -->hosts and delete the last line.
 
-![](/static/Capture-23.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-23.PNG)
 
 -   Services --> Go to details -->Delete
 
-![](/static/1-37.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-37.PNG)
 
 !!!info
 **IMPORTANT!** If the listener is not killed, but continues to appear in services, use the **command line** with admin access **tasklist** \--> **taskkill /f /pid &lt;id>**
 
-![](/static/image-457.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-457.png)
 
-![](/static/image-458.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-458.png)
 
 After that, PepperiOnloneListener will have the status **Stopped** We can see status with the help
 
-![](/static/image-459.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-459.png)
 !!!
 
 Ready. Launching the listener :)
@@ -53,4 +53,4 @@ Also, the reason that the listener is **stuck on Starting** may be that client i
 
 1.  **License Error Unknown error #100000060** - Change *server* value : add **HDB@**, example: HDB@DB1srv:30013. More details:
 
-[![Logo](/static/favicon.ico) License Error Unknown #100000060SAP Community](https://community.sap.com/t5/enterprise-resource-planning-q-a/license-error-unknown-100000060/qaq-p/12579525)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/static/favicon.ico) License Error Unknown #100000060SAP Community](https://community.sap.com/t5/enterprise-resource-planning-q-a/license-error-unknown-100000060/qaq-p/12579525)

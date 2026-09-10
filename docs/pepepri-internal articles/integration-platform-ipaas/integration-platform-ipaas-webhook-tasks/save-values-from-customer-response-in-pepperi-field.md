@@ -11,13 +11,13 @@ Suppose, we create a new account and the webhook sends a request to create this 
 
 Example:
 
-![](/static/2021-02-17_13h43_42.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2021-02-17_13h43_42.png)
 
 So, our goal is saving this values to TSA Fields for further use.
 
 For this , we can use **parsed\_object\_update** setting:
 
-![](/static/7-5.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/7-5.png)
 
 where:
 
@@ -29,4 +29,4 @@ where:
 
 After adding this, we will se in the response and fields will be updated corresponding values:
 
-![](/static/2021-02-17_13h51_02.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2021-02-17_13h51_02.png)

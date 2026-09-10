@@ -9,7 +9,7 @@ order: 28
 
 2.  **To test XSLT code, download "XSLT Checker.html" attached file and open it:**
 
-![](/static/image-984.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-984.png)
 
 pic. 1
 
@@ -30,19 +30,19 @@ pic. 1
   </xsl:if>
 ```
 
-![](/static/image-985.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-985.png)
 
 pic. 2
 
 1.  **If there is any error in your code, you will see a notification on the "Error Log" button. Click this button to see the detailed error:**
 
-![](/static/image-986.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-986.png)
 
 pic. 3
 
 1.  **With this tool you can debug not only XSLT code that is intended to generate a PDF file, but also XSLT code that will generate an Excel file, the sequence of actions is the same:**
 
-![](/static/image-987.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-987.png)
 
 pic. 4
 

@@ -15,7 +15,7 @@ Using webhook means not only to send the data to remote clients API system or da
 
 First and foremost: Each webhook routine after execution appears in “Transaction Logs” where you can find out whether your payload was delivered successfully.
 
-![](/static/1-25.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-25.png)
 
 Here we have 2 key columns we can determine by using Webhook Settings.
 
@@ -31,7 +31,7 @@ To get rid of this unwanted behavior suggested to use next setting.
 
 **USE\_HTTP\_STATUS**
 
-![](/static/2-19.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-19.png)
 
 **Field Name -** *use\_http\_status*
 
@@ -49,10 +49,10 @@ Next we need to set what exact value Integration System needs to use as Webhook 
 
 When the response from clients server received, you may use its data to determine webhook success status. After submitting webhook go to Transaction Logs and hit the “View Details” button to examine the whole process of webhook execution.
 
-![](/static/3-13.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3-13.png)
 
 At the very end of the log find “Response As Single Row” paragraph.
 
-![](/static/4-10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4-10.png)
 
 Here you will see the data representation of the client’s server response. You may use whatever value you need to determine webhook success status or use in expression.

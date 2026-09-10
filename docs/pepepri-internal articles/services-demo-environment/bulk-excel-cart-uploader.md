@@ -13,9 +13,9 @@ The **Bulk Cart Uploader** is a Pepperi UI Task that enables users to upload a f
 
 Users download a template, fill it with item details, upload it via the UI Task, and review the data in a Kendo Grid before updating the cart. If errors occur (e.g., invalid quantities or missing columns), they are displayed in the grid for correction.
 
-![](/static/22332.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/22332.png)
 
-![](/static/image7-43.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image7-43.png)
 
 ---
 
@@ -186,7 +186,7 @@ filterItemCartUpload: [
 -   To disable filtering, set filterItemCartUpload to an empty array (\[\]).
 -   Filters are applied during the validateCurrentCart function.
 
-![](/static/1122333.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1122333.png)
 
 #### Quantity Handling
 

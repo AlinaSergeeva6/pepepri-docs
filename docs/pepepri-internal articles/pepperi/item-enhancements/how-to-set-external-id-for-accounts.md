@@ -11,19 +11,19 @@ ExternalID is External field - It should be created “ somewhere outside”. In
 
 The first step is to make settings in Back-office: Settings –>Accounts –> Account types –> Customer(Edit) Then we should choose Workflow field:
 
-![](/static/1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1.png)
 
 img1
 
 All action that is necessary to change is situated in Submitted to Submitted (you can see on image the final result). But it could be set in any other workflow branches In order to get ExternalID we will use TSANewAccountID field, but we should create it first (you can choose any other name for that field). Accounts –> Fields –> “+Add Fields”:
 
-![](/static/2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2.png)
 
 img2
 
 Now we can come back to the previous step (Workflows): In Submitted to Submitted path we should create the logic.
 
-![](/static/3-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3-1.png)
 
 img3
 
@@ -31,13 +31,13 @@ Also we should create Boolean field (red rhombus on image #3), let\`s name it TS
 
 Account –> Fields –> “+Add Fields” –> CheckBox –> Create name for Field name –> Save
 
-![](/static/4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4.png)
 
 img4
 
 Press edit (as on an image before) and add Branch. In Workflow we should create branch (“+Add” –> Branch Condition –> Select ExecuteWebhook; Choose submit to the 2nd field ).
 
-![](/static/5.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/5.png)
 
 img5
 
@@ -49,7 +49,7 @@ It is time to input code into 1st Action and create logic that in the case of tr
 
 To create, name and save Custom form press File:
 
-![](/static/6.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/6.png)
 
 img6
 
@@ -124,7 +124,7 @@ The next step is to add Actions and Branches on img4.
 
 We should create new action with Webhook name, and once we open it – we should Enter the web service URL to be executed.
 
-![](/static/7.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/7.png)
 
 img7
 
@@ -138,13 +138,13 @@ The next explanation will be about receiving URL.
 
 3\. Press Plugin Settings button
 
-![](/static/8.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/8.png)
 
 img8
 
 4\. Manage Tasks –> Webhook tasks –> Add new task
 
-![](/static/9.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/9.png)
 
 img9
 
@@ -170,7 +170,7 @@ Here we are looking for match of InternalID, and if find the match, we assign ou
 
 Last step – press Save button.
 
-![](/static/10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/10.png)
 
 img10
 
@@ -178,6 +178,6 @@ img10
 
 Test it on a phablet, then in Integration platform choose Transaction Logs. Check status and press View Details button. NewAccountID in this file is equal to ExternalID. We created it manually and now assign one field to another. To force user fill in the NewAccountID field, change its status to Mandatory. Account Types –> Forms –> Edit (Admin or Rep or other profile) –>find NewAccountID field left and press “+”, then it will appear in right column –> choose it and put Mandatory.
 
-![](/static/11.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/11.png)
 
 img11

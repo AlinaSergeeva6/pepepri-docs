@@ -13,12 +13,12 @@ order: 214
 2.  Open relevant transaction webhook.
 3.  Change link and uncheck checkbox
 
-![](/static/image-321.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-321.png)
 
 the link for each webhook is stored in webhook settings(Integration Platform).
 
 Click on the details tab
 
-![](/static/image-322.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-322.png)
 
 Commit Task URL is the webhook link to be inserted

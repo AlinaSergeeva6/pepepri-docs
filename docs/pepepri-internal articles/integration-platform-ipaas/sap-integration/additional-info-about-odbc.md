@@ -139,9 +139,9 @@ where procedure-name specifies the name of a procedure (stored on the data sourc
 
 Integration configuration is the same as for Native SQL, the only thing you should not to forget is to change client type:
 
-![](/static/1-39.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-39.png)
 
-![](/static/2-28.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-28.png)
 
 ## SAP HANA First Time Plugin Installation
 
@@ -149,10 +149,10 @@ Integration configuration is the same as for Native SQL, the only thing you shou
 
 Second requirement - if customer uses only 32bit version of ODBC Driver, 64bit should also be installed. To check it, search 'ODBC' on server
 
-![](/static/image-465.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-465.png)
 
 And find line with column in the red box in ODBC Data Sources (32-bit), 'System DSN' tab
 
-![](/static/image-466.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-466.png)
 
 This is correct name of the ODBC driver you need to use later. Then follow all the steps that are described in the "**First Time Plugin Installation"** article. Link below: [https://kbint.pepperi.com/integration-platform-ipaas/integration-with-different-erp-systems/quickbooks-desktop-integration/first-time-plugin-installation](https://kbint.pepperi.com/integration-platform-ipaas/integration-with-different-erp-systems/quickbooks-desktop-integration/first-time-plugin-installation)

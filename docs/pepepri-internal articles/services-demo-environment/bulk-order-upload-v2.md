@@ -8,7 +8,7 @@ order: 23
 
 The feature allows you to upload orders with different transaction IDs with the items from separate transactions and submit them at once. The order items will appear in a table, where you can edit and/or delete each row(which represents the info about each item). Then you can upload transactions.
 
-![](/static/11111.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/11111.png)
 
 ## Advantages and disadvantages
 
@@ -172,22 +172,22 @@ columns: {
 
 If a customer wants to use another column name in the uploading file you can change it easily. For example, you need to change the names of the "TransactionID", "ItemNumber" columns to "OrderNumber" and "Product". Go to the "columns" and change names as you can see on the screenshot and save changes. Now you can upload your file with the new column names.
 
-![](/static/mapping.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/mapping.PNG)
 
-![](/static/table-column_names.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/table-column_names.PNG)
 
 ### Additional fields
 
 In case you need to add new additional columns, follow these instructions. In the example, we consider two situations: adding a header field and a line field. For headers we will add "TestPO" and for lines, we will add "LineRemark" fields. Go to the "columns" section and add new fields.
 
-![](/static/new_columns.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/new_columns.PNG)
 
 Then you have to go to the "createTransaction" function where you need to define variables for the new fields. And specify your new fields in the object to create a transaction.
 
-![](/static/variables.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/variables.PNG)
 
-![](/static/add_values_to_lines.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/add_values_to_lines.PNG)
 
 For line fields this will be enough. But for the header fields you need to go to the "Bulk Order Upload - Create Transaction" UI task ->"HTTP" and add your new field as shown in the screenshot.
 
-![](/static/order_uploader.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/order_uploader.PNG)

@@ -27,19 +27,19 @@ BeyondTrust Privileged Remote Access (PRA) lets Advantive employees securely con
 
 1.  **Send the customer the correct installer link** *(refer to the* ***customer email template*** *in the* ***💡Tips*** *section at the bottom of this article):* *❗****Note:*** *Make sure you have the* *right Business Unit's URL. If a customer uses the wrong URL to install, it will place them in the wrong business unit's endpoint group, and you will not be able to find them.*
 
-![Cover](/static/1583973260045.jpeg)
+![Cover](https://alinasergeeva6.github.io/pepepri-docs/static/1583973260045.jpeg)
 
 Lucy
 
 [https://advantive.beyondtrustcloud.com/download\_client\_connector?fn=sra-pin-win\_x64-j130jed1w8hgeyizgei7fgif7w6gx5hjx8ficry0hf7c90.msi&jc=0897f2348d1a481564165fb4ec30e261&p=winNT-64-msi&ss=aa1119cf4ac8353d8baddf06b157ffbb7cf9d1e9](https://advantive.beyondtrustcloud.com/download_client_connector?fn=sra-pin-win_x64-j130jed1w8hgeyizgei7fgif7w6gx5hjx8ficry0hf7c90.msi&jc=0897f2348d1a481564165fb4ec30e261&p=winNT-64-msi&ss=aa1119cf4ac8353d8baddf06b157ffbb7cf9d1e9)
 
-![Cover](/static/images.png)
+![Cover](https://alinasergeeva6.github.io/pepepri-docs/static/images.png)
 
 Opmetrix
 
 [https://advantive.beyondtrustcloud.com/download\_client\_connector?fn=sra-pin-win\_x64-j130ijedjjxwfg56ej87e1hgdhjjj7w5efwfcry0hf7c90.msi&jc=108900ef64cb80258734930005fc86f6&p=winNT-64-msi&ss=adf53bedc17ddb4f20117de4e13d7da88ab174f9](https://advantive.beyondtrustcloud.com/download_client_connector?fn=sra-pin-win_x64-j130ijedjjxwfg56ej87e1hgdhjjj7w5efwfcry0hf7c90.msi&jc=108900ef64cb80258734930005fc86f6&p=winNT-64-msi&ss=adf53bedc17ddb4f20117de4e13d7da88ab174f9)
 
-![Cover](/static/Pepperi__1_.webp)
+![Cover](https://alinasergeeva6.github.io/pepepri-docs/static/Pepperi__1_.webp)
 
 Pepperi
 

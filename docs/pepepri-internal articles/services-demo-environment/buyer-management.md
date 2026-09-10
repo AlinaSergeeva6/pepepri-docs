@@ -11,7 +11,7 @@ order: 26
 
 Allow you to create/delete/observe Buyers for any account available to the user with any Profile type connected for him.
 
-![](/static/image-988.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-988.png)
 
 ### Advantages and disadvantages
 

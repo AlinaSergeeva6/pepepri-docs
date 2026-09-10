@@ -23,7 +23,7 @@ But you don't have any activity, so lets create it!
 
 Our payment UI task is located in transaction, so after we get success response from our payment system we should create new activity (In general, it should be separate activity type only for this purpose). So lets use “pepperi.app.activities.add” pepperi api call and… We will get activity with “New” status, so our InternalID will be with “-” (-34 etc.). That's why we should use http POST request:
 
-![](/static/1-41.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-41.png)
 
 **bodyofRequest** should be next:
 
@@ -51,11 +51,11 @@ Target and Source Objects should be next:
 
 Settings Tab:
 
-![](/static/2-30.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-30.png)
 
 Mapping Tab:
 
-![](/static/3-22.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3-22.png)
 
 All that fields (SAP fields) you can find in other article or with next link: [http://www.saptables.net/?schema=BusinessOne9.1&column=CardCode](http://www.saptables.net/?schema=BusinessOne9.1&column=CardCode)
 
@@ -63,7 +63,7 @@ All that fields (SAP fields) you can find in other article or with next link: [h
 
 So we created activity, get it InternalID and can run our webhook. We need to create use **get\_data()** UI function to run next dataflow task:
 
-![](/static/4-17.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4-17.png)
 
 **bodyofRequest** should be next:
 

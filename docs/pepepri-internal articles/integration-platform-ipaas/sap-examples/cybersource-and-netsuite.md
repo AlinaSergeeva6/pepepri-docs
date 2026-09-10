@@ -9,7 +9,7 @@ order: 138
 
 You can find the description of general processes between **NetSuite**, **Payment Systems** and **Pepperi** here:
 
-[![Logo](/static/image) Netsuite and Payment system integration | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/article-drafts/general-about-drafts/payment-systems-and-netsuite)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/static/image) Netsuite and Payment system integration | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/article-drafts/general-about-drafts/payment-systems-and-netsuite)
 
 **Services Demo Environment** (7343) (30013939)
 
@@ -77,7 +77,7 @@ You can find the description of general processes between **NetSuite**, **Paymen
 
 The result should be as follows:
 
-![](/static/image-471.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-471.png)
 
 ▶ Copy the following UI Tasks from **Services Demo Environment**:
 
@@ -121,7 +121,7 @@ Create two Saved Searches:
 
 ◾ Results:
 
-![](/static/image-472.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-472.png)
 
 ▶ Pepperi Export Payment Card Tokens:
 
@@ -137,7 +137,7 @@ Create two Saved Searches:
 
 ◾ Results:
 
-![](/static/image-473.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-473.png)
 
 ---
 
@@ -157,7 +157,7 @@ Create two Saved Searches:
 
 The result should be as follows:
 
-![](/static/image-474.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-474.png)
 
 ▶ Copy the following Dataflow Tasks from the **Services Demo Environment**:
 
@@ -185,7 +185,7 @@ The result should be as follows:
 
 The result should be as follows:
 
-![](/static/image-475.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-475.png)
 
 ▶ Copy the following Dataflow Task from the **Services Demo Environment**:
 

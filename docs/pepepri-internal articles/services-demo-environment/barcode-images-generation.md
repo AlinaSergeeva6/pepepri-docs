@@ -38,7 +38,7 @@ Basically, you need a single scheduled job to generate and upload images. Below 
 3.  Select the catalog filter "Hats".
 4.  Click on the 1st item's image and select the last one. Here's your barcode:
 
-![](/static/Screenshot-2026-01-30-at-17.46.03.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2026-01-30-at-17.46.03.png)
 
 ### How to copy to another environment:
 

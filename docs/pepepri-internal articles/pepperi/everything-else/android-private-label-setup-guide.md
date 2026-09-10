@@ -13,50 +13,50 @@ order: 262
 
 Create the APP in Play console:
 
-![](/static/image-256.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-256.png)
 
 Pic1
 
 1.  In Pepperi, select First APK and create App.;
 2.  After First APK is successful, click Download and choose Bundle:
 
-![](/static/image-257.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-257.png)
 
 Pic2
 
 1.  It downloads a file, find it:
 
-![](/static/image-258.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-258.png)
 
 Pic3
 
 1.  Back to Play Console. Go to Internal Testing:
 
-![](/static/image-259.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-259.png)
 
 Pic4
 
 1.  Create New Release:
 
-![](/static/image-260.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-260.png)
 
 Pic5
 
 1.  Click Choose Signing Key – Use Google Generated Key:
 
-![](/static/image-261.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-261.png)
 
 Pic6
 
 1.  Upload the First APK Bundle that you downloaded:
 
-![](/static/image-262.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-262.png)
 
 Pic7
 
 Uploaded:
 
-![](/static/image-263.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-263.png)
 
 Pic8
 
@@ -75,7 +75,7 @@ Pic8
 
         Use “pepperi + {type the name of the customer} for service account name and service account id:
 
-        ![](/static/image-264.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-264.png)
 
         Pic9.
 
@@ -85,7 +85,7 @@ Pic8
 
         j. Select a role (Service Accounts / Service Account User)
 
-    ![](/static/image-265.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-265.png)
 
     Pic10
 
@@ -99,7 +99,7 @@ Pic8
 
     o. Select JSON and Create. It will download a file:
 
-![](/static/image-266.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-266.png)
 
 Pic11
 
@@ -110,7 +110,7 @@ Pic11
 
 17\. Add ?support\_mode=true to the URL to see the Support tab (to look up Jenkins failure #, and also, to have more Android app versions available to you when creating the build.):
 
-![](/static/image-267.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-267.png)
 
 Pic12
 
@@ -120,11 +120,11 @@ Pic12
 2.  Define the privacy policy in App Content / Start Declaration. All of the questions are easy, be “minimalist” and answer “no” to most of the questions.
 3.  Paste the link for the Pepperi privacy policy and save:
 
-![](/static/image-268.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-268.png)
 
 Pic13
 
-![](/static/image-269.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-269.png)
 
 Pic14
 
@@ -140,20 +140,20 @@ d. Make sure the **‘exceeds inventory available’ setting on the transaction 
 
 e. Recommend unchecking this box, but this does not prevent them from logging in and finding things to complain about.
 
-![](/static/image-270.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-270.png)
 
 Pic15
 
 1.  For data safety, use the answers here (there is an Import from CSV option). Double click the icon below to open the CSV in Excel:
 
-![](/static/image-271.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-271.png)
 
 Pic16
 
 1.  Main store listing, do not include extra info. **You will get rejected if this description is too long.** Try for example (Short Description: Mobile Ordering Application). Full Description: **“This mobile application allows \[CustomerName\] customers and reps to track order history, take orders, and view our latest product information and pricing.”**
 2.  If you have not changed the default colors you can use the regular Pepperi app for iPad and iPhone, to upload the screenshots, but if you use any Apple device you must delete this top bar that will cause the screenshots to be auto flagged as having been taken from an iOS device instead of Android:
 
-![](/static/image-272.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-272.png)
 
 Pic17
 
@@ -161,19 +161,19 @@ If you DO have custom colors you must add your email (Play store email) to the l
 
 1.  Create Production Release and add bundle from library. Click Next:
 
-![](/static/image-273.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-273.png)
 
 Pic18
 
 1.  Fix all errors (mostly just answering questions, answer them all with a “minimalist” assumption.):
 
-![](/static/image-274.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-274.png)
 
 Pic19
 
 1.  Set the production release for review after correcting all errors:
 
-![](/static/image-275.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-275.png)
 
 Pic20
 

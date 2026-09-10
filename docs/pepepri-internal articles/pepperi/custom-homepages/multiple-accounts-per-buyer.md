@@ -15,17 +15,17 @@ The ability for the buyer to create orders for different accounts that are conne
 
 If the buyer is connected to several accounts, a dropdown appears in the header (or in the body) with the list of all connected accounts. When creating an order, the selected account will be used to create a new transaction before opening it. After that, the dropdown will be disabled in the order center and cart to prevent you from changing your account during the order. You can change your account only on the home page.
 
-![](/static/image-120.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-120.png)
 
 pic1
 
-![](/static/image-121.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-121.png)
 
 pic2
 
 If you have only one account connected you can hide account name or show it without dropdown
 
-![](/static/image-122.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-122.png)
 
 pic3
 
@@ -33,17 +33,17 @@ pic3
 
 Connect a few accounts to the test buyer with a simple CSV file in the back office:
 
-![](/static/image-123.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-123.png)
 
 pic4
 
-![](/static/image-124.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-124.png)
 
 pic5
 
 You can also get the list of all connected Account-Buyers with get request (this list is not available in Pepperi Resources in the IPaaS):
 
-![](/static/image-125.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-125.png)
 
 pic6
 
@@ -59,11 +59,11 @@ The reason why we save the chosen account to UDT is using Pages for the body of 
 
 First of all you need to download the header template in back office
 
-![](/static/image-126.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-126.png)
 
 pic7
 
-![](/static/image-127.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-127.png)
 
 pic8
 
@@ -850,7 +850,7 @@ After that copy this styles to the ‘food-header.css’ file in the ‘header�
 
 And you should see dropdown like this:
 
-![](/static/image-128.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-128.png)
 
 pic9
 
@@ -858,7 +858,7 @@ pic9
 
 To be sure that everything works correctly you need to check if MultipleAccounts UDT updates after changes in dropdown:
 
-![](/static/image-129.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-129.png)
 
 pic10
 

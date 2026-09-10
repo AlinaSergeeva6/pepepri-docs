@@ -9,45 +9,45 @@ order: 210
 
 Aging List - it is general template which looks like activities in Pepperi App. In the sample you can see Aging List:
 
-![](/static/1-27.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-27.png)
 
 It is completely responsive, so you can change anything, while spending as little time as possible.
 
-![](/static/2-20.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-20.png)
 
-![](/static/3-14.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3-14.png)
 
-![](/static/4-11.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4-11.png)
 
 You can choose default date picker value:
 
-![](/static/5-9.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/5-9.png)
 
 If you need to see all data click button “Clear” or choose another default date picker value.
 
 As you can see in the header of table we have total of items:
 
-![](/static/6-8.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/6-8.png)
 
 Here you can see total for some of columns:
 
-![](/static/7-6.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/7-6.png)
 
 Here you can see total for chosen items for Debit column:
 
-![](/static/8-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/8-4.png)
 
 Than you can click top buttons, in case of "**Cash**":
 
-![](/static/9-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/9-4.png)
 
 in case of "**Cheque**":
 
-![](/static/10-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/10-3.png)
 
 In this template you can very easy create table with quantity of columns which you need, with quantity and functionality of smart search which you need, date picker, with styles like in pepperi app. You can found in the start of code in object which named gs (general scope) all that you need:
 
-![](/static/1-28.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-28.png)
 
 Firstable, you need to choose and add your configuration and main fields which you need (fields for columns we add later)
 

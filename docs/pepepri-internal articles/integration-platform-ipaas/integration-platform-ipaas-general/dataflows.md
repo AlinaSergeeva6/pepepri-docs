@@ -9,7 +9,7 @@ order: 257
 
 Dataflow task - really powerful tool for working with data They allows you to send or get any data using HTTP, Desktop application or another Dataflow Task To create it, open 'Manage Tasks' tab in your integration account. Select 'Dataflow task' from the dropdown
 
-![](/static/image-277.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-277.png)
 
 Specify such parameters (all of them are mandatory):
 

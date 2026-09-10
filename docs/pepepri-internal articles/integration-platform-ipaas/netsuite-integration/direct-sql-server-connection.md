@@ -38,7 +38,7 @@ The direct SQL Server connection principle allows Pepperi to remotely connect to
     -   **Password:** Provided by the client
     -   **Connection Timeout:** Set to 3000 (in milliseconds, e.g., 3 seconds)
 
-    ![](/static/image-438.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-438.png)
 
 #### Step 3: Create Dataflow Task
 
@@ -47,15 +47,15 @@ The direct SQL Server connection principle allows Pepperi to remotely connect to
     -   **is\_new\_api:** Set to true
     -   **is\_sql\_source:** Set to true
 
-        ![](/static/image-439.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-439.png)
 
 -   Navigate to the **SQL** tab and write the desired SQL query (e.g., SELECT \* FROM Customers).
 
-    ![](/static/image-440.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-440.png)
 
 #### Step 4: Test the Connection
 
 -   Run the dataflow task to verify the connection and data retrieval.
 -   Ensure the query executes successfully and returns the expected data.
 
-![](/static/image-441.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-441.png)

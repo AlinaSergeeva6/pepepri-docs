@@ -6,7 +6,7 @@ order: 293
 
 ### Brands
 
-![](/static/image-96.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-96.png)
 
 7KB
 
@@ -16,7 +16,7 @@ order: 293
 
 ### Categories
 
-![](/static/image-97.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-97.png)
 
 12KB
 
@@ -26,7 +26,7 @@ order: 293
 
 ### Information
 
-![](/static/image-98.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-98.png)
 
 6KB
 
@@ -36,7 +36,7 @@ order: 293
 
 ### Targets
 
-![](/static/image-99.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-99.png)
 
 17KB
 

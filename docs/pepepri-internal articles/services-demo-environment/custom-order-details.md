@@ -64,11 +64,11 @@ The entered values will be substituted in the fields earlier, and if they are no
 
 The view in Browser:
 
-![](/static/11332323213.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/11332323213.png)
 
 Mobile view:
 
-![](/static/44114141.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/44114141.png)
 
 ```
 //There in HTML we have two types of lines for input fields:

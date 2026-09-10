@@ -15,15 +15,15 @@ During you work with UI tasks you may face up the strong need to send some data 
 
 ### General Setting
 
-![](/static/1-23.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-23.png)
 
-![](/static/2020-04-22_16h52_55.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2020-04-22_16h52_55.png)
 
 ### Advanced Dataflow Task Settings
 
-![](/static/2-17.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-17.jpg)
 
-![](/static/2020-04-22_16h54_45.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2020-04-22_16h54_45.png)
 
 **dataflow\_email\_body\_html**. This setting contains general appearance of you email body. Use HTML to arrange the data.
 
@@ -45,7 +45,7 @@ You may find all code setup and setting by using provided example.
 
 #### General settings
 
-![](/static/2020-04-22_17h00_34.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2020-04-22_17h00_34.png)
 
 ### Functionality overview
 
@@ -108,30 +108,30 @@ After that you can reach this values within the dataflow task using \*~post\_arr
 
 This approach used in dataflow\_email\_to setting
 
-![](/static/4-8.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4-8.png)
 
 and in dataflow\_email\_body
 
-![](/static/5-7.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/5-7.png)
 
 **How the example works**
 
 Execute Send Email UI
 
-![](/static/6-6.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/6-6.png)
 
-![](/static/8-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/8-2.png)
 
 Write your valid email into appropriate field. Note that test email will be send to email you wrote in this field so be careful.
 
-![](/static/9-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/9-2.png)
 
 Press Send.
 
 If you used valid email, you will be notified about successful execution.
 
-![](/static/10-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/10-2.png)
 
 Examine your mailbox
 
-![](/static/11-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/11-2.png)

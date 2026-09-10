@@ -17,21 +17,21 @@ Log in to the [https://businesscentral.dynamics.com/](https://businesscentral.dy
 
 Go to search panel and type: a) In old BC versions - **Azure Active Directory Applications**:
 
-![](/static/image-522.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-522.png)
 
 b) In new BC versions - **Microsoft Entra** **Applications**:
 
-![](/static/image-523.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-523.png)
 
 After update on April 2024 **Azure Active Directory Applications** was changed to **Microsoft Entra** **Applications**, but the configuration process remains the same. So all further steps are identical for both versions.
 
 Click on **New** to add a new app:
 
-![](/static/image-524.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-524.png)
 
 Configure the app with your existing **Client ID** from Azure - Application (client) ID. Then add a **Description** (name):
 
-![](/static/image-525.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-525.png)
 
 Now switch the **State** to *Enabled* value and submit the popup.
 
@@ -39,8 +39,8 @@ Now switch the **State** to *Enabled* value and submit the popup.
 
 After that you need to configure permissions. In the **User Permission Sets** section click on empty row - then push on 3 dots and select the needed permissions from the popup list:
 
-![](/static/image-526.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-526.png)
 
 For basic configuration specify the following permissions:
 
-![](/static/image-527.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-527.png)

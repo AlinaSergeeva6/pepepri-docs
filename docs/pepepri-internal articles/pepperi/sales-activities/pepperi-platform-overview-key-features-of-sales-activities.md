@@ -6,7 +6,7 @@ order: 329
 
 This article explores the key features of Sales Activities in the Pepperi platform, focusing on **Transaction Types** and **Activity Types**, which are essential for managing sales processes and user interactions.
 
-![](/static/image-24.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-24.png)
 
 ---
 
@@ -14,7 +14,7 @@ This article explores the key features of Sales Activities in the Pepperi platfo
 
 Transactions are a cornerstone of Pepperi’s configuration, enabling various business transactions for accounts. Transaction Types define the different kinds of transactions, such as Orders, Returns, Invoices, Stock Counting, Quotes, and more.
 
-![](/static/image-25.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-25.png)
 
 #### Common Transaction Types
 
@@ -22,7 +22,7 @@ Transactions are a cornerstone of Pepperi’s configuration, enabling various bu
 -   **Sales Quotation:** Proposal or quote prepared by a sales representative.
 -   **B2B Storefront Transaction (Buyer Order):** Order placed directly by the buyer via the Pepperi B2B Storefront.
 
-![](/static/image-26.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-26.png)
 
 **Note:** Transaction Types can vary in several aspects:
 

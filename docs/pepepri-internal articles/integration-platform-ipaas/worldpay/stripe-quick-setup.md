@@ -11,11 +11,11 @@ order: 188
 
 Before using Stripe in a new environment for the first time, you need to install it. Click **Install** in Quick Setup to install Stripe in your environment.
 
-![](/static/Stripe-Quick-Setup-Installation-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Installation-1.png)
 
 **Stripe in Quick Setup before installation**
 
-![](/static/Stripe-Quick-Setup-Installation-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Installation-2.png)
 
 **Stripe in Quick Setup after installation**
 
@@ -23,7 +23,7 @@ Before using Stripe in a new environment for the first time, you need to install
 After a successful installation, you will see two groups of UI Tasks.
 !!!
 
-![](/static/Stripe-Quick-Setup-Installation-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Installation-3.png)
 
 **Two groups of UI Tasks created by Quick Setup.**
 
@@ -42,7 +42,7 @@ Stripe Quick Setup is divided on 3 sections:
 
 General section allows to configure basic Stripe Payment. You have the option to create multiple connections depending on the **Transaction** or **Activity**. There is also a Test Mode for easy testing and making changes before connecting to production.
 
-![](/static/Stripe-Quick-Setup-General-Section.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-General-Section.png)
 
 For a correct connection, you must not only select the **Resource Type** and **Sub Type**, but also add certain settings on the **Advanced** tab.
 
@@ -50,7 +50,7 @@ For a correct connection, you must not only select the **Resource Type** and **S
 
 Advanced section allows to configure default Stripe Payment settings and multiple Payment options.
 
-![](/static/Stripe-Quick-Setup-Advanced-Section.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Advanced-Section.png)
 
 ### Generic Block
 
@@ -80,35 +80,35 @@ In the Connected Account & API/JS Keys block you can choose one of two connectio
 -   By connecting your own account if you have access to this account in Stripe **(Recommended)**
 -   By providing Publishable and Restricted keys (if the customer is unable to access the account or does not agree to use the Pepperi account). If you are using Stripe Api and JS Keys, you can test them with the **Test Keys** button.
 
-![](/static/Stripe-Quick-Setup-Advanced-Section-Connected-Account-&-API-JS-Keys-Block.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Advanced-Section-Connected-Account-&-API-JS-Keys-Block.png)
 
 ### Payment Methods Block
 
 In the Payment Methods block, you can select the payment methods that will be used in this connection (for different transactions, you can use different connections). Each method has its own set of settings.
 
-![](/static/Stripe-Quick-Setup-Advanced-Section-Payment-Methods-Block.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Advanced-Section-Payment-Methods-Block.png)
 
 ### Duplicates Checks Block
 
 The Duplicates Checks block contains settings that cannot be changed. All necessary settings for these fields are already created in Quick Setup and do not need to be changed.
 
-![](/static/Stripe-Quick-Setup-Advanced-Section-Duplicates-Checks-Block.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Advanced-Section-Duplicates-Checks-Block.png)
 
 ### Fields Mapper Block
 
 The Fields Mapper block contains the fields necessary for the correct operation of the stripe. **Some of them are optional.** More detailed information about the fields can be read by hovering over the field name.
 
-![](/static/Stripe-Quick-Setup-Advanced-Section-Fields-Mapper-Block.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Advanced-Section-Fields-Mapper-Block.png)
 
 ### Visuals Block
 
 In the Visuals block contains the settings for the styles for the Stripe form. You can check the visual changes made by clicking on the **Preview** button.
 
-![](/static/Stripe-Quick-Setup-Advanced-Section-Visuals-Block-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Advanced-Section-Visuals-Block-1.png)
 
 **All style settings for the Stripe form.**
 
-![](/static/Stripe-Quick-Setup-Advanced-Section-Visuals-Block-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Advanced-Section-Visuals-Block-2.png)
 
 **Preview of the Stripe form.**
 
@@ -116,13 +116,13 @@ In the Visuals block contains the settings for the styles for the Stripe form. Y
 
 Logs section show all logs from Stripe UI Tasks.
 
-![](/static/Stripe-Quick-Setup-Logs-Section.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Logs-Section.png)
 
 ## Configuration
 
 After saving the connection, information about it and other connections can be found in the General settings.
 
-![](/static/Stripe-Quick-Setup-Configurations.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Configurations.png)
 
 ## Setup Stripe In Pepperi
 
@@ -146,7 +146,7 @@ window.parent.document.getElementsByClassName("mat-focus-indicator pep-button ic
 
 Sample code of a custom form with a query connection. You can get it by clicking the blue button and pasting the copied text into the custom form.
 
-![](/static/Stripe-Quick-Setup-Advanced-Section-Setup-Stripe-In-Pepperi.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Advanced-Section-Setup-Stripe-In-Pepperi.png)
 
 !!!warning
 Be careful, most payments need to block any extra buttons(which can close the form after starting the payment procedure), so it is mandatory to use an additional code in custom form:
@@ -158,11 +158,11 @@ window.parent.document.getElementsByClassName("mat-focus-indicator pep-button ic
 
 As a result, you will see a Stripe Page, and after confirming the payment, you will see an Approve Page.
 
-![](/static/Stripe-Quick-Setup-Advanced-Section-Setup-Stripe-In-Pepperi-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Advanced-Section-Setup-Stripe-In-Pepperi-2.png)
 
 **Stripe form in the transaction.**
 
-![](/static/Stripe-Quick-Setup-Advanced-Section-Setup-Stripe-In-Pepperi-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Advanced-Section-Setup-Stripe-In-Pepperi-3.png)
 
 **When the transaction is successful, you will see the Approved Page.**
 
@@ -172,11 +172,11 @@ If you plan to customize the payment, change some kind of logic, visual part, yo
 
 To do this, you need to go to the **Stripe Payment Generic Main** and **Stripe Payment Quick Setup** UI task settings and change the **task\_version** value to empty.
 
-![](/static/Stripe-Quick-Setup-Additional-Features-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Additional-Features-1.png)
 
 **Default setting.**
 
-![](/static/Stripe-Quick-Setup-Additional-Features-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Stripe-Quick-Setup-Additional-Features-2.png)
 
 **Disabled setting.**
 

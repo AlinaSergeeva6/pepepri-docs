@@ -11,7 +11,7 @@ order: 25
 
 This Custom form allow you to add coment with date and time creating and with the id of the person who wrote the comment and to read comments for transaction all managers or other comnpany members which work with current transaction at any stage and leave coment here.
 
-![](/static/image-989.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-989.png)
 
 ### Advantages and disadvantages
 

@@ -15,7 +15,7 @@ This article explains how to configure and use the Dataflow task *Updating UDT w
 
 ### Main Settings
 
-![](/static/2021-02-15_13h27_33.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2021-02-15_13h27_33.png)
 
 Main settings
 
@@ -42,4 +42,4 @@ Upon successful execution, the Dataflow task:
 -   Includes all additional fields (beyond MainKey and SecondaryKey) as part of the JSON values in the UDT.
 -   Logs the resulting JSON file (if write\_key\_val\_file is enabled) for verification.
 
-![](/static/11-8.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/11-8.png)

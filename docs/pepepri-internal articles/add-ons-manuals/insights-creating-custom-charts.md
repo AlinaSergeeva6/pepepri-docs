@@ -6,15 +6,15 @@ order: 69
 
 Insights provides various ways to display customer data for better understanding and organization. The design of display elements can be found in the "Design" dropdown within the Content tab of each element.
 
-![](/static/image-772.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-772.png)
 
 The selected elements for the design are located in the Insights Charts Manager. Here, you can modify existing charts or add new ones as needed.
 
-![](/static/image-773.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-773.png)
 
 On Pages, charts are used to visualize different types of data in graphical form. Data retrieved through Data Queries needs to be processed and displayed according to the client’s requirements. In most cases, pre-configured charts are sufficient, as they include system indications and cover common customer needs.
 
-![](/static/image-774.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-774.png)
 
 However, if modifications are required—such as changes in data processing, specific query requirements, or adjustments in styles and display formats—you will need to create custom charts.
 
@@ -29,7 +29,7 @@ To add a new chart or update an existing one with new logic, follow these steps:
 
 Once the template file is uploaded, a preview with visualized test data will be displayed on the right side.
 
-![](/static/image-775.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-775.png)
 
 ## Working with Chart Files
 
@@ -40,13 +40,13 @@ Most charts follow a structured approach to rendering and share key components:
 -   Most charts use a Configuration typedef to define chart settings, such as labels.
 -   The ChartData structure includes Series, Groups, and DataSet.
 
-    ![](/static/image-776.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-776.png)
 
 ### Class Definition
 
 -   Most charts export a class named MyChart, where all logic is defined.
 
-    ![](/static/image-777.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-777.png)
 
 -   The class constructor initializes chart elements within the provided HTML container.
 -   Styles are dynamically added to ensure proper rendering across different screen sizes.
@@ -102,17 +102,17 @@ The getConfiguration() function builds the chart’s configuration object:
 
 If you need a benchmark chart to use only two colors based on a Target value, you can update the standard Benchmark column chart configuration:
 
-![](/static/image-778.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-778.png)
 
 Changing several parameters allows you to change the overall appearance of the benchmark.
 
-![](/static/image-779.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-779.png)
 
 Old New
 
 As a result, the benchmark will now display only two colors, depending on the Target value.
 
-![](/static/image-780.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-780.png)
 
 #### Example 2: Adding Custom HTML Styles
 
@@ -229,7 +229,7 @@ document.querySelector('.tooltip-trigger-down').addEventListener('touchstart', f
 
 As a result we will get value with title which work on hover also on mobile devices:
 
-![](/static/image-781.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-781.png)
 
 #### Additional Resources
 

@@ -32,7 +32,7 @@ To work with KANGAROO via OAuth 2.0, the user needs to register a New Applicatio
 
 After entering you will see My Application page:
 
-![](/static/image-374.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-374.png)
 
 If the connection data is missing or not suitable for connection to Pepperi Integration you need to press Register a new application.
 
@@ -42,11 +42,11 @@ If the connection data is missing or not suitable for connection to Pepperi Inte
 (More information in [Documentation](https://api.kangaroorewards.com/docs/business.html)).
 !!!
 
-![](/static/image-375.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-375.png)
 
 Only after the status of the field "Approved?" will change to "Yes"(Ask the PM or client to confirm it) you can start connecting the KANGAROO API in Dataflow task.
 
-![](/static/image-376.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-376.png)
 
 ### Get Token and settings
 
@@ -54,9 +54,9 @@ To work with the Kangaroo API via dataflow tasks automatically, you first need t
 
 To add a token to General Settings the first time you need use Get Token button and fill in the fields as in the example.
 
-![](/static/image-377.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-377.png)
 
-![](/static/image-378.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-378.png)
 
 **PAY ATTENTION** – URL fields of this form must be filled in the same way for each customers.
 
@@ -78,15 +78,15 @@ To add a token to General Settings the first time you need use Get Token button 
 
 After having all fields completed, push the button **Generate Token** at the end of the form **As a result** “successfully connected” notification will be shown.
 
-![](/static/image-379.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-379.png)
 
 The following options can be seen in General Settings:
 
-![](/static/image-380.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-380.png)
 
 Settings for Kangaroo API:
 
-![](/static/image-381.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-381.png)
 
 **http\_row\_element** - allows to specify row element in json response and to create rows according to the objects in array 'row'.
 
@@ -94,14 +94,14 @@ Settings for Kangaroo API:
 
 **HTTP in Dataflow Task** example to get the balance using kangaroo ID to search:
 
-![](/static/image-382.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-382.png)
 
 X-Application-Key must be provided by the customer PAY ATTENTION -- In dataflow task you need to use Application: Generic HTTP Connector Source Object: Generic Http Exporter
 
 **Webhook HTTP** example for sending transaction data to Kangaro API:
 
-![](/static/image-383.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-383.png)
 
 Be careful with the value you pass. If you pass 0, you will get an error:
 
-![](/static/image-384.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-384.png)

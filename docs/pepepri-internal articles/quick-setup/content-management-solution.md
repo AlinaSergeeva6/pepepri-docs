@@ -27,15 +27,15 @@ You can find the examples of using Content Management Solution on Services Demo 
 
 2\. Under the Tools tab open Quick Setup:
 
-![](/static/image-900.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-900.png)
 
 3\. From the list of available Quick Setups find the Content Management Solution and click Install:
 
-![](/static/image-901.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-901.png)
 
 4\. After successful instalation you will see the message and a new Launch button:
 
-![](/static/image-902.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-902.png)
 
 ## Sections Overview
 
@@ -43,7 +43,7 @@ You can find the examples of using Content Management Solution on Services Demo 
 Do not forget that as in any of the Quick Setups you can hover over some dropdown / input / etc. to get a tooltip:
 !!!
 
-![](/static/image-903.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-903.png)
 
 ### Case Example
 
@@ -53,7 +53,7 @@ All of the sections will be explained on the next use case:
 >
 > On FTP server these files look like this:
 
-![](/static/image-904.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-904.png)
 
 > We need to have a scheduled job, which will work every day, and which will generate a link for each of these files and set it to another Link typed transaction header-level field in Sales Order, so we could have possibility to open this pdf file directly from the transaction.
 
@@ -65,7 +65,7 @@ On the first launch you will have only one empty configuration named "Default". 
 NOTE: your configuration will not be added / renamed / copied until you click Save button.
 !!!
 
-![](/static/image-905.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-905.png)
 
 ### Logs Tab
 
@@ -83,7 +83,7 @@ Logs tab contains the list of ui tasks / jobs runs.
 
 The main purpose of the Content Management Solution is to get some file from the FTP / SFTP server based on string value which is in the **File Name Field** (in this example - Sales Order transaction header-level TSAStringID field). This string value is the name of the wanted file on server. When the Content Management job already have this file - it will generate a clickable link, which will open this file. This link will be set to the **Link Field:**
 
-![](/static/image-906.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-906.png)
 
 In this example, we have two main fields which were created before in Sales Order transaction on the header level:
 
@@ -98,7 +98,7 @@ So the File Name Field TSAStringID will contain InternalID of current transactio
 
 2\. TSALinkToFTP - Link - Link Field which will contain generated link to the pdf file which name is \[TransactionInternalID\].pdf from FTP server:
 
-![](/static/image-907.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-907.png)
 
 **Enable Link TTL** enables Link Time To Live - after defined period of time link will not be available.
 
@@ -106,7 +106,7 @@ So the File Name Field TSAStringID will contain InternalID of current transactio
 
 If **Enable Link TTL** is disabled or TTL Hours input is empty generated links will be available all the time.
 
-![](/static/image-908.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-908.png)
 
 #### Pepperi SFTP
 
@@ -118,13 +118,13 @@ Check Status button will check if the SFTP instance was already created and if n
 
 Populate button will populate the FTP Configuration section with details of created SFTP instance in Pepperi SFTP section:
 
-![](/static/image-909.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-909.png)
 
 #### FTP Configuration
 
 As in current example we're not using SFTP instance, we will need to populate all server connection details ourself:
 
-![](/static/image-910.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-910.png)
 
 1\. Configuration Level:
 
@@ -152,7 +152,7 @@ Clicking on folder icon makes request to FTP to get files / folders structure an
 NOTE: the loading of the files tree could take some time.
 !!!
 
-![](/static/image-911.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-911.png)
 
 9\. Test Connection - will check the connection to the server;
 
@@ -166,19 +166,19 @@ This section provides possibility to schedule the job which tasks were created b
 
 To schedule it just add schedule information the same as while scheduling the job on IPAAS, check "Use Scheduler" checkbox and click "Run Flow" - it will run the job and you will be able to open it and check out the results:
 
-![](/static/image-912.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-912.png)
 
-![](/static/image-913.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-913.png)
 
-![](/static/image-914.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-914.png)
 
 After job run is successfully finished, the links are generated and saved to the Link Field from the configuration. In this example it's transaction header-level TSALInkToFTP field:
 
-![](/static/image-915.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-915.png)
 
 You can copy one of generated links and open it in your browser:
 
-![](/static/image-916.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-916.png)
 
 ## Deep Dive Into SFTP AWS S3 Instance Usage
 
@@ -204,15 +204,15 @@ General section have defined settings for fields which we should use in this con
 
 5\. Time To Live settings - we have no need in them, so we leave them untouched:
 
-![](/static/image-917.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-917.png)
 
 ### Pepperi SFTP
 
 The Status says that we already have instance, but you can click Check Status button to check it again:
 
-![](/static/image-918.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-918.png)
 
-![](/static/image-919.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-919.png)
 
 Check "Use as AWS S3" checkbox and click Populate button.
 
@@ -220,41 +220,41 @@ Check "Use as AWS S3" checkbox and click Populate button.
 
 Now check out FTP Configuration section - you will see that all of the server details are fullfilled:
 
-![](/static/image-920.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-920.png)
 
 #### Preview
 
 If you click Preview button you will see files tree. You have possibility to open it in the new tab and also to view it with different device views:
 
-![](/static/image-921.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-921.png)
 
 Desktop Preview
 
-![](/static/image-922.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-922.png)
 
 Tablet Preview
 
-![](/static/image-923.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-923.png)
 
 Phone Preview
 
 To open a folder, double click on it:
 
-![](/static/image-924.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-924.png)
 
 To show file in the new tab, click just once on wanted file and click "Show File" button:
 
-![](/static/image-925.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-925.png)
 
-![](/static/image-926.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-926.png)
 
 To show file details in current tab enable "View Details" and select wanted file again:
 
-![](/static/image-927.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-927.png)
 
 You can also archive file, upload a new one and create new folder:
 
-![](/static/image-928.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-928.png)
 
 #### Get Custom Form HTML
 
@@ -268,7 +268,7 @@ Additional settings:
 
 3\. Use Internal ID For Upload File Name - should use Resource (Transaction / Activity) Internal Id For Upload File Name:
 
-![](/static/image-929.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-929.png)
 
 On Proceed button click the custom form code will be copied.
 
@@ -282,11 +282,11 @@ How to add
 
 3\. Open Programs tab and create a new program which will have Custom Form as action:
 
-![](/static/image-930.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-930.png)
 
 4\. Paste to the custom from the code which you got from the Content Management Solution confuguration (Get Custom Form HTML button) and save the changes:
 
-![](/static/image-931.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-931.png)
 
 !!!info
 Make sure your new program was added to the one of the views, for example, Order Center Menu or Cart Menu.
@@ -300,8 +300,8 @@ Make sure your new program was added to the one of the views, for example, Order
 
 3\. Open the custom form (in example - ContentManagement) from the menu:
 
-![](/static/image-932.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-932.png)
 
 You can preview, archive, upload new files and create new folders now:
 
-![](/static/image-933.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-933.png)

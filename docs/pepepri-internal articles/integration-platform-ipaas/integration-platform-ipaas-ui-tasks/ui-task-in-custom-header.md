@@ -69,7 +69,7 @@ function accountHandler() {
 
 “**Iframe**” needs to have id and also to be displayed as none. In the “**src**” attribute add the link of the UI task, take it from the “details” page of the task and use only “RunAddOn URL” (not “iFrame URL”).
 
-![](/static/image-323.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-323.png)
 
 If you need to send value to the UI task – add it as parameters in the end of URL in “**src**” attribute of “**iframe**”, it might looks like:
 

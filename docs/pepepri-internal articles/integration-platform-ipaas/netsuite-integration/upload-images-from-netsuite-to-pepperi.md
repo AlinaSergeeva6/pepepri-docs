@@ -16,6 +16,6 @@ Create items saved search with 2 columns in the results:
 
 Create a task of type – “image upload” to use the RESTlet deployment and to use the saved search ID that you created (saved\_search\_id in the settings tab)
 
-![](/static/image-437.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-437.png)
 
 \*Note that the internal ID has to use as Pepperi Item code for this integration to work.

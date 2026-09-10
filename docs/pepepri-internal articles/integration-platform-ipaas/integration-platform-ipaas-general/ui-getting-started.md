@@ -21,7 +21,7 @@ This article describes an example that can give you a general understanding of t
 
 After you have created a UI task, click the "run" button, after this the following window will be available:
 
-![](/static/1-12.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-12.png)
 
 Copy the left part (to which the arrow points) ---> create a custom form in the back office ---> paste the copied text into a custom form. Then you can call this task wherever you need it: in workflow, or, for example, in a program. In this example, the UI task will be called in the program that is in the cart.
 
@@ -67,7 +67,7 @@ f**unction on\_load() {}** - in this function, you need to add a function that s
 
 Note that the syntax for api functions is slightly different from their usual form. And if you need use workflowObject , in UI task call it like **wfobject.**
 
-![](/static/2-7.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-7.png)
 
 Using **get\_data(){}** you can call dataflow task. **task\_name** \- name of Dataflow task
 
@@ -75,7 +75,7 @@ Using **get\_data(){}** you can call dataflow task. **task\_name** \- name of Da
 
 After finishing writing the code, create a dataflow task with the following settings:
 
-![](/static/2021-01-04_15h50_57.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2021-01-04_15h50_57.png)
 
 **\*~Email~\* -** this is way to call variable from post\_array
 
@@ -83,9 +83,9 @@ After finishing writing the code, create a dataflow task with the following sett
 
 After the completion of the UI task, you will receive the following email with the attachment:
 
-![](/static/2021-01-04_15h56_43.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2021-01-04_15h56_43.png)
 
-![](/static/2021-01-04_15h57_10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2021-01-04_15h57_10.png)
 
 You can add &lt;style>&lt;/style> tags into **pdf\_html\_code and** style the table
 

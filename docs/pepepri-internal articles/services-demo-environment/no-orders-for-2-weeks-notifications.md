@@ -46,7 +46,7 @@ The job will do the following:
 2.  Send Emails and Notifications - Send emails and notifications for these buyers.
 3.  Save Accounts, that should be skipped for the next run - Save accounts that were already used for the last orders check and don't use them in the next run, until they have no orders from the last 2 weeks.
 
-![](/static/No-Orders-For-2-Weeks-Notifications-How-Does-It-Work.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/No-Orders-For-2-Weeks-Notifications-How-Does-It-Work.png)
 
 ### Get Data From Pepperi
 
@@ -65,7 +65,7 @@ We store the accounts in a sql table to understand which accounts we are already
 
 Using all of this data, we can find which of the buyers didn't place any orders for the last 2 weeks.
 
-![](/static/No-Orders-For-2-Weeks-Notifications-Get-Data-From-Pepperi.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/No-Orders-For-2-Weeks-Notifications-Get-Data-From-Pepperi.png)
 
 ### Send Email
 

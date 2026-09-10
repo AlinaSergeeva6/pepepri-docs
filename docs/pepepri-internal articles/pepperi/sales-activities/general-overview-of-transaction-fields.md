@@ -63,7 +63,7 @@ Each field type can be marked as "temporary," meaning the data is only visible w
 
 -   **Configuration:** Date format can be managed in **Back Office → ERP Integration → Configuration**.
 
-![](/static/image-27.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-27.png)
 
 #### Number, Decimal Number, Currency Fields
 
@@ -96,7 +96,7 @@ Each field type can be marked as "temporary," meaning the data is only visible w
 
 -   **Configuration:** Managed in **ERP Integration → Configuration**.
 
-![](/static/image-28.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-28.png)
 
 ---
 
@@ -146,7 +146,7 @@ The most efficient way to manage dependencies is to create two initialization fi
     2.  Navigate to the **Account** section.
     3.  Enable the option ***"This Activity will not be assigned to any Account"***
 
-![](/static/image-29.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-29.png)
 
 ### Additional Reminders
 
@@ -161,7 +161,7 @@ The most efficient way to manage dependencies is to create two initialization fi
     3.  Navigate to **Workflows** → switch to **Table View**.
     4.  Add a + under **Create** in the creation settings.
 
-    ![](/static/image-30.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-30.png)
 
 ---
 

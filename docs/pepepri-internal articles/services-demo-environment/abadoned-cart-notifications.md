@@ -37,7 +37,7 @@ The job will do the following:
 2.  Send emails to the buyer
 3.  Send notifications to the buyer
 
-![](/static/Abandoned-Cart-Notification-How-does-it-works.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Abandoned-Cart-Notification-How-does-it-works.png)
 
 ### Get Abandoned Orders
 
@@ -45,7 +45,7 @@ First part of the job is to get all abandoned orders for the last 24-48 hours.
 
 It's a simple 2 dataflow tasks, which takes data using Pepperi API.
 
-![](/static/Abandoned-Cart-Notification-Get-Abandoned-Orders.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/Abandoned-Cart-Notification-Get-Abandoned-Orders.png)
 
 ### Send Email
 

@@ -21,7 +21,7 @@ order: 270
     1.  Title and description**: Open External Link**
     2.  Parameters:
 
-        ![](/static/image-240.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-240.png)
 
 3.  Add this **code**:
 
@@ -45,11 +45,11 @@ export async function main(data)  {
 3.  You will be redirected to Steps tab of the **Flow editor**
 4.  Go to **Parameters tab** and add the following variable:
 
-    ![](/static/image-241.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-241.png)
 
 5.  In **Steps tab** add user script block with the following values:
 
-    ![](/static/image-242.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-242.png)
 
 6.  **Save** changes and update the flow
 
@@ -60,7 +60,7 @@ export async function main(data)  {
 3.  Edit the block you would like to add the flow to and find **Click Event**: Usually situated in Content -> Expand element -> **Click Event** Settings
 4.  Add the following flow with the Link to navigate the user by:
 
-    ![](/static/image-243.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-243.png)
 
 5.  **Publish** the homepage to move changes to the live page.
 

@@ -54,13 +54,13 @@ Downloader gives you possibility to trigger any custom application/file on the c
         -   webhook\_trn\_header\_fields - what header fields to export
         -   columns - order of the columns in file
 
-        ![](/static/image-341.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-341.png)
 
-        ![](/static/image-342.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-342.png)
 
 3.  Then the file will be generated on the server with the structure of "columns" setting
 
-![](/static/image-343.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-343.png)
 
 !!!info
 Note that opening final file in different programs will result in reading this file using different encodings. **encoding-out** could mismatch with **encoding-in** of the program.
@@ -72,11 +72,11 @@ Note that opening final file in different programs will result in reading this f
 
 To install downloader on the server firstly download necessary files
 
-![](/static/image-344.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-344.png)
 
 Then create folder "Downloader" in the Pepperi folder on clients server and extract files in this folder. There is no need to configure ananything else on the server.
 
-![](/static/image-345.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-345.png)
 
 ---
 
@@ -165,11 +165,11 @@ For creating log files - create the logconfig.xml, and after the next run it wil
 
 In order to test old downloader, new folder needs to be created "testfiles"
 
-![](/static/image-346.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-346.png)
 
 Next, order from ftp should be placed inside
 
-![](/static/image-347.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/image-347.png)
 
 Last step, open ImportEditor.exe and change "test" to 1.
 

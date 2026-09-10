@@ -9,7 +9,7 @@ order: 87
 
 ### General Overview
 
-![](/static/1-48.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/1-48.png)
 
 The scanner hardware consists of 3 main operational part:
 
@@ -41,29 +41,29 @@ For Android:
 
 Set the Application Mode.
 
-![](/static/2-38.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/2-38.jpg)
 
 Open the Scanner App, Press “Continue” button and the application will guide you through the scanner application mode setup. Note: If you are using the old version of scanner (like on the picture above), you need to chose “Other Scanner (Single LED)” option during the second step of setup (Scanner Type).
 
 During the setup sequence the app will suggest you to test the scanner.
 
-![](/static/3-28.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/3-28.jpg)
 
 As the result your scanner will be paired with your smartphone/tablet using its application mode and you will be able to receive the basic information about the device.
 
-![](/static/4-20.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/4-20.jpg)
 
 ***Notice*** : In Application Mode your scanner will be displayed on your smartphone/tablet list of Bluetooth devices as General Purpose Bluetooth device.
 
-![](/static/5-18.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/5-18.png)
 
 Next step – you need to switch the scanner to basic mode. While in Application Mode in app menu find and press this button and follow the instructions.
 
-![](/static/6-16.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/6-16.png)
 
 ***Notice***: After this step your device will reboot and appear in Bluetooth device list as “Input Device” (the keyboard icon).
 
-![](/static/7-11.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/static/7-11.png)
 
 In order to work with scanner you should: 1. Add form to view for input data from scanner. Example of the form you can find below. You can also customize it if you need. 2. Then you have to connect scanner to your device via Bluetooth 3. After you can scan your barcode Code example for view (custom form or program in your transaction)
 
