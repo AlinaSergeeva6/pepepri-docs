@@ -2,7 +2,7 @@
 title: "Article Drafts"
 label: "Article Drafts"
 order: 14
-icon: book
+icon: material/book
 ---
 # Article Drafts
 

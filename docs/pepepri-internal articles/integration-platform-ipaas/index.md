@@ -2,7 +2,7 @@
 title: "INTEGRATION PLATFORM (IPAAS)"
 label: "INTEGRATION PLATFORM (IPAAS)"
 order: 261
-icon: book
+icon: material/book
 ---
 # INTEGRATION PLATFORM (IPAAS)
 

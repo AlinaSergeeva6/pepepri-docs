@@ -2,7 +2,7 @@
 title: "PS INTRODUCTION"
 label: "PS INTRODUCTION"
 order: 341
-icon: book
+icon: material/book
 ---
 # PS INTRODUCTION
 

@@ -2,7 +2,7 @@
 title: "Add-ons Manuals"
 label: "Add-ons Manuals"
 order: 82
-icon: book
+icon: material/book
 ---
 # Add-ons Manuals
 

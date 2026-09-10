@@ -2,7 +2,7 @@
 title: "Quick Setup"
 label: "Quick Setup"
 order: 51
-icon: book
+icon: material/book
 ---
 # Quick Setup
 

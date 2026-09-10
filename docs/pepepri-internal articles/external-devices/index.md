@@ -2,7 +2,7 @@
 title: "EXTERNAL DEVICES"
 label: "EXTERNAL DEVICES"
 order: 90
-icon: book
+icon: material/book
 ---
 # EXTERNAL DEVICES
 

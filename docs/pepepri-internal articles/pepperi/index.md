@@ -2,7 +2,7 @@
 title: "Pepperi"
 label: "Pepperi"
 order: 332
-icon: book
+icon: material/book
 ---
 # Pepperi
 

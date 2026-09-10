@@ -2,7 +2,7 @@
 title: "Internal API"
 label: "Internal API"
 order: 86
-icon: book
+icon: material/book
 ---
 # Internal API
 

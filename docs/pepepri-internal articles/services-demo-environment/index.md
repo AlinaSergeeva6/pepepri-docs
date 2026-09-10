@@ -2,7 +2,7 @@
 title: "Services Demo Environment"
 label: "Services Demo Environment"
 order: 45
-icon: book
+icon: material/book
 ---
 # Services Demo Environment
 
