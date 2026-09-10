@@ -1,0 +1,17 @@
+input: .
+output: /output
+
+branding:
+  title: Pepperi PS
+  label: Internal Knowledge Base
+
+meta:
+  title: " | Pepperi Internal KB"
+  siteName: Pepperi Internal Knowledge Base
+
+search:
+  placeholder: Search the knowledge base
+  maxResults: 30
+
+footer:
+  copyright: "Pepperi Professional Services — internal use only"

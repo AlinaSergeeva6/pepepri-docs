@@ -1,2 +1,0 @@
-# Pepperi Configuration – GENERAL
-

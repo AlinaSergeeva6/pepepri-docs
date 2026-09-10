@@ -1,2 +1,0 @@
-# Pepperi pack events
-

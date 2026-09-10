@@ -1,3 +1,0 @@
-# User events
-
-DynamicFilter events
