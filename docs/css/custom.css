@@ -86,3 +86,51 @@
 .md-footer-meta__inner {
     color: #9daab6 !important;
 }
+/* Header: Soft shadow to make it stand out */
+.md-header {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(8px); /* Modern blur effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+    border-bottom: none !important;
+}
+
+/* Sidebar: Clean, GitBook-style hover and active states */
+.md-nav__link {
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 2px;
+    color: #5c6975;
+    transition: all 0.2s ease;
+}
+
+.md-nav__link:hover {
+    background-color: #f5f7f9;
+    color: #242a31;
+}
+
+/* Active sidebar item gets a soft blue background */
+.md-nav__item--active > .md-nav__link,
+.md-nav__item .md-nav__link--active {
+    background-color: #ebf3ff !important; 
+    color: #3884ff !important;
+    font-weight: 600;
+}
+
+/* Search: Modern active state with focus ring */
+.md-search__form {
+    border-radius: 8px !important;
+    background-color: #f5f7f9 !important;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.md-search__form:hover {
+    background-color: #eef1f5 !important;
+}
+
+/* When search is clicked (active) */
+.md-search--active .md-search__form {
+    background-color: #ffffff !important;
+    border: 1px solid #3884ff !important;
+    box-shadow: 0 0 0 4px rgba(56, 132, 255, 0.15), 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+}
