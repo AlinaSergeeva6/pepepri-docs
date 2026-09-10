@@ -2,72 +2,38 @@ img {
   max-width: 500px;
   height: auto;
 }
-/* General page and font settings */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #3b454e; /* Dark gray text color */
-    background-color: #ffffff;
-    line-height: 1.6;
-    margin: 0;
-    display: flex;
+/* Make the top bar white and remove the shadow */
+:root {
+    --md-primary-fg-color: #ffffff;
+    --md-primary-bg-color: #3b454e;
+    --md-text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Left sidebar */
-.sidebar {
-    width: 260px;
-    background-color: #f9f9f9; 
-    border-right: 1px solid #e6ecf1; /* Thin gray line on the right */
-    padding: 24px;
-    height: 100vh;
-    position: fixed;
-    overflow-y: auto;
+.md-header {
+    box-shadow: none;
+    border-bottom: 1px solid #e6ecf1;
 }
 
-/* Sidebar links */
-.sidebar a {
-    color: #5c6975;
-    text-decoration: none;
-    display: block;
-    padding: 8px 0;
-    font-size: 14px;
+/* Change header text and icon colors to dark */
+.md-header__button.md-logo,
+.md-header__button,
+.md-header__title {
+    color: #242a31 !important;
 }
 
-.sidebar a:hover {
-    color: #3884ff; /* Blue color on hover */
-}
-
-/* Main content area */
-.content {
-    margin-left: 260px; /* Offset by the width of the sidebar */
-    padding: 48px 80px;
-    max-width: 800px;
-}
-
-/* Headings */
-h1, h2, h3 {
+/* Adjust heading colors in the content */
+.md-typeset h1, 
+.md-typeset h2, 
+.md-typeset h3 {
     color: #242a31;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    font-weight: 600;
 }
 
-h1 {
-    font-size: 32px;
-    padding-bottom: 16px;
+/* Adjust sidebar menu links */
+.md-nav__link {
+    color: #5c6975;
 }
 
-h2 {
-    font-size: 24px;
-    border-bottom: 1px solid #e6ecf1; /* Underline for H2 */
-    padding-bottom: 8px;
-}
-
-/* Lists */
-ul {
-    padding-left: 20px;
-    color: #3b454e;
-}
-
-li {
-    margin-bottom: 8px;
+.md-nav__link--active,
+.md-nav__link:hover {
+    color: #3884ff;
 }
