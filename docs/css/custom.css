@@ -1,16 +1,11 @@
-/* Make the top bar white and remove the shadow */
-:root {
-    --md-primary-fg-color: #ffffff;
-    --md-primary-bg-color: #3b454e;
-    --md-text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
+/* Header: Clean white with a soft shadow */
 .md-header {
-    box-shadow: none;
-    border-bottom: 1px solid #e6ecf1;
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+    border-bottom: 1px solid #e6ecf1 !important;
 }
 
-/* Change header text and icon colors to dark */
+/* Header text and icons */
 .md-header__button.md-logo,
 .md-header__button,
 .md-header__title {
@@ -18,13 +13,48 @@
 }
 
 /* --------------------------------------
-   NEW: Search Bar Improvements
+   Sidebar Improvements (Material specific)
    -------------------------------------- */
-.md-search__form {
-    background-color: #f5f7f9 !important;
-    border: 1px solid #e6ecf1;
+.md-sidebar--primary .md-nav__link {
     border-radius: 6px;
-    box-shadow: none !important;
+    padding: 8px 12px;
+    margin: 2px 0;
+    color: #5c6975;
+    transition: all 0.2s ease;
+}
+
+.md-sidebar--primary .md-nav__link:hover {
+    background-color: #f5f7f9 !important;
+    color: #242a31 !important;
+}
+
+/* Active sidebar item styling */
+.md-sidebar--primary .md-nav__item--active > .md-nav__link,
+.md-sidebar--primary .md-nav__link--active {
+    background-color: #ebf3ff !important;
+    color: #3884ff !important;
+    font-weight: 600;
+}
+
+/* --------------------------------------
+   Search Bar Improvements
+   -------------------------------------- */
+.md-search__inner {
+    background-color: #f5f7f9 !important;
+    border-radius: 8px !important;
+    border: 1px solid #e6ecf1 !important;
+    transition: all 0.2s ease;
+}
+
+.md-search__inner:hover {
+    background-color: #eef1f5 !important;
+}
+
+/* When search input is focused/active */
+.md-search--active .md-search__inner {
+    background-color: #ffffff !important;
+    border-color: #3884ff !important;
+    box-shadow: 0 0 0 4px rgba(56, 132, 255, 0.15), 0 8px 24px rgba(0, 0, 0, 0.08) !important;
 }
 
 .md-search__input,
@@ -34,103 +64,4 @@
 
 .md-search__input::placeholder {
     color: #9daab6 !important;
-}
-
-/* --------------------------------------
-   NEW: Sidebar Improvements
-   -------------------------------------- */
-.md-nav__link {
-    color: #5c6975;
-    transition: color 0.2s;
-}
-
-.md-nav__link--active,
-.md-nav__link:hover {
-    color: #3884ff !important;
-}
-
-/* Remove default material background from active sidebar items */
-.md-nav__item .md-nav__link--active {
-    background: transparent !important;
-}
-
-/* --------------------------------------
-   NEW: Typography & Main Content
-   -------------------------------------- */
-.md-typeset h1, 
-.md-typeset h2, 
-.md-typeset h3 {
-    color: #242a31;
-    font-weight: 600;
-}
-
-.md-typeset p,
-.md-typeset li {
-    color: #3b454e;
-    line-height: 1.6;
-}
-
-.md-typeset a {
-    color: #3884ff;
-}
-
-/* --------------------------------------
-   NEW: Make Footer White
-   -------------------------------------- */
-.md-footer,
-.md-footer-meta {
-    background-color: #ffffff !important;
-    border-top: 1px solid #e6ecf1;
-}
-
-.md-footer-meta__inner {
-    color: #9daab6 !important;
-}
-/* Header: Soft shadow to make it stand out */
-.md-header {
-    background-color: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(8px); /* Modern blur effect */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
-    border-bottom: none !important;
-}
-
-/* Sidebar: Clean, GitBook-style hover and active states */
-.md-nav__link {
-    border-radius: 6px;
-    padding: 8px 12px;
-    margin-bottom: 2px;
-    color: #5c6975;
-    transition: all 0.2s ease;
-}
-
-.md-nav__link:hover {
-    background-color: #f5f7f9;
-    color: #242a31;
-}
-
-/* Active sidebar item gets a soft blue background */
-.md-nav__item--active > .md-nav__link,
-.md-nav__item .md-nav__link--active {
-    background-color: #ebf3ff !important; 
-    color: #3884ff !important;
-    font-weight: 600;
-}
-
-/* Search: Modern active state with focus ring */
-.md-search__form {
-    border-radius: 8px !important;
-    background-color: #f5f7f9 !important;
-    border: 1px solid transparent;
-    transition: all 0.2s ease;
-}
-
-.md-search__form:hover {
-    background-color: #eef1f5 !important;
-}
-
-/* When search is clicked (active) */
-.md-search--active .md-search__form {
-    background-color: #ffffff !important;
-    border: 1px solid #3884ff !important;
-    box-shadow: 0 0 0 4px rgba(56, 132, 255, 0.15), 0 8px 24px rgba(0, 0, 0, 0.08) !important;
 }
