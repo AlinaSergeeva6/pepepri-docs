@@ -37,7 +37,7 @@
 }
 
 /* --------------------------------------
-   Search Bar Improvements
+   Modern Search Bar & Killer Dropdown
    -------------------------------------- */
 .md-search__inner {
     background-color: #f5f7f9 !important;
@@ -50,11 +50,26 @@
     background-color: #eef1f5 !important;
 }
 
-/* When search input is focused/active */
+/* When search input is active/focused */
 .md-search--active .md-search__inner {
     background-color: #ffffff !important;
     border-color: #3884ff !important;
     box-shadow: 0 0 0 4px rgba(56, 132, 255, 0.15), 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Kill the ugly retro "Type to start searching" box shadow and style the dropdown */
+.md-search__scrollwrap {
+    border-radius: 0 0 12px 12px !important;
+    background: #ffffff !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #e6ecf1;
+    border-top: none;
+}
+
+/* Hide or clean up outdated helper text elements inside search if needed */
+.md-search__output {
+    background-color: #ffffff !important;
+    border-radius: 0 0 12px 12px !important;
 }
 
 .md-search__input,
