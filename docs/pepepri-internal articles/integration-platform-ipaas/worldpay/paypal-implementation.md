@@ -15,7 +15,7 @@ To create Sandbox Account you need regular PayPal account. You can create it via
 
 In Dashboard -> My Apps & Credentials select your App. There you can find "Client ID" - this field is an ID of your account. Using this ID you can receive payments.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-348.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-348.png)
 
 ### Step 2. Custom Form configuration
 

@@ -19,17 +19,17 @@ Setup a saved search of items. The criteria should be the same as the items save
 
 The results tab should have the following data (assuming the &lt;Pepperi item External ID> = &lt;NetSuite Item Internal ID> :
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-417.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-417.png)
 
 in the integration platform, setup a dataflow task that uploads a UDT into Pepperi. The task settings:
 
 in the pivot tab - add the following settings:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-418.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-418.png)
 
 In the Settings tab - add the following settings:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-419.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-419.png)
 
 Use the attached manual for creating the quantity pricing rules in Pepperi. Some changes might be needed, depending on the specific requirements.
 
@@ -56,11 +56,11 @@ Price Levelfor this implementation, you will need to setup 2 saved searches -
 
 1.Price Level Headers
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-420.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-420.png)
 
 2\. Price Level Lines
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-421.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-421.png)
 
 !!!info
 for minimal results, criteria needs to match the item criteria saved search.
@@ -96,11 +96,11 @@ This can be implemented in Pepperi using UDTs. You should setup 2 UDTs -
 
 -   Pricing Group - Price Level Assignment: MainKey = Customer External ID, SecondaryKey = Pricing Group, Values = Price Level
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-422.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-422.png)
 
 -   Price Level Item UDT: MainKey = Price Level, SecondaryKey = Item, Value=Price
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-423.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-423.png)
 
 !!!info
 The value of the first UDT, will be used as the MainKey of the second UDT
@@ -122,15 +122,15 @@ END
 
 2\. Implementing Pricing Groups requires loading additional data for Items - in the NetSuite saved search, include Pricing Group field:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-424.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-424.png)
 
 3\. Create Saved Search to load the Data to the PricingGroups UDT
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-425.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-425.png)
 
 4\. Create Saved Search to load the Data to the PricingLevelItem UDT
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-426.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-426.png)
 
 **Integration Implementation**‌
 
@@ -148,7 +148,7 @@ Schedule these dataflow tasks using the Scheduled Jobs section in the integratio
 
 **Configure TSA UDT field – to get Price Level by Pricing Group and Account ExternalID:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-427.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-427.png)
 
 The value of the first UDT, will be used as the MainKey of the second UDT. But to prevent cases when price group was not assigned to the item you need to create additional calculated field with formula:
 
@@ -160,11 +160,11 @@ if ( TSAPricingGroupLinePriceLevel != ''){
 return ret;
 ```
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-428.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-428.png)
 
 **Configure TSA UDT field – to get Item Price by Price Level and Item ExternalID:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-429.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-429.png)
 
 ### 4. Item Pricing
 
@@ -218,7 +218,7 @@ Criteria: \[Item Pricing Unit Price\] IS NOT EMPTY
 
 -   Create a UDT with the Name "ItemPricingCustom". Main Key = Catalog Name.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-430.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-430.png)
 
 -   Create a field in the wanted transaction:
     -   Type = Decimal Number/Currency, UDT field.
@@ -248,7 +248,7 @@ Criteria: \[Item Pricing Level\] IS NOT EMPTY and {itempricinglevel} is not 'Cus
 
 -   Create a UDT with the Name "ItemPricingPriceLevel". Main Key = Catalog Name.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-431.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-431.png)
 
 -   Create a field in the wanted transaction - TSAItemPricingPriceLevel:
     -   Type = Decimal Number/Currency, UDT field.
@@ -272,13 +272,13 @@ If you already implemented Group Pricing (NetSuite) - you will not need to imple
 
 -   Price Level Item UDT: MainKey = Price Level, SecondaryKey = Item, Value=Price
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-423.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-423.png)
 
 **NetSuite:**
 
 Create Saved Search to load the Data to the PricingLevelItem UDT
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-426.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-426.png)
 
 Final Pepperi field to get the price for the Item ***Item Pricing*** **with a Price Level**
 

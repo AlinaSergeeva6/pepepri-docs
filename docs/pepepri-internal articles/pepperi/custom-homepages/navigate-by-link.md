@@ -21,7 +21,7 @@ order: 271
     1.  **Title** and **description**: Navigate By Link
     2.  **Parameters**:
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-236.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-236.png)
 
 3.  Add the following **code**:
 
@@ -47,11 +47,11 @@ return ''
 3.  You will be redirected to Steps tab of the **Flow editor**
 4.  Go to **Parameters tab** and add the following variables:
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-237.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-237.png)
 
 5.  In **Steps tab** add user script block with the following values:
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-238.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-238.png)
 
 6.  **Save** changes and update the flow
 
@@ -63,7 +63,7 @@ return ''
 4.  Add the flow **Navigate By Link**
 5.  **url\_param**: used to open pepperi link, for instance **/list/all\_activities** (must have leading '/' to work in mobile)
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-239.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-239.png)
 
 6.  Once you added the parameters you need, **save** the flow configuration popup.
 7.  **Publish** the homepage to move changes to the live page.

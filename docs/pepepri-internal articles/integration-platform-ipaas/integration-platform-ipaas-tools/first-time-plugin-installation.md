@@ -14,17 +14,17 @@ Before the installation please be sure that you have Remote Access to the custom
 
 a. **QuickBooks SDK** b. **QB Listener Importer + Exporter Full Version**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2021-09-01-at-11.21.01.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-09-01-at-11.21.01.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2021-09-01-at-11.18.43.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-09-01-at-11.18.43.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2021-09-01-at-11.24.48.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-09-01-at-11.24.48.png)
 
 **First**, you need to run **QuickBooks SDK (**software development kit- a collection of software development tools in one installable package) **Second**, you need to set **QB Listener Importer + Exporter Full Version**
 
 Download three folders, **copy** them and **add to the customer server**: **connection\_tester online\_listener qb\_exporter**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-337.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-337.png)
 
 **Open LogMeIn Rescue ----> Connect to your customer ------> File Manager ------> Launch File Manager Session -------> Move file to Remote Server**
 
@@ -34,11 +34,11 @@ Download three folders, **copy** them and **add to the customer server**: **conn
 
 **1\.** open the folder **connection\_tester** and **run as** **ADMIN** open **QBImporterConfig.exe**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-338.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-338.png)
 
 **2.** after that you will get a form with two columns: **key** **value** **companyfile** \*please add the companyfile’s value
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-339.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-339.png)
 
 **REMARKS** QuickBooks has two types of mode (state/regime): **SINGLE-USER** and **MULTI-USER**
 
@@ -70,7 +70,7 @@ Download three folders, **copy** them and **add to the customer server**: **conn
 
 **When one of these combinations works; listener is successfully run and you can find it here:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-340.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-340.png)
 
 ### #5 Step: work on the third folder qb_exporter
 

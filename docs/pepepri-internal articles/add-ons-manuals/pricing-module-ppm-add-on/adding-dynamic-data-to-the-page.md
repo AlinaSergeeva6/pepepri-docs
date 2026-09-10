@@ -23,7 +23,7 @@ Page parameter is a variable, which have:
 
 You can check the list of the page parameters by opening needed page and clicking on "Manage parameters" button:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-809.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-809.png)
 
 !!!info
 If the page was just created, you will see that the list of parameters is empty. However, there is always at least one parameter on any Page - it's **AccountUUID**. You can't see it in the list, because you have no rights to update it there somehow (change name / description / default value), but you can use it for saving accountUUID value, so you don't need to create a new variable for it.
@@ -94,7 +94,7 @@ The main feature of flow's variables is The Variable Accessibility.
 The Variable Accessibility feature enables you to classify variables as either external or internal, defining their intended usage within the flow. When marked as external, a parameter is accessible by external components using the flow picker. When marked as internal, parameter is hidden from external entities, though available during the flow run time
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-810.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-810.png)
 
 All of added variables you can use in Flow Steps (Steps tab).
 
@@ -124,7 +124,7 @@ If buyer have only one account connected you might want to hide the account filt
 
 Add Filter Block to the page:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-811.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-811.png)
 
 Then go to the Content tab and create new filter.
 
@@ -132,7 +132,7 @@ Add title and select AccoutUUID as Page parameter key - it means that on every c
 
 Check "Use first value" checkbox - it will set the first account as currently selected on page load
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-812.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-812.png)
 
 ### Get Accounts For Filter Flow
 
@@ -150,7 +150,7 @@ Add "Get Values" logic block and set the next values:
 4.  Add filter for Hidden = false
 5.  Click "Done"
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-813.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-813.png)
 
 !!!info
 Get Value logic block can be used for getting a list of some similar elements, for example, accounts. In this case the list will be presented by Account Names, but the representative value for each element will be Account UUID.
@@ -160,11 +160,11 @@ Save the changes by clicking on Update button and go back to the page.
 
 Edit filter block which was previously added to the Page, go to the Content tab, open "Select Account" filter and add "Get Accounts For Filter" flow as Options Source
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-814.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-814.png)
 
 As the flow is added you should see that the filter have the list of the account names now
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-815.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-815.png)
 
 ## Page On Load - Page Parameter Change Flow
 
@@ -244,7 +244,7 @@ Go to the flow, open the Parameters tab and add the next variables:
 3.  Add dynamic parameter accountUUID as accountUUID
 4.  click Save
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-816.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-816.png)
 
 !!!warning
 For better understanding of what exactly script is added to the flow you will need to update the step's name from "UserScriptsBlock" to the name which you will undertand, in this example it will be better to name it the same as the name of the script, but **WITHOUT SPACES** - "B2BHomepageGetAccountUUID". **The UserScriptsBlock cannot have any symbols except english letters in its name**.
@@ -256,7 +256,7 @@ For better understanding of what exactly script is added to the flow you will ne
 2.  Add dynamic parameters and set static status code for transaction search (status is In Creation in example) and click Done
 3.  Click Update to save changes in flow
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-817.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-817.png)
 
 ### Adding Flow To On Load And Page Parameter Change Actions
 
@@ -266,7 +266,7 @@ For better understanding of what exactly script is added to the flow you will ne
 4.  Click Save
 5.  Do steps 2-4 again, but for On Parameter Change Flow
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-818.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-818.png)
 
 !!!info
 We can use different flows for Page On Load and Page Parameter Change actions, but in this example the parameter change will be triggered by accountUUID page parameter update via Filter Block. So basically, we need the page to do the same actions as on page load - check if we have something in AccountUUID parameter and if no - get the first accountUUID plus get last active transaction UUID.
@@ -287,7 +287,7 @@ For example, you have 3 banners and you want to update title in the second banne
 
 We have only one banner in the banner block, so its index is 0
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-819.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-819.png)
 
 ### Configuring Banner On Load - On Parameter Change Flow
 
@@ -438,7 +438,7 @@ Explanation:
 **configuration** - is the name of configuration object of the block on the page.
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-820.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-820.png)
 
 #### Adding Script To The Flow
 
@@ -450,7 +450,7 @@ Explanation:
 6.  If you want - rename the added step, do not forget that it shouldn't have any symbols except english letters
 7.  Save changes in the flow
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-821.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-821.png)
 
 ### Adding Banner On Load - On Parameter Change Flow
 
@@ -463,4 +463,4 @@ Explanation:
 7.  Check "Same as OnLoad" checkbox to use the same flow for On Page Parameter Change action
 8.  Save all changes on the page and publish it
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-822.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-822.png)

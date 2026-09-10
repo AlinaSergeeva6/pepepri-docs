@@ -15,7 +15,7 @@ order: 274
 4.  Drag **Get Values** block to the **Used Logic Blocks** section
 5.  In the popup go to **Mapped** tab and add the following input:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-216.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-216.png)
 
 1.  Click **Done** and update the flow
 
@@ -27,17 +27,17 @@ order: 274
 4.  Drag and drop the **Filter** block into the desired section
 5.  The **Filter Settings** will be opened:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-217.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-217.png)
 
 1.  Go to **Content tab** and click **Add filter**: a. Add Title **Select Account** b. Select **AccountUUID** as page parameter key c. **Use first value** checkbox must be **true**.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-218.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-218.png)
 
 1.  Click on **Choose Flow** and select **Get Accounts for Filter** option
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-219.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-219.png)
 
 2.  **Save** the changes
 3.  Go to **Preview** to see the Account dropdown. You can also **publish** the homepage, in order to view the changes on the **live page**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-220.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-220.png)

@@ -58,7 +58,7 @@ You can combine it with previous one "**$#@\*Image\_URL\*@#$"**
 
 You can use this syntax for special constants inside integration platform. List of these constants could be found here
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-278.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-278.png)
 
 Info how to use it and what it means you can find here
 

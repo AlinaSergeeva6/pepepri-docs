@@ -18,11 +18,11 @@ First of all, open VS Code and go to Extensions on the left bar. You need to ins
 
 -   **AL Language extension for Microsoft Dynamics 365 Business Central**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-531.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-531.png)
 
 -   **AZ AL Dev Tools/AL Code Outline**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-532.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-532.png)
 
 ### New project creation
 
@@ -32,15 +32,15 @@ This will start the process of new project creating.
 
 1.  Select **location** for the new project. Folder (*test-project* in this case) must not exist on your local machine - it will be created automatically:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-533.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-533.png)
 
 1.  Select Dynamics BC **version**. If you are not sure which one to use, select the latest and change it in the configuration file later):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-534.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-534.png)
 
 1.  Select **Microsoft cloud sandbox**:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-535.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-535.png)
 
 Initial configuration is finished. You’ll see some errors in the VS Code debug tab, don’t pay attention to them as we will fix everything at the next step.
 
@@ -48,7 +48,7 @@ Initial configuration is finished. You’ll see some errors in the VS Code debug
 
 Open `launch.json` file and change `environmentName` to the correct name of BC environment. You can find it in Dynamics BC admin panel:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-536.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-536.png)
 
 !!!warning
 You can use only environments with type **Sandbox** when developing. Production environments are not allowed.
@@ -56,7 +56,7 @@ You can use only environments with type **Sandbox** when developing. Production 
 
 Also, you need to add `tenant` property with your tenantID value, which can be found in Dynamics BC admin panel as well (in the URL):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-537.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-537.png)
 
 Here is an example of `launch.json` file:
 
@@ -92,9 +92,9 @@ Let's take a look at some of common issues, that can appear on current step, and
 
 **Solution:** open `app.json` file and check `application` property. Value there should match your BC application environment version:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-538.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-538.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-539.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-539.png)
 
 In this case you should set:
 
@@ -106,7 +106,7 @@ In this case you should set:
 
 **Solution:** open `app.json` file and check `runtime` property. In the VS Code debug tab you can see supported version, change it:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-540.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-540.png)
 
 ```
 "runtime": "12.0"

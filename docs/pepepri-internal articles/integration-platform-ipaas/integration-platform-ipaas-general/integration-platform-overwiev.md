@@ -37,7 +37,7 @@ Allow to create new account without plugin.
 
 Allow to created new account with plugin. This option is widely used for creating new or copying existing integration accounts (creates also new trial account in backoffice for 14 days) Note that if this email-password combination exists in Pepperi, new account will be created in Integration but it will not be created in the backoffice
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-276.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-276.png)
 
 This Tab also allow to [copy environment](https://kbint.pepperi.com/integration-platform-general/copy-environment)
 

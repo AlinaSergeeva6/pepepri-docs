@@ -10,7 +10,7 @@ order: 299
 
 Add to Cart Menu XML whic you can find if go to Configuration Files->Configuration Files->Search "XML":
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-7.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-7.png)
 
 Then create transaction (if you want to get XML from new one), or you can see XML for old transaction ,
 
@@ -18,20 +18,20 @@ just follow this steps:
 
 **Go to Activities in top bar menu in BackOffice ->**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/2-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-3.png)
 
 **Click "Activity List"-> Choose dates->**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/3-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-3.png)
 
 You will see a list of Activity. Find the one that interests you and go into it**\->**
 
 **go to Menu->choose 'Export to XML'**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/5-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/5-1.png)
 
 **2) Way2 - Email**
 
 You can add XML in attachments to Program that will have action "Send Email", or just add "Send Email" to workflow in Post Actions (for example , between InCreation and Submitted) and add you e-mail:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/6-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/6-1.png)

@@ -31,21 +31,21 @@ For Example, we want to have "News" and "Education" pages.
 
 For News page we want to have some different categories of news. Based on selected category we should see the data in the Gallery block: all of the gallery items should be updated with correct images and text.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-823.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-823.png)
 
 News page: New Products category
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-824.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-824.png)
 
 News Page: Active Promotion category
 
 We also would like to have another page which will show some additional information for any of the gallery items. For example, the user clicked "Trick or Treat Deals: Acid Blondies" gallery item. He should be navigated to another page, where the main image from the clicked element will be the first image on current page, and at the bottom there will be rendered any html code that we saved in our data storage:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-825.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-825.png)
 
 Trick or Treat Deals: Acid Blondies - article page 1
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-826.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-826.png)
 
 Trick or Treat Deals: Acid Blondies - article page 2
 
@@ -57,11 +57,11 @@ We also want the "Go Back" button to redirect user to the previous page. To make
 
 Education page is very similar to the News page, it also have a gallery, but it has no sections (no filter block) and the action on click for each gallery item should open an external link:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-827.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-827.png)
 
 Education Page
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-828.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-828.png)
 
 Education Page: Gallery Item On Click - Opening an External Link example
 
@@ -90,11 +90,11 @@ In this example we will use UDTs. The client have possibility to add pages data 
 
 We're using PORTAL-NEWS activity type to add data for News page (Homepage Activity NEWS UDT), and PORTAL-EDUCATION activity type to add data for Education page (Homepage Activity EDUCATION UDT):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-829.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-829.png)
 
 Homepage Activity NEWS UDT
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-830.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-830.png)
 
 Homepage Activity EDUCATION UDT
 
@@ -112,7 +112,7 @@ This is how the one row from the Homepage Activity NEWS UDT looks like:
 >
 > <br><br><br>
 >
-> ![](https://alinasergeeva6.github.io/pepepri-docs/static/Trick-or-Treat-deals_Blondies5MC.jpg)
+> ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Trick-or-Treat-deals_Blondies5MC.jpg)
 >
 > ~1
 
@@ -134,7 +134,7 @@ But sometimes while using "~" as a delimeter the upsert doesn't work as expected
 
 1.  *Active Promotion* - the name of the category. We will get all the needed rows from the UDT and look for all unique category names for forming filter block's options source:
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-831.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-831.png)
 
 2.  [*https://drewestate.box.com/shared/static/3nw8vpm5hnw10kuzkyy50cyzgfsx0oy9.jpg*](https://drewestate.box.com/shared/static/3nw8vpm5hnw10kuzkyy50cyzgfsx0oy9.jpg) - the src for the main image for gallery item;
 3.  *DDRP, DDDP, DDCP, NAS-Wholesale* - the list of accounts programs for which this row should be presented on the page (it could be any parameter, for example, account type);
@@ -168,7 +168,7 @@ Let's suppose we will have 10 gallery items (10 rows in the UDT) for News page, 
 
 Unfortunatelly, we cannot add more gallery items to the gallery block using scripts and flows than it already is in this gallery block in page builder. For example, if we have two gallery items added in page builder - then we cannot add a script to get all needed rows from the UDT and if the amount is more than 2, for example, 10 - just update the configuration of the gallery block with 8 more gallery items:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-832.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-832.png)
 
 We cannot do it because every gallery item has unique Key which is generated not on our side, but in the moment when we add a new gallery item to the gallery block **in Page Builder ONLY**.
 
@@ -416,11 +416,11 @@ If you need to save some object-typed data to the page parameter (for example, a
 
 When the script is done, we're adding it to the flow:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-833.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-833.png)
 
 Then we're adding the flow to the page OnLoad flow:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-834.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-834.png)
 
 ### Page Title - Rich Text Block OnLoad Flow
 
@@ -465,11 +465,11 @@ If the configuration object of Rich Text block was successfully retrieved - it w
 
 Adding this script to the flow:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-835.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-835.png)
 
 Adding the flow to the Rich Text OnLoad flow:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-836.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-836.png)
 
 ### Category Selection - Filter Block - Options Source Flow
 
@@ -718,7 +718,7 @@ That's why at the end of the script's main function we're getting unique titles 
 
 Then we're adding this script to the flow and adding the flow to the Filter block + adding some settings to this Filter block in Page Builder:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-837.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-837.png)
 
 1.  **Page parameter key** - activeButton - it's a page parameter which will be updated with a new value (the value of the Key property) everytime the user selects another value from dropdown;
 2.  **Options source** - the flow which was created in previous steps;
@@ -864,9 +864,9 @@ Do not forget to check the "Same as OnLoad" checkbox under the On Change Flow se
 
 The result is the next:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-838.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-838.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-839.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-839.png)
 
 #### Gallery Item OnClick Flow
 
@@ -995,25 +995,25 @@ When the script is finished - we will have either articlePageSlug parameter not 
 
 This action is a default flow logic block Navigate To which will navigate to the article slug:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-840.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-840.png)
 
 Then we're setting it as Disabled and configuring the rule. This block will be disabled only if the rule returns true. In our case, we should not navigate to article page if the articlePageSlug is empty:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-841.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-841.png)
 
 **Open External (Open external link)**
 
 The next logic block which we want to add is Open External. We want it to open an external link in a new tab:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-842.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-842.png)
 
 Then we need to add disabled rule for this block too. It should be disabled if the externalLink is empty:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-843.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-843.png)
 
 As a result we have different actions performed based on current page's type. So the page without sections, for example Education, works fine now:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-844.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-844.png)
 
 But we still need to create an Article page to see the detailed data of the items on the Events page and all of the other pages with sections.
 
@@ -1027,9 +1027,9 @@ You can check the described page: Page Builder -> Dynamic Article Page.
 
 The layout for the article page is the next. We have "Go Back" button at the top of the page, which should navigate us to the previous page; under the button there is a gallery block with one image with title - the main image of the item which was clicked before on dynamic UDT page; and at the bottom of the page we have a Rich Text block with HTML code with some description of the current item:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-845.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-845.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-846.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-846.png)
 
 ### Parameters
 
@@ -1057,7 +1057,7 @@ Navigate To Previous Page Flow
 
 We don't need any parameters in this flow, we just need to add 'Navigate To' logic block and select "Back" as a navigation type:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-847.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-847.png)
 
 ### Gallery OnLoad Flow
 
@@ -1136,13 +1136,13 @@ The final result for the News page:
 
 All of the categories are the values in the filter block - we can change the category and the gallery will be reloaded with needed gallery items:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-848.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-848.png)
 
 If the user clicks on one of the gallery items - he would be redirected to the article page:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-849.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-849.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-850.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-850.png)
 
 User also can return from the article page to the News page.
 

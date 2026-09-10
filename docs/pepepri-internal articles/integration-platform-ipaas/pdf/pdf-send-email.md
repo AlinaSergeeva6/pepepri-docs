@@ -21,7 +21,7 @@ c. Send Email Sales Order PDF
 
 With this dataflow task, we send an HTTP request and get the necessary transaction header
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-22.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-22.png)
 
 **Step#2: prepare a dataflow task 'Get Sales Order Lines':**
 
@@ -29,9 +29,9 @@ With this dataflow task, we send an HTTP request and get the necessary transacti
 
 Mandatory settings are **loop\_over\_table** of the first task "Get Sales Order Header" and **loop\_over\_table\_distinct** on UUID
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/2Capture-2.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2Capture-2.PNG)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/3Capture-1.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3Capture-1.PNG)
 
 **Step#3: prepare a dataflow task 'Send Email Sales Order PDF':**
 
@@ -57,10 +57,10 @@ Required settings:
 
 \- pdf\_html\_code = write the HTML structure of the pdf file
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/4Capture-1.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/4Capture-1.PNG)
 
 **Step#4:** prepare Scheduled Jobs in which add all three dataflow tasks that are described above
 
 **Step#5 :** create a webhook that will trigger this Scheduled Jobs
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/6Capture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/6Capture.PNG)

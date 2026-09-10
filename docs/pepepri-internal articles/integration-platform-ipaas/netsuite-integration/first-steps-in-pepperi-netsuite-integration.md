@@ -21,13 +21,13 @@ order: 171
 
 2.  In the NetSuite account, go to **Customization > Scripting > Scripts > New**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-389.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-389.png)
 
 3\. Press the “+” button to add a script
 
 4\. **Choose file > Choose the “pepperi\_saved\_search\_execute\_V2” file from your computer.**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-390.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-390.png)
 
 if you don't have the script, you can download the script from here - **remember, you will need to change the extension from .txt to .JS**:
 
@@ -39,34 +39,34 @@ if you don't have the script, you can download the script from here - **remember
 
 5\. Push the button “**Save”** and then “**Create Script Record”**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-391.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-391.png)
 
 6\. Enter “**Pepperi Integration Script**” in the name field
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-392.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-392.png)
 
 **Important to mention:** TYPE is chosen as **RESTlet** by default
 
 7\. Press on “**Save**” and “**Deploy Script**”
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-393.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-393.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-394.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-394.png)
 
 8\. Mark the checkboxes of **Roles**, **Partners** and **Employees**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-395.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-395.png)
 
 9\. Change the status to “**Released**” and the log level to “**Error**”
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-396.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-396.png)
 
 10\. After this you will be able to get **advanced\_search\_url**
 
 EXTERNAL URL:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-397.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-397.png)
 
 11\. Saved it in **Pepperi's Integration plugin > General Settings >** ***advanced\_search\_url.***
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-398.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-398.png)

@@ -9,7 +9,7 @@ order: 121
 
 In order to do the image integration with the Acumatica ERP system, we need to have this set of the dataflow tasks, which can be found on the "[Services Demo](https://integration.pepperi.com/mgr/PluginSettings/ClientTask?TaskId=90405)" environment.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-502.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-502.png)
 
 ### Get list of all images task
 

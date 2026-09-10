@@ -15,7 +15,7 @@ It has its own proprietary and easy to use redirect api. For additional informat
 
 There are 4 key UI tasks which drive the payment routine
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-357.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-357.png)
 
 |  |  |
 | --- | --- |
@@ -45,15 +45,15 @@ As always you need to call the UI task using custom form in your transaction/act
 
 Before all scripts attached.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-358.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-358.png)
 
 Ui\_page\_body setting of the UI task contains the view configuration and styling. Nothing special.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-359.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-359.png)
 
 Ui\_page\_head includes all the logic.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-360.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-360.png)
 
 **Actions: 1.** Receive the context to get the current uuid of the routine.
 
@@ -65,7 +65,7 @@ Ui\_page\_head includes all the logic.
 
 **5\.** If all data transferred in right format the CG Iframe appears.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-361.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-361.png)
 
 ### CreditGuard get page url.
 
@@ -119,11 +119,11 @@ Such parameters for production as user, pass, terminalNumber, mid should be rece
 
 After the payment done the CG Iframe should call one of the tasks ApprovePage Or DeclinePage depending on the status of the payment. Both of them update your transaction with necessary information such as TSACreditGuardID value, TSAPaymentStatusValue. You may also receive additional information. By parsing the response from the iframe:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-362.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-362.png)
 
 And put it in your tsa fields in transaction.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-363.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-363.png)
 
 Keep in mind that you are working in iframe an if you want to use pepperi api you need to add **window.parent** to your function.
 
@@ -158,7 +158,7 @@ While we cannot directly modify CreditGuard's operations, we can assist in ident
 
 This data will be useful for CreditGuard's support team to diagnose and fix the problem.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-364.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-364.png)
 
 #### Common CreditGuard Issue: Incorrect Request Method
 
@@ -168,11 +168,11 @@ One problem we encountered was the use of an incorrect request method. In this c
 
 When it comes to issues on the Pepperi side, particular attention should be given to **synchronization**, especially on mobile devices. Ensuring proper syncing is crucial for data processing in Pepperi.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-365.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-365.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-366.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-366.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-367.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-367.png)
 
 To avoid issues:
 

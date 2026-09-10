@@ -53,7 +53,7 @@ To set up launch page, you need to do the following:
 
 First of all, you need to create a visit flow scripts. Go to the **Configuration** \-> **Scripts**.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Create-a-script-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Create-a-script-1.png)
 
 Click on **Add** to add new script.
 
@@ -61,11 +61,11 @@ You need to create two scripts:
 
 -   **OnVisitFlowViewLoad** \- prepare all data from the visit flow.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Visit-Flow-Create-a-script-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Visit-Flow-Create-a-script-1.png)
 
 -   **OnVisitFlowStepClick** \- Navigate to the pressed activity, either create a new activity or navigate to existing activity. In case there is more than one base activity, VisitFlow will navigate to the first activity.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Visit-Flow-Create-a-script-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Visit-Flow-Create-a-script-2.png)
 
 You can find the code for this two scripts here.
 
@@ -92,7 +92,7 @@ Here you need to specify the following:
 -   Name, Description.
 -   Drag & Drop **VisitFlow** into the page section. After that you should see the settings for **VisitFlow** and select a UDC for it.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Visit-Flow-Create-a-page-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Visit-Flow-Create-a-page-1.png)
 
 !!!info
 If you don't have a UDC for a Visit Flows, create it.
@@ -107,13 +107,13 @@ It should have the following:
 -   **Display Name** - Visit Flow
 -   **Slug** \- visit\_flow
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Visit-Flow-Create-a-slug-and-map-a-page-to-a-slug-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Visit-Flow-Create-a-slug-and-map-a-page-to-a-slug-1.png)
 
 Open **Mapping** tab. Click **Edit** on the **Rep** profile, then Drag & Drop **visit\_flow** into the slug section and select your page.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Visit-Flow-Create-a-slug-and-map-a-page-to-a-slug-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Visit-Flow-Create-a-slug-and-map-a-page-to-a-slug-2.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Visit-Flow-Create-a-slug-and-map-a-page-to-a-slug-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Visit-Flow-Create-a-slug-and-map-a-page-to-a-slug-3.png)
 
 Click **Save** to save your slug.
 

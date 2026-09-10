@@ -44,7 +44,7 @@ On the **Services Demo - Environment**, Insights are configured for the Transact
     -   Click **Install** and confirm by selecting **Continue**.
     -   Wait for the installation to complete (this may take several minutes). Once done, a new **Insights** section will appear under **Settings**.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-716.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-716.png)
 
 ---
 
@@ -55,24 +55,24 @@ On the **Services Demo - Environment**, Insights are configured for the Transact
 -   Use the **Configuration Assistant** to set up initial dashboards and data queries for Reps and Managers:
     -   Go to **Settings -> Insights -> Configuration Assistant**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-717.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-717.png)
 
     -   Configure the following:
         -   **Fields to Accumulate:** Select fields for data aggregation (only fields indexed in the Data Index will be available).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-718.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-718.png)
 
         -   **Queries Filter:** Filter by Transaction Type or Status (e.g., select "submitted" for orders).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-719.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-719.png)
 
         -   **Slugs & Pages to Create:** Default slugs are /insights and /account\_insights (customizable if needed).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-720.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-720.png)
 
     -   Click **Run** to create three unpublished pages. A notification will confirm completion.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-721.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-721.png)
 
 #### Step 2: Index Data (Data Index)
 
@@ -82,7 +82,7 @@ The Data Index prepares fields for use in queries and dashboards by exporting th
 
 1.  Navigate to **Settings -> Insights -> Data Index**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-722.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-722.png)
 
 2.  **Activities & Transactions Tab:**
     -   Index header fields such as:
@@ -92,7 +92,7 @@ The Data Index prepares fields for use in queries and dashboards by exporting th
 
     -   Default fields are pre-indexed. Ensure custom fields (e.g., TSA fields like TSATransactionTotal) are added, especially if multiple Transaction/Activity types are used.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-723.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-723.png)
 
 3.  **Transaction Lines Tab:**
     -   Index line-level fields such as:
@@ -101,7 +101,7 @@ The Data Index prepares fields for use in queries and dashboards by exporting th
 
     -   Include any custom TSA fields relevant to your reporting needs.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-724.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-724.png)
 
 4.  **Publish the Index:**
     -   Click **Publish** to export data to the Elastic database.
@@ -122,7 +122,7 @@ The Data Index prepares fields for use in queries and dashboards by exporting th
 
 -   Navigate to **Settings -> Insights -> Data Queries** to manage queries created by the Configuration Assistant.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-725.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-725.png)
 
 -   Create or edit queries to summarize indexed fields for dashboards:
     -   Use the graphical UI to select fields and apply filters.
@@ -134,11 +134,11 @@ The Data Index prepares fields for use in queries and dashboards by exporting th
 
 1.  Go to **Settings -> Pages -> Page Builder**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-726.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-726.png)
 
 2.  Locate the three new pages created by the Configuration Assistant.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-727.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-727.png)
 
 3.  For each page:
     -   Add sections and drag in blocks such as Charts, Benchmark Charts, Scorecards, and Tables.
@@ -147,19 +147,19 @@ The Data Index prepares fields for use in queries and dashboards by exporting th
 
 4.  Save and click **Publish** to make pages available.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-728.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-728.png)
 
 #### Step 5: Assign User Profile Permissions
 
 1.  Navigate to **Settings -> Pages -> Slugs -> Mapping**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-729.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-729.png)
 
 2.  Add or edit user profiles:
     -   Drag available slugs (e.g., /insights, /account\_insights) to the Mapped Slugs section.
     -   Select the corresponding page for each slug.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-730.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-730.png)
 
 3.  Verify published pages are accessible:
     -   https://app.pepperi.com/insights
@@ -169,7 +169,7 @@ The Data Index prepares fields for use in queries and dashboards by exporting th
 
 1.  Go to **Settings -> Company Profiles -> App Home Screen**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-731.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-731.png)
 
 2.  Select the desired profile.
 3.  In the Slugs section, locate the newly created slugs (e.g., /insights, /account\_insights).
@@ -191,7 +191,7 @@ Target resources are defined in the **User Defined Collections (UDC)** editor:
     -   **AccountTarget:** For account-level targets.
     -   **UserTarget:** For user-level targets.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-732.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-732.png)
 
 -   If your sales targets are per user or per account, these UDCs suffice without modification.
 -   You may need to modify or create additional UDCs in cases such as:
@@ -209,12 +209,12 @@ To create a new target UDC or add fields to existing ones (e.g., for targets by 
     -   **Description:** Provide a clear description (e.g., "Targets by user and brand").
     -   **Inherit Field From:** Select either user\_target or account\_target to inherit base fields (Date, User/Account, Target) and make the UDC available in the Targets Manager.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-733.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-733.png)
 
 4.  Ensure the **Scheme Only** checkbox is unchecked, then click **Create**.
 5.  After creation, the UDC editor opens:
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-734.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-734.png)
 
     -   Add fields (e.g., Brand):
         -   **Key:** Use lowercase, with no spaces or special characters (e.g., brand).
@@ -225,7 +225,7 @@ To create a new target UDC or add fields to existing ones (e.g., for targets by 
         -   **Indexed:** Set to true if the field will be used in Insights data queries.
         -   **Optional Values:** List options (e.g., brand1, brand2, brand3a).
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-735.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-735.png)
 
     -   Click **Update** to save changes.
 
@@ -239,7 +239,7 @@ The Targets Manager allows you to view, create, or edit target data for each UDC
 
 1.  Navigate to **Settings -> Insights -> Targets Manager**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-736.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-736.png)
 
 2.  Each target resource (e.g., UserTarget, AccountTarget) is displayed in a separate tab.
 3.  Per resource, you can:
@@ -253,7 +253,7 @@ Import target data from a file to populate the UDC:
 
 1.  Open the UDC list and click on the target UDC (e.g., UserTarget).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-737.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-737.png)
 
 2.  Click the menu icon and select **Import**.
 3.  Upload a file in **JSON** or **CSV** format:
@@ -272,7 +272,7 @@ Import target data from a file to populate the UDC:
 
 1.  The imported data will appear in the UDC and be available in the Targets Manager.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-738.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-738.png)
 
 #### Targets Data Queries
 
@@ -284,33 +284,33 @@ Example: Create a query for a benchmark chart showing Sales Reps’ Monthly Sale
 
 1.  Navigate to **Settings -> Insights -> Data Queries**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-739.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-739.png)
 
 2.  Create a new query and select the target resource (e.g., UserTarget).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-740.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-740.png)
 
 3.  Configure the query:
     -   **Value Format:** Choose Currency or Decimal (default currency applies unless specified).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-741.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-741.png)
 
     -   **Series:**
         -   Sum the Target field in the UserTarget resource.
         -   For managers: Group by User Name to see targets per rep.
         -   For individual reps: Create a separate query without grouping.
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-742.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-742.png)
 
     -   **User Filter:**
         -   For managers: Select "All users" or "Users under my role" (if using Role Hierarchy).
         -   For reps: Select "Current User" (create separate queries for each role).
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-743.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-743.png)
 
     -   **Date Filter:** Filter by This Month to view current month targets (uses the Date column in the UDC).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-744.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-744.png)
 
 4.  Click **Add** and preview the values to ensure accuracy.
 
@@ -326,6 +326,6 @@ Target queries are typically used in Scorecards or Benchmark Charts on dashboard
     -   Actual values query (e.g., "Manager Rep Sales this Month").
     -   Target values query (e.g., "Manager Rep Targets this Month").
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-745.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-745.png)
 
 4.  Save and publish the page to the relevant profiles (see Page Builder Guide).

@@ -363,7 +363,7 @@ This custom form will change status of card from abandon cart to submitted card.
 
 Put this custom form in the last place between in creation and submitted:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/123.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/123.png)
 
 Full code of Custom Header here:
 

@@ -15,13 +15,13 @@ order: 268
 -   1.1. Open iPaaS accounts manager page [https://integration.pepperi.com/mgr/PluginManager/IntegrationAccounts](https://integration.pepperi.com/mgr/PluginManager/IntegrationAccounts)
 -   1.2. In ‘Tools’ select ‘Create Pepperi + iPaaS Account’:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-244.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-244.png)
 
 img 1.
 
 -   1.3. Fullfil the details accordingly and click ‘create’:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-245.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-245.png)
 
 img 2.
 
@@ -47,7 +47,7 @@ If you see some missing essential addon - try to install it via Postman.
 
 **What to do**: re-link account in iPaaS. Find it in accounts list and click ‘re-link’
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-246.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-246.png)
 
 img 3.
 
@@ -75,7 +75,7 @@ Most of the addons will be installed automatically, but some won’t be (like Vi
 
 There were some cases when Core Resources addon could not be updated if main account type was written with small first letter - “customer”.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-247.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-247.png)
 
 img 4.
 
@@ -142,7 +142,7 @@ Catalogs are not copied with environment, but in order to setup transactions cor
 
 Activity lists are copied, but you need to check filter tab, those filters that contain ActivityTypeId will be empty.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-248.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-248.png)
 
 img 5.
 
@@ -152,7 +152,7 @@ img 5.
 
 Go to ‘Promotion Setup’ tab and copy configuration for each promo type used
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-249.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-249.png)
 
 img 6.
 
@@ -320,7 +320,7 @@ All the task, scheduled jobs, settings are copied, but there are few things to c
 
 -   **Addons**. Go to Tools -> Add-ons Manager and see if addons are installed correctly. Click ‘check for updates’ to make sure there are no issues. Most probably you will see UUIDs mismatch error:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-250.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-250.png)
 
 img 7
 

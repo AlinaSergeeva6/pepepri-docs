@@ -19,17 +19,17 @@ Before the installation please be sure that you have Remote Access to the custom
 
 a. **Sap Listener 64** b. **Exporter 64 version** c. **Sap Picture Exporter** d. **If SAP version 10 – Version 10 of Sap Importer Only must be downloaded too**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-442.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-442.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-443.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-443.png)
 
 ### #3 Step: download the folder Sap Listener 64
 
 1.  Open the file **install.bat** ----> **Edit** -----> add **the correct path to your listener**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-444.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-444.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-445.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-445.png)
 
 After making sure you have the correct way to the listener inside the file **install.bat ------>** **run it as administrator**
 
@@ -39,7 +39,7 @@ Could be that you will get error '0x80131515' OnlineListenereService.exe could n
 
 **PAY ATTENTION** --- following that you will have the **Service tab** in your Task Manager and **online\_listener (pepperi\_onlinelistener)** in it **stop the listener**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-14.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Capture-14.PNG)
 
 **2.** **Generating a UUID.** Open the file **SettingsEditor.exe as administrator** ---> Generate **GUID for clientid --->** **Save Settings**
 
@@ -47,27 +47,27 @@ Could be that you will get error '0x80131515' OnlineListenereService.exe could n
 
 **PAY ATTENTION** – to generate **GUID for clientid** \---> push the button **Generate GUID**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-446.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-446.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-15.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Capture-15.PNG)
 
 \*this **GUID** should be saved afterwards in client’s General Settings **PAY ATTENTION!** To test this GUID you can choose any client’s dataflow task ---> set the new field **signal\_client\_id** -----> add as a **value** the generated GUID
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-447.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-447.png)
 
 3\. After the GUID has been generated, we **Start the listener**.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-16.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Capture-16.PNG)
 
 4\. Open online\_listener via **Open Service ---->** find **Pepperi Online Listener ------->** open via **Properties**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-448.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-448.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-449.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-449.png)
 
 5\. **These three settings (First failure; Second failure; Subsequent failures) are important to be prepared in a case of listener failure**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-450.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-450.png)
 
 !!!info
 **PAY ATTENTION –** if all steps above were completed, listener should work properly **!!BUT sometimes** the possible issue with webhooks can appear when client doesn’t have SAP DI API running (both versions, 32 and 64 bit) or if SAP version is 10
@@ -75,23 +75,23 @@ Could be that you will get error '0x80131515' OnlineListenereService.exe could n
 **SOLUTION: upgrade importer Version 10 of Sap Importer Only** it has two files: **SAP\_Importer.exe SAP\_Importer.pdb**
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-451.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-451.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-452.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-452.png)
 
 These two files (**SAP\_Importer.exe; SAP\_Importer.pdb**) should be added + with replace into the folder of online\_listener where the file install.bat is Before doing this make sure that Service is stopped otherwise you will get an error **\*Stop the Service and then add + replace the files after it Start the Service again**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-453.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-453.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-454.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-454.png)
 
 **REMARKS** SAP Version 10 is only 64-bit but in compatibility mode 32-bit DI API is still working. A lot of clients forget to install it and Pepperi cannot work without it. **RULE: SAP Version 10 works with availability of two versions 64-bit and 32-bit and listener must be updated**
 
 6\. Let’s take **General Settings example** to get through **all SAP settings** all these settings must be prepared for the client:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-455.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-455.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-456.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-456.png)
 
 **SAP Desktop Plugin** licenseserve \* should be given by the client (domain+ port) **REMARKS** **sql\_connection** and **signalr\_client\_id** are responsible for dataflow tasks (so if you have any issues with dataflow tasks, probably you have got the incorrect info in these fields) the rest of the fields are for webhooks mostly.
 

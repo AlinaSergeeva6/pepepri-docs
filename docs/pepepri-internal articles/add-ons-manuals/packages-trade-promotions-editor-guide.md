@@ -12,13 +12,13 @@ This guide explains how to use the Package Trade Promotions Editor in Pepperi to
 
 Once the Package Trade Promotions Add-On was installed and completed the additional setup (see Package Trade Promotions Installation Guide), users can configure promotions using the editor. Access the editor through **Settings** in the Webapp.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-674.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-674.png)
 
 ---
 
 ### Package Setup Overview
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-675.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-675.png)
 
 To create a Package Promotion, configure the following tabs in the editor:
 
@@ -29,9 +29,9 @@ To create a Package Promotion, configure the following tabs in the editor:
 -   **Available Items:** Defines items available for selection in the package (Phase 1). For two-phase promotions, configure "Additional Selected Items" separately.
     -   **Rules Logic:** Multiple rules use logical OR (any rule satisfied); grouped rules use logical AND (all conditions in the group satisfied).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-676.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-676.png)
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-677.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-677.png)
 
 ---
 
@@ -58,14 +58,14 @@ This guide walks through configuring example Package Promotions to demonstrate t
 -   **Main Category:** Assign a Main Category (e.g., a dedicated "Packages" category or the category of participating items).
 -   **Image:** Upload an image to represent the package.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-678.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-678.png)
 
 **Accounts**
 
 -   **Filter:** Define which Accounts can access the package using properties (e.g., PaymentMethod = "Cash" OR LocationType = "Salon"). If none are set, all Accounts can access it.
 -   **Excluded Accounts:** Specify Accounts to exclude (e.g., "Look de Luxe").
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-679.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-679.png)
 
 ---
 
@@ -79,11 +79,11 @@ This guide walks through configuring example Package Promotions to demonstrate t
     1.  **Fill Promotion Details:**
         -   **Title:** A name for your reference in the editor.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-680.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-680.png)
 
         -   **Message:** A pop-up message explaining the promotion (e.g., what quantities to select). Also displayed at the top of the selection screen.
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-681.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-681.png)
 
         -   **Validity:**
             -   **Enabled between dates:** Set "Valid from" and "Valid to" dates (leave blank for always valid).
@@ -104,7 +104,7 @@ This guide walks through configuring example Package Promotions to demonstrate t
             -   **Quantity:** The threshold value (quantity or price).
             -   **Limitations:** Add conditions (e.g., items from specific categories). Click **Edit Limitations** to set (e.g., 5 items from 2 different categories).
 
-                ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-682.png)
+                ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-682.png)
 
             -   **Get:**
                 -   **Discount (%):** Apply a percentage discount.
@@ -112,7 +112,7 @@ This guide walks through configuring example Package Promotions to demonstrate t
                 -   **Additional Item:** Add a specific item at a discount/free.
                 -   **Additional User Selected Item:** Allow users to select items from a list at a discount/free.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-683.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-683.png)
 
     2.  **Set Available Items:** Define items using properties (e.g., Main Category = "Skincare").
     3.  **Result:** Users see the package in the Order Center, with pop-ups for incorrect quantities.
@@ -138,13 +138,13 @@ This guide walks through configuring example Package Promotions to demonstrate t
         -   Tier 1: Get: Additional User Selected Item → Quantity: 1, Discount: 100%
         -   Tier 2: Get: Additional Item → Select "Display Unit", Discount: 100%, Quantity: 1
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-684.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-684.png)
 
     -   **Set Available Items:** Define items for the first phase (e.g., by Product Type).
 
 #### 3. User Selects 5 Items, Then 2 Free Items (2 Phases)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-685.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-685.png)
 
 -   **Steps:**
     -   **Promotion Details:**
@@ -156,7 +156,7 @@ This guide walks through configuring example Package Promotions to demonstrate t
 
     -   **Configure Additional Items:**
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-686.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-686.png)
 
         -   Title: "Select Free Items"
             -   Message: "Select {0} free items" (e.g., "Select 6 free items" for 15 items).
@@ -167,14 +167,14 @@ This guide walks through configuring example Package Promotions to demonstrate t
                 -   Excluded Items: Item ExternalID = "Skin033A"
                 -   Default Quantity: 0
 
-                ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-687.png)
+                ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-687.png)
 
 #### 4. User Selects 5 Items, Gets Cheapest Free (1 Phase)
 
 -   **Steps:**
     -   **Promotion Details:**
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-688.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-688.png)
 
         -   Title: "5 Items, Cheapest Free"
         -   By: Quantity
@@ -182,7 +182,7 @@ This guide walks through configuring example Package Promotions to demonstrate t
         -   Quantity: 5
         -   Get: Additional Items → Use Cheapest Item, Quantity: 1, Discount: 100%
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-689.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-689.png)
 
     -   **Result:** For items (e.g., ItemA: $12.50 x2, ItemB: $13.75 x1, ItemC: $14.50 x2), cart shows 1 ItemA as free.
 
@@ -195,7 +195,7 @@ This guide walks through configuring example Package Promotions to demonstrate t
         -   Price: 500
         -   Get: Additional User Selected Items
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-690.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-690.png)
 
     -   **Configure Additional Items:**
         -   By: Price
@@ -203,7 +203,7 @@ This guide walks through configuring example Package Promotions to demonstrate t
         -   Price: 50
         -   Get: Discount (%) → Value: 100
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-691.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-691.png)
 
     -   **Set Available Items:** Define items for both phases.
 
@@ -221,4 +221,4 @@ This guide walks through configuring example Package Promotions to demonstrate t
         -   Filter by Item Code (e.g., 3 specific items).
         -   Default Quantity: 1 (non-modifiable, quantity field must be as read-only).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-692.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-692.png)

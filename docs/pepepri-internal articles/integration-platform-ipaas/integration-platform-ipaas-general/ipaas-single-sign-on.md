@@ -27,33 +27,33 @@ Allow to create SSO Client from Integration side.
 1) Go to Integration platform - Integration Accounts ([https://integration.pepperi.com/mgr/PluginManager/IntegrationAccounts](https://integration.pepperi.com/mgr/PluginManager/IntegrationAccounts))
 2) Select Integration Account and click on “SSO Clients” menu:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/clip_image002.gif)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/clip_image002.gif)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-14.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-14.png)
 
 3) You will see the SSO Clients grid. Press “Add New Record”:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/clip_image002.gif)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/clip_image002.gif)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/2-9.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-9.png)
 
 If it is first time you will need to enter user credentials of Pepperi User and press “Send” to create connection:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/3-5.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-5.png)
 
 4) Press “Add new record” one more time and you will see next record in Edit mode:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/clip_image002.gif)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/clip_image002.gif)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/4-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/4-3.png)
 
 In order to create Default SSO Client you just need to press Update. Confirm adding:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/5-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/5-4.png)
 
 You should see created SSO Provider with checked Login column:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/6-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/6-4.png)
 
 With this step SSO Provider creation is over.
 
@@ -65,13 +65,13 @@ Note: Security Group creation can be not allowed (you will not see “Add” but
 
 1) Go to WebApp Security Group Settings and press “Add” button:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/clip_image002.gif)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/clip_image002.gif)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/7-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/7-2.png)
 
 2) Enter Name and Press “Save”:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/8-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/8-1.png)
 
 Security group was created.
 
@@ -79,7 +79,7 @@ Security group was created.
 
 In same tab/page go to Authentication Providers
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/9-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/9-1.png)
 
 You should see created one in Integration. Select it and press save.
 
@@ -92,13 +92,13 @@ Allow to select user that will use IPAAS SSO Provider to Login
 1) Go to WebApp Users tab
 2) Select User, click edit icon and “Change Security Group”
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/10-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/10-1.png)
 
 3) Select your security group and click apply:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/clip_image002.gif)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/clip_image002.gif)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/11-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/11-1.png)
 
 Now this user is connected to the group and IPAAS SSO Login. To connect another user just go over this step again.
 
@@ -106,13 +106,13 @@ Now this user is connected to the group and IPAAS SSO Login. To connect another 
 
 1) Go to Integration SSO Clients (like with first step), select “Login” from menu:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/clip_image002.gif)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/clip_image002.gif)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/12-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/12-1.png)
 
 2) You will find dropdown with your users. Select one and press “Login”:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/13.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/13.png)
 
 You will be redirected (in the new tab) to WebApp with selected logged in user. Setup is done. Now you can login to WebApp via Integration Platform.
 

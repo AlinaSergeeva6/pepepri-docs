@@ -17,7 +17,7 @@ This becomes very useful when, for example, you are faced with the task of filte
 
 So we have field TSAExample in the lines:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-3.png)
 
 just fox example , you filtered lines by TSAExample value and need to hide this field from PDF.
 
@@ -155,6 +155,6 @@ uncomment the necessary parts of the code (result):
 
 As result you will get PDF without TSAExample column, but still will have it in XML:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-4.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/2-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-1.png)

@@ -11,41 +11,41 @@ An EDI file is a data file formatted using one of several Electronic Data Interc
 
 To create new EDI File on target FTP you need to create a new separate webhook and new webhook task in an integration platform
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-24.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-24.png)
 
 The connection between back office and integration is the same as in a regular webhooks for transactions.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/2-18.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-18.png)
 
 Next Integration platform configurations:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/3-12.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-12.png)
 
 File type can be TXT or XML, depending on this you will need to use the corresponding template and file of the appropriate format will be generated.
 
 TXT file template:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/4-9.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/4-9.png)
 
 This template will generate next file:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/5-8.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/5-8.png)
 
 XML file template:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/6-7.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/6-7.png)
 
 This template will generate next file:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/7-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/7-4.png)
 
 Check the final generated file. One common error may be the following, an error about an incorrect field name (Currency in this screenshot):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/8-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/8-3.png)
 
 This error means that you entered a wrong name in the template. To fix this error, you can take advantage of the integration platform.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/9-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/9-3.png)
 
 399B
 

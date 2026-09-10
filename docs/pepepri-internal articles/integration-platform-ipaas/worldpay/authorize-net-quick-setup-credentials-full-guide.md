@@ -23,27 +23,27 @@ These steps are needed for getting all of listed credentials.
 
 2\. In the Merchant Interface navigate to "ACCOUNT" section:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img1.png)
 
 3\. Navigate to "API Credentials & Keys":
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img2.png)
 
 ### Getting Merchant Name
 
 The "API Login ID" is the **Marchant Name:**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img3.png)
 
 ### Getting Merchant Transaction Key
 
 1\. To get Merchant Transaction Key on the same "API Credentials" page check "New Transaction Key" and click "Submit":
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img4.png)
 
 2\. You have the Merchant Transaction Key now:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img5.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img5.png)
 
 ### Getting Signature Key (for Authorize.net webhooks)
 
@@ -55,11 +55,11 @@ Merchant Transaction Key isn’t saved in Authorize.net environment, so if you f
 
 1\. To get Merchant Signature Key on the "API Credentials & Keys" page check "New Signature Key" and click "Submit":
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img6.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img6.png)
 
 2\. You have the Merchant Signature Key now:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img7.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img7.png)
 
 ### Disable option for Merchant Transaction / Signature Key
 
@@ -69,7 +69,7 @@ If the Disable Old Transaction/Signature Key check box is not selected, the old 
 
 To disable the old Transaction or Signature Key, check the box labeled Disable Old Transaction/Signature Key Immediately:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img8.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img8.png)
 
 ## Adding Merchant Name & Transaction Key to the Authorize.net Quick Setup
 
@@ -77,21 +77,21 @@ To disable the old Transaction or Signature Key, check the box labeled Disable O
 
 2\. In the Tool tab select "Quick Setup":
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img9.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img9.png)
 
 3\. Install and then launch the Authorize.net Quick Setup
 
 4\. Click on "Fill Details" button in General tab:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img10.png)
 
 5\. Add here your Merchant Name and Transaction Key and click "OK". Your merchant data will be saved:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img11.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img11.png)
 
 6\. Click on "Test Connection" button to check if the credentials are correct:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img12.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img12.png)
 
 ## Adding Merchant Signature Key to the Authorize.net Quick Setup
 
@@ -99,7 +99,7 @@ If you want to use Authorize.net webhook for saving the transaction data, you wi
 
 1\. In Authorize.net Quick Setup open the Advanced tab and go to the Duplicates Checks section. You will see the settings for Authorize.net webhook:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/img13.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/img13.png)
 
 2\. If you want to use Authorize.net Webhook check the "Should Use Webhooks" checkbox
 

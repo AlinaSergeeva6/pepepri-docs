@@ -11,12 +11,12 @@ At integration platform you have opportunity to set transaction type. It could b
 
 **Transaction header**:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-19.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-19.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/2-14.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-14.png)
 
 **Transaction Lines:**
 
 No special configurations for lines. Only mapping and base task configuration:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/3-10.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-10.png)

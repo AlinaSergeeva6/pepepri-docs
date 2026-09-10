@@ -42,7 +42,7 @@ The job will do the following:
 4.  Filter Only Buyers Without Surveys - Filter all buyers and find buyers who don't have surveys.
 5.  Send Emails and Notifications - Send emails and notifications for these buyers.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Surveys-Notifications-How-does-it-works.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Surveys-Notifications-How-does-it-works.png)
 
 ### Get Data From Pepperi
 
@@ -56,7 +56,7 @@ You need to take:
 
 Using all of this data, we can find which of the buyers didn't have any new surveys for the last 30 days.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Surveys-Notifications-Get-Data-From-Pepperi.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Surveys-Notifications-Get-Data-From-Pepperi.png)
 
 ### Send Email
 

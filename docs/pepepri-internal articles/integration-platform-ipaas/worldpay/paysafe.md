@@ -47,7 +47,7 @@ Paysafe.js uses the Base64-encoded version of the single-use token API key, cons
 
 ● **ui\_page\_body** - contains main html elements (PaySafe solution start with &lt;!-- CREDIT CARD FORM STARTS HERE → and ends with &lt;!-- CREDIT CARD FORM ENDS HERE →; headers with some messages, images etc.) and styles; So we get form like that:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-31.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-31.png)
 
 ● **ui\_page\_head** - contains js logic:
 
@@ -61,11 +61,11 @@ Paysafe.js uses the Base64-encoded version of the single-use token API key, cons
 
 You can see default form with 3 input fields that should be filled:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/2-23.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-23.png)
 
 In case of bad input it will show red light:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/3-17.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-17.png)
 
 It used PaySafe functions:
 
@@ -121,9 +121,9 @@ $('.fa').removeClass('fa-credit-card')
 
 So we will have these results:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/4-13.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/4-13.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/5-11.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/5-11.png)
 
 If user enter correct data “Pay” button will be accessible. After pressings it will run tokenize function that will give you token and you can send payment via dataflow task with POST request and body like that (minimum required body):
 

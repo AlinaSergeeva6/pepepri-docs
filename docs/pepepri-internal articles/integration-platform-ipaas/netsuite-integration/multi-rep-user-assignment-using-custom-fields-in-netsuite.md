@@ -10,4 +10,4 @@ The source of this field should be the "Employee" list.
 
 The last step would be to add this field to the relevant screens for the customer to populate them, and to create a saved search for the Pepperi-Rep Assignment ([Accounts-User](https://app.gitbook.com/@pepperi-services/s/internal-knowledge-base/~/drafts/-Li2IdQIloMWOcmhYa4A/primary/pepperi-uploads/accountuser) [- Pepperi Upload](https://app.gitbook.com/@pepperi-services/s/internal-knowledge-base/~/drafts/-Li2IdQIloMWOcmhYa4A/primary/pepperi-uploads/accountuser))
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-416.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-416.png)

@@ -59,7 +59,7 @@ This is possible because of one task, that is storing old orders in the sql tabl
 
 In the result of this part, we have all orders and lines of this orders, that were changed.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Order-Change-Notification-Find-Changed-Orders.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Order-Change-Notification-Find-Changed-Orders.png)
 
 ### Send Email
 
@@ -102,7 +102,7 @@ Dataflow task should do the following:
 Don't forget to add this two tasks to the job.
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Order-Change-Notification-Add-New-Orders.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Order-Change-Notification-Add-New-Orders.png)
 
 The webhook should trigger the job.
 

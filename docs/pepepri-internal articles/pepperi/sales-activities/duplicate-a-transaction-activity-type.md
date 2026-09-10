@@ -24,14 +24,14 @@ Create a copy of an existing Transaction or Activity Type for testing, new sales
     -   Go to **Settings → Sales Activities → Transaction Types/Activity Types**.
     -   Click **+**, enter a name and description, and save.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-31.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-31.png)
 
 2.  **Export and Import:**
     -   Select the existing Transaction/Activity Type to duplicate.
     -   Choose **Export** from the menu to download the definition file.
     -   Select the new Transaction/Activity Type, choose **Import**, and drag the downloaded file into the import screen.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-32.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-32.png)
 
 1.  **Modify Configuration:**
     -   Adjust the new Transaction/Activity Type (e.g., workflows, views, custom fields) for its intended use.

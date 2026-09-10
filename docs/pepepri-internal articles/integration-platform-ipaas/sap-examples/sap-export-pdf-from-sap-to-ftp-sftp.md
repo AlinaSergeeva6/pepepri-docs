@@ -36,7 +36,7 @@ The name of the listener of the second task (PictureExporter.exe) could be confu
 1.  To install picture exporter, you need to go to [https://integration.pepperi.com/mgr/PluginManager/IntegrationAccounts](https://integration.pepperi.com/mgr/PluginManager/IntegrationAccounts)
 2.  select **tools** dropdown **-> desktop applications**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2023-08-08-at-11.44.21.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2023-08-08-at-11.44.21.png)
 
 1.  Choose Application Name "**SAP Business One**" download **Sap Picture Exporter.**
 2.  Install picture exporter to the client's server and update 2 files there using files from this archive

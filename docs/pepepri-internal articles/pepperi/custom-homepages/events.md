@@ -11,7 +11,7 @@ order: 281
 
 Events in Pepperi are a feature that enables the execution of logic based on specific actions within Transactions. Recently updated, Events replace the deprecated "Events" (which relied on scripts) and now trigger Flows, offering greater flexibility for various scenarios. Flows represent an advanced abstraction level over scripts, enhancing adaptability in different situations.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-139.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-139.png)
 
 ---
 
@@ -23,11 +23,11 @@ Events are triggered in three cases within Transactions:
 -   **Transaction Field Changed (On Change):** Triggers when a Transaction field is modified.
 -   **Transaction Line Field Changed (On Line Change):** Activates when a field in a Transaction line is altered.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-140.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-140.png)
 
 The appropriate Flow must be selected from the available list for each event. Scripts within a Transaction will execute even if no workflow steps remain, unless prevented.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-141.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-141.png)
 
 #### Preventing Script Execution
 
@@ -47,7 +47,7 @@ The appropriate Flow must be selected from the available list for each event. Sc
 
 ### Flows and Scripts Setup
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-142.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-142.png)
 
 #### Step 1: Install and Enable Add-ons
 
@@ -60,8 +60,8 @@ The appropriate Flow must be selected from the available list for each event. Sc
     -   Copy flows and scripts from another environment.
     -   Create custom flows and scripts from scratch.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-143.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-143.png)
 
 -   **Editing Access:** Editing is restricted to the SupportAdminUser\_{DistributorID}@Wrnty.com user.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-144.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-144.png)

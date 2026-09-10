@@ -72,7 +72,7 @@ query 50100 "Customers Info List"
 }
 ```
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-541.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-541.png)
 
 #### Data join
 
@@ -155,7 +155,7 @@ Field must be defined with *id*, *name* and *type*. Click [here](https://learn.m
 
 Here is a full list of supported values for `DataClassification` property:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-542.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-542.png)
 
 If you're not sure which value to set for *DataClassification* you can use `DataClassification = ToBeClassified`. But in most cases `CustomerContent` is suitable.
 
@@ -195,6 +195,6 @@ Once you've finished with the configuration of some data object, in order to see
 
 Let's take a look at the additional query configuration after deploying. As we are using GET-requests for accessing query data, we need to find its endpoint. Open Dynamics BC and search for Web Services. Click on **New**, select required **Object Type** and specify **Object ID**:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-543.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-543.png)
 
 Then provide a **Service Name** and click on the checkbox **Published**. After page reloads **OData V4** link will be created - use it as an endpoint to get data from the query.

@@ -35,13 +35,13 @@ This process allows you to integrate your Dropbox account with Pepperi using HTT
 
 -   After creating the app, navigate to the **Settings** tab on the Dropbox website.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-571.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-571.png)
 
 #### Step 4: Configure Permissions Tab
 
 -   In the **Permissions** tab, check all checkboxes except **Connect** to grant the necessary access levels (e.g., read and write permissions for files and metadata).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-572.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-572.png)
 
 #### Step 5: Set Up Dataflow Task
 
@@ -57,7 +57,7 @@ This process allows you to integrate your Dropbox account with Pepperi using HTT
 
 -   Press **Generate Token** to initiate the connection and follow the authorization prompts.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-573.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-573.png)
 
 ---
 

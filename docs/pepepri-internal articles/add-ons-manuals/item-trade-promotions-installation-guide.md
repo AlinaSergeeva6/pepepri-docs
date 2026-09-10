@@ -30,7 +30,7 @@ The Item Trade Promotions module allows users to install and configure a system 
     -   Click the **Edit Menu** and select **Install**.
     -   **Troubleshooting:** If the add-on is missing or access is denied, contact Pepperi support to enable it.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-625.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-625.png)
 
 ---
 
@@ -50,7 +50,7 @@ After installing the add-on, the following steps must be perfomed to fully enabl
 1.  **Run Installation per Transaction Type:**
     -   Navigate to **Settings → Promotion Setup → Item TP Setup**.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-626.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-626.png)
 
     -   Select each Transaction Type where Item Trade Promotions should apply (e.g., B2B Transaction, Sales Rep Order).
 
@@ -68,11 +68,11 @@ After installing the add-on, the following steps must be perfomed to fully enabl
 -   **Outcome:**
     -   Creates User Defined Tables (prefix PPI\_ItemPromotion)
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-627.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-627.png)
 
     -   Creates custom Transaction Line-Item fields (prefix PPI\_ItemPromotion).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-628.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-628.png)
 
 !!!warning
 #### Note: Do not delete or modify these objects, as it will break the promotion functionality.
@@ -81,7 +81,7 @@ After installing the add-on, the following steps must be perfomed to fully enabl
 1.  **Define Promotion Types in the Types Editor:**
     -   Go to **Settings → Promotion Setup → Item TP Types Editor**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-629.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-629.png)
 
     -   Click **Add+** to define a new Item Promotion Type.
     -   **Fields:**
@@ -97,7 +97,7 @@ After installing the add-on, the following steps must be perfomed to fully enabl
             -   **Property:** Choose the field (e.g., Account.Size, Item.MainCategory).
             -   Click **Add+** for additional properties.
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-630.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-630.png)
 
     -   **Example Types:**
         -   Medium-sized accounts, Brand "X" items:
@@ -142,7 +142,7 @@ After installing the add-on, the following steps must be perfomed to fully enabl
         -   Go to **Settings → Promotion Setup → Item TP Setup → Advanced Setup**.
         -   Enter the List ID You can find the List ID as explained in section #9 in Package Promotions Advanced Configuration
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-631.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-631.png)
 
 4.  **Modify Next Discount Message Text:**
     -   Edit the PPI\_ItemPromotionLogic field in the Transaction Custom Fields section.
@@ -176,7 +176,7 @@ After installing the add-on, the following steps must be perfomed to fully enabl
         -   Unit Price After Discount: Displays the new unit price post-promotion.
         -   Item Discount: Shows the percentage discount (if applicable).
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-632.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-632.png)
 
 ---
 

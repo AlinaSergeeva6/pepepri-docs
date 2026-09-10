@@ -9,7 +9,7 @@ order: 238
 
 **Let\`s say** that we want to send Email with some information in the form of tables (Last Activities, Top managers/customers by Revenue/Orders, Top Brands; total 6 tables in our example) and 2 total fields (Total Orders and Total Revenue):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-280.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-280.png)
 
 First of all, we need to create data to send in form of table. We are going to use loop over table and @@lines to put data in email body, but there is one issue: @@lines @@lines duplicate all html elements, which are between them, and you can’t use them more than ones. So we can’t do something like that:
 
@@ -29,7 +29,7 @@ second\_table @@lines data\_to\_table2 @@lines …
 
 Stages as dataflow tasks:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-18.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-18.jpg)
 
 **Get Data**
 
@@ -39,13 +39,13 @@ First of all, we need to get data separately:
 
 · **Get Top Managers/Customers By Revenue/Orders** – this 4 table are really similar, so we will consider only one:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/2-13.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-13.jpg)
 
 In the first part we use totals to find total revenue by each manager (agent) and sort them in descent order. In the second part we just use auto for future join (we will join all tables by this field, so at the end we add this field).
 
 · **Get Top Brands By Revenue** – there are 2 sub-tasks, because we union revenue and orders quantity. First of all, we should get totals by each item for transaction lines, then join brands for items and use group\_by by brand:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/3-9.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-9.jpg)
 
 · **Get Last Activities** – use simple HTTP Get request to get last 3 activities in DESC order:
 
@@ -53,13 +53,13 @@ https://api.pepperi.com/v1.0/activities?fields=AgentInternalID,ActionDateTime,Ty
 
 Change and split some columns to get only time:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/4.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/4.jpg)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/5.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/5.jpg)
 
 · **Fields To Join Folder** – just a folder, contains dataflow tasks which are used to join additional field such as Manager or Customer Name etc.:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/6.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/6.jpg)
 
 Can be simply changed in order to get needed fields. That dataflow tasks than join to certain tables by InternalID, but it can be joined by other fields.
 
@@ -69,17 +69,17 @@ Can be simply changed in order to get needed fields. That dataflow tasks than jo
 
 To join all together we need 3 tasks:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/7.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/7.jpg)
 
 1) **Join All For Email For Pivot Without Filter** – first tasks where we just join all other tables in 1 by key (auto):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/8.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/8.jpg)
 
 At the end we get table, that contains all data we need, but there are 3 rows, but we need 1.
 
 2) **Join All For Email** – we use this tasks to get only 1 row with help of pivot (this function similar to nominal rows\_to\_cols). We use pivot for each column, so we get 18 pivots:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/9.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/9.jpg)
 
 · **Pivot Column** – name of columns after pivot: “ManagerIDbyRev \_1”, “ManagerIDbyRev \_2”, “ManagerIDbyRev \_3”, …;
 
@@ -103,7 +103,7 @@ This is the last task we actually send our sheet. First of all, we should set da
 
 · Target Object – Store Data Table For Later Use.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/10.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/10.jpg)
 
 The next step should be email and loop\_over\_table Settings:
 
@@ -118,4 +118,4 @@ The next step should be email and loop\_over\_table Settings:
 
 In our case we use @@lines in the beginning and in the end, and create tables with using $#TotalQty#$, $#LastActivity\_AgentFullName\_1#$ etc. fields between them.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/11.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/11.jpg)

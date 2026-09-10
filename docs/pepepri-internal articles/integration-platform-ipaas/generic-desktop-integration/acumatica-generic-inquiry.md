@@ -9,13 +9,13 @@ order: 126
 
 **Generic Inquiry** in Acumatica is a pre-defined query to receive data. It can be found in left menu in 'Data Views' submenu:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-44.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-44.PNG)
 
 ***In order to create a new Inquiry*** follow these steps:
 
 In the menu on the left side, select the button More Items → Customization → Generic Inquiry. Enter the name of the new Endpoint in the **Inquiry Title** field, set the "*Make Visible on the UI*" and "*Expose via OData*" **checkboxes** enabled. Also in the **Category** field, select the desired category as shown in the screenshot below.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/11-4.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/11-4.PNG)
 
 *Arrange Parameters in* -always equal to 3; *Select Top* - you can use this field to limit the amount of data. For example, we can enter 5 and in the view we will see only 5 goods. (default is 0 - any restrictions are removed); *Records per Page* - number of records per Page;
 
@@ -25,25 +25,25 @@ As soon as a new inquiry is created, a Screen ID is created. Then when we access
 
 **1.TABLES** We must specify a **list of all tables** that are needed in order to create a data sample. To see the list of available items (in our case) click on the view button.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/11-5.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/11-5.PNG)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/11-6.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/11-6.PNG)
 
 **2.** **RELATIONS** The next step is to build the right relationship. For example, for customers, we can join ShipTo or BillTo Address. You can see an example below.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/кCapture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/кCapture.PNG)
 
 **3.PARAMETERS** Parameters are required in order to then create conditions and use them in filters. It's like a variable, only for the API
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1111-1.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1111-1.PNG)
 
 **4.CONDITIONS** Conditions are needed in order to create certain conditions - data filter. For example, I want to take all clients except the client with this name. You can also filter the data using the variables that were created in the Parameters tab. Thus, to limit the amount of data required, we can use the API. See example below.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/111.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/111.PNG)
 
 For example, if we need to return data for the last 40 days, we can use the condition: ***DocDate is Equals @today-40.*** All available mathematical conditions and formulas can be written by clicking on the pencil ✎.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-25.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Capture-25.PNG)
 
 **5.GROUPING** makes it possible to group data
 
@@ -51,13 +51,13 @@ For example, if we need to return data for the last 40 days, we can use the cond
 
 **7.RESULTS GRID** tab allows you to specify which columns will be in the final table.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-45.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-45.PNG)
 
 ### IMPORTANT!
 
 In order not to configure Inquiry every time, you can download existing ones via Import, which you can find below in the archive.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/12-3.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/12-3.PNG)
 
 19KB
 

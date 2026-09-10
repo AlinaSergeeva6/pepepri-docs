@@ -11,7 +11,7 @@ order: 41
 
 Frame Board Management is a feature that allows you to place or remove items from the showcase and into the customer ERP system. Or instead, you can split the order and create a Sales Order and Return transaction, from the items that customer selected in the Frame Board Management transaction.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/121111211.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/121111211.png)
 
 ## Advantages and disadvantages
 

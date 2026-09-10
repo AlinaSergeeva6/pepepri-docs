@@ -26,7 +26,7 @@ This guide details a process for parsing webhook logs in the ***Services Demo En
         -   **Parse Webhook Logs - Get Links for JS:** Prepares data from the link generation task for JS processing.
         -   **Parse Webhook Logs - Generate Final Report:** Fetches and parses logs with customizable regex patterns.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-990.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-990.png)
 
     -   **Webhook:**
         -   **Parse Webhook Logs - Webhook:** Demonstrates functionality (adapt to your environment's webhook).
@@ -41,7 +41,7 @@ This guide details a process for parsing webhook logs in the ***Services Demo En
         -   SearchToDate: End date for the search.
         -   ClientTask\_TaskName: Name of the webhook failed transaction to target.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-991.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-991.png)
 
 2.  **Parse Webhook Logs - Generate Logs Links**
     -   **Purpose:** Generates links to logs for each transaction log UUID.
@@ -55,19 +55,19 @@ This guide details a process for parsing webhook logs in the ***Services Demo En
     -   **Purpose:** Fetches logs from generated links and parses them using regex patterns.
     -   **Customization:** Open the JS Script tab, locate the regexList variable, and update the array with desired patterns to parse log data
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-992.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-992.png)
 
     -   **Example:**
         -   When a webhook fails, we receive this log
         -   That contains this data
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-993.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-993.png)
 
         -   So while parsing this log by user-selected regex, we can obtain any necessary information from the response, such as response code, response body, etc.
         -   In our example, we extract text from the h1 HTML tag that contains info about the error that occurred during execution.
         -   And as the final report, we receive this CSV
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-994.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-994.png)
 
 #### Copying to Another Environment
 

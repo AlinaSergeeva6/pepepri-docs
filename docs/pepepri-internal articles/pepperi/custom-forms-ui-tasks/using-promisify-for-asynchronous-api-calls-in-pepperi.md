@@ -136,4 +136,4 @@ function on_load() {
 
 The promisify function streamlines asynchronous API calls in Pepperi, making your code cleaner and more maintainable. By following the examples and best practices in this guide, you can effectively use promisify in both Custom Forms and UI Tasks while avoiding common pitfalls.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1.jpg)

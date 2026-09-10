@@ -29,7 +29,7 @@ The Package Trade Promotions module allows to install and configure a system for
     -   Locate **Package Trade Promotions** in the list.
         -   Click the **Edit Menu** and select **Install**.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-645.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-645.png)
 
     -   **Troubleshooting:** If the add-on is missing or access is denied, contact Pepperi support to enable it.
 
@@ -66,24 +66,24 @@ After installing the add-on, the following steps must be performed to fully enab
     -   **Advanced Setup:**
         -   Click **Advanced Setup**.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-646.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-646.png)
 
         -   Add the Package Item and Additional Items transactions:
             -   **Package Item Transaction:** Select PPI\_PackagePromotion for the first phase.
             -   **Additional Items Transaction:** Select PPI\_PackagePromotion\_AdditionalItems for the additional phase.
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-647.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-647.png)
 
         -   **Main Category for Internal Item:** Set a valid main category (internal use only, does not affect catalogs or filters).
 
     -   **Outcome:**
         -   Creates User Defined Tables (prefix PPI\_PackagePromotion).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-648.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-648.png)
 
         -   Creates custom Transaction fields (prefix PPI\_PackagePromotion).
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-649.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-649.png)
 
 !!!warning
 **Note: Do not delete or modify these objects, as it will break the promotion functionality.**
@@ -95,7 +95,7 @@ After installing the add-on, the following steps must be performed to fully enab
         -   Add the following rule to the **Transaction Items Scope**:
             -   PPI\_PackagePromotion\_ShowPackageItem isEqual True.
 
-            ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-650.png)
+            ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-650.png)
 
         -   If existing rules exist, add two PPI rules connected with an "AND" operator and an "OR" to existing rules:
             -   PPI Rule #1: PPI\_PackagePromotion\_IsPackage isEqual True.

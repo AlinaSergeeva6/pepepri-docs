@@ -23,14 +23,14 @@ UOM Add-on request
 
 -   Navigate to: **Items → UOMs → Add**
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-782.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-782.png)
 
 -   Define your UOMs with:
     -   **ID**: Technical name (e.g., "CS", "EA")
     -   **Name**: Description (e.g., "Case", "Each")
     -   **Factor**: Package quantity (e.g., 6 for "CS" meaning 6 units per case)
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-783.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-783.png)
 
 *Example Configuration:*
 
@@ -61,7 +61,7 @@ UOM Add-on request
     [{"UOMKey":"CS","Factor":6},{"UOMKey":"EA","Factor":1}]
     ```
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-784.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-784.png)
 
 8KB
 
@@ -77,7 +77,7 @@ Example of csv file with UOM data
 
 1.  Go to: **Sales Activity → Transaction Types → &lt;Your Transaction>→ UOM Tab**
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-785.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-785.png)
 
 2.  Map fields:
     -   **Allowed UOMs Field** → `TSAAllowedUOMs`
@@ -95,13 +95,13 @@ Example of csv file with UOM data
 | `TSAAOQMQuantity1` | Quantity for primary UOM |
 | `TSAAOQMQuantity2` | Quantity for secondary UOM |
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-786.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-786.png)
 
 ---
 
 ### 5. User Workflow Example
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-787.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-787.png)
 
 1.  **Select Item**: HT3010 (pre-configured with CS=6 units)
 2.  **Choose UOM**: Select "CS" from `TSAAOQMUOM1` dropdown
@@ -116,7 +116,7 @@ Example of csv file with UOM data
 
 5.  **Verification**: Check `UnitsQuantity` field auto-updates to 60
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-788.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-788.png)
 
 ---
 

@@ -32,7 +32,7 @@ and download Sap Listener with corresponding bit-version. It includes all necess
 
 1) In global settings of the environment in iPaaS add new record with name “signalr\_client\_id” and fill the value with UUID you have generated in previous step
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-368.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-368.png)
 
 2) Add new record with name “sql\_connection” and fill it with next value:
 
@@ -46,11 +46,11 @@ If path to database is a network path, here is one of the ways of getting absolu
 
 2\. Choose tab ‘System DSN’, click ‘Add’ and select Microsoft Access Driver(\*.mdb)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-369.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-369.png)
 
 1.  Click ‘Select’ below the ‘Database’ and find path for corresponding disk name.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-370.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-370.png)
 
 #4 How to configure dataflow tasks
 
@@ -73,7 +73,7 @@ SQL statement – write your SQL code
 
 You can view content of database by simply opening .mdb file.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-371.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-371.png)
 
 After that, you can choose table you need and check data in it.
 

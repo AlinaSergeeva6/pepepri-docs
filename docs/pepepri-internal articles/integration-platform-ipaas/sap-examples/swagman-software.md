@@ -24,7 +24,7 @@ Simplified workflow
 
 The orders to import is taken from one of the files in Tools -> Maps folder.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/зображення_2024-01-29_110830178.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/зображення_2024-01-29_110830178.png)
 
 !!!info
 In "schema" file there is schemas for several files, with column's types
@@ -32,15 +32,15 @@ In "schema" file there is schemas for several files, with column's types
 
 The correct file could be found in Mapping window
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-481.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-481.png)
 
 To find the columns which are needed for mapping you need to open "Mapping File", in this case so.csv
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-482.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-482.png)
 
 To see what values are inserting into Sage, go to the mapping window and enable 3 checkboxes in the top right corner
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/зображення_2024-01-29_114546657.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/зображення_2024-01-29_114546657.png)
 
 This is based on the last imported order
 

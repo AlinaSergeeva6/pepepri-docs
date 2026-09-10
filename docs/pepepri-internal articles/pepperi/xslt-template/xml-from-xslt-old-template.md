@@ -14,23 +14,23 @@ How can you download and view a XSLT-file from Pepperi?
 
 These files are located in **Configuration Files**:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-89.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-89.png)
 
 For example, in this account, the invoice form is stored in a file called PDF:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-90.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-90.png)
 
 Click edit (in the right corner):
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-91.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-91.png)
 
 Download this file and open it in your code editor:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-92.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-92.png)
 
 At this stage, the invoice looks like this:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-93.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-93.png)
 
 If you need to change something in this document (for example, add a field, or remove extra fields, etc.), for understanding which field is in this document, it will be useful for you to look at XML-file. For getting of XML, find this :
 
@@ -42,8 +42,8 @@ Next go to **Configuration Files -> Configuration Files -> find your file (in th
 
 Next, just check how your file now looks. You should receive a file in which there will be a XML-code + invoice.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-94.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-94.png)
 
 ................................ ............................
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-95.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-95.png)

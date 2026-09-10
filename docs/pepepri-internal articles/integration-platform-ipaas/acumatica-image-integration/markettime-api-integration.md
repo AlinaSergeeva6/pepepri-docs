@@ -91,11 +91,11 @@ A Dataflow Task in Pepperi retrieves data from MarketTime (e.g., orders) and imp
             https://publicapi.markettime.com/mtpublic/api/v1/M123/orders/get?page_num_start=0&page_interval=250&offset={#page_num#}&recordSize=250
             ```
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot_1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_1.png)
 
 a dataflow task example
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot_2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_2.png)
 
 paging settings
 
@@ -135,7 +135,7 @@ A Webhook Task in Pepperi sends data (e.g., transaction updates) from Pepperi to
 
         -   **Body:** JSON data to send (e.g., {"order\_id": "123", "status": "shipped"}).
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot_3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot_3.png)
 
 a webhook task example
 

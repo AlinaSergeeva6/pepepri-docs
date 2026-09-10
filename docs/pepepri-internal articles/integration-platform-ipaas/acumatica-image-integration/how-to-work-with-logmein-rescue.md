@@ -6,7 +6,7 @@ order: 92
 
 It happens that developer needs to have **the permanent connection to the client server**; it is required to have a possibility to set certain integration
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2021-11-05-at-11.04.13.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2021-11-05-at-11.04.13.png)
 
 [https://secure.logmeinrescue.com/](https://secure.logmeinrescue.com/)
 
@@ -20,7 +20,7 @@ another type of connection can lead to some difficulties and issues while workin
 
 2\. launch Desktop Console
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-618.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-618.png)
 
 **Important Rule to follow:** when you connect to the client server, make sure that you disconnect it after you finish working with it (the thing is two people cannot connect to the client server from the same account on LogMein)
 
@@ -30,23 +30,23 @@ another type of connection can lead to some difficulties and issues while workin
 
 · login and password can be found in the description and then used to connect to the server
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-619.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-619.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-620.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-620.png)
 
 **4\. after Logging In ---> push the button launch Remote Control Session**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-621.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-621.png)
 
 **and press Ctrl+ Alt+Delete to unlock**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-622.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-622.png)
 
 **you get the access to the server**
 
 **5\.** [**https://integration.pepperi.com/support/**](https://integration.pepperi.com/support/) useful link if you want to provide the client with the access to **LogMein**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-623.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-623.png)
 
 6\. when you are connected to the server, be aware of **setting Unattended Access:**
 
@@ -56,4 +56,4 @@ another type of connection can lead to some difficulties and issues while workin
 
 **P: 1234**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-624.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-624.png)

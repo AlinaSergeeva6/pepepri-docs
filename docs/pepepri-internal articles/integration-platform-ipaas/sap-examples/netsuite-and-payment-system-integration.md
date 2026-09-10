@@ -89,9 +89,9 @@ b. Token ID transferred to NetSuite.
 2) Choose Customer -> View.
 3) In the Customer Page open the Financial tab -> Payment Instruments:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-469.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-469.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-470.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-470.png)
 !!!
 
 !!!info
@@ -144,8 +144,8 @@ HomePage -> Menu -> **"VersaPay - Tokenize Card"**
 
 1.  **CyberSource:**
 
-[![Logo](https://alinasergeeva6.github.io/pepepri-docs/static/image) CyberSource and NetSuite | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/article-drafts/general-about-drafts/payment-systems-and-netsuite/cybersource-and-netsuite)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image) CyberSource and NetSuite | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/article-drafts/general-about-drafts/payment-systems-and-netsuite/cybersource-and-netsuite)
 
 1.  **VersaPay:**
 
-[![Logo](https://alinasergeeva6.github.io/pepepri-docs/static/image) VersaPay and NetSuite | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/article-drafts/general-about-drafts/payment-systems-and-netsuite/versapay-and-netsuite)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image) VersaPay and NetSuite | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/article-drafts/general-about-drafts/payment-systems-and-netsuite/versapay-and-netsuite)

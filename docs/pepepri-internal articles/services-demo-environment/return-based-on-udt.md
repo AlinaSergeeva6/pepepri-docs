@@ -22,7 +22,7 @@ This transaction type enables users to return items based on invoices selected f
 -   Limits return quantities to prevent exceeding original invoice amounts.
 -   Triggers a webhook post-submission to clean up UDT data.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2023-03-30-114241.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2023-03-30-114241.png)
 
 ---
 

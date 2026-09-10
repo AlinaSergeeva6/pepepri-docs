@@ -25,13 +25,13 @@ The Account Balance Manager is a tool integrated via Pepperi’s iPaaS to track 
     -   Navigate to your iPaaS account for the current environment.
     -   Locate the automatically created UI Task for the Ledger activity.
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2024-12-12-at-16.28.02.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2024-12-12-at-16.28.02.png)
 
 3.  **Copy the UI Task Code:**
     -   Run the UI Task to generate the code.
     -   Copy the code provided for the Ledger activity.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2024-12-12-at-16.31.46.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2024-12-12-at-16.31.46.png)
 
 ---
 
@@ -41,7 +41,7 @@ The Account Balance Manager is a tool integrated via Pepperi’s iPaaS to track 
     -   Go to **Settings → Sales Activities → Activity Types**.
     -   Click **Add New Activity** and create a new activity named "Ledger".
 
-        ![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2024-12-12-at-16.36.50.png)
+        ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2024-12-12-at-16.36.50.png)
 
         ;
 
@@ -50,17 +50,17 @@ The Account Balance Manager is a tool integrated via Pepperi’s iPaaS to track 
     -   Navigate to the **Programs** tab and create a new Custom Form.
     -   Paste the code copied from the UI Task into the Custom Form editor.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2024-12-12-at-16.40.17.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2024-12-12-at-16.40.17.png)
 
 3.  -   **Update the Config ID:**
         -   Inside the Custom Form code, locate the page\_url parameter.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2024-12-12-at-17.25.38.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2024-12-12-at-17.25.38.png)
 
     -   Replace the configID with the actual Config ID from the Account Balance Manager in iPaaS:
         -   Go to **Settings → iPaaS → Quick Setup → Account Balance Manager** to find your Config ID.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-899.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-899.png)
 
 ---
 
@@ -70,14 +70,14 @@ The Account Balance Manager is a tool integrated via Pepperi’s iPaaS to track 
     -   Go to the "Ledger" activity’s **Workflows** tab.
     -   Add the Custom Form to the workflow to ensure it triggers when the activity is executed.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2024-12-12-at-17.29.20.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2024-12-12-at-17.29.20.png)
 
 -   **Add to App Home Screen:**
     -   Go to **Settings → Company Profile → App Home Screen**.
     -   Select the profile for which you want to enable the Ledger activity.
     -   Add the "Ledger" activity to the view to make it accessible to users
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2024-12-12-at-17.34.15.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2024-12-12-at-17.34.15.png)
 
 ---
 

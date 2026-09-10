@@ -43,7 +43,7 @@ After creating a new user who should have access to existing flows, you **must r
 Otherwise the new user will not see the flows and you will get an error in the logs.
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-14-at-17.50.25.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-14-at-17.50.25.png)
 
 Edit menu of a flow
 
@@ -80,7 +80,7 @@ Flows take parameters on input, but they also can output values. This is done in
 
 1.  By a script using “UserScriptsBlock” logic block:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-11-at-14.28.27.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-11-at-14.28.27.png)
 
 !!!info
 In case of using scripts, you don‘t even have to create the corresponding parameter in the flow.
@@ -88,13 +88,13 @@ In case of using scripts, you don‘t even have to create the corresponding para
 
 1.  With logic blocks that have “Save result in” part:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-11-at-15.35.38.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-11-at-15.35.38.png)
 
 !!!info
 In order for it to work, parameters with exactly same name should be created in ”Manage parameters” page section.
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-11-at-15.40.23.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-11-at-15.40.23.png)
 
 Parameters output can be useful when you use “**Show if**” logic on blocks that support it (Gallery, Slideshow, Banners, Buttons, Filter). For example, you want to hide some specific slides based on certain condition, and show show the slide when AccountTSAXXX = "Test". To achieve that, you need:
 
@@ -123,11 +123,11 @@ To achieve this, you need:
     1.  Provide you parameter, which holds final value, with one of the dynamic options available. When using buttons it is text and badge text, when banners - 1st and 2nd title.
     2.  In the dropdown, dynamic options are available, each of them consists of dynamic sub-element type and element uuid, e.g. 1st Title\_2694170d-1f2a-4f5c-968d-d27166dd8307
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-24-at-12.31.52.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-24-at-12.31.52.png)
 
 Example of dynamic badge that shows AccountName:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-24-at-13.49.31.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-24-at-13.49.31.png)
 
 ### Best practices of using flows with pages
 
@@ -170,7 +170,7 @@ Events based on field change are fired only when changing field value manually i
 3.  Edit the transaction you want to use flows with
 4.  Open “Events” tab. You may also see “Events (deprecated)” tab, it had similar purpose to the “Events” tab, but there was direct assignment of scripts to events (instead of flows).
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-18-at-16.13.42.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-18-at-16.13.42.png)
 
 1.  Click “Add” and select event type and field (if event is based on field change)
 2.  Select relevant flow and populate parameters
@@ -188,17 +188,17 @@ Clicking **Cancel** does **not** discard changes — it triggers the saving of t
 
 Most probably you will use scripts with custom logic. More details on how to build a script is described in the article
 
-[![Logo](https://alinasergeeva6.github.io/pepepri-docs/static/image) Scripts - How to Write | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/pepperi/pepperi-configuration-general/scripts/scripts-how-to-write)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image) Scripts - How to Write | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/pepperi/pepperi-configuration-general/scripts/scripts-how-to-write)
 
 If your transaction is using PPM Pricing addon, in the available Logic Blocks you will find “Calculate price” block which is also has to be used for transaction flow. However, more on this you can read in dedicated article for PPM Pricing
 
-[![Logo](https://alinasergeeva6.github.io/pepepri-docs/static/image) Pricing Module (PPM) Add-on | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/article-drafts/pricing-module-ppm-add-on)
+[![Logo](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image) Pricing Module (PPM) Add-on | Internal Knowledge Basekbint.pepperi.com](https://kbint.pepperi.com/article-drafts/pricing-module-ppm-add-on)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-12-at-18.42.15.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-12-at-18.42.15.png)
 
 In general, your **On Load** transaction flow may look like this:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-12-at-18.50.20.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-12-at-18.50.20.png)
 
 Parameters: transactionUUID – string.
 
@@ -210,7 +210,7 @@ This list may be updated in the future, as new logic blocks are being developed 
 
 You can import commonly used flows from the flows library. You need to click burger menu -> Import from library -> select and import flows you need.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-14-at-10.13.26.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-14-at-10.13.26.png)
 
 ### Active Transaction
 
@@ -220,7 +220,7 @@ This block is basically doing a search on transactions with provided parameters 
 If it didn’t find the transaction, new one will NOT be created automatically.
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-12-at-19.10.54.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-12-at-19.10.54.png)
 
 All the input parameters can be whether dynamic or you can select them manually (e.g. transaction type or status list), but it is better to make them dynamic. You can define default values to the flow parameters, so you will not need to specify commonly used values.
 
@@ -230,7 +230,7 @@ If you want to make “Status” dynamic, please provide it with correct values.
 
 This block is better to use in pair with **Create Transaction** block. You should place the “Create Transaction” after “Active transaction” block. “Create Transaction” block should be disabled when your transaction id param (transactionUUID) is not empty, so it will run only when no transaction was found.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-18-at-16.34.26.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-18-at-16.34.26.png)
 
 ### Build Text
 
@@ -238,7 +238,7 @@ The block is used to build text string with ability to use dynamic parameters va
 
 In the Input text you need to write a template with dynamic values inside of curly braces. You can add as many dynamic params as you need, e.g. `Account {accountName} has {currencySymbol} {openDebt} of open debts`
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-19-at-19.50.19.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-19-at-19.50.19.png)
 
 This block is especially useful when you need to insert some dynamic text into buttons or banners.
 
@@ -252,7 +252,7 @@ Currently, there are 3 available options to calculate pricing for:
 -   **All cart items** – runs pricing only for cart items. May be useful when you want to recalculate pricing for cart items before submitting the order (as there is probably no need to calculate pricing for scope items in this scenario). How to trigger an event from workflow before submit is described in this [article](https://kbint.pepperi.com/pepperi/pepperi-configuration-general/scripts/scripts-how-to-write#how-to-trigger-scripts-from-workflow) (it is applicable for flows also).
 -   **Current item** – runs pricing calculations only for item that was somehow changed. It has to be used only in “Transaction Line Field Changed“ event.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-18-at-16.37.18.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-18-at-16.37.18.png)
 
 !!!info
 You don’t have to provide transactionUUID or transactionLineUUID as parameters for this block, it is resolved automatically.
@@ -262,7 +262,7 @@ You don’t have to provide transactionUUID or transactionLineUUID as parameters
 
 This logic block is creating a new activity for specified account.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-13-at-10.45.42.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-13-at-10.45.42.png)
 
 !!!warning
 There is no logic block like “Active Activity”, so you cannot find an existing one. However, you can configure “Validate History” in activity workflow instead.
@@ -272,7 +272,7 @@ There is no logic block like “Active Activity”, so you cannot find an existi
 
 This logic block is designed to create a survey for the provided template. To use it, your environment needs to have surveys installed. More on how to install and use you can read in the [article](https://kbint.pepperi.com/services-demo-environment/features/surveys-feature)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-13-at-10.50.23.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-13-at-10.50.23.png)
 
 !!!warning
 The block just creates a record in MySurveys UDC for specified template. To open the survey, you have to use “Navigate To” block and redirect user to the survey.
@@ -282,7 +282,7 @@ The block just creates a record in MySurveys UDC for specified template. To open
 
 This block creates a new transaction for specified account and catalog.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-13-at-10.58.35.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-13-at-10.58.35.png)
 
 !!!info
 Even if the block has created a new transaction and user is navigated to it, workflow of the transaction is still working. And if you have a “Validate History” action in between New->In Creation, it may still redirect user to an existing transaction.
@@ -300,7 +300,7 @@ Aggregation Type – currently only 2 options are available “sum” and “cou
 “sum” aggregation type is supported only for number type fields. Saving output for both types is available only into ‘Integer’ or ‘Double’ type params. “Count” is just counting number of records in the object.
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-13-at-11.01.21.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-13-at-11.01.21.png)
 
 **Usage:** for example, you need to get some AccountTSAXXX of first available account. To implement this, you need to use “Search Data” block and save result of search into “object” type parameter. After it, you need to use an “Extract Value” block and there are 2 possible ways to get it:
 
@@ -315,7 +315,7 @@ In case you need some complicated logic or complex titles, this block can be rep
 
 Eventually, your script should return an object like this: `{Options: [{Key: “123”, Title: “Option1”},{Key: “321”, Title: “Option2”}...]}`
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-13-at-12.52.09.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-13-at-12.52.09.png)
 
 ### Navigate To
 
@@ -348,7 +348,7 @@ This block is used for navigating user to selected view/page/list etc inside the
 
 The block is used for opening external links or applications that are associated with the links in the user’s operating system. The link will be opened in a new tab.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-13-at-14.59.05.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-13-at-14.59.05.png)
 
 ### Rich Text – Find & Replace
 
@@ -360,7 +360,7 @@ To use it, you need to create a flow with at least 1 parameter of “object” t
 
 For example, you have a static content inside of Rich Text block: `<h1> New title {dynamic}</h1>` and you want to replace ‘{dynamic}’ with something else, for example with ‘new text’. Here is an example on how to configure the block:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-13-at-15.14.22.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-13-at-15.14.22.png)
 
 !!!info
 If you just add the block to the flow and try to save it, you will get an error, because it contains “&” in the block title, you need to remove this symbol. Block title must satisfy next pattern "^(\[Sa-zA-Z0-9-\_ \])\*$"
@@ -376,25 +376,25 @@ Block allows retrieving multiple records (by search) or getting a single record 
 
 **Multiple Resource Querying**: Support for querying multiple resources (e.g., Transactions, Activities) within a single Logic Block.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-210.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-210.png)
 
 **Dynamic Filtering**: Filters can be applied based on runtime flow parameters, enabling more flexible data retrieval.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-211.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-211.png)
 
 **Resource Inclusion**: Search scope now includes Activities and Transactions.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-212.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-212.png)
 
 Example of **Search Data Block Configuration**:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-13-at-15.34.58.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-13-at-15.34.58.png)
 
 !!!info
 You can create as much search blocks as you need, they will be executed in parallel and won’t really harm performance.
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-13-at-15.36.56.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-13-at-15.36.56.png)
 
 ### Set Field Value
 
@@ -404,7 +404,7 @@ The block is time consuming, so it is intended to be used only once in a flow. H
 
 Enhances automation by dynamically setting field values based on flow logic.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-13-at-16.04.13.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-13-at-16.04.13.png)
 
 ### UserScriptsBlock
 
@@ -417,7 +417,7 @@ This block is used to run a custom script. You need to select the script itself 
 1.  Create Flow that you want to add to Flow library in your test environment
 2.  Export JSON of this Flow
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Знімок-екрана-2025-02-26-о-18.22.14.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Знімок-екрана-2025-02-26-о-18.22.14.png)
 
 Edit menu of a Flow
 
@@ -430,7 +430,7 @@ Edit menu of a Flow
 -   Added by PS: visible for support users only – support\_user=true
 -   Approved by R&D: visible for regular admin users
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Знімок-екрана-2025-02-26-о-18.31.56.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Знімок-екрана-2025-02-26-о-18.31.56.png)
 
 Flow Add View
 
@@ -445,7 +445,7 @@ Flow Add View
 2.  Click Menu button
 3.  Choose Import from Library
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/Знімок-екрана-2025-02-26-о-18.51.02.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Знімок-екрана-2025-02-26-о-18.51.02.png)
 
 4.  Choose the Flow you need and click Select
 
@@ -453,7 +453,7 @@ Flow Add View
 Don’t forget to publish the flow, otherwise your changes won’t take effect
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-14-at-17.50.25.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-14-at-17.50.25.png)
 
 Edit menu of a flow
 
@@ -462,17 +462,17 @@ Edit menu of a flow
 -   **Publishing Requirement**:
     -   Flows must be published to apply changes; a description is required before publishing.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-213.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-213.png)
 
 -   **Version History**:
     -   View all publishing history for a flow by selecting it and clicking "Version History."
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-214.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-214.png)
 
 -   **Rollback and Compare Changes**:
     -   Options to rollback to a previous version or compare changes between versions.
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-215.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-215.png)
 
     -   Example: Compare Current Version vs. Selected Version.
     -   Timestamped entries (e.g., 04/17/2025 12:38 PM).

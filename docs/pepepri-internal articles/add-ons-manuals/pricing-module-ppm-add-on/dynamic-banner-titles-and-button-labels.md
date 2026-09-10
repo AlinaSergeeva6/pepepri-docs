@@ -21,7 +21,7 @@ order: 55
 
 **In the example below:** • testValue – will contain dynamic value for Button/Banner (e.g. Totals, field values) • bannerTitle – will contain text that will be shown on Button/Banner
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-875.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-875.png)
 
 #### Step 2: Add Build Text Logic Block:
 
@@ -29,7 +29,7 @@ order: 55
 -   Select a parameter to replace the placeholder.
 -   Save the result in a parameter (e.g., bannerTitle).
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-876.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-876.png)
 
 #### Step 3: Save and Publish Flow:
 
@@ -39,29 +39,29 @@ order: 55
 **Sync may be required.**
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-877.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-877.png)
 
 #### Step 4: Add New Page Block and Select Flow:
 
 -   Assign testValue (can be manual or dynamic).
 -   Set bannerTitle to "dynamic" and choose the Banner element (identified by UUID in Content -> Action key).
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-878.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-878.png)
 
 -   Support for multiple titles (e.g., 1st and 2nd Title for Banners).
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-879.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-879.png)
 
 -   Enable 2nd Title in Content to make it available in the parameter dropdown.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-880.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-880.png)
 
 -   Save to update the Banner title dynamically.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-881.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-881.png)
 
 #### Button Labels and Badges:
 
 -   Same dynamic update process applies to Button Labels and Badges.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-882.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-882.png)

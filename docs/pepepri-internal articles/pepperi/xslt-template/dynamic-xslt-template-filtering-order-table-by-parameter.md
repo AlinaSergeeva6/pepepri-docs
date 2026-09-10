@@ -10,7 +10,7 @@ This example will show a filter by ItemMainCategory.
 
 Original PDF:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/12.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/12.png)
 
 Found this part of code and uncomment what you need:
 
@@ -193,4 +193,4 @@ result:
 
 After uploading this template you will get a filtered order- table with correct SubTotals:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/30.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/30.png)

@@ -59,7 +59,7 @@ UOM add-on
 
 This table will store all configuration JSON files for PPM.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-06-104038.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-06-104038.png)
 
 "Add collection" window
 
@@ -68,13 +68,13 @@ In the next window:
 -   Change the **"Data Storage & Sync"** parameter to **"Available for online and offline."**
 -   Add a new field named **"schema"** with the type **"String."**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-06-104320.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-06-104320.png)
 
 "Add field" window
 
 Final Look of the "PricingConfig" Table:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-06-104502.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-06-104502.png)
 
 Final look of "PricingConfig" table
 
@@ -82,7 +82,7 @@ Final look of "PricingConfig" table
 
 This table will store the **UUID** of the transaction to which PPM will be applied, as well as the **procedure name** from the config file.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-06-104758.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-06-104758.png)
 
 "Add collection" window
 
@@ -91,13 +91,13 @@ In the next window:
 -   Change the **"Data Storage & Sync"** parameter to **"Available for online and offline."**
 -   Add a new field named **"procedure"** with the type **"String."**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-06-105307.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-06-105307.png)
 
 "procedure" field settings
 
 Final Look of the "PricingATD" Table:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-06-105433.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-06-105433.png)
 
 Final look of "PricingATD" table
 
@@ -105,7 +105,7 @@ Final look of "PricingATD" table
 
 This table will store pricing data if you decide to use UDC for this purpose.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-789.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-789.png)
 
 "Add collection" window
 
@@ -113,7 +113,7 @@ In the next window:
 
 -   Change the **"Data Storage & Sync"** parameter to **"Available for online and offline."**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-790.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-790.png)
 
 **Final Look of the "PricingGeneral" Table**
 
@@ -557,11 +557,11 @@ All procedures for different transactions placed in one config must contain iden
 4.  Open the downloaded JSON file using **VSCode** or any other text editor.
 5.  Locate and copy the **UUID** of the transaction.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-07-112821.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-07-112821.png)
 
 Go to **PricingATD UDC**, add a new document with the following data, and click **Save**.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-06-144542.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-06-144542.png)
 
 ---
 
@@ -630,11 +630,11 @@ First, you need to create two additional scripts. Log in to the environment usin
 
 **Update TSAPPMLastLinePricingUpdate script**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-791.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-791.png)
 
 Adding **Calculate Transaction Totals script**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-07-123135.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-07-123135.png)
 
 Adding **Update TSAPPMLastLinePricingUpdate script**
 
@@ -751,7 +751,7 @@ The decision of the data location depends on the sync requirements:
 
 For example, the following pricing tables will be placed in different UDT/UDC to improve the sync process:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-792.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-792.png)
 
 Example of storing pricing data
 
@@ -861,15 +861,15 @@ If all conditions for an **additional item** are met, the item will automaticall
 
 *Note: The examples below use UDT as data storage. In case UDC is used, use PricingKey instead of MainKey and PricingData instead of Value.*
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-07-191629.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-07-191629.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-07-191638.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-07-191638.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-07-191655.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-07-191655.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image.jpg)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Screenshot-2025-02-07-191720.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Screenshot-2025-02-07-191720.png)
 
 ---
 

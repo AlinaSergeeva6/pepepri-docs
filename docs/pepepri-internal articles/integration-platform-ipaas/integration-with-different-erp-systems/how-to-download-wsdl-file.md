@@ -12,11 +12,11 @@ WSDL file contains a sample of the request with all parameters that can be set t
 
 1.  Go to your client's SAP platform in Browser and click on the burger menu
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-372.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-372.png)
 
 2.  You will see the search there, type "Service Explorer". After you click on it, you will be transferred to the page with all services which are available to the client
 
-    ![](https://alinasergeeva6.github.io/pepepri-docs/static/image-373.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-373.png)
 
 3.  Choose the service you like and click on "Download WSDL" button.
 4.  After you download the file, go to Postman, click on "Import" and insert the file there.

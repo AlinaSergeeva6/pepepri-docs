@@ -13,7 +13,7 @@ You can found js code in the attachment in the end of article.
 
 You can add a map with markers by coordinates to the page using Kendo and get result like this:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-29.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-29.jpg)
 
 Example of map
 
@@ -50,7 +50,7 @@ where "**location**" - geolocation to be displayed; "**shape**" - shape of marke
 </style>
 ```
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/2-21.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/2-21.jpg)
 
 Example of markers
 
@@ -69,7 +69,7 @@ layers: [{type: "bing",
 
 Result:
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/3-15.jpg)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/3-15.jpg)
 
 Example of satellite map
 

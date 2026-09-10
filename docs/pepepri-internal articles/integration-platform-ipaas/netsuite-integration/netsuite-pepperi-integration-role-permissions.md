@@ -9,4 +9,4 @@ order: 166
 
 Find below general permissions that should be available (might be used) by Pepperi integration
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Permissions-Without-2FA.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Permissions-Without-2FA.png)

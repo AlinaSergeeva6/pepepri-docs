@@ -53,15 +53,15 @@ Let's deal with some points:
 
 4.1.Go to Transactions --> Sales --> Sales Order
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1-35.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1-35.PNG)
 
 4.2. Open any saved search and, as shown in the screenshot below, we can change it to the required scriptID and immediately receive the necessary information about another invoice.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-12.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Capture-12.PNG)
 
 5\. In order to find out the **ID** of the field in the header, you must inspect the element and take the name up to the word **fs\_**\*\*\*\*
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/1Capture-1.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/1Capture-1.PNG)
 
 !!!info
 ***Helpful Tips!*** If you need to send a field according to some condition, for example, if there is a date, then you send it, and if not, then you don’t send it at all. An example syntax can be seen below.
@@ -79,16 +79,16 @@ If you try to submit a transaction but get an **error** that the field is **Read
 
 1.  **Access** Go to Setup--> Users/Roles--> Manager Roles --> find Pepperi Integration
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Capture-13.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Capture-13.PNG)
 
 \--> and go to the **Forms** tab and see the list of access for the transaction
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/33.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/33.PNG)
 
 2\. **Transaction Forms** Customization--> Forms --> Transaction Forms --> find Sales Order with checkbox **PREFERED**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/12Capture.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/12Capture.PNG)
 
 and choose which fields we want to display
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/15.PNG)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/15.PNG)

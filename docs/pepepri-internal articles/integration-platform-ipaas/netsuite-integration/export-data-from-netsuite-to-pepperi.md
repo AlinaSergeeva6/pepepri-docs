@@ -19,7 +19,7 @@ Once done, the DataFlow task created will export the saved search required from 
 
 Saved searches are reusable search definitions that can have many advanced filters and display options for the results. Keep in mind that each time a saved search is run, the search will query the database and return current information. If data is being changed that might affect your search results, you will notice that if you refresh the search results, updated information will be displayed.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/NetSuite_Saved_Customer_Search_2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/NetSuite_Saved_Customer_Search_2.png)
 
 NetSuite\_Saved\_Customer\_Search\_2
 
@@ -37,13 +37,13 @@ Optimize Your Saved Searches
 
 **Summarize Results** – Within the Results tab on a saved search, you can specify a summary type for each column of data which allows you to define how to roll up, or group, data. When you run a summarized saved search, you have the ability to drill down into each group of results. The following summary types are available: Group, Count, Sum, Minimum, Maximum and Average
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Saved_Search_Functionality-Summarize_Results.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Saved_Search_Functionality-Summarize_Results.png)
 
 Saved\_Search\_Functionality-Summarize\_Results
 
 **Formulas in Searches** – SQL functions and mathematical operators can be used to translate data formats (turn dates into weekdays for easy viewing or numbers for calculations), compare values in different fields across related records, or perform on-the-fly calculations at the time the search is performed
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Saved_Search_Functionality-Formulas_in_Searches.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Saved_Search_Functionality-Formulas_in_Searches.png)
 
 Saved\_Search\_Functionality-Formulas\_in\_Searches
 
@@ -53,15 +53,15 @@ To match the date exported in a saved search to Pepperi in a data upload, use a 
 
 After having the saved search you want to work with, copy it's ID. Usually the ID can be found in the settings page in "Edit" mode -
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-413.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-413.png)
 
 If can't be found there, the ID can be found in the saved searches list, under Lists > Search > Saved Searches
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-414.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-414.png)
 
 Once you have the saved search ID, go to Pepperi's Integration Platform, open a new data flow task under the NetSuite application with the relevant target object. Source Object of NetSuite can always be "NetSuite Export Special Price List"
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/image-415.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/image-415.png)
 
 In the task settings, add the settings of -
 

@@ -67,11 +67,11 @@ Let's setup the first script to see how everything is working.
 
 First of all, you need to create a script. Go to the **Configuration** \-> **Scripts**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Create-a-script-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Create-a-script-1.png)
 
 Here you will see a list of all your scripts.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Create-a-script-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Create-a-script-2.png)
 
 Click on **Add** to add new script and you will see the following window.
 
@@ -81,7 +81,7 @@ Here you need to specify the following:
 -   Parameters
 -   Code
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Create-a-script-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Create-a-script-3.png)
 
 As an example, let's use this script code. Review it and pass it into your script.
 
@@ -113,19 +113,19 @@ Click **Save** to save the script. After that, you should see your script in the
 
 Now in order to use a script, we need to create a page for it. Go to the **Pages** \-> **Page Builder**
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Create-a-page-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Create-a-page-1.png)
 
 Here you will see a list of all your pages.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Create-a-page-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Create-a-page-2.png)
 
 Click on **Add Page** to add new page and choose **Blank** template.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Create-a-page-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Create-a-page-3.png)
 
 Next you should see the following page. This is a constructor of the page.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Create-a-page-4.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Create-a-page-4.png)
 
 This is very powerful tool, but we are interested in the options on the left side.
 
@@ -138,9 +138,9 @@ Here you need to specify the following:
 In **ScriptBlockClient** settings, you should specify a script and it's parameters. Choose your **Script** and add **Key** for it.
 !!!
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Create-a-page-7.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Create-a-page-7.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Create-a-page-6.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Create-a-page-6.png)
 
 Click **Publish** to publish the page.
 
@@ -148,15 +148,15 @@ Click **Publish** to publish the page.
 
 All that left is to map your page to a slug. Go to the **Pages** \-> **Slugs** and open **Mapping** tab.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Map-a-page-to-a-slug-1.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Map-a-page-to-a-slug-1.png)
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Map-a-page-to-a-slug-2.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Map-a-page-to-a-slug-2.png)
 
 Here you will see a list of all profiles and the pages associated with them.
 
 Click **Edit** on the **Rep** profile, then Drag & Drop **launch\_page** into the slug section and select your page.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-Map-a-page-to-a-slug-3.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-Map-a-page-to-a-slug-3.png)
 
 Click **Save** to save your slug.
 
@@ -183,7 +183,7 @@ Your URL should look like this: https://app.pepperi.com/**launch\_page**?**Scrip
 
 After installing **Scripts Add-on** and navigating to it, you could see the following page.
 
-![](https://alinasergeeva6.github.io/pepepri-docs/static/Launch-Page-No-License.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal%20articles/static/Launch-Page-No-License.png)
 
 !!!info
 Ask a senior developer to enable **Scripts Add-on** for your environment.
