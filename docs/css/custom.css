@@ -43,15 +43,22 @@
 }
 
 /* --------------------------------------
-   Modern Search Bar 
+   Modern Search Bar Fixes
    -------------------------------------- */
-/* Normal (inactive) state */
+/* Main search wrapper (Inactive) */
 .md-search__form {
     background-color: #f5f7f9 !important;
-    border: 1px solid #e6ecf1 !important;
     border-radius: 8px !important;
+    border: 1px solid #e6ecf1 !important;
     box-shadow: none !important;
     transition: all 0.2s ease;
+}
+
+/* Remove default inner background that makes it look broken */
+.md-search__inner {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 /* On hover */
@@ -64,17 +71,15 @@
 .md-search--active .md-search__form {
     background-color: #ffffff !important;
     border-color: #3884ff !important;
-    border-radius: 8px 8px 0 0 !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
 }
 
-/* The dropdown container */
+/* Dropdown results container */
 .md-search__output {
-    background-color: #ffffff !important;
-    border-radius: 0 0 8px 8px !important;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
-    border: 1px solid #3884ff !important;
-    border-top: none !important;
+    border-radius: 8px !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #e6ecf1 !important;
+    margin-top: 8px !important; /* Detach slightly from the search bar */
 }
 
 /* Input text and placeholder */
@@ -84,4 +89,7 @@
 
 .md-search__input::placeholder {
     color: #9daab6 !important;
+}
+.md-nav__link svg{
+display: none !important;
 }
