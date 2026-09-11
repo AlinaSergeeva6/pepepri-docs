@@ -235,3 +235,27 @@
     color: #3884ff !important;
     font-weight: 600 !important;
 }
+/* Modern inline SVG icon coloring */
+.md-sidebar--primary .md-nav__link svg {
+    fill: #9daab6 !important;
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 8px !important;
+    transition: fill 0.2s ease !important;
+}
+
+/* Icon hover state */
+.md-sidebar--primary .md-nav__item:hover > .md-nav__link svg,
+.md-sidebar--primary .md-nav__item:hover > .md-nav__container svg {
+    fill: #4a5568 !important;
+}
+
+/* Active icon state */
+.md-sidebar--primary .md-nav__item--active .md-nav__link svg,
+.md-sidebar--primary .md-nav__item--active .md-nav__container svg {
+    fill: #3884ff !important;
+}
+/* Hide the redundant root index entry in the sidebar */
+.md-sidebar--primary > .md-nav > .md-nav__list > .md-nav__item:first-child {
+    display: none !important;
+}
