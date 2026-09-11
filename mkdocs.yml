@@ -1,25 +1,10 @@
 site_name: Pepepri IKB
 site_url: https://alinasergeeva6.github.io/pepepri-docs/
-
 theme:
   name: material
   logo: images/Pepperi-Logo-Green.png
-  favicon: images/Pepperi-circle-green.png
+  favicon: images/Pepperi-circle.svg
   features:
     - navigation.indexes
-
 extra_css:
   - css/custom.css
-
-nav:
-  - Home: index.md
-  - Pepepri Internal Articles:
-      - Add-ons Manuals: pepepri-internal-articles/add-ons-manuals/index.md
-      - External Devices: pepepri-internal-articles/external-devices/index.md
-      - Internal API: pepepri-internal-articles/internal-api/index.md
-      - Integration Platform iPaaS: pepepri-internal-articles/integration-platform-ipaas/index.md
-      - Pepperi: pepepri-internal-articles/pepperi/index.md
-      - Article Drafts: pepepri-internal-articles/article-drafts/index.md
-      - PS Introduction: pepepri-internal-articles/ps-introduction/index.md
-      - Quick Setup: pepepri-internal-articles/quick-setup/index.md
-      - Services Demo Environment: pepepri-internal-articles/services-demo-environment/index.md
