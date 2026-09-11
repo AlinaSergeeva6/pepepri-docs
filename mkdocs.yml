@@ -10,3 +10,6 @@ theme:
 
 extra_css:
   - css/custom.css
+nav:
+  - Home: index.md
+  - Pepepri internal articles: pepepri-internal-articles/
