@@ -6,7 +6,7 @@ icon: material/book
 ---
 # Add-ons Manuals
 
-- [**Pricing Module (PPM) Add-on**](pricing-module-ppm-add-on/index.md) — 15 pages
+- [**Pricing Module (PPM) Add-on**](pricing-module-ppm-add-on/index.md)
 - [Pepperi Trade Promotions](pepperi-trade-promotions.md)
 - [Item Trade Promotions Installation Guide](item-trade-promotions-installation-guide.md)
 - [Order Trade Promotions Installation Guide](order-trade-promotions-installation-guide.md)
