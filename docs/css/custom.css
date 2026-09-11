@@ -71,14 +71,13 @@
     border-radius: 8px !important;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1) !important;
     border: 1px solid #e6ecf1 !important;
-    margin-top: 8px !important; /* Detach slightly from the search bar */
+    margin-top: 8px !important; 
 }
 
 /* Input text and placeholder */
 .md-search__input {
     color: #242a31 !important;
 }
-
 .md-search__input::placeholder {
     color: #9daab6 !important;
 }
@@ -98,77 +97,125 @@
    Sidebar Reset & Hierarchy (Absolute Fix)
    -------------------------------------- */
 
-/* Hide default icons inside the sidebar menu */
-.md-nav__link svg {
-    display: none !important;
-}
-
-/* 1. Base styles ONLY for actual links ('a' tags), ignoring 'label' toggles */
-.md-sidebar--primary a.md-nav__link {
-    border-radius: 6px !important;
-    padding: 6px 12px !important;
-    margin: 2px 0 !important;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-}
-
-/* 2. Strip rogue styling from the toggle buttons (labels) to fix the weird blue box */
-.md-sidebar--primary label.md-nav__link,
-.md-sidebar--primary div.md-nav__link {
+/* 1. RESET DEFAULT MKDOCS SPACING */
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--primary .md-nav__container {
     background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 2. STYLE THE VISUAL "ROWS" (Applies to links, folder labels, and index wrappers) */
+.md-sidebar--primary .md-nav__item > a.md-nav__link,
+.md-sidebar--primary .md-nav__item > label.md-nav__link,
+.md-sidebar--primary .md-nav__item > div.md-nav__container {
+    border-radius: 6px !important;
+    padding: 8px 12px !important; /* Base top/bottom padding */
+    margin: 2px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer;
+}
+
+/* 3. FIX INTERNAL LAYOUT FOR INDEX FOLDERS */
+/* Make the text stretch to push the toggle arrow to the right */
+.md-sidebar--primary .md-nav__container > a.md-nav__link {
+    flex-grow: 1 !important;
     padding: 0 !important;
     margin: 0 !important;
 }
-
-/* 3. Active State (Blue Background) */
-.md-sidebar--primary .md-nav__item--active > a.md-nav__link,
-.md-sidebar--primary .md-nav__item--active > .md-nav__container > a.md-nav__link {
-    background-color: #ebf3ff !important;
-    color: #3884ff !important;
-    font-weight: 600 !important;
+/* Ensure the toggle arrow is visible and properly spaced */
+.md-sidebar--primary .md-nav__container > label.md-nav__link {
+    padding-left: 8px !important;
+    margin: 0 !important;
 }
 
-/* 4. Hover State for inactive items */
-.md-sidebar--primary a.md-nav__link:hover:not(.md-nav__link--active) {
+/* 4. ACTIVE & HOVER BACKGROUNDS */
+/* Active Background */
+.md-sidebar--primary .md-nav__item--active > a.md-nav__link,
+.md-sidebar--primary .md-nav__item--active > label.md-nav__link,
+.md-sidebar--primary .md-nav__item--active > div.md-nav__container {
+    background-color: #ebf3ff !important;
+}
+/* Hover Background */
+.md-sidebar--primary .md-nav__item > a.md-nav__link:hover,
+.md-sidebar--primary .md-nav__item > label.md-nav__link:hover,
+.md-sidebar--primary .md-nav__item > div.md-nav__container:hover {
     background-color: #f5f7f9 !important;
-    color: #242a31 !important;
+}
+/* Keep active blue background during hover */
+.md-sidebar--primary .md-nav__item--active > a.md-nav__link:hover,
+.md-sidebar--primary .md-nav__item--active > label.md-nav__link:hover,
+.md-sidebar--primary .md-nav__item--active > div.md-nav__container:hover {
+    background-color: #ebf3ff !important;
 }
 
 /* --------------------------------------
-   Hierarchy Typography
+   Hierarchy Typography & Indentation
    -------------------------------------- */
 
-/* LEVEL 1: Main parent folders (e.g., Pepepri internal articles) */
-.md-nav--primary > .md-nav__list > .md-nav__item > a.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link {
+/* LEVEL 1: Root Folders */
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis {
     font-weight: 700 !important;
     font-size: 15px !important;
-}
-.md-nav--primary > .md-nav__list > .md-nav__item > a.md-nav__link:not(.md-nav__link--active),
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link:not(.md-nav__link--active) {
     color: #1e2329 !important;
 }
+/* Level 1 Indentation */
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > a.md-nav__link,
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > label.md-nav__link,
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > div.md-nav__container {
+    padding-left: 12px !important;
+}
 
-/* LEVEL 2: Nested folders (e.g., Add ons manuals) */
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > a.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link {
+/* LEVEL 2: Nested Folders */
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis {
     font-weight: 600 !important;
     font-size: 14px !important;
-}
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > a.md-nav__link:not(.md-nav__link--active),
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link:not(.md-nav__link--active) {
     color: #4a5568 !important;
 }
+/* Level 2 Indentation */
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > a.md-nav__link,
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > label.md-nav__link,
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > div.md-nav__container {
+    padding-left: 24px !important;
+}
 
-/* LEVEL 3: Deep articles (e.g., Installation Guide) */
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > a.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link {
+/* LEVEL 3 & 4: Deep Articles */
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis {
     font-weight: 400 !important;
     font-size: 13px !important;
-    padding-left: 24px !important; /* Visual indent for articles */
-}
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > a.md-nav__link:not(.md-nav__link--active),
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link:not(.md-nav__link--active) {
     color: #718096 !important;
+}
+/* Level 3 Indentation */
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > a.md-nav__link,
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > label.md-nav__link,
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > div.md-nav__container {
+    padding-left: 36px !important;
+}
+/* Level 4 Indentation */
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > a.md-nav__link,
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > label.md-nav__link,
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > div.md-nav__container {
+    padding-left: 48px !important;
+}
+
+/* --------------------------------------
+   Active Text Override (Must be at the bottom)
+   -------------------------------------- */
+/* Ensures active text is ALWAYS blue, overriding the hierarchy colors above */
+.md-sidebar--primary .md-nav__item--active > a.md-nav__link .md-ellipsis,
+.md-sidebar--primary .md-nav__item--active > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary .md-nav__item--active > div.md-nav__container .md-ellipsis {
+    color: #3884ff !important;
+    font-weight: 600 !important;
 }
