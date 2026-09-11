@@ -253,9 +253,10 @@
 /* Active icon state */
 .md-sidebar--primary .md-nav__item--active .md-nav__link svg,
 .md-sidebar--primary .md-nav__item--active .md-nav__container svg {
-    fill: #3884ff !important;
+    fill: #4a5568 !important;
 }
-/* Hide the redundant root index entry in the sidebar */
-.md-sidebar--primary > .md-nav > .md-nav__list > .md-nav__item:first-child {
+/* Permanently kill the duplicate root index link in the sidebar by its address */
+.md-sidebar--primary .md-nav__item > a.md-nav__link[href="./"],
+.md-sidebar--primary .md-nav__item > a.md-nav__link[href=""] {
     display: none !important;
 }
