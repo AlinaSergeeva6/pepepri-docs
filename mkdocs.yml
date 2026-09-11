@@ -1,7 +1,7 @@
 site_name: Pepepri IKB
 theme:
   name: material
-  logo: images/Pepperi - circle - green.svg
+  logo: images/Pepperi Logo - Connected_Selling_Seamless_Buying - Green.png
   favicon: images/Pepperi - circle - green.svg
 extra_css:
   - css/custom.css

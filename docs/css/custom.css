@@ -108,17 +108,17 @@ display: none !important;
    -------------------------------------- */
 /* Increase the size of the image */
 .md-header__button.md-logo img {
-    height: 38px !important; /* Меняй эту цифру, чтобы сделать больше/меньше */
+    height: 38px !important;
     width: auto !important;
 }
 
 /* Adjust the container padding so it breathes */
 .md-header__button.md-logo {
     padding: 0.4rem !important;
-    margin-right: 10px !important; /* Даем немного воздуха между лого и текстом Pepepri IKB */
+    margin-right: 10px !important; 
 }
 
 /* Fix title alignment to match the new bigger logo */
 .md-header__title {
-    font-weight: 700 !important; /* Делаем текст чуть жирнее для солидности */
+    font-weight: 700 !important; 
 }
