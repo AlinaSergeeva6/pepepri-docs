@@ -105,12 +105,12 @@
     padding: 0 !important;
 }
 
-/* 2. STYLE THE VISUAL "ROWS" (Applies to links, folder labels, and index wrappers) */
+/* 2. STYLE THE VISUAL "ROWS" */
 .md-sidebar--primary .md-nav__item > a.md-nav__link,
 .md-sidebar--primary .md-nav__item > label.md-nav__link,
 .md-sidebar--primary .md-nav__item > div.md-nav__container {
     border-radius: 6px !important;
-    padding: 8px 12px !important; /* Base top/bottom padding */
+    padding: 8px 12px !important;
     margin: 2px 0 !important;
     display: flex !important;
     align-items: center !important;
@@ -119,36 +119,57 @@
 }
 
 /* 3. FIX INTERNAL LAYOUT FOR INDEX FOLDERS */
-/* Make the text stretch to push the toggle arrow to the right */
 .md-sidebar--primary .md-nav__container > a.md-nav__link {
     flex-grow: 1 !important;
     padding: 0 !important;
     margin: 0 !important;
 }
-/* Ensure the toggle arrow is visible and properly spaced */
 .md-sidebar--primary .md-nav__container > label.md-nav__link {
     padding-left: 8px !important;
     margin: 0 !important;
 }
 
-/* 4. ACTIVE & HOVER BACKGROUNDS */
-/* Active Background */
+/* 4. HIDE OLD UGLY TOGGLE ARROWS */
+.md-sidebar--primary .md-nav__icon {
+    display: none !important;
+}
+
+/* 5. ACTIVE & HOVER BACKGROUNDS */
 .md-sidebar--primary .md-nav__item--active > a.md-nav__link,
 .md-sidebar--primary .md-nav__item--active > label.md-nav__link,
 .md-sidebar--primary .md-nav__item--active > div.md-nav__container {
     background-color: #ebf3ff !important;
 }
-/* Hover Background */
 .md-sidebar--primary .md-nav__item > a.md-nav__link:hover,
 .md-sidebar--primary .md-nav__item > label.md-nav__link:hover,
 .md-sidebar--primary .md-nav__item > div.md-nav__container:hover {
     background-color: #f5f7f9 !important;
 }
-/* Keep active blue background during hover */
 .md-sidebar--primary .md-nav__item--active > a.md-nav__link:hover,
 .md-sidebar--primary .md-nav__item--active > label.md-nav__link:hover,
 .md-sidebar--primary .md-nav__item--active > div.md-nav__container:hover {
     background-color: #ebf3ff !important;
+}
+
+/* --------------------------------------
+   Modern Folder Icons Styling
+   -------------------------------------- */
+/* Make folder/file icons soft, subtle, and matching the text tone */
+.md-sidebar--primary .md-nav__link .md-icon,
+.md-sidebar--primary .md-nav__item .md-icon {
+    color: #9daab6 !important;
+    transition: color 0.2s ease !important;
+    margin-right: 8px !important;
+}
+
+/* Highlight icon on hover */
+.md-sidebar--primary .md-nav__item:hover .md-icon {
+    color: #4a5568 !important;
+}
+
+/* Make icon blue for active/selected items */
+.md-sidebar--primary .md-nav__item--active .md-icon {
+    color: #3884ff !important;
 }
 
 /* --------------------------------------
@@ -163,7 +184,6 @@
     font-size: 15px !important;
     color: #1e2329 !important;
 }
-/* Level 1 Indentation */
 .md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > a.md-nav__link,
 .md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > label.md-nav__link,
 .md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > div.md-nav__container {
@@ -178,7 +198,6 @@
     font-size: 14px !important;
     color: #4a5568 !important;
 }
-/* Level 2 Indentation */
 .md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > a.md-nav__link,
 .md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > label.md-nav__link,
 .md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > div.md-nav__container {
@@ -196,13 +215,11 @@
     font-size: 13px !important;
     color: #718096 !important;
 }
-/* Level 3 Indentation */
 .md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > a.md-nav__link,
 .md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > label.md-nav__link,
 .md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > div.md-nav__container {
     padding-left: 36px !important;
 }
-/* Level 4 Indentation */
 .md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > a.md-nav__link,
 .md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > label.md-nav__link,
 .md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > div.md-nav__container {
@@ -212,7 +229,6 @@
 /* --------------------------------------
    Active Text Override (Must be at the bottom)
    -------------------------------------- */
-/* Ensures active text is ALWAYS blue, overriding the hierarchy colors above */
 .md-sidebar--primary .md-nav__item--active > a.md-nav__link .md-ellipsis,
 .md-sidebar--primary .md-nav__item--active > label.md-nav__link .md-ellipsis,
 .md-sidebar--primary .md-nav__item--active > div.md-nav__container .md-ellipsis {
