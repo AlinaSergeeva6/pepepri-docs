@@ -1,4 +1,4 @@
-## Pepperi Professional Services Internal Knowledge Base
+# Home
 
 Welcome to the Pepperi Professional Services Internal Knowledge Base! This resource provides comprehensive guides, best practices, and technical documentation to support your work with the Pepperi platform.
 
