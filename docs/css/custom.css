@@ -260,3 +260,6 @@
 .md-sidebar--primary .md-nav__item > a.md-nav__link[href=""] {
     display: none !important;
 }
+.md-sidebar--primary > .md-nav--primary > .md-nav__list > .md-nav__item:first-child {
+    display: none !important;
+}

@@ -4,5 +4,7 @@ theme:
   name: material
   logo: images/Pepperi-Logo-Green.png
   favicon: images/Pepperi-circle.svg
+  features:
+    - navigation.indexes
 extra_css:
   - css/custom.css
