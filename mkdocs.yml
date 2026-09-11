@@ -1,5 +1,7 @@
 site_name: Pepepri IKB
 theme:
   name: material
+  logo: images/Pepperi-Logo-Green.png
+  favicon: images/Pepperi-circle-green.png
 extra_css:
   - css/custom.css
