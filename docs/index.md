@@ -17,15 +17,3 @@ If you can’t find what you’re looking for:
 
 -   Check with your team for additional resources.
 
-
-## Sections
-
-- [**PS INTRODUCTION**](ps-introduction/index.md)
-- [**Pepperi**](pepperi/index.md)
-- [**INTEGRATION PLATFORM (IPAAS)**](integration-platform-ipaas/index.md)
-- [**EXTERNAL DEVICES**](external-devices/index.md)
-- [**Internal API**](internal-api/index.md)
-- [**Add-ons Manuals**](add-ons-manuals/index.md)
-- [**Quick Setup**](quick-setup/index.md)
-- [**Services Demo Environment**](services-demo-environment/index.md)
-- [**Article Drafts**](article-drafts/index.md)

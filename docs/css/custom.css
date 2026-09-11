@@ -12,35 +12,7 @@
     color: #242a31 !important;
 }
 
-/* --------------------------------------
-   Sidebar Improvements
-   -------------------------------------- */
-.md-sidebar--primary .md-nav__link {
-    border-radius: 6px;
-    padding: 8px 12px;
-    margin: 2px 0;
-    color: #5c6975;
-    transition: all 0.2s ease;
-}
 
-.md-sidebar--primary .md-nav__link:hover {
-    background-color: #f5f7f9 !important;
-    color: #242a31 !important;
-}
-
-/* Active sidebar item styling */
-.md-sidebar--primary .md-nav__item--active > .md-nav__link,
-.md-sidebar--primary .md-nav__link--active {
-    background-color: #ebf3ff !important;
-    color: #3884ff !important;
-    font-weight: 600;
-}
-
-/* Hide icons inside the sidebar menu */
-.md-sidebar--primary .md-nav__link > .md-icon,
-.md-sidebar--primary .md-nav__item .md-icon {
-    display: none !important;
-}
 
 /* --------------------------------------
    Modern Search Bar Fixes
@@ -123,38 +95,75 @@ display: none !important;
     font-weight: 700 !important; 
 }
 /* --------------------------------------
-   Sidebar Hierarchy & Nesting Styles
+   Sidebar Reset & Hierarchy (Fixed)
+   -------------------------------------- */
+
+/* 1. Reset massive gaps. Target ONLY the actual 'a' tag, not the wrapper divs */
+.md-sidebar--primary a.md-nav__link {
+    border-radius: 6px;
+    padding: 6px 12px !important;
+    margin: 2px 0 !important;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+/* 2. Remove padding from the structural wrappers that navigation.indexes creates */
+.md-sidebar--primary div.md-nav__link,
+.md-sidebar--primary label.md-nav__link {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+/* 3. Fix active state colors (Blue background for current page) */
+.md-sidebar--primary .md-nav__item--active > a.md-nav__link,
+.md-sidebar--primary .md-nav__item--active > .md-nav__container > a.md-nav__link,
+.md-sidebar--primary a.md-nav__link--active {
+    background-color: #ebf3ff !important;
+    color: #3884ff !important;
+    font-weight: 600 !important;
+}
+
+/* 4. Hover effect for inactive links */
+.md-sidebar--primary a.md-nav__link:hover:not(.md-nav__link--active) {
+    background-color: #f5f7f9 !important;
+    color: #242a31 !important;
+}
+
+/* --------------------------------------
+   Hierarchy Levels
    -------------------------------------- */
 
 /* LEVEL 1: Main parent folders (Root) */
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
-    font-weight: 700 !important; /* Maximum weight */
-    font-size: 15px !important; /* Larger text */
-    padding-top: 8px !important; 
-    padding-bottom: 8px !important;
+.md-nav--primary > .md-nav__list > .md-nav__item > a.md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link {
+    font-weight: 700 !important;
+    font-size: 15px !important;
 }
-/* Level 1 color (inactive state) */
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link:not(.md-nav__link--active) {
-    color: #1e2329 !important; /* Dark, contrasting color */
-}
-
-/* LEVEL 2: Nested folders (e.g., Add-ons Manuals) */
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
-    font-weight: 600 !important; /* Semi-bold */
-    font-size: 14px !important; /* Base size */
-}
-/* Level 2 color (inactive state) */
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link:not(.md-nav__link--active) {
-    color: #4a5568 !important; /* Soft gray */
+.md-nav--primary > .md-nav__list > .md-nav__item > a.md-nav__link:not(.md-nav__link--active),
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link:not(.md-nav__link--active) {
+    color: #1e2329 !important;
 }
 
-/* LEVEL 3: Articles or deep nested folders */
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
-    font-weight: 400 !important; /* Regular text */
-    font-size: 13px !important; /* Smaller size */
-    padding-left: 20px !important; /* Indent for visual hierarchy */
+/* LEVEL 2: Nested folders (Using native data-md-level) */
+.md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__list > .md-nav__item > a.md-nav__link,
+.md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link {
+    font-weight: 600 !important;
+    font-size: 14px !important;
 }
-/* Level 3 color (inactive state) */
-.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link:not(.md-nav__link--active) {
-    color: #718096 !important; /* Light gray to keep focus away */
+.md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__list > .md-nav__item > a.md-nav__link:not(.md-nav__link--active),
+.md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link:not(.md-nav__link--active) {
+    color: #4a5568 !important;
+}
+
+/* LEVEL 3: Articles (Deep nesting) */
+.md-sidebar--primary .md-nav[data-md-level="2"] > .md-nav__list > .md-nav__item > a.md-nav__link,
+.md-sidebar--primary .md-nav[data-md-level="2"] > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link {
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    padding-left: 24px !important;
+}
+.md-sidebar--primary .md-nav[data-md-level="2"] > .md-nav__list > .md-nav__item > a.md-nav__link:not(.md-nav__link--active),
+.md-sidebar--primary .md-nav[data-md-level="2"] > .md-nav__list > .md-nav__item > .md-nav__container > a.md-nav__link:not(.md-nav__link--active) {
+    color: #718096 !important;
 }
