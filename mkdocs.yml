@@ -1,10 +1,16 @@
 site_name: Pepepri IKB
 site_url: https://alinasergeeva6.github.io/pepepri-docs/
+
 theme:
   name: material
   logo: images/Pepperi-Logo-Green.png
-  favicon: images/Pepperi-circle.svg
+  favicon: images/Pepperi-circle-green.png
   features:
     - navigation.indexes
+
 extra_css:
   - css/custom.css
+
+nav:
+  - Home: index.md
+  - Pepepri Internal Articles: pepepri-internal-articles/index.md
