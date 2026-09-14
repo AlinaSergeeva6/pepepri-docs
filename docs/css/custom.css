@@ -304,3 +304,74 @@
 .md-typeset a {
     text-decoration: none !important;
 }
+/* --------------------------------------
+   Layout Width & Sidebar Expansion
+   -------------------------------------- */
+
+/* 1. Expand the maximum width of the entire page to use empty screen space */
+.md-grid {
+    max-width: 1500px !important;
+}
+
+/* 2. Apply wider sidebars only on desktop screens (prevent breaking mobile view) */
+@media screen and (min-width: 76.25em) {
+    /* Widen the left sidebar to fit long folder names and arrows */
+    .md-sidebar--primary {
+        width: 19rem !important;
+    }
+    
+    /* Widen the right sidebar (Table of Contents) */
+    .md-sidebar--secondary {
+        width: 16rem !important;
+    }
+    
+    /* Shift the central text content so it doesn't overlap with the wider left sidebar */
+    .md-content {
+        margin-left: 19rem !important;
+    }
+}
+/* --------------------------------------
+   Custom SVG Icon Replacement
+   -------------------------------------- */
+
+/* 1. Hide default Material icons on the left side */
+.md-sidebar--primary .md-nav__link > svg {
+    display: none !important;
+}
+
+/* 2. Inject custom SVG as a mask to preserve color transitions */
+.md-sidebar--primary .md-nav__link::before {
+    content: "";
+    display: block;
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 8px !important;
+    background-color: #9daab6 !important; /* Default soft steel color */
+    
+    /* Change this path to exactly match your SVG file name */
+    -webkit-mask-image: url('../images/Pepperi-logo-edu-green.png');
+    mask-image: url('../images/Pepperi-logo-edu-green.png');
+    
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease !important;
+}
+
+/* 3. Hover state color for the new custom icon */
+.md-sidebar--primary .md-nav__item:hover > .md-nav__link::before,
+.md-sidebar--primary .md-nav__item:hover > .md-nav__container > .md-nav__link::before,
+.md-sidebar--primary label.md-nav__link:hover::before {
+    background-color: #4a5568 !important;
+}
+
+/* 4. Active state color for the new custom icon */
+.md-sidebar--primary .md-nav__item--active > .md-nav__link::before,
+.md-sidebar--primary .md-nav__item--active > .md-nav__container > .md-nav__link::before,
+.md-sidebar--primary label.md-nav__item--active::before {
+    background-color: #3884ff !important;
+}
