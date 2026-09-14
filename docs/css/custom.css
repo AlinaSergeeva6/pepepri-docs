@@ -7,29 +7,22 @@
     border-bottom: 1px solid #e6ecf1 !important;
 }
 
-/* Header text and icons */
 .md-header__button.md-logo,
 .md-header__button,
 .md-header__title {
     color: #242a31 !important;
 }
 
-/* --------------------------------------
-   Header Logo Resizing
-   -------------------------------------- */
-/* Increase the size of the image */
 .md-header__button.md-logo img {
     height: 38px !important;
     width: auto !important;
 }
 
-/* Adjust the container padding so it breathes */
 .md-header__button.md-logo {
     padding: 0.4rem !important;
     margin-right: 10px !important; 
 }
 
-/* Fix title alignment to match the new bigger logo */
 .md-header__title {
     font-weight: 700 !important; 
 }
@@ -37,7 +30,6 @@
 /* --------------------------------------
    Modern Search Bar Fixes
    -------------------------------------- */
-/* Main search wrapper (Inactive) */
 .md-search__form {
     background-color: #f5f7f9 !important;
     border-radius: 8px !important;
@@ -46,27 +38,23 @@
     transition: all 0.2s ease;
 }
 
-/* Remove default inner background that makes it look broken */
 .md-search__inner {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
 
-/* On hover */
 .md-search__form:hover {
     background-color: #ffffff !important;
     border-color: #b0c4de !important;
 }
 
-/* Active state (when clicked) */
 .md-search--active .md-search__form {
     background-color: #ffffff !important;
     border-color: #3884ff !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
 }
 
-/* Dropdown results container */
 .md-search__output {
     border-radius: 8px !important;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1) !important;
@@ -74,20 +62,15 @@
     margin-top: 8px !important; 
 }
 
-/* Input text and placeholder */
 .md-search__input {
     color: #242a31 !important;
 }
 .md-search__input::placeholder {
     color: #9daab6 !important;
 }
-
-/* Fix invisible search icon */
 .md-search__icon {
     color: #9daab6 !important;
 }
-
-/* Active and Hover states for the search icon */
 .md-search--active .md-search__icon,
 .md-search__form:hover .md-search__icon {
     color: #3884ff !important;
@@ -96,8 +79,6 @@
 /* --------------------------------------
    Sidebar Reset & Hierarchy (Absolute Fix)
    -------------------------------------- */
-
-/* 1. RESET DEFAULT MKDOCS SPACING */
 .md-sidebar--primary .md-nav__link,
 .md-sidebar--primary .md-nav__container {
     background: transparent !important;
@@ -105,7 +86,6 @@
     padding: 0 !important;
 }
 
-/* 2. STYLE THE VISUAL "ROWS" */
 .md-sidebar--primary .md-nav__item > a.md-nav__link,
 .md-sidebar--primary .md-nav__item > label.md-nav__link,
 .md-sidebar--primary .md-nav__item > div.md-nav__container {
@@ -118,7 +98,6 @@
     cursor: pointer;
 }
 
-/* 3. FIX INTERNAL LAYOUT FOR INDEX FOLDERS */
 .md-sidebar--primary .md-nav__container > a.md-nav__link {
     flex-grow: 1 !important;
     padding: 0 !important;
@@ -129,22 +108,21 @@
     margin: 0 !important;
 }
 
-/* 4. MODERN TOGGLE ARROWS (RESTORED FOR COLLAPSING) */
+/* Toggle Arrows */
 .md-sidebar--primary .md-nav__icon {
     display: block !important;
-    color: #9daab6 !important; /* Soft steel color to match folder icons */
-    margin-left: auto !important; /* Push arrow to the far right */
+    color: #9daab6 !important; 
+    margin-left: auto !important; 
     width: 20px !important;
     transition: color 0.2s ease, transform 0.2s ease !important;
 }
 
-/* Highlight arrow with brand blue on hover */
 .md-sidebar--primary .md-nav__container:hover .md-nav__icon,
 .md-sidebar--primary label.md-nav__link:hover .md-nav__icon {
     color: #3884ff !important;
 }
 
-/* 5. ACTIVE & HOVER BACKGROUNDS */
+/* Active & Hover Backgrounds */
 .md-sidebar--primary .md-nav__item--active > a.md-nav__link,
 .md-sidebar--primary .md-nav__item--active > label.md-nav__link,
 .md-sidebar--primary .md-nav__item--active > div.md-nav__container {
@@ -164,8 +142,6 @@
 /* --------------------------------------
    Hierarchy Typography & Indentation
    -------------------------------------- */
-
-/* LEVEL 1: Root Folders */
 .md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
 .md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
 .md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis {
@@ -179,7 +155,6 @@
     padding-left: 12px !important;
 }
 
-/* LEVEL 2: Nested Folders */
 .md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
 .md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
 .md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis {
@@ -193,8 +168,7 @@
     padding-left: 24px !important;
 }
 
-/* LEVEL 3 & 4: Deep Articles */
-/* Regular articles remain light and normal weight */
+/* Deep Articles (No bolding) */
 .md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
 .md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis {
     font-weight: 400 !important;
@@ -202,8 +176,7 @@
     color: #718096 !important;
 }
 
-/* LEVEL 3 & 4: Deep Nested Folders */
-/* Folder containers get bold text and darker color to stand out from regular articles */
+/* Deep Nested Folders (Bolding applied) */
 .md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
 .md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis,
 .md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
@@ -213,9 +186,7 @@
     color: #4a5568 !important;
 }
 
-/* --------------------------------------
-   Active Text Override (Must be at the bottom)
-   -------------------------------------- */
+/* Active Text Override */
 .md-sidebar--primary .md-nav__item--active > a.md-nav__link .md-ellipsis,
 .md-sidebar--primary .md-nav__item--active > label.md-nav__link .md-ellipsis,
 .md-sidebar--primary .md-nav__item--active > div.md-nav__container .md-ellipsis {
@@ -236,7 +207,6 @@
 /* --------------------------------------
    Modern Typography for Content Lists & Links
    -------------------------------------- */
-/* Remove default blue color from list links */
 .md-typeset ul li > a {
     color: #242a31 !important;
     font-weight: 500 !important;
@@ -244,62 +214,55 @@
     border-bottom: 1px solid transparent !important;
     transition: all 0.2s ease !important;
 }
-/* Smoothly reveal brand blue color and underline on hover */
 .md-typeset ul li > a:hover {
     color: #3884ff !important;
     border-bottom: 1px solid #3884ff !important;
 }
-/* Soften list markers and add vertical spacing between rows */
 .md-typeset ul li {
     color: #9daab6 !important; 
     margin-bottom: 12px !important;
     line-height: 1.6 !important;
 }
-/* Hide default link underlines that MkDocs occasionally injects */
 .md-typeset a {
     text-decoration: none !important;
 }
 
 /* --------------------------------------
-   Safe Grid Expansion (More space for names)
+   Safe Grid Expansion 
    -------------------------------------- */
-/* Expand the main container safely without breaking flexbox columns */
 .md-grid {
     max-width: 90rem !important; 
 }
 
 /* --------------------------------------
-   Custom Colored PNG Icon Replacement
+   Custom Colored PNG Icon ONLY for Folders
    -------------------------------------- */
-/* 1. Hide default Material icons */
-.md-sidebar--primary .md-nav__link > svg {
+/* 1. Remove any old default SVG icons from folders so they don't overlap with our PNG */
+.md-sidebar--primary .md-nav__item--nested > label.md-nav__link > svg:not(.md-nav__icon),
+.md-sidebar--primary .md-nav__item--nested > div.md-nav__container > a.md-nav__link > svg:not(.md-nav__icon) {
     display: none !important;
 }
 
-/* 2. Inject your custom colored PNG */
-.md-sidebar--primary .md-nav__link::before {
+/* 2. Inject the custom PNG specifically into FOLDERS ONLY (.md-nav__item--nested) */
+.md-sidebar--primary .md-nav__item--nested > label.md-nav__link::before,
+.md-sidebar--primary .md-nav__item--nested > div.md-nav__container > a.md-nav__link::before {
     content: "";
     display: block;
     width: 18px !important;
     height: 18px !important;
     margin-right: 8px !important;
-    
-    /* Use background-image to keep original colors (no masks!) */
     background-image: url('../images/Pepperi-logo-edu-green.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     flex-shrink: 0;
-    
-    /* Smooth transition for the darkening filter */
     transition: filter 0.2s ease !important;
 }
 
-/* 3. Darken the original image slightly on hover and active state */
-.md-sidebar--primary .md-nav__item:hover > .md-nav__link::before,
-.md-sidebar--primary .md-nav__item:hover > .md-nav__container > .md-nav__link::before,
-.md-sidebar--primary label.md-nav__link:hover::before,
-.md-sidebar--primary .md-nav__item--active > .md-nav__link::before,
-.md-sidebar--primary .md-nav__item--active > .md-nav__container > .md-nav__link::before {
-    filter: brightness(0.65) !important; /* Reduces brightness by 35% */
+/* 3. Darken the image on hover and active state */
+.md-sidebar--primary .md-nav__item--nested:hover > label.md-nav__link::before,
+.md-sidebar--primary .md-nav__item--nested:hover > div.md-nav__container > a.md-nav__link::before,
+.md-sidebar--primary .md-nav__item--nested.md-nav__item--active > label.md-nav__link::before,
+.md-sidebar--primary .md-nav__item--active > div.md-nav__container > a.md-nav__link::before {
+    filter: brightness(0.65) !important; 
 }
