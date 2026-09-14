@@ -162,27 +162,6 @@
 }
 
 /* --------------------------------------
-   Modern Folder Icons Styling
-   -------------------------------------- */
-/* Make folder/file icons soft, subtle, and matching the text tone */
-.md-sidebar--primary .md-nav__link .md-icon,
-.md-sidebar--primary .md-nav__item .md-icon {
-    color: #9daab6 !important;
-    transition: color 0.2s ease !important;
-    margin-right: 8px !important;
-}
-
-/* Highlight icon on hover */
-.md-sidebar--primary .md-nav__item:hover .md-icon {
-    color: #4a5568 !important;
-}
-
-/* Make icon blue for active/selected items */
-.md-sidebar--primary .md-nav__item--active .md-icon {
-    color: #3884ff !important;
-}
-
-/* --------------------------------------
    Hierarchy Typography & Indentation
    -------------------------------------- */
 
@@ -214,7 +193,6 @@
     padding-left: 24px !important;
 }
 
-
 /* LEVEL 3 & 4: Deep Articles */
 /* Regular articles remain light and normal weight */
 .md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
@@ -244,40 +222,20 @@
     color: #3884ff !important;
     font-weight: 600 !important;
 }
-/* Modern inline SVG icon coloring */
-.md-sidebar--primary .md-nav__link svg {
-    fill: #9daab6 !important;
-    width: 18px !important;
-    height: 18px !important;
-    margin-right: 8px !important;
-    transition: fill 0.2s ease !important;
-}
-
-/* Icon hover state */
-.md-sidebar--primary .md-nav__item:hover > .md-nav__link svg,
-.md-sidebar--primary .md-nav__item:hover > .md-nav__container svg {
-    fill: #4a5568 !important;
-}
-
-/* Active icon state */
-/* .md-sidebar--primary .md-nav__item--active .md-nav__link svg,
-.md-sidebar--primary .md-nav__item--active .md-nav__container svg {
-    fill: #3884ff !important;
-} */
 
 /* --------------------------------------
    FIX FOR DUPLICATE & DISAPPEARING ACTIVE PAGES
    -------------------------------------- */
-
 .md-sidebar--primary label.md-nav__link[for="__toc"] {
     display: flex !important; 
 }
 .md-sidebar--primary label.md-nav__link[for="__toc"] + a.md-nav__link {
     display: none !important;
-}/* --------------------------------------
+}
+
+/* --------------------------------------
    Modern Typography for Content Lists & Links
    -------------------------------------- */
-
 /* Remove default blue color from list links */
 .md-typeset ul li > a {
     color: #242a31 !important;
@@ -286,92 +244,62 @@
     border-bottom: 1px solid transparent !important;
     transition: all 0.2s ease !important;
 }
-
 /* Smoothly reveal brand blue color and underline on hover */
 .md-typeset ul li > a:hover {
     color: #3884ff !important;
     border-bottom: 1px solid #3884ff !important;
 }
-
 /* Soften list markers and add vertical spacing between rows */
 .md-typeset ul li {
     color: #9daab6 !important; 
     margin-bottom: 12px !important;
     line-height: 1.6 !important;
 }
-
 /* Hide default link underlines that MkDocs occasionally injects */
 .md-typeset a {
     text-decoration: none !important;
 }
-/* --------------------------------------
-   Layout Width & Sidebar Expansion
-   -------------------------------------- */
 
-/* 1. Expand the maximum width of the entire page to use empty screen space */
+/* --------------------------------------
+   Safe Grid Expansion (More space for names)
+   -------------------------------------- */
+/* Expand the main container safely without breaking flexbox columns */
 .md-grid {
-    max-width: 1500px !important;
+    max-width: 90rem !important; 
 }
 
-/* 2. Apply wider sidebars only on desktop screens (prevent breaking mobile view) */
-@media screen and (min-width: 76.25em) {
-    /* Widen the left sidebar to fit long folder names and arrows */
-    .md-sidebar--primary {
-        width: 19rem !important;
-    }
-    
-    /* Widen the right sidebar (Table of Contents) */
-    .md-sidebar--secondary {
-        width: 16rem !important;
-    }
-    
-    /* Shift the central text content so it doesn't overlap with the wider left sidebar */
-    .md-content {
-        margin-left: 19rem !important;
-    }
-}
 /* --------------------------------------
-   Custom SVG Icon Replacement
+   Custom Colored PNG Icon Replacement
    -------------------------------------- */
-
-/* 1. Hide default Material icons on the left side */
+/* 1. Hide default Material icons */
 .md-sidebar--primary .md-nav__link > svg {
     display: none !important;
 }
 
-/* 2. Inject custom SVG as a mask to preserve color transitions */
+/* 2. Inject your custom colored PNG */
 .md-sidebar--primary .md-nav__link::before {
     content: "";
     display: block;
     width: 18px !important;
     height: 18px !important;
     margin-right: 8px !important;
-    background-color: #9daab6 !important; /* Default soft steel color */
     
-    /* Change this path to exactly match your SVG file name */
-    -webkit-mask-image: url('../images/Pepperi-logo-edu-green.png');
-    mask-image: url('../images/Pepperi-logo-edu-green.png');
-    
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
+    /* Use background-image to keep original colors (no masks!) */
+    background-image: url('../images/Pepperi-logo-edu-green.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     flex-shrink: 0;
-    transition: background-color 0.2s ease !important;
+    
+    /* Smooth transition for the darkening filter */
+    transition: filter 0.2s ease !important;
 }
 
-/* 3. Hover state color for the new custom icon */
+/* 3. Darken the original image slightly on hover and active state */
 .md-sidebar--primary .md-nav__item:hover > .md-nav__link::before,
 .md-sidebar--primary .md-nav__item:hover > .md-nav__container > .md-nav__link::before,
-.md-sidebar--primary label.md-nav__link:hover::before {
-    background-color: #4a5568 !important;
-}
-
-/* 4. Active state color for the new custom icon */
+.md-sidebar--primary label.md-nav__link:hover::before,
 .md-sidebar--primary .md-nav__item--active > .md-nav__link::before,
-.md-sidebar--primary .md-nav__item--active > .md-nav__container > .md-nav__link::before,
-.md-sidebar--primary label.md-nav__item--active::before {
-    background-color: #3884ff !important;
+.md-sidebar--primary .md-nav__item--active > .md-nav__container > .md-nav__link::before {
+    filter: brightness(0.65) !important; /* Reduces brightness by 35% */
 }
