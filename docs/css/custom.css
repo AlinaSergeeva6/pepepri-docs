@@ -233,20 +233,7 @@
 .md-grid {
     max-width: 80rem !important; 
 }
-/* --------------------------------------
-   Custom Left Sidebar Width (Desktop Only)
-   -------------------------------------- */
-@media screen and (min-width: 76.25em) {
-    /* Widen the left sidebar (MkDocs default is ~12.2rem) */
-    .md-sidebar--primary {
-        width: 16rem !important; 
-    }
-    
-    /* Shift the center content to match the new left sidebar width */
-    .md-content {
-        margin-left: 16rem !important;
-    }
-}
+
 
 /* --------------------------------------
    Custom Colored PNG Icon ONLY for Folders
