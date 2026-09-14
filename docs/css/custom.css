@@ -251,19 +251,47 @@
 }
 
 /* Active icon state */
-.md-sidebar--primary .md-nav__item--active .md-nav__link svg,
+/* .md-sidebar--primary .md-nav__item--active .md-nav__link svg,
 .md-sidebar--primary .md-nav__item--active .md-nav__container svg {
     fill: #3884ff !important;
-}
+} */
 
 /* --------------------------------------
    FIX FOR DUPLICATE & DISAPPEARING ACTIVE PAGES
    -------------------------------------- */
-/* 1. Возвращаем видимость техническому ярлыку оглавления для активной страницы */
+
 .md-sidebar--primary label.md-nav__link[for="__toc"] {
     display: flex !important; 
 }
-/* 2. Умный хак: скрываем обычную ссылку ТОЛЬКО если она дублирует ярлык оглавления */
 .md-sidebar--primary label.md-nav__link[for="__toc"] + a.md-nav__link {
     display: none !important;
+}/* --------------------------------------
+   Modern Typography for Content Lists & Links
+   -------------------------------------- */
+
+/* Remove default blue color from list links */
+.md-typeset ul li > a {
+    color: #242a31 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid transparent !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Smoothly reveal brand blue color and underline on hover */
+.md-typeset ul li > a:hover {
+    color: #3884ff !important;
+    border-bottom: 1px solid #3884ff !important;
+}
+
+/* Soften list markers and add vertical spacing between rows */
+.md-typeset ul li {
+    color: #9daab6 !important; 
+    margin-bottom: 12px !important;
+    line-height: 1.6 !important;
+}
+
+/* Hide default link underlines that MkDocs occasionally injects */
+.md-typeset a {
+    text-decoration: none !important;
 }
