@@ -253,16 +253,17 @@
 /* Active icon state */
 .md-sidebar--primary .md-nav__item--active .md-nav__link svg,
 .md-sidebar--primary .md-nav__item--active .md-nav__container svg {
-    fill: #4a5568 !important;
+    fill: #3884ff !important;
 }
-/* Permanently kill the duplicate root index link in the sidebar by its address */
-.md-sidebar--primary .md-nav__item > a.md-nav__link[href="./"],
-.md-sidebar--primary .md-nav__item > a.md-nav__link[href=""] {
-    display: none !important;
-}
-.md-sidebar--primary > .md-nav--primary > .md-nav__list > .md-nav__item:first-child {
-    display: none !important;
-}
+
+/* --------------------------------------
+   FIX FOR DUPLICATE & DISAPPEARING ACTIVE PAGES
+   -------------------------------------- */
+/* 1. Возвращаем видимость техническому ярлыку оглавления для активной страницы */
 .md-sidebar--primary label.md-nav__link[for="__toc"] {
+    display: flex !important; 
+}
+/* 2. Умный хак: скрываем обычную ссылку ТОЛЬКО если она дублирует ярлык оглавления */
+.md-sidebar--primary label.md-nav__link[for="__toc"] + a.md-nav__link {
     display: none !important;
 }
