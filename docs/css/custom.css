@@ -129,9 +129,19 @@
     margin: 0 !important;
 }
 
-/* 4. HIDE OLD UGLY TOGGLE ARROWS */
+/* 4. MODERN TOGGLE ARROWS (RESTORED FOR COLLAPSING) */
 .md-sidebar--primary .md-nav__icon {
-    display: none !important;
+    display: block !important;
+    color: #9daab6 !important; /* Soft steel color to match folder icons */
+    margin-left: auto !important; /* Push arrow to the far right */
+    width: 20px !important;
+    transition: color 0.2s ease, transform 0.2s ease !important;
+}
+
+/* Highlight arrow with brand blue on hover */
+.md-sidebar--primary .md-nav__container:hover .md-nav__icon,
+.md-sidebar--primary label.md-nav__link:hover .md-nav__icon {
+    color: #3884ff !important;
 }
 
 /* 5. ACTIVE & HOVER BACKGROUNDS */
@@ -204,26 +214,25 @@
     padding-left: 24px !important;
 }
 
+
 /* LEVEL 3 & 4: Deep Articles */
+/* Regular articles remain light and normal weight */
 .md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
-.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
-.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis,
-.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
-.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
-.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis {
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis {
     font-weight: 400 !important;
     font-size: 13px !important;
     color: #718096 !important;
 }
-.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > a.md-nav__link,
-.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > label.md-nav__link,
-.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > div.md-nav__container {
-    padding-left: 36px !important;
-}
-.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > a.md-nav__link,
-.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > label.md-nav__link,
-.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > div.md-nav__container {
-    padding-left: 48px !important;
+
+/* LEVEL 3 & 4: Deep Nested Folders */
+/* Folder containers get bold text and darker color to stand out from regular articles */
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis {
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    color: #4a5568 !important;
 }
 
 /* --------------------------------------
