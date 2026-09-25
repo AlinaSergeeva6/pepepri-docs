@@ -1,4 +1,284 @@
 /* --------------------------------------
+   Header: Clean white with a soft shadow
+   -------------------------------------- */
+.md-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+    border-bottom: 1px solid #e6ecf1 !important;
+}
+
+.md-header__button.md-logo,
+.md-header__button,
+.md-header__title {
+    color: #242a31 !important;
+}
+
+.md-header__button.md-logo img {
+    height: 38px !important;
+    width: auto !important;
+}
+
+.md-header__button.md-logo {
+    padding: 0.4rem !important;
+    margin-right: 10px !important; 
+}
+
+.md-header__title {
+    font-weight: 700 !important; 
+}
+
+/* --------------------------------------
+   Modern Search Bar Fixes
+   -------------------------------------- */
+.md-search__form {
+    background-color: #f5f7f9 !important;
+    border-radius: 8px !important;
+    border: 1px solid #e6ecf1 !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease;
+}
+
+.md-search__inner {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.md-search__form:hover {
+    background-color: #ffffff !important;
+    border-color: #b0c4de !important;
+}
+
+.md-search--active .md-search__form {
+    background-color: #ffffff !important;
+    border-color: #3884ff !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+.md-search__output {
+    border-radius: 8px !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #e6ecf1 !important;
+    margin-top: 8px !important; 
+}
+
+.md-search__input {
+    color: #242a31 !important;
+}
+.md-search__input::placeholder {
+    color: #9daab6 !important;
+}
+.md-search__icon {
+    color: #9daab6 !important;
+}
+.md-search--active .md-search__icon,
+.md-search__form:hover .md-search__icon {
+    color: #3884ff !important;
+}
+
+/* --------------------------------------
+   Sidebar Reset & Hierarchy (Absolute Fix)
+   -------------------------------------- */
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--primary .md-nav__container {
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.md-sidebar--primary .md-nav__item > a.md-nav__link,
+.md-sidebar--primary .md-nav__item > label.md-nav__link,
+.md-sidebar--primary .md-nav__item > div.md-nav__container {
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+    margin: 2px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer;
+}
+
+.md-sidebar--primary .md-nav__container > a.md-nav__link {
+    flex-grow: 1 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.md-sidebar--primary .md-nav__container > label.md-nav__link {
+    padding-left: 8px !important;
+    margin: 0 !important;
+}
+
+/* Toggle Arrows */
+.md-sidebar--primary .md-nav__icon {
+    display: block !important;
+    color: #9daab6 !important; 
+    margin-left: auto !important; 
+    width: 20px !important;
+    transition: color 0.2s ease, transform 0.2s ease !important;
+}
+
+.md-sidebar--primary .md-nav__container:hover .md-nav__icon,
+.md-sidebar--primary label.md-nav__link:hover .md-nav__icon {
+    color: #3884ff !important;
+}
+
+/* Active & Hover Backgrounds */
+.md-sidebar--primary .md-nav__item--active > a.md-nav__link,
+.md-sidebar--primary .md-nav__item--active > label.md-nav__link,
+.md-sidebar--primary .md-nav__item--active > div.md-nav__container {
+    background-color: #ebf3ff !important;
+}
+.md-sidebar--primary .md-nav__item > a.md-nav__link:hover,
+.md-sidebar--primary .md-nav__item > label.md-nav__link:hover,
+.md-sidebar--primary .md-nav__item > div.md-nav__container:hover {
+    background-color: #f5f7f9 !important;
+}
+.md-sidebar--primary .md-nav__item--active > a.md-nav__link:hover,
+.md-sidebar--primary .md-nav__item--active > label.md-nav__link:hover,
+.md-sidebar--primary .md-nav__item--active > div.md-nav__container:hover {
+    background-color: #ebf3ff !important;
+}
+
+/* --------------------------------------
+   Hierarchy Typography & Indentation
+   -------------------------------------- */
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis {
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    color: #1e2329 !important;
+}
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > a.md-nav__link,
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > label.md-nav__link,
+.md-sidebar--primary nav[data-md-level="0"] > .md-nav__list > .md-nav__item > div.md-nav__container {
+    padding-left: 12px !important;
+}
+
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #4a5568 !important;
+}
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > a.md-nav__link,
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > label.md-nav__link,
+.md-sidebar--primary nav[data-md-level="1"] > .md-nav__list > .md-nav__item > div.md-nav__container {
+    padding-left: 24px !important;
+}
+
+/* Deep Articles (No bolding) */
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > a.md-nav__link .md-ellipsis {
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    color: #718096 !important;
+}
+
+/* Deep Nested Folders (Bolding applied) */
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="2"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary nav[data-md-level="3"] > .md-nav__list > .md-nav__item > div.md-nav__container .md-ellipsis {
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    color: #4a5568 !important;
+}
+
+/* Active Text Override */
+.md-sidebar--primary .md-nav__item--active > a.md-nav__link .md-ellipsis,
+.md-sidebar--primary .md-nav__item--active > label.md-nav__link .md-ellipsis,
+.md-sidebar--primary .md-nav__item--active > div.md-nav__container .md-ellipsis {
+    color: #3884ff !important;
+    font-weight: 600 !important;
+}
+
+/* --------------------------------------
+   FIX FOR DUPLICATE & DISAPPEARING ACTIVE PAGES
+   -------------------------------------- */
+.md-sidebar--primary label.md-nav__link[for="__toc"] {
+    display: flex !important; 
+}
+.md-sidebar--primary label.md-nav__link[for="__toc"] + a.md-nav__link {
+    display: none !important;
+}
+
+/* --------------------------------------
+   Modern Typography for Content Lists & Links
+   -------------------------------------- */
+.md-typeset ul li > a {
+    color: #242a31 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid transparent !important;
+    transition: all 0.2s ease !important;
+}
+.md-typeset ul li > a:hover {
+    color: #3884ff !important;
+    border-bottom: 1px solid #3884ff !important;
+}
+.md-typeset ul li,
+.md-typeset ol li {
+    color: #242a31 !important; 
+    margin-bottom: 12px !important;
+    line-height: 1.6 !important;
+}
+.md-typeset ul li::marker {
+    color: #9daab6 !important;
+}
+.md-typeset ul li strong,
+.md-typeset ul li b,
+.md-typeset ol li strong,
+.md-typeset ol li b {
+    color: #1e2329 !important;
+    font-weight: 700 !important;
+}
+.md-typeset a {
+    text-decoration: none !important;
+}
+
+/* --------------------------------------
+   Safe Grid Expansion 
+   -------------------------------------- */
+/* .md-grid {
+    max-width: 80rem !important; 
+} */
+
+
+/* --------------------------------------
+   Custom Colored PNG Icon ONLY for Folders
+   -------------------------------------- */
+/* 1. Remove any old default SVG icons from folders so they don't overlap with our PNG */
+.md-sidebar--primary .md-nav__item--nested > label.md-nav__link > svg:not(.md-nav__icon),
+.md-sidebar--primary .md-nav__item--nested > div.md-nav__container > a.md-nav__link > svg:not(.md-nav__icon) {
+    display: none !important;
+}
+
+/* 2. Inject the custom PNG specifically into FOLDERS ONLY (.md-nav__item--nested) */
+.md-sidebar--primary .md-nav__item--nested > label.md-nav__link::before,
+.md-sidebar--primary .md-nav__item--nested > div.md-nav__container > a.md-nav__link::before {
+    content: "";
+    display: block;
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 8px !important;
+    background-image: url('../images/Pepperi-logo-edu-green.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    transition: filter 0.2s ease !important;
+}
+
+/* 3. Darken the image on hover and active state */
+.md-sidebar--primary .md-nav__item--nested:hover > label.md-nav__link::before,
+.md-sidebar--primary .md-nav__item--nested:hover > div.md-nav__container > a.md-nav__link::before,
+.md-sidebar--primary .md-nav__item--nested.md-nav__item--active > label.md-nav__link::before,
+.md-sidebar--primary .md-nav__item--active > div.md-nav__container > a.md-nav__link::before {
+    filter: brightness(0.65) !important; 
+}
+/* --------------------------------------
    Modern Code Blocks & Inline Code Styling
    -------------------------------------- */
 /* Clean container for multiline code blocks */
@@ -26,5 +306,4 @@
     padding: 2px 6px !important;
     border-radius: 4px !important;
     font-size: 0.85em !important;
-    box-shadow: none !important;
-}
+    box-shadow: none !important;}
