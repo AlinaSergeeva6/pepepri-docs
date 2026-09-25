@@ -7,6 +7,12 @@ theme:
   favicon: images/Pepperi-circle-green.png
   features:
     - navigation.indexes
+    - content.code.copy
 
 extra_css:
   - css/custom.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
