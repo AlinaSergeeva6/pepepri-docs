@@ -218,10 +218,21 @@
     color: #3884ff !important;
     border-bottom: 1px solid #3884ff !important;
 }
-.md-typeset ul li {
-    color: #9daab6 !important; 
+.md-typeset ul li,
+.md-typeset ol li {
+    color: #242a31 !important; 
     margin-bottom: 12px !important;
     line-height: 1.6 !important;
+}
+.md-typeset ul li::marker {
+    color: #9daab6 !important;
+}
+.md-typeset ul li strong,
+.md-typeset ul li b,
+.md-typeset ol li strong,
+.md-typeset ol li b {
+    color: #1e2329 !important;
+    font-weight: 700 !important;
 }
 .md-typeset a {
     text-decoration: none !important;
