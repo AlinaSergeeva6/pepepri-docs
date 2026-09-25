@@ -1,6 +1,6 @@
-# Table of contents
+# JS Client API
 
-* [Getting Started](README.md)
+* [Getting Started](getting-started.md)
 * [Rule Engine Unique Functions](rule-engine-unique-functions.md)
 * [Custom Form Window Functions](custom-form-unique-functions.md)
 * [Use Cases & Code Samples](use-cases-and-code-samples.md)
