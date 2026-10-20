@@ -1,4 +1,4 @@
-The Journey Tracker Add-on logs user interactions and workflow execution paths across the Pepperi platform. By capturing key events—such as page button clicks, navigation flows, and custom transition alerts—into PFS log files, it provides the tracking data needed for audit trails, behavior analysis, and integration debugging.
+The Journey Tracker Add-on logs user interactions and workflow execution paths across the Pepperi platform. By capturing key events - such as page button clicks, navigation flows, and custom transition alerts - into PFS log files, it provides the tracking data needed for audit trails, behavior analysis, and integration debugging.
 
 ## Install the Journey Tracker Add-on
 
