@@ -20,7 +20,7 @@ After the add-on is installed, open the **Journey Tracker** configuration.
 1. Click **Add** to create a new tracked event.
 2. Select the event source: **Activity**, **Transaction**, **Page**, or **Application Header**.
 
-   ![Pasted image 20261019132115.png](Pasted%20image%2020261019132115.png)
+   ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Pasted%20image%2020261019132115.png)
 
 3. Fill in the event settings:
    - **Display Event Name** - required. Select an event from the predefined list.
@@ -105,7 +105,8 @@ To configure the event filter, you need the button **Action Key**.
 6. Scroll to the **On click flow** section.
 7. Copy the **Action Key** value.
 
-   ![Pasted image 20261019144815.png](Pasted%20image%2020261019144815.png)
+ ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Pasted%20image%2020261019144815.png)
+
 
 Use this value in the Journey Tracker event filter to track clicks on this specific button.
 
@@ -119,40 +120,44 @@ Custom workflow events are triggered when a workflow transition is executed. Use
 
    Example: **In Creation** --> **Submitted**
 
-   ![Pasted image 20261019165426.png](Pasted%20image%2020261019165426.png)
+   ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Pasted%20image%2020261019165426.png)
+
 
 4. Add an **Alert on condition** workflow action.
 
-   ![Pasted image 20261019165630.png](Pasted%20image%2020261019165630.png)
+   ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Pasted%20image%2020261019165630.png)
+
 
 5. Click **<a>Add...</a>** and create a new field.
 
-   ![Pasted image 20261019165833.png](Pasted%20image%2020261019165833.png)
+   ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Pasted%20image%2020261019165833.png)
+
+
 
 6. Enter a field name that starts with - 'EmitEvent'. Save the alert without adding a message.
 
 > [!Important]  
 > The field name must start with `EmitEvent`. Otherwise, the Journey Tracker add-on will not recognize the custom workflow event.
 
-![Pasted image 20261019165921.png](Pasted%20image%2020261019165921.png)
+![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Pasted%20image%2020261019165921.png)
 
 7. If the transition contains multiple actions, set the required execution order for the **Alert on condition** action. Save the workflow.
 
-   ![Pasted image 20261019170645.png](Pasted%20image%2020261019170645.png)
+   ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Pasted%20image%2020261019170645.png)
 
 8. Go to
    **Settings** --> **Configurations** --> **Journey Tracker**.
 
 9. Open the menu next to **<span style="color: green">Add +</span>** and select **Add workflow event**.
-   ![Pasted image 20261019171117.png](Pasted%20image%2020261019171117.png)
+   ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Pasted%20image%2020261019171117.png)
 
 10. Enter the details that match the workflow event you created, then save the configuration.
 
-    ![Pasted image 20261019171254.png](Pasted%20image%2020261019171254.png)
+  ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Pasted%20image%2020261019171254.png)
 
 11. Add the new custom workflow event to the **Tracked Events** list.
 
-    ![Screenshot 2026-10-19 at 17.16.01.png](Screenshot%202026-10-19%20at%2017.16.01.png)
+    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Screenshot%202026-10-19%20at%2017.16.01.png)
 
 > [!NOTE]
 > You can create custom workflow events for **Transactions** and **Activities**. These events can also be added to **Programs** workflows.
