@@ -1,3 +1,5 @@
+The Journey Tracker Add-on logs user interactions and workflow execution paths across the Pepperi platform. By capturing key events—such as page button clicks, navigation flows, and custom transition alerts—into PFS log files, it provides the tracking data needed for audit trails, behavior analysis, and integration debugging.
+
 ## Install the Journey Tracker Add-on
 
 1. Obtain a valid Pepperi JWT token from Session Storage.
@@ -23,10 +25,10 @@ After the add-on is installed, open the **Journey Tracker** configuration.
    ![](https://alinasergeeva6.github.io/pepepri-docs/pepepri-internal-articles/static/Pasted%20image%2020261019132115.png)
 
 3. Fill in the event settings:
-   - **Display Event Name** - required. Select an event from the predefined list.
-   - **Description** - optional. Add a short description of the tracked event.
-   - **Alias** - required. This value is used as the `Label` in Journey Tracker log records.
-   - **Filter** - optional. Defines which specific event instance should be tracked. Filter settings depend on the selected event type
+   - **Display Event Name** (required). Select an event from the predefined list.
+   - **Description** (optional). Add a short description of the tracked event.
+   - **Alias** (required). This value is used as the `Label` in Journey Tracker log records.
+   - **Filter** (optional). Defines which specific event instance should be tracked. Filter settings depend on the selected event type
 
 4. After you select a **Display Event Name**, it cannot be changed or selected again.  
    To use a different event, click **Cancel** and start creating a new tracked event.
